@@ -1320,11 +1320,12 @@ struct FUN_00994270
 {
     int* m_items;
     int m_uiItemCount;
-    unsigned int __thiscall FindIndex(unsigned int key);
+    unsigned int __thiscall CombatPlan_GetIndexForStep(unsigned int key);
 };
 // Searches m_items for key and returns its index, warning via FNV_Warning and returning 0 if not found.
 // @fnv 0x00994270
-unsigned int FUN_00994270::FindIndex(unsigned int key)
+// src: EXE 0x00994270
+unsigned int FUN_00994270::CombatPlan_GetIndexForStep(unsigned int key)
 {
     for (unsigned int i = 0; i < (unsigned int)m_uiItemCount; ++i)
     {
@@ -4979,7 +4980,7 @@ struct Arr994350
 {
     Elem** m_items;
     int m_uiItemCount;
-    unsigned int FUN_00994270(unsigned int key);
+    unsigned int CombatPlan_GetIndexForStep(unsigned int key);
     bool InsertSortedEntry(int p0, KeyObj* p1, int p2, CtxObj* p3);
 };
 // @fnv 0x00994350
@@ -5022,7 +5023,7 @@ bool Arr994350::InsertSortedEntry(int aiStartIndex, KeyObj* apKey, int aiValue, 
         {
             if (m_items[aiStartIndex]->m_04 == 0)
                 return 1;
-            unsigned int idx = FUN_00994270((unsigned int)m_items[aiStartIndex]->m_04);
+            unsigned int idx = CombatPlan_GetIndexForStep((unsigned int)m_items[aiStartIndex]->m_04);
             if (idx < i)
                 return 1;
             Elem* saved = m_items[aiStartIndex];
@@ -5073,7 +5074,7 @@ bool Arr994350::InsertSortedEntry(int aiStartIndex, KeyObj* apKey, int aiValue, 
                                 prevN = m_items[aiStartIndex];
                                 markI = i;
                                 if (m_items[aiStartIndex]->m_04 != 0)
-                                    markI = FUN_00994270((unsigned int)m_items[aiStartIndex]->m_04) - 1;
+                                    markI = CombatPlan_GetIndexForStep((unsigned int)m_items[aiStartIndex]->m_04) - 1;
                                 if (markI > (unsigned int)aiStartIndex)
                                 {
                                     memcpy(&m_items[aiStartIndex], &m_items[aiStartIndex + 1],

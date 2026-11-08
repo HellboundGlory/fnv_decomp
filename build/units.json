@@ -587729,7 +587729,7 @@
     },
     {
      "address": "0x00994270",
-     "symbol": "?FindIndex@FUN_00994270@@QAEII@Z",
+     "symbol": "?CombatPlan_GetIndexForStep@FUN_00994270@@QAEII@Z",
      "size": 86
     },
     {
@@ -588595,7 +588595,7 @@
     "?FUN_00993cd0@FUN_00993bc0_class@@QAEXXZ": "0x00438af0",
     "?FUN_00993cd0@FUN_00993bf0_class@@QAEXXZ": "0x00993cd0",
     "?NiTArray_CombatGroup_NiTMallocInterface_CombatGroup_Init@FUN_00993960@@QAEXHH@Z": "0x00993cf0",
-    "?FUN_00994270@Arr994350@@QAEII@Z": "0x00994270",
+    "?CombatPlan_GetIndexForStep@Arr994350@@QAEII@Z": "0x00994270",
     "?CombatWorldStateArray_GetStateValue@CtxObj@@QAEHH@Z": "0x009947f0",
     "?CombatPlanNode_HashKey@@YAIII@Z": "0x00994bb0",
     "?CombatPlanner_GetNodeKey@BuildOwner@@QAEHPAPAUBuildInput@@@Z": "0x009950a0",
