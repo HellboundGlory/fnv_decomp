@@ -97,11 +97,11 @@ struct FUN_00d97850_shell
 
 void* __cdecl _D1A0E0GetMemoryRouter();
 
-extern int DAT_010cd278;
-extern int DAT_010cd25c;
-extern int DAT_010cd244;
-extern int _DAT_0102e388;
-extern int DAT_0104e3d0;
+extern int vftable_hkpKdTreeWorldManager;
+extern int vftable_hkpKdTreeWorldManager_for_hkpEntityListener;
+extern int vftable_hkpKdTreeWorldManager_for_hkpPhantomListener;
+extern int vftable_hkBaseObject;
+extern int vftable_hkpPhantomListener;
 extern int $SG5957;
 
 struct FUN_00d0a4f0
@@ -118,9 +118,9 @@ struct FUN_00d0a4f0
 // @fnv 0x00d0a4f0
 FUN_00d0a4f0::~FUN_00d0a4f0()
 {
-    *(int*)this = (int)&DAT_010cd278;
-    *(int*)((char*)this + 0x14) = (int)&DAT_010cd25c;
-    *(int*)((char*)this + 0x18) = (int)&DAT_010cd244;
+    *(int*)this = (int)&vftable_hkpKdTreeWorldManager;
+    *(int*)((char*)this + 0x14) = (int)&vftable_hkpKdTreeWorldManager_for_hkpEntityListener;
+    *(int*)((char*)this + 0x18) = (int)&vftable_hkpKdTreeWorldManager_for_hkpPhantomListener;
 
     ((FUN_00c917a0_shell*)*(void**)((char*)this + 0x1c))->hkpWorld_removeEntityListener((char*)this + 0x14);
     ((FUN_00c917f0_shell*)*(void**)((char*)this + 0x1c))->hkpWorld_removePhantomListener((char*)this + 0x18);
@@ -136,8 +136,8 @@ FUN_00d0a4f0::~FUN_00d0a4f0()
         fn(mgr, p, 0x50);
     }
 
-    *(int*)this = (int)&_DAT_0102e388;
-    *(int*)((char*)this + 0x18) = (int)&DAT_0104e3d0;
+    *(int*)this = (int)&vftable_hkBaseObject;
+    *(int*)((char*)this + 0x18) = (int)&vftable_hkpPhantomListener;
     *(int*)((char*)this + 0x14) = (int)&$SG5957;
 }
 

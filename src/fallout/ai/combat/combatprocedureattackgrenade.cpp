@@ -158,7 +158,7 @@ void* __thiscall FUN_009caeb0_shell::CombatProcedureAttackGrenade_ScalarDeleting
     return this;
 }
 
-extern int DAT_010909bc;
+extern int vftable_CombatProcedureAttackGrenade;
 struct FUN_009ca6c0_shell
 {
     void SetVirtualTable_009ca6c0();
@@ -171,7 +171,7 @@ struct FUN_009cafa0_shell
 // src: GUESS 0x009cafa0 (confidence: low)
 void FUN_009cafa0_shell::UpdateFields_009cafa0()
 {
-    *reinterpret_cast<int**>(this) = &DAT_010909bc;
+    *reinterpret_cast<int**>(this) = &vftable_CombatProcedureAttackGrenade;
     reinterpret_cast<FUN_009ca6c0_shell*>(this)->SetVirtualTable_009ca6c0();
 }
 
@@ -332,7 +332,7 @@ unsigned char __cdecl CombatUtilities_CheckProjectileArc(void* actor, void* targ
 
 
 
-extern int DAT_010909bc;
+extern int vftable_CombatProcedureAttackGrenade;
 extern NiPoint3 DAT_011f426c;
 
 struct CombatBaseObj
@@ -366,7 +366,7 @@ struct FUN_009cadf0_cls : CombatBaseObj
 // @fnv 0x009cadf0
 FUN_009cadf0_cls::FUN_009cadf0_cls()
 {
-    m_vptr = &DAT_010909bc;
+    m_vptr = &vftable_CombatProcedureAttackGrenade;
     m_10 = 0;
     m_14 = 0;
     reinterpret_cast<NiPoint3&>(m_18) = DAT_011f426c;

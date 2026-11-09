@@ -541,7 +541,7 @@ struct Base_004d9210
 {
     void FUN_004d9210(int a, int b);
 };
-extern int DAT_01021024;
+extern int vftable_NiTPrimitiveArray_01021024;
 struct Holder_004d9100
 {
     Holder_004d9100* InitializeFields_004d9100(int a, int b);
@@ -551,7 +551,7 @@ struct Holder_004d9100
 Holder_004d9100* Holder_004d9100::InitializeFields_004d9100(int aiArg1, int aiArg2)
 {
     ((Base_004d9210*)this)->FUN_004d9210(aiArg1, aiArg2);
-    *(void**)this = (void*)&DAT_01021024;
+    *(void**)this = (void*)&vftable_NiTPrimitiveArray_01021024;
     return this;
 }
 

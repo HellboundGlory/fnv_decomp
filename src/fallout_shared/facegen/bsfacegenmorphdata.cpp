@@ -519,7 +519,7 @@ void* Host006626f0::BSFaceGenBaseMorphExtraData_ScalarDeletingDestructor(unsigne
     return this;
 }
 
-extern int DAT_01065fac;
+extern int vftable_BSFaceGenBaseMorphExtraData;
 void __cdecl _Deallocate(void*);
 struct FUN_00662720_shell
 {
@@ -533,7 +533,7 @@ struct FUN_00662720_shell
 // src: GUESS 0x00662720 (confidence: low)
 void FUN_00662720_shell::UpdateFields_00662720()
 {
-    *(void**)this = (void*)&DAT_01065fac;
+    *(void**)this = (void*)&vftable_BSFaceGenBaseMorphExtraData;
     if (f12)
     {
         void* tmp = f12;

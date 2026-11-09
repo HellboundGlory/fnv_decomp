@@ -42,7 +42,7 @@ int TargetClass::ComputeValue_00db7860()
 // FUN_00db7870 : constructor taking one argument. Installs the class vtable,
 // sets a 16-bit flag to 1 and stores the bitwise complement of the argument.
 
-extern int DAT_010d538c;
+extern int vftable_hkCrc32StreamWriter;
 
 struct FUN_00db7870_cls
 {
@@ -58,7 +58,7 @@ struct FUN_00db7870_cls
 FUN_00db7870_cls::FUN_00db7870_cls(unsigned int value)
 {
     m_w06 = 1;
-    m_pVTable = (void*)&DAT_010d538c;
+    m_pVTable = (void*)&vftable_hkCrc32StreamWriter;
     m_dw08 = ~value;
 }
 

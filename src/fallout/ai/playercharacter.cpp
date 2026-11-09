@@ -1122,7 +1122,7 @@ extern FloatSetting DAT_011c3c74, DAT_011c3db0, DAT_011c3d28, DAT_011c3e54, DAT_
 
 extern ByteSetting DAT_011c3da0, DAT_011c3e64, DAT_011c3ccc;
 
-extern unsigned int DAT_010178b4;
+extern unsigned int vftable_TES;
 
 extern int DAT_01017874, DAT_005764f0, DAT_00577450, DAT_00577ca0, DAT_0045c680;
 

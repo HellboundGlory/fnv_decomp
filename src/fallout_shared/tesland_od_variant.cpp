@@ -420,7 +420,7 @@ void FUN_00537e90::SetQuantity(unsigned int value)
 struct FUN_00538e30_class {
     void __fastcall SetVtable();
 };
-extern int DAT_0102e378;
+extern int vftable_hkReferencedObject;
 struct FUN_00538e10_class {
     int* m_vtbl;
     void __fastcall UpdateState_00538e10();
@@ -429,7 +429,7 @@ struct FUN_00538e10_class {
 // src: GUESS 0x00538e10 (confidence: low)
 void __fastcall FUN_00538e10_class::UpdateState_00538e10()
 {
-    m_vtbl = &DAT_0102e378;
+    m_vtbl = &vftable_hkReferencedObject;
     ((FUN_00538e30_class*)this)->SetVtable();
 }
 
@@ -462,7 +462,7 @@ void* B1::hkReferencedObject_ScalarDeletingDestructor(unsigned int flags)
 }
 
 extern "C" void __cdecl FUN_00538f20();
-extern int DAT_0102e378;
+extern int vftable_hkReferencedObject;
 
 struct FUN_00538ef0_class {
     void* m_ppVirtualMethodTable;
@@ -477,12 +477,12 @@ struct FUN_00538ef0_class {
 void* FUN_00538ef0_class::UpdateState_00538ef0()
 {
     FUN_00538f20();
-    m_ppVirtualMethodTable = &DAT_0102e378;
+    m_ppVirtualMethodTable = &vftable_hkReferencedObject;
     *(unsigned short*)((char*)this + 6) = 1;
     return this;
 }
 
-extern int DAT_0102e388;
+extern int vftable_hkBaseObject;
 
 struct FUN_00538f20 {
     int* p;
@@ -492,7 +492,7 @@ struct FUN_00538f20 {
 // @fnv 0x00538f20
 FUN_00538f20::FUN_00538f20()
 {
-    p = &DAT_0102e388;
+    p = &vftable_hkBaseObject;
 }
 
 void __cdecl Tesland_UpdateState_00538eb0(void*);
@@ -1058,8 +1058,8 @@ void FUN_005331f0_class::TESObjectLAND_GetSaveParentCell()
         reinterpret_cast<char*>(this) - 0x18)->_FNV_GetObjectReference();
 }
 
-extern int DAT_0102dcd4;
-extern int DAT_0102dccc;
+extern int vftable_TESObjectLAND;
+extern int vftable_TESObjectLAND_for_TESChildCell;
 extern unsigned char DAT_011c9efc;
 extern int DAT_011c9f00;
 void __cdecl TESObjectLAND_InitializeStatics();
@@ -1099,7 +1099,7 @@ struct FUN_00533120_cls : FUN_00483370 {
 };
 
 // @fnv 0x00533120
-FUN_00533120_cls::FUN_00533120_cls() : m_18(), m_24((this->m_vt = &DAT_0102dcd4, this->m_18.m_vt = &DAT_0102dccc, 0))
+FUN_00533120_cls::FUN_00533120_cls() : m_18(), m_24((this->m_vt = &vftable_TESObjectLAND, this->m_18.m_vt = &vftable_TESObjectLAND_for_TESChildCell, 0))
 {
     if (DAT_011c9efc == 0) {
         TESObjectLAND_InitializeStatics();

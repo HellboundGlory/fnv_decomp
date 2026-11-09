@@ -166,7 +166,7 @@ struct FUN_00537e90 {
 struct FUN_00538e30_class {
     void __fastcall SetVtable();
 };
-extern int DAT_0102e378;
+extern int vftable_hkReferencedObject;
 struct FUN_00538e10_class {
     int* m_vtbl;
     void __fastcall UpdateState_00538e10();
@@ -174,7 +174,7 @@ struct FUN_00538e10_class {
 struct B1 { virtual ~B1(); void* hkReferencedObject_ScalarDeletingDestructor(unsigned int); };
 void __cdecl Tesland_UpdateState_00538eb0(void*);
 extern "C" void __cdecl FUN_00538f20();
-extern int DAT_0102e378;
+extern int vftable_hkReferencedObject;
 struct FUN_00538ef0_class {
     void* m_ppVirtualMethodTable;
     int m_kPointA;
@@ -182,7 +182,7 @@ struct FUN_00538ef0_class {
     void FUN_00538f20();
     void* UpdateState_00538ef0();
 };
-extern int DAT_0102e388;
+extern int vftable_hkBaseObject;
 struct FUN_00538f20 {
     int* p;
     FUN_00538f20();
@@ -414,8 +414,8 @@ struct FUN_005331f0_class
 {
     void TESObjectLAND_GetSaveParentCell();
 };
-extern int DAT_0102dcd4;
-extern int DAT_0102dccc;
+extern int vftable_TESObjectLAND;
+extern int vftable_TESObjectLAND_for_TESChildCell;
 extern unsigned char DAT_011c9efc;
 extern int DAT_011c9f00;
 void __cdecl TESObjectLAND_InitializeStatics();

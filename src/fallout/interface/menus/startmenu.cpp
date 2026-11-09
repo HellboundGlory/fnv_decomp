@@ -286,7 +286,7 @@ void StartMenu_IdleTimer_Delete()
     DAT_011daac4 = 0;
 }
 
-extern int DAT_01076ee0;
+extern int vftable_StartMenu__Option;
 struct S007ce620
 {
     void* vt;
@@ -300,7 +300,7 @@ struct S007ce620
 // src: GUESS 0x007ce620 (confidence: low)
 S007ce620* S007ce620::InitializeFields_007ce620(int pa, int pb, int pc)
 {
-    vt = &DAT_01076ee0;
+    vt = &vftable_StartMenu__Option;
     a = pa;
     b = pb;
     c = pc;
@@ -2866,7 +2866,7 @@ void* FUN_00b008d0_StandIn::BSContentPackage_DisplayName()
     return m_pUnk;
 }
 
-extern int DAT_01076ee0;
+extern int vftable_StartMenu__Option;
 
 struct FUN_007ce690_cls
 {
@@ -2877,7 +2877,7 @@ struct FUN_007ce690_cls
 // @fnv 0x007ce690
 void FUN_007ce690_cls::InitPointer()
 {
-    p = &DAT_01076ee0;
+    p = &vftable_StartMenu__Option;
 }
 
 struct FUN_007d1240_Class
@@ -6862,7 +6862,7 @@ void FUN_007d62e0_shell::EnableAndRemoveHighlightedItem()
     }
 }
 
-extern int DAT_0107704c;
+extern int vftable_StartMenu__UserOption;
 
 void __cdecl FormHeapFreeAndLog_00401030(int value);
 
@@ -6887,7 +6887,7 @@ struct FUN_007d64d0_cls
 // @fnv 0x007d64d0
 void FUN_007d64d0_cls::Initialize()
 {
-    m_vptr = (int)&DAT_0107704c;
+    m_vptr = (int)&vftable_StartMenu__UserOption;
     int value = m_28;
     FormHeapFreeAndLog_00401030(value);
     ((FUN_007ce690_cls*)this)->InitPointer();

@@ -325,7 +325,7 @@ void FUN_0051b8c0_shell::SkyShaderProperty_SetBlendValue(float value)
     *reinterpret_cast<float*>(reinterpret_cast<char*>(this) + 0x84) = value;
 }
 
-extern int DAT_0102be94;
+extern int vftable_TESIconTree;
 
 struct FUN_0051b970_shell : TESTexture1024
 {
@@ -1153,7 +1153,7 @@ FUN_0051b930::FUN_0051b930() : SpawnedBase()
 
 // FUN_0051b9b0 - TESTexture1024::TESTexture1024()
 // Runs the base TESTexture constructor, then installs the class vtable pointer.
-extern int DAT_0102beb4;  // vtable of TESTexture1024
+extern int vftable_TESTexture1024;  // vtable of TESTexture1024
 
 class TESTextureBase
 {
@@ -1171,7 +1171,7 @@ class FUN_0051b9b0_cls : public TESTextureBase
 // @fnv 0x0051b9b0
 FUN_0051b9b0_cls::FUN_0051b9b0_cls() : TESTextureBase()
 {
-    m_pVTable = &DAT_0102beb4;
+    m_pVTable = &vftable_TESTexture1024;
 }
 
 extern double DAT_01012060;

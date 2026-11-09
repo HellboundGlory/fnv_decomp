@@ -472,7 +472,7 @@ void* FUN_00c657e0_class::GetGlobalDataPtr()
 }
 
 extern "C" void NiFreeAlias(void*);
-extern int DAT_010c377c;
+extern int vftable_NiTArray_010c377c;
 
 // RTTI at vftable 0x010c377c identifies NiTArray<NiPointer<NiAVObject>, NiTMallocInterface<NiPointer<NiAVObject> > >.
 // @fnv 0x00c62890
@@ -484,7 +484,7 @@ NiTArray<NiPointer<NiAVObject>, NiTMallocInterface<NiPointer<NiAVObject> > >::~N
 }
 
 extern "C" void NiFreeAlias(void*);
-extern int DAT_010c3a08;
+extern int vftable_NiTArray_010c3a08;
 // RTTI at vftable 0x010c3a08 identifies NiTArray<BSAttachPointPair*, NiTMallocInterface<BSAttachPointPair*> >.
 // @fnv 0x00c65680
 template <>
@@ -540,7 +540,7 @@ struct AVObjectArrayDeleteEntry : NiTArray<NiPointer<NiAVObject>, NiTMallocInter
 // @fnv 0x00c63210
 void* AVObjectArrayDeleteEntry::Delete(int flag)
 {
-    *reinterpret_cast<void**>(this) = &DAT_010c377c;
+    *reinterpret_cast<void**>(this) = &vftable_NiTArray_010c377c;
     void* p = m_pBase;
     NiFree(p);
     if (flag & 1)
@@ -918,7 +918,7 @@ struct AttachPointArrayDeleteEntry : NiTArray<BSAttachPointPair*, NiTMallocInter
 void* AttachPointArrayDeleteEntry::Delete(unsigned int flags)
 {
     void* p;
-    *reinterpret_cast<void**>(this) = &DAT_010c3a08;
+    *reinterpret_cast<void**>(this) = &vftable_NiTArray_010c3a08;
     p = m_pBase;
     NiFree(p);
     if (flags & 1)

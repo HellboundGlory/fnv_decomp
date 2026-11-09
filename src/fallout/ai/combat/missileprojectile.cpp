@@ -222,18 +222,18 @@ struct FUN_004b5120
 {
     FUN_004b5120();
 };
-extern int DAT_0108febc;
+extern int vftable_bhkConstraint;
 extern int DAT_01268188;
 struct FUN_009ba4a0 : FUN_004b5120
 {
     int* m_iWordAt00;
     FUN_009ba4a0();
 };
-// Points the object's pointer at DAT_0108febc and increments DAT_01268188.
+// Points the object's pointer at vftable_bhkConstraint and increments DAT_01268188.
 // @fnv 0x009ba4a0
 FUN_009ba4a0::FUN_009ba4a0() : FUN_004b5120()
 {
-    m_iWordAt00 = &DAT_0108febc;
+    m_iWordAt00 = &vftable_bhkConstraint;
     DAT_01268188++;
 }
 

@@ -162,14 +162,14 @@ struct FUN_00c657e0_class
     void* GetGlobalDataPtr();
 };
 extern "C" void NiFreeAlias(void*);
-extern int DAT_010c377c;
+extern int vftable_NiTArray_010c377c;
 // 0x00c62890 is the NiTArray<NiPointer<NiAVObject>, NiTMallocInterface<NiPointer<NiAVObject> > > destructor in blk_00c60000_od.cpp's overlay.
 struct AVObjectArrayDestructorEntry : NiTArray<NiPointer<NiAVObject>, NiTMallocInterface<NiPointer<NiAVObject> > >
 {
     void FUN_00c62890();
 };
 extern "C" void NiFreeAlias(void*);
-extern int DAT_010c3a08;
+extern int vftable_NiTArray_010c3a08;
 struct FUN_00c65680_Class
 {
     void* m_iWordAt00;
@@ -235,7 +235,7 @@ struct FUN_00c64c30_Class
 {
     bool __thiscall BSNodeReferences_IsEqual(int a);
 };
-extern int DAT_010c3384;
+extern int vftable_BSPSysSimpleColorModifier;
 struct FUN_00c60240 : NiPSysPositionModifier
 {
     int m_vt;
@@ -304,7 +304,7 @@ struct FUN_00c63260_class
 extern NiPoint3 _NiPoint3_ZERO;
 extern int _DAT_011f4270;
 extern int _DAT_011f4274;
-extern int DAT_010c37fc;
+extern int vftable_BSParentVelocityModifier;
 struct FUN_00c63330 : NiPSysPositionModifier
 {
     FUN_00c63330();

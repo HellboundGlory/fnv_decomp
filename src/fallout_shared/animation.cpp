@@ -51,7 +51,7 @@
 #include "../../include/MEM_CONTEXT.h"
 
 namespace fnv_004965d0 {
-extern "C" char DAT_0101dcd8;
+extern "C" char vftable_AnimIdle;
 extern "C" char DAT_0101dccc;
 extern "C" char DAT_0101dcc4;
 extern "C" char DAT_011c3f2c;
@@ -524,13 +524,13 @@ struct FUN_0048ef40_shell : public AnimSequenceBase
     void SetVirtualTable_0048ef40();
 };
 
-extern int DAT_0101d8e8;
+extern int vftable_AnimSequenceBase;
 
 // @fnv 0x0048ef40
 // src: GUESS 0x0048ef40 (confidence: low)
 void FUN_0048ef40_shell::SetVirtualTable_0048ef40()
 {
-    *(int**)this = &DAT_0101d8e8;
+    *(int**)this = &vftable_AnimSequenceBase;
 }
 
 namespace fnv_0048f010 {
@@ -572,7 +572,7 @@ void AnimSequenceSingle::AssignSequence(BSAnimGroupSequence* apSeq, bool abRelea
 }
 
 
-extern int DAT_0101d908;
+extern int vftable_AnimSequenceMultiple;
 
 struct GlobalObject_0048f200
 {
@@ -599,7 +599,7 @@ struct FUN_0048f0c0 : public FUN_0048f1b0
 // @fnv 0x0048f0c0
 FUN_0048f0c0::FUN_0048f0c0(AnimSequenceSingle* apSingleSeq)
 {
-    m_ppVirtualMethodTable = &DAT_0101d908;
+    m_ppVirtualMethodTable = &vftable_AnimSequenceMultiple;
     m_pSingleSequence = new GlobalObject_0048f200;
     FUN_0048f3a0(apSingleSeq->GetSequenceAtIndex(-1), true);
     typedef void (__thiscall *AssignSlot)(AnimSequenceSingle*, BSAnimGroupSequence*, bool);
@@ -608,13 +608,13 @@ FUN_0048f0c0::FUN_0048f0c0(AnimSequenceSingle* apSingleSeq)
     delete reinterpret_cast<NiObject*>(apSingleSeq);
 }
 
-extern int DAT_0101d8e8;
+extern int vftable_AnimSequenceBase;
 
 // @fnv 0x0048f1b0
 // src: GUESS 0x0048f1b0 (confidence: low)
 int* __fastcall Animation_UpdateState_0048f1b0(int* pThis)
 {
-    *pThis = (int)&DAT_0101d8e8;
+    *pThis = (int)&vftable_AnimSequenceBase;
     return pThis;
 }
 
@@ -755,13 +755,13 @@ typedef char _sizecheck_AnimSequenceSingle[sizeof(AnimSequenceSingle) == 8 ? 1 :
 
 
 void __fastcall Animation_UpdateState_0048f1b0(void* pThis);
-extern int DAT_0101d8c8;
+extern int vftable_AnimSequenceSingle;
 
 // @fnv 0x00490e10
 void* __fastcall ConstructAnimSequenceSingle(AnimSequenceSingle* pThis)
 {
     Animation_UpdateState_0048f1b0(pThis);
-    *reinterpret_cast<void**>(pThis) = &DAT_0101d8c8;
+    *reinterpret_cast<void**>(pThis) = &vftable_AnimSequenceSingle;
     pThis->pForwardSequence = 0;
     return pThis;
 }
@@ -3501,13 +3501,13 @@ struct S_0049c050
     void NiTMapBase_NiTPointerAllocator_unsigned_int_unsigned_short_AnimSequenceBase_NiTMapBase(int);
     void* Construct(int);
 };
-extern int DAT_0101ded0;
-// Calls FUN_0049c100 with a, stores the address of DAT_0101ded0 into this, and returns this.
+extern int vftable_NiTPointerMap_0101ded0;
+// Calls FUN_0049c100 with a, stores the address of vftable_NiTPointerMap_0101ded0 into this, and returns this.
 // @fnv 0x0049c050
 void* S_0049c050::Construct(int a)
 {
     NiTMapBase_NiTPointerAllocator_unsigned_int_unsigned_short_AnimSequenceBase_NiTMapBase(a);
-    *(void**)this = (void*)&DAT_0101ded0;
+    *(void**)this = (void*)&vftable_NiTPointerMap_0101ded0;
     return this;
 }
 
@@ -3621,7 +3621,7 @@ bool FUN_00493990_shell::Animation_GetDelayUpdateScenegraph()
 }  // namespace fnv_00493970
 
 extern "C" void* _NiMalloc(unsigned int);
-extern int DAT_0101def0;
+extern int vftable_NiTMapBase_0101def0;
 struct FUN_0049c100_shell
 {
     void* vft;
@@ -3635,7 +3635,7 @@ struct FUN_0049c100_shell
 // src: EXE 0x0049c100
 FUN_0049c100_shell* FUN_0049c100_shell::NiTMapBase_NiTPointerAllocator_unsigned_int_unsigned_short_AnimSequenceBase_NiTMapBase(int aiCount)
 {
-    vft = (void*)&DAT_0101def0;
+    vft = (void*)&vftable_NiTMapBase_0101def0;
     count = aiCount;
     unused = 0;
     unsigned int uiSize = count * 4;

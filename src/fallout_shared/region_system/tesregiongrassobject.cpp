@@ -48,15 +48,15 @@ struct FUN_004f5600_shell
     FUN_004f5600_shell();
 };
 
-extern int DAT_01023ee4;
+extern int vftable_TESRegionObjectBase;
 
 // @fnv 0x004f5600
 FUN_004f5600_shell::FUN_004f5600_shell()
 {
-    m_vftable = (int)&DAT_01023ee4;
+    m_vftable = (int)&vftable_TESRegionObjectBase;
 }
 
-extern int DAT_01023ec4;
+extern int vftable_TESRegionGrassObject;
 
 struct FUN_004f5920_shell
 {
@@ -67,7 +67,7 @@ struct FUN_004f5920_shell
 // src: GUESS 0x004f5920 (confidence: low)
 void FUN_004f5920_shell::SetVirtualTable_004f5920()
 {
-    *reinterpret_cast<int**>(this) = &DAT_01023ec4;
+    *reinterpret_cast<int**>(this) = &vftable_TESRegionGrassObject;
 }
 
 namespace fnv_004f55d0 {

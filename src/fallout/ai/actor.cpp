@@ -30582,7 +30582,7 @@ void* __thiscall FUN_0087d830_class::Destroy(unsigned int flags)
     return this;
 }
 
-extern "C" void* DAT_01084734;
+extern "C" void* vftable_CachedValuesOwner;
 
 struct FUN_0087d860_Class
 {
@@ -30594,7 +30594,7 @@ struct FUN_0087d860_Class
 // src: GUESS 0x0087d860 (confidence: low)
 void* __thiscall FUN_0087d860_Class::SetVirtualTable_0087d860()
 {
-    pvt = &DAT_01084734;
+    pvt = &vftable_CachedValuesOwner;
     return this;
 }
 
@@ -30955,7 +30955,7 @@ void __thiscall FUN_008abfa0_Class::PlayerCharacter_AddTeammate(int* arg)
     reinterpret_cast<G2*>(reinterpret_cast<char*>(this) + 0x5fc)->AddHead(reinterpret_cast<int*>(&arg));
 }
 
-extern "C" void __cdecl DAT_01084e54();
+extern "C" void __cdecl vftable_bhkFilteredCdBodyCollector();
 extern "C" void __cdecl FUN_0062d350(void*);
 
 struct FUN_008aff30_Class
@@ -30968,7 +30968,7 @@ struct FUN_008aff30_Class
 void* __thiscall FUN_008aff30_Class::Construct()
 {
     FUN_0062d350();
-    *(void**)(this) = (void*)&DAT_01084e54;
+    *(void**)(this) = (void*)&vftable_bhkFilteredCdBodyCollector;
     return this;
 }
 

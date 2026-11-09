@@ -374,16 +374,16 @@ void FUN_004a3eb0_shell::bhkPickData_SetTo(void* arTo)
     ((FUN_004a3f40_helper*)this)->bhkPickData_SetTo_004a3f40(NI2HK(hkv, *(const NiPoint3*)arTo));
 }
 
-extern int DAT_0108a490;
-extern int DAT_0108a49c;
+extern int vftable_MobileObject_for_TESChildCell;
+extern int vftable_MobileObject;
 
 // @fnv 0x0092eb50
 // src: GUESS 0x0092eb50 (confidence: low)
 void* __fastcall TESObjectREFR_UpdateState_0092eb50(char* this_ptr)
 {
     ((TESObjectREFR*)this_ptr)->TESObjectREFR::TESObjectREFR();
-    *(int**)(this_ptr + 0x00) = &DAT_0108a49c;
-    *(int**)(this_ptr + 0x18) = &DAT_0108a490;
+    *(int**)(this_ptr + 0x00) = &vftable_MobileObject;
+    *(int**)(this_ptr + 0x18) = &vftable_MobileObject_for_TESChildCell;
     *(int*)(this_ptr + 0x6c) = 0;
     *(int*)(this_ptr + 0x68) = 0;
     *(int*)(this_ptr + 0x70) = 0;

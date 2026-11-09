@@ -151,13 +151,13 @@ TESSound* FUN_004fd3a0_shell::TESChallenge_GetFormOne()
     return *(TESSound**)((char*)this + 0x74);
 }
 
-extern int DAT_01029ee0;
+extern int vftable_BGSOpenCloseForm;
 
 // @fnv 0x00510620
 // src: EXE 0x00510620
 void* __fastcall BGSOpenCloseForm_BGSOpenCloseForm(void** pThis)
 {
-    *pThis = &DAT_01029ee0;
+    *pThis = &vftable_BGSOpenCloseForm;
     return pThis;
 }
 

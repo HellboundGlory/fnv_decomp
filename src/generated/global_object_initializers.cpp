@@ -9665,7 +9665,7 @@ FUN_006ffc90_shell::FUN_006ffc90_shell()
     m_kPointB &= 0xfff00000;
 }
 
-extern void* DAT_010827e8;
+extern void* vftable_NiTObjectArray_010827e8;
 
 struct FUN_008699c0_shell
 {
@@ -9678,7 +9678,7 @@ struct FUN_008699c0_shell
 void* FUN_008699c0_shell::NiTObjectArray_TESObjectREFR_NiTObjectArray(unsigned int maxSize, unsigned int growBy)
 {
     FUN_00869aa0(maxSize, growBy);
-    *(void**)this = &DAT_010827e8;
+    *(void**)this = &vftable_NiTObjectArray_010827e8;
     return this;
 }
 
@@ -9700,9 +9700,9 @@ void __thiscall FUN_00869bf0_holder::FUN_00869bf0(void* a, void* b)
 // src: EXE 0x00869b10
 void* __thiscall FUN_00869b10_shell::NiTObjectArray_BipedAnim_NiTObjectArray(void* a, void* b)
 {
-    extern void* DAT_010827f8;
+    extern void* vftable_NiTObjectArray_010827f8;
     ((FUN_00869bf0_holder*)this)->FUN_00869bf0(a, b);
-    m_vft = &DAT_010827f8;
+    m_vft = &vftable_NiTObjectArray_010827f8;
     return this;
 }
 
@@ -9711,7 +9711,7 @@ struct AX
     void* m_vft;
     void BSSimpleArray_float_1024_InitialSetup(unsigned int, unsigned int);
 };
-extern void* DAT_0106ba6c;
+extern void* vftable_BSSimpleArray_0106ba6c;
 
 struct FUN_00869f00_shell
 {
@@ -9723,7 +9723,7 @@ struct FUN_00869f00_shell
 // src: COMMUNITY 0x00869f00
 void* FUN_00869f00_shell::BSSimpleArray_NavMesh_1024_BSSimpleArray_NavMesh_1024_00869f00(unsigned int a, unsigned int b)
 {
-    this->m_vft = &DAT_0106ba6c;
+    this->m_vft = &vftable_BSSimpleArray_0106ba6c;
     ((AX*)this)->BSSimpleArray_float_1024_InitialSetup(a, b);
     return this;
 }
@@ -9742,7 +9742,7 @@ FUN_0045cfb0::FUN_0045cfb0(unsigned int a, unsigned char b)
     f4 = b;
 }
 
-extern int DAT_0102f408;
+extern int vftable_NiTMap_0102f408;
 struct StandIn_00559cc0
 {
     int m0;
@@ -9754,7 +9754,7 @@ struct StandIn_00559cc0
 StandIn_00559cc0* StandIn_00559cc0::NiTMap_TESObjectREFR_TESObjectREFR_NiTMap(int a)
 {
     InitArray(a);
-    m0 = (int)&DAT_0102f408;
+    m0 = (int)&vftable_NiTMap_0102f408;
     return this;
 }
 

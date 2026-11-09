@@ -160,7 +160,7 @@ void __thiscall BGSMoviePlayer::UnPauseMusic()
     ResetThreadFlags();
 }
 
-extern int DAT_01082564;
+extern int vftable_BGSMoviePlayer;
 struct FUN_00ec15e0_shell
 {
     void __thiscall FUN_00ec15e0();
@@ -170,6 +170,6 @@ struct FUN_00ec15e0_shell
 // src: GUESS 0x00867180 (confidence: low)
 void __thiscall BGSMoviePlayer::UpdateFields_00867180()
 {
-    *(void**)this = &DAT_01082564;
+    *(void**)this = &vftable_BGSMoviePlayer;
     ((FUN_00ec15e0_shell*)this)->FUN_00ec15e0();
 }

@@ -76,7 +76,7 @@ bool Cmd_SystemSave_Execute()
 }
 
 extern "C" void __cdecl j_Deallocate_NiTNewInterface_V_NiPointer_VNiAVObject_SAXPAV_NiPointer_VNiAVObject_Z(int);
-extern int DAT_0103d3e8;
+extern int vftable_NiTArray_0103d3e8;
 
 struct FUN_005e02e0
 {
@@ -85,15 +85,15 @@ struct FUN_005e02e0
     void Init();
 };
 
-// Stores the address of DAT_0103d3e8 into m0 and calls FUN_004b0220 with m4.
+// Stores the address of vftable_NiTArray_0103d3e8 into m0 and calls FUN_004b0220 with m4.
 // @fnv 0x005e02e0
 void FUN_005e02e0::Init()
 {
-    m0 = (int)&DAT_0103d3e8;
+    m0 = (int)&vftable_NiTArray_0103d3e8;
     j_Deallocate_NiTNewInterface_V_NiPointer_VNiAVObject_SAXPAV_NiPointer_VNiAVObject_Z(m4);
 }
 
-extern "C" void* DAT_0103d3f0;
+extern "C" void* vftable_NiTObjectArray_0103d3f0;
 struct FUN_005e0310_class
 {
     void* vtbl;
@@ -101,13 +101,13 @@ struct FUN_005e0310_class
     FUN_005e0310_class* __thiscall NiTObjectArray_NiPointer_NiTexture_NiTObjectArray(void* a, void* b);
 };
 
-// Calls FUN_005e08e0 with the two arguments, sets vtbl to DAT_0103d3f0, and returns this.
+// Calls FUN_005e08e0 with the two arguments, sets vtbl to vftable_NiTObjectArray_0103d3f0, and returns this.
 // @fnv 0x005e0310
 // src: EXE 0x005e0310
 FUN_005e0310_class* __thiscall FUN_005e0310_class::NiTObjectArray_NiPointer_NiTexture_NiTObjectArray(void* apArg, void* apArg2)
 {
     NiTArray_NiPointer_NiTexture_NiTNewInterface_NiPointer_NiTexture_NiTArray_NiPointer_NiTexture_NiTNewInterface_NiPointer_NiTexture(apArg, apArg2);
-    vtbl = &DAT_0103d3f0;
+    vtbl = &vftable_NiTObjectArray_0103d3f0;
     return this;
 }
 
@@ -120,31 +120,31 @@ struct FUN_005e0340Class
     void ReleaseStorage_005e0340();
 };
 
-extern int DAT_0103d3f8;
+extern int vftable_NiTArray_0103d3f8;
 
-// Sets the vtable pointer to DAT_0103d3f8 and deallocates m_ptr through NiTMallocInterface<ActorCombatGroup*>::Deallocate.
+// Sets the vtable pointer to vftable_NiTArray_0103d3f8 and deallocates m_ptr through NiTMallocInterface<ActorCombatGroup*>::Deallocate.
 // @fnv 0x005e0340
 // src: GUESS 0x005e0340 (confidence: medium)
 void FUN_005e0340Class::ReleaseStorage_005e0340()
 {
-    m_vtbl = (int)&DAT_0103d3f8;
+    m_vtbl = (int)&vftable_NiTArray_0103d3f8;
     NiTMallocInterface<ActorCombatGroup*>::Deallocate(m_ptr);
 }
 
-extern int DAT_0103d400;
+extern int vftable_NiTPrimitiveArray_0103d400;
 struct FUN_005e0370_Class
 {
     void* vtbl;
     void FUN_005e0950(int a, int b);
     void* NiTPrimitiveArray_TESModel_NiTPrimitiveArray(int a, int b);
 };
-// Calls FUN_005e0950 with the two arguments, sets vtbl to &DAT_0103d400, and returns this.
+// Calls FUN_005e0950 with the two arguments, sets vtbl to &vftable_NiTPrimitiveArray_0103d400, and returns this.
 // @fnv 0x005e0370
 // src: EXE 0x005e0370
 void* FUN_005e0370_Class::NiTPrimitiveArray_TESModel_NiTPrimitiveArray(int aiArg1, int aiArg2)
 {
     FUN_005e0950(aiArg1, aiArg2);
-    vtbl = &DAT_0103d400;
+    vtbl = &vftable_NiTPrimitiveArray_0103d400;
     return this;
 }
 
@@ -259,7 +259,7 @@ bool FUN_005ed1b0_Class::IsNotEqual(int arg)
     return !Equals(arg);
 }
 
-extern int DAT_010472e4;
+extern int vftable_BSSimpleArray_010472e4;
 
 struct GlobalObject_00869f00
 {
@@ -271,7 +271,7 @@ struct GlobalObject_00869f00
 // @fnv 0x005eee60
 void GlobalObject_00869f00::ResetToGlobal()
 {
-    p = &DAT_010472e4;
+    p = &vftable_BSSimpleArray_010472e4;
     Clear(true);
 }
 
@@ -311,7 +311,7 @@ FootIK_DATA__FootIK_Leg_DATA* BSSimpleArray<FootIK_DATA__FootIK_Leg_DATA, 1024>:
     return static_cast<FootIK_DATA__FootIK_Leg_DATA*>(::_Reallocate(n, iCount * 0x38));
 }
 
-extern int DAT_0104730c;
+extern int vftable_BSSimpleArray_0104730c;
 void BSSimpleArray_LookIK_DATA_LookIK_Head_DATA_1024_InitialSetup(int, int);
 
 struct FUN_005ef1a0_Class
@@ -324,13 +324,13 @@ struct FUN_005ef1a0_Class
 // src: COMMUNITY 0x005ef1a0
 FUN_005ef1a0_Class* FUN_005ef1a0_Class::BSSimpleArray_LookIK_DATA_LookIK_Head_DATA_1024_BSSimpleArray_LookIK_DATA_LookIK_Head_DATA_1024()
 {
-    *reinterpret_cast<int*>(this) = reinterpret_cast<int>(&DAT_0104730c);
+    *reinterpret_cast<int*>(this) = reinterpret_cast<int>(&vftable_BSSimpleArray_0104730c);
     BSSimpleArray_LookIK_DATA_LookIK_Head_DATA_1024_InitialSetup(0, 0);
     return this;
 }
 
 namespace fnv_005ef1d0 {
-extern int DAT_0104730c;
+extern int vftable_BSSimpleArray_0104730c;
 struct GlobalObject_00869f00
 {
     void Clear(bool);
@@ -342,7 +342,7 @@ struct FUN_005ef1d0
 // @fnv 0x005ef1d0
 void FUN_005ef1d0::Init()
 {
-    *(int*)this = (int)&DAT_0104730c;
+    *(int*)this = (int)&vftable_BSSimpleArray_0104730c;
     ((GlobalObject_00869f00*)this)->Clear(true);
 }
 }  // namespace fnv_005ef1d0
@@ -646,7 +646,7 @@ void FUN_005f4bd0_class::SetEntryByte(unsigned int index, unsigned char value)
         *(unsigned char*)((char*)m14 + index * 16 + 13) = value;
 }
 
-extern int DAT_0103d408;
+extern int vftable_NiTArray_0103d408;
 void __cdecl NiTMallocInterface_unsigned_int_Deallocate(void*);
 struct Standin005e03a0
 {
@@ -654,12 +654,12 @@ struct Standin005e03a0
     void* m4;
     void __thiscall SetVirtualTable_005e03a0();
 };
-// Sets the object's vtbl to DAT_0103d408 and passes m4 to FUN_004ede70.
+// Sets the object's vtbl to vftable_NiTArray_0103d408 and passes m4 to FUN_004ede70.
 // @fnv 0x005e03a0
 // src: GUESS 0x005e03a0 (confidence: low)
 void __thiscall Standin005e03a0::SetVirtualTable_005e03a0()
 {
-    vtbl = (void*)&DAT_0103d408;
+    vtbl = (void*)&vftable_NiTArray_0103d408;
     NiTMallocInterface_unsigned_int_Deallocate(m4);
 }
 
@@ -960,7 +960,7 @@ struct FUN_005eee30_class
 // src: COMMUNITY 0x005eee30
 FUN_005eee30_class* __thiscall FUN_005eee30_class::BSSimpleArray_short_1024_BSSimpleArray_short_1024()
 {
-    vtbl = (void*)&DAT_010472e4;
+    vtbl = (void*)&vftable_BSSimpleArray_010472e4;
     ((FUN_00692290_class*)this)->BSSimpleArray_unsigned_short_1024_InitialSetup(0, 0);
     return this;
 }
@@ -1448,7 +1448,7 @@ struct FUN_005e08e0_class
 // src: COMMUNITY 0x005e08e0
 FUN_005e08e0_class* __thiscall FUN_005e08e0_class::NiTArray_NiPointer_NiTexture_NiTNewInterface_NiPointer_NiTexture_NiTArray_NiPointer_NiTexture_NiTNewInterface_NiPointer_NiTexture(unsigned short x, unsigned short y)
 {
-    vtbl = &DAT_0103d3e8;
+    vtbl = &vftable_NiTArray_0103d3e8;
     a = x;
     d = y;
     b = 0;
@@ -1607,7 +1607,7 @@ struct FUN_005e0950
 // @fnv 0x005e0950
 FUN_005e0950::FUN_005e0950(unsigned short ausSize, unsigned short b)
 {
-    m0 = (int)&DAT_0103d3f8;
+    m0 = (int)&vftable_NiTArray_0103d3f8;
     m8 = ausSize;
     me = b;
     ma = 0;
@@ -1632,7 +1632,7 @@ struct FUN_005e09c0
 // @fnv 0x005e09c0
 FUN_005e09c0::FUN_005e09c0(unsigned short ausCount, unsigned short ausCapacity)
 {
-    vtbl = (int*)&DAT_0103d408;
+    vtbl = (int*)&vftable_NiTArray_0103d408;
     count = ausCount;
     capacity = ausCapacity;
     m0a = 0;
@@ -1645,7 +1645,7 @@ FUN_005e09c0::FUN_005e09c0(unsigned short ausCount, unsigned short ausCapacity)
 }  // namespace fnv_005e09c0
 
 namespace fnv_005e0a30 {
-extern int DAT_0103d418;
+extern int vftable_NiTArray_0103d418;
 struct FUN_005e0a30_t
 {
     void* __thiscall NiTArray_char_const_NiTMallocInterface_char_const_Init(unsigned short a, unsigned short b);
@@ -1654,7 +1654,7 @@ struct FUN_005e0a30_t
 // src: COMMUNITY 0x005e0a30
 void* FUN_005e0a30_t::NiTArray_char_const_NiTMallocInterface_char_const_Init(unsigned short ausCapacity, unsigned short b)
 {
-    *(int*)this = (int)&DAT_0103d418;
+    *(int*)this = (int)&vftable_NiTArray_0103d418;
     *(unsigned short*)((char*)this + 8) = ausCapacity;
     *(unsigned short*)((char*)this + 14) = b;
     *(unsigned short*)((char*)this + 10) = 0;
@@ -4831,7 +4831,7 @@ void EntryPointFunction_MultiplyValue(void* pvArg0, void* pvArg1, unsigned char 
 
 namespace s5e63f0 {
 
-extern "C" const char DAT_010462c0[];
+extern "C" const char vftable_BGSEntryPointFunctionDataOneValue[];
 
 struct Base
 {
@@ -4847,13 +4847,13 @@ struct Derived : Base
     Derived* UpdateState_005e63f0();
 };
 
-// Calls FUN_005e6420, stores DAT_010462c0 in m_pVtbl, zeroes m_fValue and returns this.
+// Calls FUN_005e6420, stores vftable_BGSEntryPointFunctionDataOneValue in m_pVtbl, zeroes m_fValue and returns this.
 // @fnv 0x005e63f0
 // src: GUESS 0x005e63f0 (confidence: low)
 Derived* Derived::UpdateState_005e63f0()
 {
     BGSEntryPointFunctionData_BGSEntryPointFunctionData();
-    m_pVtbl = DAT_010462c0;
+    m_pVtbl = vftable_BGSEntryPointFunctionDataOneValue;
     m_fValue = 0.0f;
     return this;
 }
@@ -4862,7 +4862,7 @@ Derived* Derived::UpdateState_005e63f0()
 
 namespace s5e6420 {
 
-extern "C" const char DAT_010462e0[];
+extern "C" const char vftable_BGSEntryPointFunctionData[];
 
 struct Holder
 {
@@ -4875,13 +4875,13 @@ struct Holder
 // src: EXE 0x005e6420
 Holder* Holder::BGSEntryPointFunctionData_BGSEntryPointFunctionData()
 {
-    m_pTable = DAT_010462e0;
+    m_pTable = vftable_BGSEntryPointFunctionData;
     return this;
 }
 
 }
 
-extern void* DAT_01046320;
+extern void* vftable_BGSEntryPointFunctionDataLeveledList;
 
 struct FUN_005e6510_cls
 {
@@ -4891,18 +4891,18 @@ struct FUN_005e6510_cls
     FUN_005e6510_cls* InitializeFields_005e6510();
 };
 
-// Initializes the object by calling FUN_005e6420, setting the vtable to DAT_01046320, and zeroing m4.
+// Initializes the object by calling FUN_005e6420, setting the vtable to vftable_BGSEntryPointFunctionDataLeveledList, and zeroing m4.
 // @fnv 0x005e6510
 // src: GUESS 0x005e6510 (confidence: low)
 FUN_005e6510_cls* FUN_005e6510_cls::InitializeFields_005e6510()
 {
     BGSEntryPointFunctionData_BGSEntryPointFunctionData();
-    vtbl = &DAT_01046320;
+    vtbl = &vftable_BGSEntryPointFunctionDataLeveledList;
     m4 = 0;
     return this;
 }
 
-extern int DAT_01048bb4, DAT_01048ba0, DAT_01048b88, DAT_01048b68, DAT_01048b54;
+extern int vftable_TESClass, vftable_TESClass_for_TESFullName, vftable_TESClass_for_TESDescription, vftable_TESClass_for_TESTexture, vftable_TESClass_for_TESAttributes;
 struct FUN_00483370
 {
     void* table_00;
@@ -4946,11 +4946,11 @@ struct FUN_005f6610 : FUN_00483370, FUN_00402d00, FUN_00482c50, FUN_0048e270, FU
 // @fnv 0x005f6610
 FUN_005f6610::FUN_005f6610()
 {
-    table_00 = &DAT_01048bb4;
-    table_18 = &DAT_01048ba0;
-    table_24 = &DAT_01048b88;
-    table_2c = &DAT_01048b68;
-    table_38 = &DAT_01048b54;
+    table_00 = &vftable_TESClass;
+    table_18 = &vftable_TESClass_for_TESFullName;
+    table_24 = &vftable_TESClass_for_TESDescription;
+    table_2c = &vftable_TESClass_for_TESTexture;
+    table_38 = &vftable_TESClass_for_TESAttributes;
     FUN_004f15a0(7);
     FUN_005f67c0();
 }

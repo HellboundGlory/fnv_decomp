@@ -971,14 +971,14 @@ void FUN_00978890_cls::UpdateMuzzleFlashes(float dt)
     }
 }
 
-extern int DAT_0108c23c;
+extern int vftable_BSSimpleArray_0108c23c;
 class NavMeshInfo;
 
 // @fnv 0x00978e70
 // src: XBOX_PDB 0x00978e70
 void* __fastcall BSSimpleArray_Animation_1024_BSSimpleArray_Animation_1024(void* pThis)
 {
-    *reinterpret_cast<int**>(pThis) = &DAT_0108c23c;
+    *reinterpret_cast<int**>(pThis) = &vftable_BSSimpleArray_0108c23c;
     reinterpret_cast<BSSimpleArray<NavMeshInfo*, 1024>*>(pThis)->BSSimpleArray_float_1024_InitialSetup(0, false);
     return pThis;
 }

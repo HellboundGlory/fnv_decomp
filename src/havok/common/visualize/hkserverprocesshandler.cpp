@@ -19,7 +19,7 @@ inline void* hkReferencedObject::operator new(std::size_t size)
     return p;
 }
 
-extern int DAT_010d1508;
+extern int vftable_hkProcess;
 void __cdecl Deallocate(void*);
 struct FUN_00d60bb0
 {
@@ -29,7 +29,7 @@ struct FUN_00d60bb0
 // @fnv 0x00d60bb0
 FUN_00d60bb0::FUN_00d60bb0(unsigned char p)
 {
-    m_p = &DAT_010d1508;
+    m_p = &vftable_hkProcess;
     if (p & 1)
         Deallocate(this);
 }

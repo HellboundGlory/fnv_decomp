@@ -3007,8 +3007,8 @@ FUN_009e6870::FUN_009e6870(const POD12& aPOD12, float afValue1, float afValue2, 
     f20 = aiValue;
 }
 
-extern int DAT_01092640;
-// Sets the vtable to DAT_01092640, calls InitBuffer with 0 and 0, and returns this.
+extern int vftable_BSSimpleArray_01092640;
+// Sets the vtable to vftable_BSSimpleArray_01092640, calls InitBuffer with 0 and 0, and returns this.
 // @fnv 0x009e9950
 template <>
 BSSimpleArray<ActorAvoidanceData, 1024>::BSSimpleArray()

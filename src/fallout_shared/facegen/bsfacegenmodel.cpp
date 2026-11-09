@@ -1207,7 +1207,7 @@ bool FUN_0065c090_shell::UpdateState_0065c090()
     return true;
 }
 
-extern int DAT_01065af4;
+extern int vftable_BSFaceGenModel;
 class FUN_004968b0
 {
   public:
@@ -1222,11 +1222,11 @@ class FUN_00659ae0 : public FUN_004968b0
     int m_iThirdValue;
     FUN_00659ae0();
 };
-// Initializes the vtable pointer to DAT_01065af4 and zeroes the two integer members.
+// Initializes the vtable pointer to vftable_BSFaceGenModel and zeroes the two integer members.
 // @fnv 0x00659ae0
 FUN_00659ae0::FUN_00659ae0()
 {
-    m_vt = &DAT_01065af4;
+    m_vt = &vftable_BSFaceGenModel;
     m_8 = 0;
     m_iThirdValue = 0;
 }

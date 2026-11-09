@@ -189,7 +189,7 @@ bool NavMeshTriangle::IsNoLargeCreature()
     return FUN_00691140(0x10);
 }
 
-extern unsigned int DAT_0106b0dc;
+extern unsigned int vftable_BSSimpleArray_0106b0dc;
 
 class GlobalObject_00869f00
 {
@@ -201,7 +201,7 @@ class GlobalObject_00869f00
 // src: GUESS 0x00694e10 (confidence: low)
 void __fastcall NavmeshLoadsave_UpdateState_00694e10(GlobalObject_00869f00* pThis)
 {
-    *(unsigned int**)pThis = &DAT_0106b0dc;
+    *(unsigned int**)pThis = &vftable_BSSimpleArray_0106b0dc;
     pThis->Clear(true);
 }
 

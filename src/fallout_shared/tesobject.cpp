@@ -568,7 +568,7 @@ void* __fastcall Object_InitializeFields_0050f7a0(void* pThis)
 }
 }  // namespace fnv_0050f7a0
 
-extern int DAT_01029b1c;
+extern int vftable_TESObject;
 void __fastcall FUN_00483370(void*);
 
 // @fnv 0x0050f8c0
@@ -576,7 +576,7 @@ void __fastcall FUN_00483370(void*);
 TESObject* __fastcall TESObject_TESObject(TESObject* apObject)
 {
     FUN_00483370(apObject);
-    *reinterpret_cast<int**>(apObject) = &DAT_01029b1c;
+    *reinterpret_cast<int**>(apObject) = &vftable_TESObject;
     reinterpret_cast<int*>(apObject)[7] = 0;
     reinterpret_cast<int*>(apObject)[8] = 0;
     reinterpret_cast<int*>(apObject)[6] = 0;
@@ -840,8 +840,8 @@ void FUN_006055d0_class::TESNPC_UnClone3D(int a)
 }
 
 extern "C" void __cdecl FUN_00ec3205(int);
-extern void* DAT_010a2f9c;
-extern void* DAT_010a2fa4;
+extern void* vftable_std__ios_base;
+extern void* vftable_std__basic_ios_010a2fa4;
 
 struct FUN_00aca4b0_class
 {
@@ -853,8 +853,8 @@ struct FUN_00aca4b0_class
 // src: GUESS 0x00aca4b0 (confidence: low)
 void __thiscall FUN_00aca4b0_class::SetVtableAndProcessState_00aca4b0()
 {
-    vtbl = &DAT_010a2fa4;
-    vtbl = &DAT_010a2f9c;
+    vtbl = &vftable_std__basic_ios_010a2fa4;
+    vtbl = &vftable_std__ios_base;
     FUN_00ec3205((int)this);
 }
 
@@ -1492,7 +1492,7 @@ float ShortPoint3::GetFloatY()
     return (float)(int)y;
 }
 
-extern char DAT_01029994;
+extern char vftable_TESBoundTreeObject;
 extern void __fastcall UpdateState_0050e9f0(void*);
 
 struct FUN_0050f7f0_shell
@@ -1504,7 +1504,7 @@ struct FUN_0050f7f0_shell
 // src: GUESS 0x0050f7f0 (confidence: low)
 void FUN_0050f7f0_shell::SetVtableAndProcessState_0050f7f0()
 {
-    *reinterpret_cast<void**>(this) = reinterpret_cast<void*>(&DAT_01029994);
+    *reinterpret_cast<void**>(this) = reinterpret_cast<void*>(&vftable_TESBoundTreeObject);
     UpdateState_0050e9f0(this);
 }
 

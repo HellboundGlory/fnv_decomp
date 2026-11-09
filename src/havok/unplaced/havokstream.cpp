@@ -66,7 +66,7 @@ void FUN_00625bd0_class::ForwardCall_00625bd0()
     FUN_006264f0();
 }
 
-extern int DAT_0104dfb4;
+extern int vftable_hkStreamReader;
 struct FUN_00538ef0_class
 {
     void* UpdateState_00538ef0();
@@ -80,11 +80,11 @@ struct FUN_00625fc0_class : FUN_00538ef0_class
 FUN_00625fc0_class::FUN_00625fc0_class()
 {
     UpdateState_00538ef0();
-    vtbl = (void*)&DAT_0104dfb4;
+    vtbl = (void*)&vftable_hkStreamReader;
 }
 
 namespace fnv_00625fe0 {
-extern int DAT_0104dfe8;
+extern int vftable_hkStreamWriter;
 struct FUN_00538ef0_class
 {
     void* UpdateState_00538ef0();
@@ -95,7 +95,7 @@ struct FUN_00538ef0_class
 void* FUN_00538ef0_class::InitializeFields_00625fe0()
 {
     UpdateState_00538ef0();
-    *(int**)this = &DAT_0104dfe8;
+    *(int**)this = &vftable_hkStreamWriter;
     return this;
 }
 }  // namespace fnv_00625fe0

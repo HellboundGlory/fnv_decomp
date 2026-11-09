@@ -192,8 +192,8 @@ PathingAvoidNodeArrayStorage* PathingAvoidNodeArrayStorage::Destroy(unsigned int
 PathingAvoidNodeArrayStorage::PathingAvoidNodeArrayStorage()
 {
     FUN_006e3960();
-    *reinterpret_cast<void**>(data) = &DAT_0106d1e4;
-    *reinterpret_cast<void**>(data + 16) = &DAT_0106d1d8;
+    *reinterpret_cast<void**>(data) = &vftable_PathingAvoidNodeArray;
+    *reinterpret_cast<void**>(data + 16) = &vftable_PathingAvoidNodeArray_for_NiRefObject;
 }
 // @fnv 0x006e38b0
 PathingAvoidNodeArrayStorage::~PathingAvoidNodeArrayStorage()

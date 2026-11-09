@@ -5042,7 +5042,7 @@ bool Actor::TESObjectREFR_IsDead(int iUnused)
 
 #include <xmmintrin.h>
 // Destruction of the reference and its transient physics/actor state.
-extern int DAT_01085954, DAT_01085948;
+extern int vftable_ArrowProjectile, vftable_ArrowProjectile_for_TESChildCell;
 extern int DAT_011dfc98;
 struct __declspec(align(16)) CleanupVector
 {

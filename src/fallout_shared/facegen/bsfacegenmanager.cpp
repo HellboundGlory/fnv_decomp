@@ -232,7 +232,7 @@ FaceGenCoordinateValue FaceGenMatrix<float>::ForwardCall_0060b370(unsigned int a
     return FaceGenCoordinateValue(GetElementPointerChecked(0, m_uiColumnCount) + aiRow * m_uiColumnCount);
 }
 
-extern int DAT_01065678;
+extern int vftable_BSFaceGenModelMap;
 
 struct Dummy658aa0
 {
@@ -243,7 +243,7 @@ struct Dummy658aa0
 // src: EXE 0x0064fd80
 void* __fastcall BSFaceGenModelMap_BSFaceGenModelMap(void* pThis)
 {
-    *(int**)pThis = &DAT_01065678;
+    *(int**)pThis = &vftable_BSFaceGenModelMap;
     ((Dummy658aa0*)((char*)pThis + 4))->Initialize(0x25, 1);
     for (unsigned int cnt = 0; cnt < 2; ++cnt)
     {

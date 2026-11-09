@@ -5,7 +5,7 @@
 #include "../../../include/MemoryManagerFile.h"
 #include "../../../include/SeenData.h"
 
-extern int DAT_01083b00;
+extern int vftable_IMemoryManagerFile;
 
 struct FUN_00878430_shell
 {
@@ -17,11 +17,11 @@ struct FUN_00878430_shell
 // src: GUESS 0x00878430 (confidence: low)
 void FUN_00878430_shell::SetPtr()
 {
-    m_ptr = &DAT_01083b00;
+    m_ptr = &vftable_IMemoryManagerFile;
 }
 
 namespace fnv_008784b0 {
-extern "C" void* DAT_01083b00;
+extern "C" void* vftable_IMemoryManagerFile;
 
 struct FUN_008784b0
 {
@@ -32,7 +32,7 @@ struct FUN_008784b0
 // @fnv 0x008784b0
 FUN_008784b0::FUN_008784b0()
 {
-    m_p = &DAT_01083b00;
+    m_p = &vftable_IMemoryManagerFile;
 }
 }  // namespace fnv_008784b0
 

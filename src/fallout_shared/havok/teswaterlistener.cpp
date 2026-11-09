@@ -321,19 +321,19 @@ struct AX
 {
     void __thiscall BSSimpleArray_float_1024_InitialSetup(unsigned int, unsigned int);
 };
-extern int DAT_0104e4bc;
+extern int vftable_BSSimpleArray_0104e4bc;
 
 struct FUN_00631750_shell
 {
     void* __thiscall BSSimpleArray_hkpCollidable_const_1024_BSSimpleArray_hkpCollidable_const_1024();
 };
 
-// Sets the object's vtable pointer to DAT_0104e4bc, calls FUN_006b3eb0 with 0, 0, and returns this.
+// Sets the object's vtable pointer to vftable_BSSimpleArray_0104e4bc, calls FUN_006b3eb0 with 0, 0, and returns this.
 // @fnv 0x00631750
 // src: XBOX_PDB 0x00631750
 void* __thiscall FUN_00631750_shell::BSSimpleArray_hkpCollidable_const_1024_BSSimpleArray_hkpCollidable_const_1024()
 {
-    *(void**)this = &DAT_0104e4bc;
+    *(void**)this = &vftable_BSSimpleArray_0104e4bc;
     reinterpret_cast<AX*>(this)->BSSimpleArray_float_1024_InitialSetup(0, 0);
     return this;
 }

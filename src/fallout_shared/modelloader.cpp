@@ -1562,19 +1562,19 @@ void __fastcall FinishScriptRun(char* pThis)
     }
 }
 
-extern int DAT_01016ca4;
+extern int vftable_QueuedActor;
 struct S4411
 {
     void FUN_0043fd40(int, int);
     S4411* SetVtableAndProcessState_004411d0(int a, int b);
 };
-// Calls FUN_0043fd40 with the two arguments, sets the object's first field to point at DAT_01016ca4, and returns this.
+// Calls FUN_0043fd40 with the two arguments, sets the object's first field to point at vftable_QueuedActor, and returns this.
 // @fnv 0x004411d0
 // src: GUESS 0x004411d0 (confidence: low)
 S4411* S4411::SetVtableAndProcessState_004411d0(int aiArg1, int aiArg2)
 {
     FUN_0043fd40(aiArg1, aiArg2);
-    *reinterpret_cast<int**>(this) = &DAT_01016ca4;
+    *reinterpret_cast<int**>(this) = &vftable_QueuedActor;
     return this;
 }
 
@@ -1595,7 +1595,7 @@ bool _FUN_00441290_shell::SetTlsFlag(bool abValue)
     return bOld;
 }
 
-extern int DAT_01016cec;
+extern int vftable_QueuedCharacter;
 
 struct FUN_004411d0
 {
@@ -1620,9 +1620,9 @@ struct FUN_00441440 : public FUN_004411d0
     FUN_00441440(int a, int b);
 };
 
-// Constructs the object: calls the base constructor, sets the vftable to DAT_01016cec, and initializes m_40 and m_44 to 0.
+// Constructs the object: calls the base constructor, sets the vftable to vftable_QueuedCharacter, and initializes m_40 and m_44 to 0.
 // @fnv 0x00441440
-FUN_00441440::FUN_00441440(int a, int b) : FUN_004411d0(a, b), vftable(&DAT_01016cec), m_40(0), m_44(0)
+FUN_00441440::FUN_00441440(int a, int b) : FUN_004411d0(a, b), vftable(&vftable_QueuedCharacter), m_40(0), m_44(0)
 {}
 
 extern __declspec(thread) void* DAT_00441780_264;
@@ -1811,7 +1811,7 @@ void FUN_004418b0_shell::AttachHeadAndFaceParts()
 }
 }  // namespace fnv_004418b0
 
-extern int DAT_01016d7c;
+extern int vftable_QueuedPlayer;
 struct PlayerCharacter;
 extern PlayerCharacter* pPlayer;
 struct S1b20
@@ -1819,12 +1819,12 @@ struct S1b20
     void FUN_00441440(PlayerCharacter*, int);
     S1b20* InitWithPlayer(int a);
 };
-// Calls FUN_00441440 with pPlayer and a, sets the first field of this to point at DAT_01016d7c, and returns this.
+// Calls FUN_00441440 with pPlayer and a, sets the first field of this to point at vftable_QueuedPlayer, and returns this.
 // @fnv 0x00441b20
 S1b20* S1b20::InitWithPlayer(int a)
 {
     FUN_00441440(pPlayer, a);
-    *reinterpret_cast<int**>(this) = &DAT_01016d7c;
+    *reinterpret_cast<int**>(this) = &vftable_QueuedPlayer;
     return this;
 }
 
@@ -2284,7 +2284,7 @@ int __cdecl ModelLoader_GetArchiveTypeIndexForIOFileIndex(int aeIOFileIndex)
     }
 }
 
-extern int DAT_01017138;
+extern int vftable_BSTask_01017138;
 extern int DAT_011c3b38;
 int __cdecl InitScriptRunLock(void*);
 
@@ -2292,7 +2292,7 @@ int __cdecl InitScriptRunLock(void*);
 // src: EXE 0x00449090
 void* __fastcall BSTask_int64_BSTask(void* apObject)
 {
-    *((void**)apObject) = &DAT_01017138;
+    *((void**)apObject) = &vftable_BSTask_01017138;
     *((int*)((char*)apObject + 8)) = 0;
     *((int*)((char*)apObject + 0xc)) = 0;
     *((__int64*)((char*)apObject + 0x10)) = 0;
@@ -2577,7 +2577,7 @@ bool FUN_00449880_Class::LockFreeStringMap_Model_IsKeyEqual(const char* pcString
     return FUN_00ec6da0(pcStringA, pcStringB) == 0;
 }
 
-extern int DAT_01017288;
+extern int vftable_LockFreeStringMap__LockFreeStringMapIterator_01017288;
 void __fastcall LockFreeMap_char_const_Model_LockFreeMapIterator_LockFreeMapIterator(void*);
 
 // @fnv 0x004498e0
@@ -2585,70 +2585,70 @@ void __fastcall LockFreeMap_char_const_Model_LockFreeMapIterator_LockFreeMapIter
 void* __fastcall Object_ProcessAndReturnValue_004498e0(void* apObject)
 {
     LockFreeMap_char_const_Model_LockFreeMapIterator_LockFreeMapIterator(apObject);
-    *reinterpret_cast<void**>(apObject) = &DAT_01017288;
+    *reinterpret_cast<void**>(apObject) = &vftable_LockFreeStringMap__LockFreeStringMapIterator_01017288;
     *reinterpret_cast<void**>(reinterpret_cast<char*>(apObject) + 8) =
         reinterpret_cast<void*>(reinterpret_cast<char*>(apObject) + 0x10);
     *reinterpret_cast<unsigned char*>(reinterpret_cast<char*>(apObject) + 0x10) = 0;
     return apObject;
 }
 
-extern int DAT_01017294;
+extern int vftable_LockFreeMap__LockFreeMapIterator_01017294;
 
 // @fnv 0x00449940
 // src: GUESS 0x00449940 (confidence: low)
 void __fastcall Object_SetVirtualTable_00449940(void** apOut)
 {
-    *apOut = &DAT_01017294;
+    *apOut = &vftable_LockFreeMap__LockFreeMapIterator_01017294;
 }
 
 void __fastcall FUN_0044cbb0(void* pThis);
-extern int DAT_010172a0;
+extern int vftable_LockFreeStringMap__LockFreeStringMapIterator_010172a0;
 
 // @fnv 0x00449960
 // src: GUESS 0x00449960 (confidence: low)
 void* __fastcall Object_InitializeFields_00449960(char* pThis)
 {
     FUN_0044cbb0(pThis);
-    *reinterpret_cast<int**>(pThis) = &DAT_010172a0;
+    *reinterpret_cast<int**>(pThis) = &vftable_LockFreeStringMap__LockFreeStringMapIterator_010172a0;
     *reinterpret_cast<char**>(pThis + 8) = pThis + 0x10;
     pThis[0x10] = 0;
     return pThis;
 }
 
-extern int DAT_010172ac;
+extern int vftable_LockFreeMap__LockFreeMapIterator_010172ac;
 
 // @fnv 0x004499a0
 // src: GUESS 0x004499a0 (confidence: low)
 void __fastcall Object_SetVirtualTable_004499a0(int** ppTarget)
 {
-    *ppTarget = &DAT_010172ac;
+    *ppTarget = &vftable_LockFreeMap__LockFreeMapIterator_010172ac;
 }
 
-extern int DAT_010172b8;
+extern int vftable_LockFreeMap__LockFreeMapIterator_010172b8;
 
 // @fnv 0x004499c0
 // src: GUESS 0x004499c0 (confidence: low)
 void __fastcall Object_SetVirtualTable_004499c0(void* pThis)
 {
-    *(int**)pThis = &DAT_010172b8;
+    *(int**)pThis = &vftable_LockFreeMap__LockFreeMapIterator_010172b8;
 }
 
-extern int DAT_010172c4;
+extern int vftable_LockFreeMap__LockFreeMapIterator_010172c4;
 
 // @fnv 0x004499e0
 // src: GUESS 0x004499e0 (confidence: low)
 void __fastcall Object_SetVirtualTable_004499e0(void* pThis)
 {
-    *(int**)pThis = &DAT_010172c4;
+    *(int**)pThis = &vftable_LockFreeMap__LockFreeMapIterator_010172c4;
 }
 
-extern int DAT_010172d0;
+extern int vftable_LockFreeMap__LockFreeMapIterator_010172d0;
 
 // @fnv 0x00449a00
 // src: GUESS 0x00449a00 (confidence: low)
 void __fastcall Object_SetVirtualTable_00449a00(int** appTarget)
 {
-    *appTarget = &DAT_010172d0;
+    *appTarget = &vftable_LockFreeMap__LockFreeMapIterator_010172d0;
 }
 
 namespace fnv_00449f50 {
@@ -4000,7 +4000,7 @@ FUN_0043be60::FUN_0043be60(GeometryRelatedType* shader, int arg) : QueuedFileEnt
 
 namespace fnv_0043c6e0 {
 // Use the model pointer so exception unwinding releases Model, not NiAVObject.
-extern int DAT_01016890;
+extern int vftable_QueuedModel;
 
 struct FUN_0043c7d0_shell
 {
@@ -4042,7 +4042,7 @@ FUN_0043c6e0::FUN_0043c6e0(const char* a1, int a2, int a3, FUN_0043c7a0_arg a4, 
 
 namespace fnv_0043c890 {
 // Use the model pointer so exception unwinding releases Model, not NiAVObject.
-extern int DAT_01016890;
+extern int vftable_QueuedModel;
 
 struct FUN_0043c7d0_shell
 {
@@ -4302,7 +4302,7 @@ FUN_00441f80::FUN_00441f80(int a, int b, int c) : QueuedFileLoadBase(a, b, c), m
 {}
 }  // namespace fnv_00441f80
 
-extern int DAT_01016e50;
+extern int vftable_BackgroundCloneThread;
 
 void* __cdecl operator new(unsigned int);
 
@@ -5591,7 +5591,7 @@ FUN_0044b270_Class* FUN_0044b270_Class::SetDataAndNotify(FUN_0044b2a0_Class* apD
 }
 }  // namespace fnv_0044b270
 
-extern int DAT_010172b8;
+extern int vftable_LockFreeMap__LockFreeMapIterator_010172b8;
 
 struct FUN_0044cc10
 {
@@ -5605,7 +5605,7 @@ struct FUN_0044cc10
 // @fnv 0x0044cc10
 FUN_0044cc10::FUN_0044cc10()
 {
-    m_iWordAt00 = &DAT_010172b8;
+    m_iWordAt00 = &vftable_LockFreeMap__LockFreeMapIterator_010172b8;
     m_iWordAt04 = 0;
     m_8 = 0;
     m_iThirdValue = 0;
@@ -5712,18 +5712,18 @@ extern "C" int __cdecl _sprintf_s(char* apDest, unsigned int aiSize, const char*
 }  // namespace fnv_0043fc10
 
 namespace fnv_00440e50 {
-extern int DAT_01016c5c;
+extern int vftable_QueuedTree;
 struct S4411
 {
     void FUN_0043fd40(int a, int b);
     void* InitWithGlobal(int a, int b);
 };
-// Calls FUN_0043fd40 with the two arguments, stores the address of DAT_01016c5c at the start of this, and returns this.
+// Calls FUN_0043fd40 with the two arguments, stores the address of vftable_QueuedTree at the start of this, and returns this.
 // @fnv 0x00440e50
 void* S4411::InitWithGlobal(int aiArg1, int aiArg2)
 {
     FUN_0043fd40(aiArg1, aiArg2);
-    *reinterpret_cast<int**>(this) = &DAT_01016c5c;
+    *reinterpret_cast<int**>(this) = &vftable_QueuedTree;
     return this;
 }
 }  // namespace fnv_00440e50
@@ -5742,7 +5742,7 @@ void FUN_00440eb0_class::ForwardCall_00440eb0()
 }
 
 namespace fnv_00441920 {
-extern int DAT_01016d34;
+extern int vftable_QueuedCreature;
 struct FUN_004411d0
 {
     int* m_vft;
@@ -5754,11 +5754,11 @@ struct FUN_00441920 : FUN_004411d0
 {
     FUN_00441920(int a, int b);
 };
-// Constructs the object by forwarding a and b to the base constructor and setting m_vft to DAT_01016d34.
+// Constructs the object by forwarding a and b to the base constructor and setting m_vft to vftable_QueuedCreature.
 // @fnv 0x00441920
 FUN_00441920::FUN_00441920(int a, int b) : FUN_004411d0(a, b)
 {
-    m_vft = &DAT_01016d34;
+    m_vft = &vftable_QueuedCreature;
 }
 }  // namespace fnv_00441920
 
@@ -5903,7 +5903,7 @@ void FUN_00449030Class::CallMemberFunction(void)
 }  // namespace fnv_00449030
 
 namespace fnv_004490e0 {
-extern int DAT_01017138;
+extern int vftable_BSTask_01017138;
 extern int DAT_011c3b38;
 int __cdecl FinishScriptRunLock(void*);
 
@@ -5913,12 +5913,12 @@ struct FUN_004490e0_Class
     void DoNothing_004490e0();
 };
 
-// Points m_p at DAT_01017138 and calls FinishScriptRunLock on DAT_011c3b38.
+// Points m_p at vftable_BSTask_01017138 and calls FinishScriptRunLock on DAT_011c3b38.
 // @fnv 0x004490e0
 // src: GUESS 0x004490e0 (confidence: high)
 void FUN_004490e0_Class::DoNothing_004490e0()
 {
-    m_p = &DAT_01017138;
+    m_p = &vftable_BSTask_01017138;
     FinishScriptRunLock(&DAT_011c3b38);
 }
 }  // namespace fnv_004490e0
@@ -8296,7 +8296,7 @@ FUN_00449d60::~FUN_00449d60()
 }
 
 namespace fnv_00449ec0 {
-extern int DAT_0101737c;
+extern int vftable_LockFreeStringMap_0101737c;
 struct FUN_0044c480
 {
     virtual ~FUN_0044c480();
@@ -8905,7 +8905,7 @@ void BSStream::DestroyObject()
 // Constructor-like thiscall with 3 stack args: calls a base routine with two
 // args, stores the class vtable pointer, stores the third arg at +0x38, returns this.
 
-extern char DAT_0101698c[];
+extern char vftable_QueuedTreeBillboard[];
 
 struct FUN_0043bd10_base
 {
@@ -8934,13 +8934,13 @@ struct FUN_0043d540_cls : FUN_0043bd10_base
     FUN_0043d540_cls* InitializeFields_0043d540(int a1, int a2, int a3);
 };
 
-// Calls the base constructor with a1 and a2, sets the vtable pointer to DAT_0101698c, stores a3 in m_iValue38, and returns this.
+// Calls the base constructor with a1 and a2, sets the vtable pointer to vftable_QueuedTreeBillboard, stores a3 in m_iValue38, and returns this.
 // @fnv 0x0043d540
 // src: GUESS 0x0043d540 (confidence: low)
 FUN_0043d540_cls* FUN_0043d540_cls::InitializeFields_0043d540(int a1, int a2, int aiValue)
 {
     FUN_0043bd10(a1, a2);
-    m_pVTable = (void*)DAT_0101698c;
+    m_pVTable = (void*)vftable_QueuedTreeBillboard;
     m_iValue38 = aiValue;
     return this;
 }
@@ -9092,7 +9092,7 @@ void D750Batch::CreateAndProcessObject()
     }
 }
 
-extern int DAT_010169d4;
+extern int vftable_QueuedTreeModel;
 
 // Retained: QueuedTreeModel.h lacks this four-argument constructor.
 class FUN_0043d850_cls
@@ -9128,7 +9128,7 @@ class FUN_0043d850_cls
 FUN_0043d850_cls* FUN_0043d850_cls::QueuedTreeModel_QueuedTreeModel(unsigned int a1, void* a2, unsigned int auiArg3, unsigned int auiArg4)
 {
     FUN_0043c890((a2 != 0) ? (void*)((char*)a2 + 0x30) : 0, auiArg3, auiArg4, 1, 0);
-    m_ppVirtualMethodTable = (void*)&DAT_010169d4;
+    m_ppVirtualMethodTable = (void*)&vftable_QueuedTreeModel;
     m_48 = a1;
     m_4c = a2;
     m_18 = 0x1e;
@@ -12027,7 +12027,7 @@ void ThisS::Model_InitModel(const char* apName, BSStream* apSource, unsigned cha
     }
 }
 
-extern int DAT_010169d4;
+extern int vftable_QueuedTreeModel;
 
 struct FUN_0043d8f0_Class : public FUN_0043c830
 {
@@ -12038,7 +12038,7 @@ struct FUN_0043d8f0_Class : public FUN_0043c830
 // src: GUESS 0x0043d8f0 (confidence: low)
 void FUN_0043d8f0_Class::SetVtableAndProcessState_0043d8f0()
 {
-    *reinterpret_cast<int*>(this) = reinterpret_cast<int>(&DAT_010169d4);
+    *reinterpret_cast<int*>(this) = reinterpret_cast<int>(&vftable_QueuedTreeModel);
     this->FUN_0043c830::~FUN_0043c830();
 }
 

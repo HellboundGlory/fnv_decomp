@@ -3098,7 +3098,7 @@ void __thiscall FUN_00558c60Class::TESObjectREFR_SetCurrentWaterObject(int aiVal
     }
 }
 
-extern int DAT_0102f338;
+extern int vftable_NiTMap_0102f338;
 
 struct FUN_005590b0_S
 {
@@ -3116,7 +3116,7 @@ struct FUN_00558da0_S : FUN_005590b0_S
 FUN_00558da0_S* __thiscall FUN_00558da0_S::InitializeFields_00558da0(int param_2)
 {
     InitArray(param_2);
-    m_iWordAt00 = &DAT_0102f338;
+    m_iWordAt00 = &vftable_NiTMap_0102f338;
     return this;
 }
 
@@ -3276,7 +3276,7 @@ char FUN_00557d30_class::PathingRequestCover_GetSortDistanceFromTarget()
 namespace fnv_00558fb0 {
 void* __cdecl _NiMalloc(unsigned int);
 extern "C" void* __cdecl memset(void*, int, unsigned int);
-extern int DAT_0102f378;
+extern int vftable_NiTMapBase_0102f378;
 // NiTMapItemView: unit-local view (declares only what 0x00558fb0 calls), not the shared NiTMapItem; renamed so no local type keeps the shared name
 struct NiTMapItemView
 {
@@ -3290,7 +3290,7 @@ struct NiTMapItemView
 // src: COMMUNITY 0x00558fb0
 void* NiTMapItemView::NiTMapBase_DFALL_NiTMapItem_TESForm_TESObjectREFR_TESForm_TESObjectREFR_NiTMapBase_DFALL_NiTMapItem_TESForm_TESObjectREFR_TESForm_TESObjectREFR(int count)
 {
-    m_ppVirtualMethodTable = (void*)&DAT_0102f378;
+    m_ppVirtualMethodTable = (void*)&vftable_NiTMapBase_0102f378;
     m_uiItemCount = count;
     m_iElementCount = 0;
     unsigned int size = m_uiItemCount * 4;
@@ -3483,7 +3483,7 @@ unsigned char FUN_005524b0_class::GetByteAtOffset8C()
     return ((const unsigned char*)this)[0x8c];
 }
 
-extern int DAT_0102f2f8;
+extern int vftable_NiTMap_0102f2f8;
 
 struct FUN_00558d40_class
 {
@@ -3492,30 +3492,30 @@ struct FUN_00558d40_class
     FUN_00558d40_class* __thiscall InitializeFields_00558d40(int a);
 };
 
-// Calls FUN_00558eb0 with a, sets m_p to DAT_0102f2f8, and returns this.
+// Calls FUN_00558eb0 with a, sets m_p to vftable_NiTMap_0102f2f8, and returns this.
 // @fnv 0x00558d40
 // src: GUESS 0x00558d40 (confidence: low)
 FUN_00558d40_class* __thiscall FUN_00558d40_class::InitializeFields_00558d40(int a)
 {
     FUN_00558eb0(a);
-    m_p = &DAT_0102f2f8;
+    m_p = &vftable_NiTMap_0102f2f8;
     return this;
 }
 
-extern int DAT_0102f318;
+extern int vftable_NiTMap_0102f318;
 struct FUN_00558d70_Class
 {
     int* vfn;
     void NiTMapBase_DFALL_NiTMapItem_TESForm_TESObjectREFR_TESForm_TESObjectREFR_NiTMapBase_DFALL_NiTMapItem_TESForm_TESObjectREFR_TESForm_TESObjectREFR(int a);
     FUN_00558d70_Class* UpdateState_00558d70(int a);
 };
-// Calls FUN_00558fb0 with a, sets vfn to DAT_0102f318, and returns this.
+// Calls FUN_00558fb0 with a, sets vfn to vftable_NiTMap_0102f318, and returns this.
 // @fnv 0x00558d70
 // src: GUESS 0x00558d70 (confidence: low)
 FUN_00558d70_Class* FUN_00558d70_Class::UpdateState_00558d70(int a)
 {
     NiTMapBase_DFALL_NiTMapItem_TESForm_TESObjectREFR_TESForm_TESObjectREFR_NiTMapBase_DFALL_NiTMapItem_TESForm_TESObjectREFR_TESForm_TESObjectREFR(a);
-    vfn = &DAT_0102f318;
+    vfn = &vftable_NiTMap_0102f318;
     return this;
 }
 
@@ -3552,7 +3552,7 @@ struct MyMap
 {
     void RemoveAll();
 };
-extern int DAT_0102f358;
+extern int vftable_NiTMapBase_0102f358;
 struct FUN_00558f80
 {
     void* vtbl;
@@ -3560,17 +3560,17 @@ struct FUN_00558f80
     void* b;
     void Init();
 };
-// Sets vtbl to DAT_0102f358, clears the map contents, and frees b via _NiFreeAlias.
+// Sets vtbl to vftable_NiTMapBase_0102f358, clears the map contents, and frees b via _NiFreeAlias.
 // @fnv 0x00558f80
 void FUN_00558f80::Init()
 {
-    vtbl = (void*)&DAT_0102f358;
+    vtbl = (void*)&vftable_NiTMapBase_0102f358;
     ((MyMap*)this)->RemoveAll();
     _NiFreeAlias(b);
 }
 
 namespace fnv_00559080 {
-extern int DAT_0102f378;
+extern int vftable_NiTMapBase_0102f378;
 struct MyMap
 {
     void RemoveAll();
@@ -3583,17 +3583,17 @@ struct FUN_00559080 : MyMap
     void* ptr;
     void Init();
 };
-// Sets vtbl to DAT_0102f378, calls RemoveAll, then frees ptr via NiFreeAlias.
+// Sets vtbl to vftable_NiTMapBase_0102f378, calls RemoveAll, then frees ptr via NiFreeAlias.
 // @fnv 0x00559080
 void FUN_00559080::Init()
 {
-    vtbl = &DAT_0102f378;
+    vtbl = &vftable_NiTMapBase_0102f378;
     RemoveAll();
     NiFreeAlias(ptr);
 }
 }  // namespace fnv_00559080
 
-extern int DAT_0102f3c0;
+extern int vftable_NiTPrimitiveArray_0102f3c0;
 
 struct FUN_005594b0_class
 {
@@ -3602,12 +3602,12 @@ struct FUN_005594b0_class
     FUN_005594b0_class* __thiscall Construct(int a, int b);
 };
 
-// Calls FUN_00559ad0 with the two arguments, sets the vtable to DAT_0102f3c0, and returns this.
+// Calls FUN_00559ad0 with the two arguments, sets the vtable to vftable_NiTPrimitiveArray_0102f3c0, and returns this.
 // @fnv 0x005594b0
 FUN_005594b0_class* __thiscall FUN_005594b0_class::Construct(int aiArg1, int aiArg2)
 {
     FUN_00559ad0(aiArg1, aiArg2);
-    vtable = &DAT_0102f3c0;
+    vtable = &vftable_NiTPrimitiveArray_0102f3c0;
     return this;
 }
 
@@ -5539,7 +5539,7 @@ FUN_00557d50::FUN_00557d50()
     f = 8;
 }
 
-extern int DAT_0102f358;
+extern int vftable_NiTMapBase_0102f358;
 void* __cdecl _NiMalloc(unsigned int);
 void* __cdecl memset(void*, int, unsigned int);
 
@@ -5556,7 +5556,7 @@ struct FUN_00558eb0
 // @fnv 0x00558eb0
 FUN_00558eb0::FUN_00558eb0(unsigned int iSize)
 {
-    pvt = &DAT_0102f358;
+    pvt = &vftable_NiTMapBase_0102f358;
     size = iSize;
     mSize = 0;
     unsigned int uiByteCount = size << 2;
@@ -5564,7 +5564,7 @@ FUN_00558eb0::FUN_00558eb0(unsigned int iSize)
     memset(pMap, 0, size << 2);
 }
 
-extern int DAT_0102f398;
+extern int vftable_NiTMapBase_0102f398;
 struct FUN_005590b0_s
 {
     void* m_vtbl;
@@ -5581,7 +5581,7 @@ void* __cdecl memset(void* aDest, int aVal, unsigned int aSize);
 // @fnv 0x005590b0
 void* FUN_005590b0_s::InitArray(unsigned int aCount)
 {
-    m_vtbl = &DAT_0102f398;
+    m_vtbl = &vftable_NiTMapBase_0102f398;
     m_uiItemCount = aCount;
     m_iElementCount = 0;
     unsigned int aSize = m_uiItemCount * 4;

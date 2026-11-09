@@ -882,17 +882,17 @@ unsigned short FUN_004301b0_shell::Animation_GetGroup(int aeSection)
     return ((unsigned short*)group)[iIndex];
 }
 
-extern int DAT_01015b58;
+extern int vftable_ExtraLight;
 struct FUN_004308f0_stub
 {
     void* ConstructExtraDataWithPointer(void* p);
 };
-// Constructs a BSExtraData with type 0x29, installs the vtable at DAT_01015b58, stores p at offset 0xc and returns this.
+// Constructs a BSExtraData with type 0x29, installs the vtable at vftable_ExtraLight, stores p at offset 0xc and returns this.
 // @fnv 0x004308f0
 void* FUN_004308f0_stub::ConstructExtraDataWithPointer(void* p)
 {
     reinterpret_cast<BSExtraData*>(this)->BSExtraData::BSExtraData(0x29);
-    *reinterpret_cast<int**>(this) = &DAT_01015b58;
+    *reinterpret_cast<int**>(this) = &vftable_ExtraLight;
     *reinterpret_cast<void**>(reinterpret_cast<char*>(this) + 0xc) = p;
     return this;
 }
@@ -926,9 +926,9 @@ int __cdecl GetLockLevelMax(int aiDifficulty)
     return result;
 }
 
-extern int DAT_0101589c;
+extern int vftable_ExtraLock;
 
-// Constructs a BSExtraData with type 0x2a, installs the vtable at DAT_0101589c and stores p at offset 0xc.
+// Constructs a BSExtraData with type 0x2a, installs the vtable at vftable_ExtraLock and stores p at offset 0xc.
 // @fnv 0x00430c70
 ExtraLock::ExtraLock(LockExtraData* p) : BSExtraData(0x2a)
 {
@@ -946,14 +946,14 @@ struct TESActorBase;
 
 typedef char _sizecheck_ExtraLeveledCreature[sizeof(ExtraLeveledCreature) == 20 ? 1 : -1];
 
-extern int DAT_01015b7c;
+extern int vftable_ExtraLeveledCreature;
 
 // @fnv 0x004311f0
 // src: GUESS 0x004311f0 (confidence: medium)
 ExtraLeveledCreature* __fastcall BSExtraData_InitializeExtraCreatureData(ExtraLeveledCreature* pThis)
 {
     ((BSExtraData*)pThis)->BSExtraData::BSExtraData(0x2e);
-    *(void**)pThis = &DAT_01015b7c;
+    *(void**)pThis = &vftable_ExtraLeveledCreature;
     pThis->m_pCreatureBase = 0;
     pThis->pTemplate = 0;
     return pThis;
@@ -968,7 +968,7 @@ ExtraTeleport::ExtraTeleport(TeleportableReference* p) : BSExtraData(0x2b)
 
 typedef char _sizecheck_ExtraMapMarker[sizeof(ExtraMapMarker) == 16 ? 1 : -1];
 
-extern int DAT_01015b88;
+extern int vftable_ExtraMapMarker;
 
 // Constructs an ExtraMapMarker: initializes the BSExtraData base with type 0x2c, sets its vtable, and stores the MapMarkerData pointer.
 // @fnv 0x00431360
@@ -981,7 +981,7 @@ struct MediaLocation;
 
 typedef char _sizecheck_ExtraAudioMarker[sizeof(ExtraAudioMarker) == 16 ? 1 : -1];
 
-extern int DAT_01015b94;
+extern int vftable_ExtraAudioMarker;
 
 struct PtrWrap
 {
@@ -994,7 +994,7 @@ struct PtrWrap
 ExtraAudioMarker* __fastcall ExtraAudioMarker_InitializeAudioData(ExtraAudioMarker* pThis, PtrWrap aData)
 {
     pThis->BSExtraData::BSExtraData(0x90);
-    *(int*)pThis = (int)&DAT_01015b94;
+    *(int*)pThis = (int)&vftable_ExtraAudioMarker;
     pThis->pAudioData = aData.p;
     return pThis;
 }
@@ -1017,7 +1017,7 @@ struct TESObjectWEAP;
 
 typedef char _sizecheck_ExtraContainerChanges[sizeof(ExtraContainerChanges) == 16 ? 1 : -1];
 
-extern int DAT_01015bb8;
+extern int vftable_ExtraContainerChanges;
 
 // Initializes an ExtraContainerChanges extra-data object with type 0x15, sets its vtable, and stores the given InventoryChanges pointer.
 // @fnv 0x00431830
@@ -1026,23 +1026,23 @@ ExtraContainerChanges::ExtraContainerChanges(InventoryChanges* apChanges) : BSEx
     pChanges = apChanges;
 }
 
-extern int DAT_010158e4;
+extern int vftable_ExtraHealth;
 struct FUN_00431d10_stub
 {
     void* ExtraHealth_ExtraHealth(float p);
 };
-// Constructs a BSExtraData of type 0x25, sets its vtable to DAT_010158e4 and stores the float p at offset 0xc, returning this.
+// Constructs a BSExtraData of type 0x25, sets its vtable to vftable_ExtraHealth and stores the float p at offset 0xc, returning this.
 // @fnv 0x00431d10
 // src: EXE 0x00431d10
 void* FUN_00431d10_stub::ExtraHealth_ExtraHealth(float afValue)
 {
     reinterpret_cast<BSExtraData*>(this)->BSExtraData::BSExtraData(0x25);
-    *reinterpret_cast<int**>(this) = &DAT_010158e4;
+    *reinterpret_cast<int**>(this) = &vftable_ExtraHealth;
     *reinterpret_cast<float*>(reinterpret_cast<char*>(this) + 0xc) = afValue;
     return this;
 }
 
-extern int DAT_01015c54;
+extern int vftable_ExtraEncounterZone;
 
 
 // @fnv 0x00432e60
@@ -1051,9 +1051,9 @@ ExtraEncounterZone::ExtraEncounterZone() : BSExtraData(0x74)
     *reinterpret_cast<int*>(reinterpret_cast<char*>(this) + 0xc) = 0;
 }
 
-extern int DAT_01015c60;
+extern int vftable_ExtraUsedMarkers;
 
-// Constructs a BSExtraData with type 0x12, installs the vtable at DAT_01015c60, zeroes the field at offset 0xc, and returns pThis.
+// Constructs a BSExtraData with type 0x12, installs the vtable at vftable_ExtraUsedMarkers, zeroes the field at offset 0xc, and returns pThis.
 // @fnv 0x00432f00
 ExtraUsedMarkers::ExtraUsedMarkers() : BSExtraData(0x12)
 {
@@ -1122,27 +1122,27 @@ void ExtraReflectedRefs::AssignReferencedObject(TESObjectREFR* apRef, unsigned i
 
 typedef char _sizecheck_ExtraMerchantContainer[sizeof(ExtraMerchantContainer) == 16 ? 1 : -1];
 
-extern int DAT_01015e04;
+extern int vftable_ExtraMerchantContainer;
 
 // Constructs an ExtraMerchantContainer: initializes the BSExtraData base with type 0x3c, sets the vtable, and clears pContainer.
 // @fnv 0x00434fc0
 ExtraMerchantContainer* __fastcall ExtraMerchantContainerCtor(ExtraMerchantContainer* pThis)
 {
     pThis->BSExtraData::BSExtraData(0x3c);
-    *(int**)pThis = &DAT_01015e04;
+    *(int**)pThis = &vftable_ExtraMerchantContainer;
     pThis->pContainer = 0;
     return pThis;
 }
 
 typedef char _sizecheck_ExtraLevCreaModifier[sizeof(ExtraLevCreaModifier) == 16 ? 1 : -1];
 
-extern int DAT_01015e10;
+extern int vftable_ExtraLevCreaModifier;
 
 // @fnv 0x00435040
 ExtraLevCreaModifier* __fastcall ExtraLevCreaModifierCtor(ExtraLevCreaModifier* _this)
 {
     _this->BSExtraData::BSExtraData(0x1E);
-    *(int**)_this = &DAT_01015e10;
+    *(int**)_this = &vftable_ExtraLevCreaModifier;
     _this->m_iModifier = 4;
     return _this;
 }
@@ -1195,14 +1195,14 @@ ExtraLastFinishedSequence::~ExtraLastFinishedSequence()
 
 typedef char _sizecheck_ExtraXTarget[sizeof(ExtraXTarget) == 16 ? 1 : -1];
 
-extern int DAT_01015e28;
+extern int vftable_ExtraXTarget;
 
 // Initializes an ExtraXTarget: constructs the BSExtraData base with type 0x44, sets its vtable, and clears pTarget.
 // @fnv 0x00435370
 ExtraXTarget* __fastcall ConstructExtraXTarget(ExtraXTarget* pThis)
 {
     pThis->BSExtraData::BSExtraData(0x44);
-    *(int**)pThis = &DAT_01015e28;
+    *(int**)pThis = &vftable_ExtraXTarget;
     pThis->pTarget = 0;
     return pThis;
 }
@@ -1213,8 +1213,8 @@ typedef char _sizecheck_ExtraEmittanceSource[sizeof(ExtraEmittanceSource) == 16 
 ExtraEmittanceSource* __fastcall InitExtraEmittanceSource(ExtraEmittanceSource* this_ptr)
 {
     this_ptr->BSExtraData::BSExtraData(0x67);
-    extern int DAT_01015e34;
-    *(int**)this_ptr = &DAT_01015e34;
+    extern int vftable_ExtraEmittanceSource;
+    *(int**)this_ptr = &vftable_ExtraEmittanceSource;
     this_ptr->pSource = 0;
     return this_ptr;
 }
@@ -1305,13 +1305,13 @@ struct TESTopicInfo;
 
 typedef char _sizecheck_ExtraSayToTopicInfo[sizeof(ExtraSayToTopicInfo) == 28 ? 1 : -1];
 
-extern int DAT_01015f48;
+extern int vftable_ExtraSayToTopicInfo;
 
 // @fnv 0x00437690
 ExtraSayToTopicInfo* __fastcall ExtraSayToTopicInfoConstructor(ExtraSayToTopicInfo* pThis)
 {
     pThis->BSExtraData::BSExtraData(0x75);
-    *(void**)pThis = &DAT_01015f48;
+    *(void**)pThis = &vftable_ExtraSayToTopicInfo;
     pThis->pInfo = 0;
     pThis->pTopic = 0;
     pThis->m_uiTopicInfoValue = 0;
@@ -1321,14 +1321,14 @@ ExtraSayToTopicInfo* __fastcall ExtraSayToTopicInfoConstructor(ExtraSayToTopicIn
 
 typedef char _sizecheck_ExtraIgnoredBySandbox[sizeof(ExtraIgnoredBySandbox) == 12 ? 1 : -1];
 
-extern int DAT_01015f64;
+extern int vftable_ExtraIgnoredBySandbox;
 
 // Initializes a BSExtraData-derived object with type 0x80 and installs its vtable pointer.
 // @fnv 0x00437970
 ExtraIgnoredBySandbox* ExtraIgnoredBySandbox::Initialize()
 {
     this->BSExtraData::BSExtraData(0x80);
-    *(int**)this = &DAT_01015f64;
+    *(int**)this = &vftable_ExtraIgnoredBySandbox;
     return this;
 }
 
@@ -1802,8 +1802,8 @@ ExtraXTarget::~ExtraXTarget()
 // @fnv 0x004354a0
 ExtraEmittanceSource::~ExtraEmittanceSource()
 {
-    extern int DAT_01015e34;
-    *reinterpret_cast<int**>(this) = &DAT_01015e34;
+    extern int vftable_ExtraEmittanceSource;
+    *reinterpret_cast<int**>(this) = &vftable_ExtraEmittanceSource;
 }
 
 struct B006815c0
@@ -1913,7 +1913,7 @@ ExtraAudioBuoyMarker::~ExtraAudioBuoyMarker()
     delete reinterpret_cast<Date*>(pData);
 }
 
-extern int DAT_01015bb8;
+extern int vftable_ExtraContainerChanges;
 
 // Destructor for a BSExtraData subclass that deletes its InventoryChanges pointer.
 // @fnv 0x00431890
@@ -1931,7 +1931,7 @@ ExtraOriginalReference::ExtraOriginalReference(TESObjectREFR* apRef) : BSExtraDa
 }
 
 namespace fnv_004322c0 {
-extern int DAT_01015bd0;
+extern int vftable_ExtraGhost;
 struct BE
 {
     BE(unsigned char);
@@ -1969,7 +1969,7 @@ FUN_00432320::FUN_00432320() : BE(23)
 }  // namespace fnv_00432320
 
 namespace fnv_00432350 {
-extern int DAT_01015bf4;
+extern int vftable_ExtraCannotWear;
 
 class BE
 {
@@ -1985,7 +1985,7 @@ struct FUN_00432350 : BE
 // @fnv 0x00432350
 FUN_00432350::FUN_00432350() : BE(0x3e)
 {
-    *reinterpret_cast<void**>(this) = reinterpret_cast<void*>(&DAT_01015bf4);
+    *reinterpret_cast<void**>(this) = reinterpret_cast<void*>(&vftable_ExtraCannotWear);
 }
 }  // namespace fnv_00432350
 
@@ -2033,7 +2033,7 @@ bool ExtraPackageStartLocation::Compare_00432770(BSExtraData* apCompare)
 }
 
 namespace fnv_004327e0 {
-extern int DAT_01015938;
+extern int vftable_ExtraReferencePointer;
 
 class BE
 {
@@ -2050,7 +2050,7 @@ struct FUN_004327e0 : BE
 // @fnv 0x004327e0
 FUN_004327e0::FUN_004327e0(TESObjectREFR* a_refr) : BE(0x1c)
 {
-    *reinterpret_cast<void**>(this) = &DAT_01015938;
+    *reinterpret_cast<void**>(this) = &vftable_ExtraReferencePointer;
     *reinterpret_cast<TESObjectREFR**>(reinterpret_cast<char*>(this) + 0xc) = a_refr;
 }
 }  // namespace fnv_004327e0
@@ -2424,7 +2424,7 @@ bool ExtraAudioBuoyMarker::Compare_00431710(BSExtraData* apCompare)
     return false;
 }
 
-extern void* DAT_010158cc;
+extern void* vftable_ExtraRank;
 // ExtraRank.h does not declare its value constructor.
 struct RankInitializer : ExtraRank
 {
@@ -2434,7 +2434,7 @@ struct RankInitializer : ExtraRank
 ExtraRank* RankInitializer::Initialize(int rank)
 {
     this->BSExtraData::BSExtraData(0x23);
-    *reinterpret_cast<void**>(this) = &DAT_010158cc;
+    *reinterpret_cast<void**>(this) = &vftable_ExtraRank;
     m_iRank = rank;
     return this;
 }
@@ -2571,7 +2571,7 @@ ExtraMultiBoundRef::ExtraMultiBoundRef() : BSExtraData(0x63)
 }
 
 namespace fnv_00435920 {
-extern int DAT_01015e88;
+extern int vftable_ExtraItemDropper;
 struct BE
 {
     BE(unsigned char);
@@ -2584,11 +2584,11 @@ struct FUN_00435920 : BE
     int m_0c;
     FUN_00435920();
 };
-// Initializes the base with 0x39, stores the address of DAT_01015e88 in m_00 and zeroes m_0c.
+// Initializes the base with 0x39, stores the address of vftable_ExtraItemDropper in m_00 and zeroes m_0c.
 // @fnv 0x00435920
 FUN_00435920::FUN_00435920() : BE(0x39)
 {
-    m_00 = (int)&DAT_01015e88;
+    m_00 = (int)&vftable_ExtraItemDropper;
     m_0c = 0;
 }
 }  // namespace fnv_00435920
@@ -2653,7 +2653,7 @@ void FUN_00438260::SetStr(const char* apStr)
 }
 }  // namespace fnv_00438260
 
-extern int DAT_01015ca8;
+extern int vftable_ExtraRandomTeleportMarker;
 // ExtraRandomTeleportMarker.h does not declare its default constructor.
 struct TeleportMarkerInitializer : ExtraRandomTeleportMarker
 {
@@ -2663,7 +2663,7 @@ struct TeleportMarkerInitializer : ExtraRandomTeleportMarker
 ExtraRandomTeleportMarker* TeleportMarkerInitializer::Initialize()
 {
     this->BSExtraData::BSExtraData(0x3b);
-    *reinterpret_cast<void**>(this) = &DAT_01015ca8;
+    *reinterpret_cast<void**>(this) = &vftable_ExtraRandomTeleportMarker;
     pTeleportMarker = 0;
     return this;
 }
@@ -2676,17 +2676,17 @@ struct BE
     int _08;
     BE(unsigned char);
 };
-extern int DAT_01015cc0;
+extern int vftable_ExtraLinkedRef;
 struct FUN_00433640 : BE
 {
     int unk0C;
     FUN_00433640();
 };
-// Initialises the base with tag 0x51, installs the vtable pointer DAT_01015cc0, and zeroes unk0C.
+// Initialises the base with tag 0x51, installs the vtable pointer vftable_ExtraLinkedRef, and zeroes unk0C.
 // @fnv 0x00433640
 FUN_00433640::FUN_00433640() : BE(0x51)
 {
-    *(int*)this = (int)&DAT_01015cc0;
+    *(int*)this = (int)&vftable_ExtraLinkedRef;
     unk0C = 0;
 }
 }  // namespace fnv_00433640
@@ -2932,7 +2932,7 @@ struct BE
     unsigned int iSize;
     BE(unsigned char);
 };
-extern "C" void* DAT_01015c24;
+extern "C" void* vftable_ExtraPackage;
 struct FUN_00432870 : BE
 {
     unsigned int iActionIndex;
@@ -2951,7 +2951,7 @@ FUN_00432870::FUN_00432870(unsigned int aiData, unsigned int aiFlags, unsigned i
                            unsigned char acFlags2, unsigned char acFlags3)
     : BE(0x19)
 {
-    pVTable = &DAT_01015c24;
+    pVTable = &vftable_ExtraPackage;
     iData = aiData;
     iFlags = aiFlags;
     iFlags2 = aiFlags2;
@@ -3187,7 +3187,7 @@ void ExtraDismemberedLimbs::SetBit(int arg1, bool arg2)
     }
 }
 
-extern int DAT_010158c0;
+extern int vftable_ExtraGlobal;
 // ExtraOwnership.h does not declare the one-argument constructor.
 struct OwnershipInitializer : ExtraOwnership
 {
@@ -3197,12 +3197,12 @@ struct OwnershipInitializer : ExtraOwnership
 ExtraOwnership* OwnershipInitializer::Initialize(unsigned int value)
 {
     this->BSExtraData::BSExtraData(0x22);
-    *reinterpret_cast<void**>(this) = &DAT_010158c0;
+    *reinterpret_cast<void**>(this) = &vftable_ExtraGlobal;
     pOwner = reinterpret_cast<char*>(value);
     return this;
 }
 
-extern int DAT_010158f0;
+extern int vftable_ExtraUses;
 // ExtraUses.h does not declare its value constructor.
 struct UsesInitializer : ExtraUses
 {
@@ -3212,7 +3212,7 @@ struct UsesInitializer : ExtraUses
 ExtraUses* UsesInitializer::Initialize(unsigned char value)
 {
     this->BSExtraData::BSExtraData(0x26);
-    *reinterpret_cast<void**>(this) = &DAT_010158f0;
+    *reinterpret_cast<void**>(this) = &vftable_ExtraUses;
     m_ucUses = value;
     return this;
 }
@@ -3223,7 +3223,7 @@ ExtraTimeLeft::ExtraTimeLeft(float value) : BSExtraData(0x27)
     fTime = value;
 }
 
-extern int DAT_01015908;
+extern int vftable_ExtraCharge;
 // ExtraCharge.h does not declare its value constructor.
 struct ChargeInitializer : ExtraCharge
 {
@@ -3233,12 +3233,12 @@ struct ChargeInitializer : ExtraCharge
 ExtraCharge* ChargeInitializer::Initialize(float value)
 {
     this->BSExtraData::BSExtraData(0x28);
-    *reinterpret_cast<void**>(this) = &DAT_01015908;
+    *reinterpret_cast<void**>(this) = &vftable_ExtraCharge;
     m_fCharge = value;
     return this;
 }
 
-extern int DAT_01015920;
+extern int vftable_ExtraScale;
 // ExtraScale.h does not declare its value constructor.
 struct ScaleInitializer : ExtraScale
 {
@@ -3248,7 +3248,7 @@ struct ScaleInitializer : ExtraScale
 ExtraScale* ScaleInitializer::Initialize(float value)
 {
     this->BSExtraData::BSExtraData(0x30);
-    *reinterpret_cast<void**>(this) = &DAT_01015920;
+    *reinterpret_cast<void**>(this) = &vftable_ExtraScale;
     fScale = value;
     return this;
 }
@@ -3344,7 +3344,7 @@ struct BE
     BE(unsigned char);
 };
 
-extern int DAT_01015ccc;
+extern int vftable_ExtraAshPileRef;
 
 struct FUN_004336c0 : BE
 {
@@ -3355,7 +3355,7 @@ struct FUN_004336c0 : BE
 // @fnv 0x004336c0
 FUN_004336c0::FUN_004336c0() : BE(0x89)
 {
-    *reinterpret_cast<void**>(this) = reinterpret_cast<void*>(&DAT_01015ccc);
+    *reinterpret_cast<void**>(this) = reinterpret_cast<void*>(&vftable_ExtraAshPileRef);
     DroppedItemList = 0;
 }
 }  // namespace fnv_004336c0
@@ -3396,7 +3396,7 @@ struct BE
     BE(unsigned char);
 };
 
-extern char _DAT_0101595c;
+extern char vftable_ExtraPoison;
 
 struct FUN_00435150 : BE
 {
@@ -3409,7 +3409,7 @@ struct FUN_00435150 : BE
 // @fnv 0x00435150
 FUN_00435150::FUN_00435150(int aiValue) : BE(0x3f)
 {
-    *reinterpret_cast<void**>(this) = reinterpret_cast<void*>(&_DAT_0101595c);
+    *reinterpret_cast<void**>(this) = reinterpret_cast<void*>(&vftable_ExtraPoison);
     value = aiValue;
 }
 }  // namespace fnv_00435150
@@ -4049,7 +4049,7 @@ bool ExtraLastFinishedSequence::Compare_00435310(BSExtraData* apExtra)
 
 void __cdecl FormHeapFreeAndLog_00401030(void*);
 
-extern int DAT_01015e4c;
+extern int vftable_ExtraMultiBoundData;
 extern "C" void __cdecl FormHeapFreeAndLog_00401030(void*);
 
 // Sets the vtable pointer, frees ownedSource via FUN_00401030, then calls FUN_0040ecb0.
@@ -5281,7 +5281,7 @@ bool ExtraLock::Compare(BSExtraData* other)
     return false;
 }
 
-extern char DAT_01015b28;
+extern char vftable_ExtraAnim;
 // @fnv 0x004300c0
 ExtraAnim::ExtraAnim(int aiValue) : BSExtraData(0x10)
 {

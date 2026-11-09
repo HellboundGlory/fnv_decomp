@@ -2211,13 +2211,13 @@ bool __cdecl Cmd_RemoveFromFaction_Execute(const ScriptParameter* paramInfo, con
     return true;
 }
 
-extern int DAT_0103cf5c;
+extern int vftable_MobIterOperator;
 
 // @fnv 0x005d8b10
 // src: GUESS 0x005d8b10 (confidence: low)
 int* __fastcall Tesscriptfunctions_UpdateState_005d8b10(int* pThis)
 {
-    pThis[0] = (int)&DAT_0103cf5c;
+    pThis[0] = (int)&vftable_MobIterOperator;
     pThis[1] = 0;
     return pThis;
 }
@@ -2370,13 +2370,13 @@ public:
 };
 
 
-extern int DAT_0103d428;
+extern int vftable_BSSimpleArray_0103d428;
 
 // @fnv 0x005e04c0
 // src: GUESS 0x005e04c0 (confidence: low)
 void* __fastcall Object_InitializeFields_005e04c0(void* pThis)
 {
-    *reinterpret_cast<int**>(pThis) = &DAT_0103d428;
+    *reinterpret_cast<int**>(pThis) = &vftable_BSSimpleArray_0103d428;
     reinterpret_cast<ScriptNavMeshInfoArray*>(pThis)->BSSimpleArray_float_1024_InitialSetup(0, false);
     return pThis;
 }
@@ -2387,13 +2387,13 @@ public:
     void Clear(bool);
 };
 
-extern int DAT_0103d428;
+extern int vftable_BSSimpleArray_0103d428;
 
 // @fnv 0x005e04f0
 // src: GUESS 0x005e04f0 (confidence: low)
 void __fastcall Tesscriptfunctions_UpdateState_005e04f0(GlobalObject_00869f00* pThis)
 {
-    *(int**)pThis = &DAT_0103d428;
+    *(int**)pThis = &vftable_BSSimpleArray_0103d428;
     pThis->Clear(true);
 }
 
@@ -2404,13 +2404,13 @@ public:
     void Clear(bool);
 };
 
-extern int DAT_0103d43c;
+extern int vftable_BSSimpleArray_0103d43c;
 
 // @fnv 0x005e0540
 // src: GUESS 0x005e0540 (confidence: medium)
 void __fastcall Object_ResetVirtualTableAndClear(GlobalObject_00869f00* _this)
 {
-    *(int**)_this = &DAT_0103d43c;
+    *(int**)_this = &vftable_BSSimpleArray_0103d43c;
     _this->Clear(true);
 }
 }  // namespace fnv_005e0540
@@ -4152,13 +4152,13 @@ struct GlobalObject_00869f00
     void UpdateState_005e0590();
 };
 
-extern GlobalObject_00869f00 DAT_0103d450;
+extern GlobalObject_00869f00 vftable_BSSimpleArray_0103d450;
 
 // @fnv 0x005e0590
 // src: GUESS 0x005e0590 (confidence: low)
 void GlobalObject_00869f00::UpdateState_005e0590()
 {
-    m_pSomething = &DAT_0103d450;
+    m_pSomething = &vftable_BSSimpleArray_0103d450;
     Clear(true);
 }
 }  // namespace fnv_005e0590
@@ -4752,7 +4752,7 @@ bool Cmd_IsAlwaysHardcore_Execute(const ScriptParameter* a_param, const char* a_
     return Cmd_IsAlwaysHardcore_Eval(a_refr, 0, 0, a_double);
 }
 
-extern "C" void* DAT_0103d450;
+extern "C" void* vftable_BSSimpleArray_0103d450;
 
 struct AX {
     void* vtable;
@@ -4766,7 +4766,7 @@ struct FUN_005e0560 : AX {
 // @fnv 0x005e0560
 FUN_005e0560::FUN_005e0560()
 {
-    this->vtable = &DAT_0103d450;
+    this->vtable = &vftable_BSSimpleArray_0103d450;
     this->BSSimpleArray_float_1024_InitialSetup(0, false);
 }
 
@@ -5661,7 +5661,7 @@ Setting& Setting::AssignStringValue(const char* name)
     return *this;
 }
 
-extern "C" void* DAT_0103d410;
+extern "C" void* vftable_NiTPrimitiveArray_0103d410;
 struct FUN_005e0430 {
     void* m_vft;
     void __thiscall FUN_005e09c0(void*, void*);
@@ -5671,7 +5671,7 @@ struct FUN_005e0430 {
 FUN_005e0430* __thiscall FUN_005e0430::Init(void* a, void* b)
 {
     FUN_005e09c0(a, b);
-    m_vft = &DAT_0103d410;
+    m_vft = &vftable_NiTPrimitiveArray_0103d410;
     return this;
 }
 
@@ -6282,7 +6282,7 @@ bool Cmd_RevokeCode_Execute(const ScriptParameter* parameters, const char* scrip
     return true;
 }
 
-extern int DAT_0103d418;
+extern int vftable_NiTArray_0103d418;
 void __cdecl NiTMallocInterface_unsigned_int_Deallocate(void*);
 struct S005e0460
 {
@@ -6292,14 +6292,14 @@ struct S005e0460
 // src: GUESS 0x005e0460 (confidence: low)
 void S005e0460::UpdateFields_005e0460()
 {
-    *(void**)this = (void*)&DAT_0103d418;
+    *(void**)this = (void*)&vftable_NiTArray_0103d418;
     NiTMallocInterface_unsigned_int_Deallocate(*(void**)((char*)this + 4));
 }
 
 struct BaseFor_5e0490 {
     void __thiscall NiTArray_char_const_NiTMallocInterface_char_const_Init(unsigned int, unsigned int);
 };
-extern int DAT_0103d420;
+extern int vftable_NiTPrimitiveArray_0103d420;
 struct Holder {
     Holder* __thiscall NiTPrimitiveArray_char_const_NiTPrimitiveArray(unsigned int, unsigned int);
 };
@@ -6308,7 +6308,7 @@ struct Holder {
 Holder* __thiscall Holder::NiTPrimitiveArray_char_const_NiTPrimitiveArray(unsigned int a, unsigned int b)
 {
     ((BaseFor_5e0490*)this)->NiTArray_char_const_NiTMallocInterface_char_const_Init(a, b);
-    *(int*)this = (int)&DAT_0103d420;
+    *(int*)this = (int)&vftable_NiTPrimitiveArray_0103d420;
     return (Holder*)this;
 }
 
@@ -38303,7 +38303,7 @@ bool Cmd_AlwaysShowActorSubtitles_Execute(const ScriptParameter* apParameters, c
 }
 
 namespace fnv_005e0510 {
-extern int DAT_0103d43c;
+extern int vftable_BSSimpleArray_0103d43c;
 
 struct AX {
     void __thiscall BSSimpleArray_float_1024_InitialSetup(unsigned int, unsigned int);
@@ -38317,7 +38317,7 @@ struct FUN_005e0510_Class {
 // @fnv 0x005e0510
 // src: GUESS 0x005e0510 (confidence: low)
 unsigned int* __thiscall FUN_005e0510_Class::SetVtableAndProcessState_005e0510() {
-    *(int**)this = (int*)&DAT_0103d43c;
+    *(int**)this = (int*)&vftable_BSSimpleArray_0103d43c;
     reinterpret_cast<AX*>(this)->BSSimpleArray_float_1024_InitialSetup(0, 0);
     return reinterpret_cast<unsigned int*>(this);
 }

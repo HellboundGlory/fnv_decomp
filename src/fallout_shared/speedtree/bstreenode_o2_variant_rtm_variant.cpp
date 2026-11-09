@@ -284,7 +284,7 @@ struct S00cb7750
     void __thiscall bhkSPCollisionObject_hktoNiTransform();
 };
 void* __fastcall NiRTTI_UpdateState_00c6b910(void*);
-extern int DAT_01066b94;
+extern int vftable_bhkPCollisionObject;
 BSFadeNode* bhkPCollisionObject_CreateObject();
 struct Middle
 {

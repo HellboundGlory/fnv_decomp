@@ -2135,7 +2135,7 @@ int S_0060b980::FaceGenData_Iterator_FaceGenData_GetUnk00()
     return p ? Modelloader_GetReferencedThis(p) : 0;
 }
 
-extern int DAT_0104aae0;
+extern int vftable_NiTArray_0104aae0;
 void __cdecl NiTMallocInterface_unsigned_int_Deallocate(void*);
 struct Holder_FUN_0060b9b0
 {
@@ -2143,12 +2143,12 @@ struct Holder_FUN_0060b9b0
     void* m_data;
     void SetVtableAndProcessState_0060b9b0();
 };
-// Sets the vtable pointer to DAT_0104aae0 and calls FUN_004ede70 on m_data.
+// Sets the vtable pointer to vftable_NiTArray_0104aae0 and calls FUN_004ede70 on m_data.
 // @fnv 0x0060b9b0
 // src: GUESS 0x0060b9b0 (confidence: low)
 void Holder_FUN_0060b9b0::SetVtableAndProcessState_0060b9b0()
 {
-    vfptr = (void*)&DAT_0104aae0;
+    vfptr = (void*)&vftable_NiTArray_0104aae0;
     NiTMallocInterface_unsigned_int_Deallocate(m_data);
 }
 
@@ -2179,13 +2179,13 @@ struct STR_0060b9e0
     void FUN_0060bd20(unsigned int, unsigned int);
     void* NiTPrimitiveArray_FaceGenUndo_NiTPrimitiveArray(unsigned int, unsigned int);
 };
-extern int DAT_0104aae8;
+extern int vftable_NiTPrimitiveArray_0104aae8;
 // @fnv 0x0060b9e0
 // src: EXE 0x0060b9e0
 void* STR_0060b9e0::NiTPrimitiveArray_FaceGenUndo_NiTPrimitiveArray(unsigned int arg1, unsigned int arg2)
 {
     FUN_0060bd20(arg1, arg2);
-    *(void**)this = &DAT_0104aae8;
+    *(void**)this = &vftable_NiTPrimitiveArray_0104aae8;
     return this;
 }
 

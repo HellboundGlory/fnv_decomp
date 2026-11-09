@@ -36,7 +36,7 @@ extern BGSSaveLoadGame* g_BGSSaveLoadGame;
 
 extern ProcessLists g_kProcessLists;
 extern PlayerCharacter* g_thePlayer;
-extern "C" void* DAT_01047670;
+extern "C" void* vftable_Reset3DMobIterator;
 
 // @fnv 0x0048cee0
 SEX TESActorBase::GetSex()
@@ -85,7 +85,7 @@ void TESActorBase::LoadGame(BGSLoadFormBuffer* buffer)
 // @fnv 0x005f2150
 Reset3DMobIterator::Reset3DMobIterator()
 {
-    *reinterpret_cast<void**>(this) = &DAT_01047670;
+    *reinterpret_cast<void**>(this) = &vftable_Reset3DMobIterator;
 }
 
 // If reset is set, runs the 3D mob iterator over this actor base twice and resets the player's process 3D when this is the player's base.

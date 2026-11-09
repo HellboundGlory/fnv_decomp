@@ -1373,7 +1373,7 @@ struct FUN_004b50f0 : bhkSerializable
     FUN_004b50f0();
 };
 
-// Sets m_p to the address of DAT_0102016c and increments DAT_01268154.
+// Sets m_p to the address of vftable_bhkAction and increments DAT_01268154.
 // @fnv 0x004b50f0
 FUN_004b50f0::FUN_004b50f0()
 {
@@ -1565,7 +1565,7 @@ void S_004b4fc0::bhkVector4_setZero4()
     bhkVector4_set(0.0f, 0.0f, 0.0f, 0.0f);
 }
 
-extern int DAT_0102009c;
+extern int vftable_bhkUnaryAction;
 extern int DAT_01268118;
 struct Fake004b50c0
 {
@@ -1577,7 +1577,7 @@ struct Fake004b50c0
 Fake004b50c0* Fake004b50c0::InitializeFields_004b50c0()
 {
     FUN_004b50f0();
-    *(int*)this = (int)&DAT_0102009c;
+    *(int*)this = (int)&vftable_bhkUnaryAction;
     DAT_01268118++;
     return this;
 }

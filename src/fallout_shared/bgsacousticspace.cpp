@@ -208,7 +208,7 @@ BGSCameraPath* BGSCameraPath::GetCameraPathAt(unsigned int uiIndex)
     return result;
 }
 
-extern int DAT_010320fc;
+extern int vftable_BGSAcousticSpace;
 
 void __fastcall UpdateState_0050e9f0(void*);
 
@@ -221,7 +221,7 @@ struct FUN_00589960_shell
 // src: GUESS 0x00589960 (confidence: low)
 void __thiscall FUN_00589960_shell::UpdateFields_00589960()
 {
-    *reinterpret_cast<int**>(this) = &DAT_010320fc;
+    *reinterpret_cast<int**>(this) = &vftable_BGSAcousticSpace;
     UpdateState_0050e9f0(this);
 }
 

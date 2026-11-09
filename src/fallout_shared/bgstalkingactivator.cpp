@@ -535,7 +535,7 @@ void FUN_004fec10_shell::BGSTalkingActivator_Save()
     reinterpret_cast<FUN_00485680*>(this)->M();
 }
 
-extern void* DAT_01025520;
+extern void* vftable_BGSTalkingActivator_for_BGSOpenCloseForm;
 
 struct FUN_004fe640 : public TESObjectACTI
 {

@@ -6,7 +6,7 @@
 #include "../../../include/bhkCharacterListener.h"
 #include "../../../include/hkpAllCdPointCollector.h"
 
-extern int DAT_0104da3c;
+extern int vftable_hkpCdPointCollector;
 
 struct FUN_00621100_shell
 {
@@ -16,7 +16,7 @@ struct FUN_00621100_shell
 // @fnv 0x00621100
 void __thiscall FUN_00621100_shell::SetVtable()
 {
-    *(int*)this = (int)&DAT_0104da3c;
+    *(int*)this = (int)&vftable_hkpCdPointCollector;
 }
 
 // @fnv 0x00621270
@@ -43,7 +43,7 @@ void* FUN_00621290_shell::InitFloats()
     return this;
 }
 
-extern int DAT_0104da3c;
+extern int vftable_hkpCdPointCollector;
 struct FUN_00621060_shell
 {
     int* vtbl;
@@ -54,7 +54,7 @@ struct FUN_00621060_shell
 // src: XBOX_PDB 0x00621060
 FUN_00621060_shell* __thiscall FUN_00621060_shell::hkpCdPointCollector_hkpCdPointCollector()
 {
-    vtbl = &DAT_0104da3c;
+    vtbl = &vftable_hkpCdPointCollector;
     SetValue();
     return this;
 }
@@ -248,7 +248,7 @@ FUN_00620ff0::FUN_00620ff0() : m_10(0)
     hkpAllCdPointCollector_reset();
 }
 
-extern int DAT_0104da28;
+extern int vftable_hkpAllCdPointCollector;
 
 class CdPointSubObj
 {

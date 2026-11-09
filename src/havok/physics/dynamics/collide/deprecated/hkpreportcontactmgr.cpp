@@ -69,7 +69,7 @@ inline const hkVector4& hkContactPoint::getNormal() const
     return m_vSeparatingNormal;
 }
 
-extern "C" void* DAT_010cc8bc;
+extern "C" void* vftable_hkpReportContactMgr__Factory;
 
 struct FUN_00cfca20
 {
@@ -84,7 +84,7 @@ struct FUN_00cfca20
 FUN_00cfca20::FUN_00cfca20(void* data)
 {
     m_flag = 1;
-    m_ppVirtualMethodTable = &DAT_010cc8bc;
+    m_ppVirtualMethodTable = &vftable_hkpReportContactMgr__Factory;
     m_data = data;
 }
 

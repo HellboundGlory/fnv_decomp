@@ -387,7 +387,7 @@ void __fastcall SetAnimGroupType(TESAnimGroup* self, UShortArg type)
     }
 }
 
-extern int DAT_010484e8;
+extern int vftable_TESAnimGroup;
 
 void __cdecl operator delete(void*);
 

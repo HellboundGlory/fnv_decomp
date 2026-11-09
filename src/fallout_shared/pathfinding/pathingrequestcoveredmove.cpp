@@ -566,7 +566,7 @@ void FUN_006e51a0_shell::LoadFromStream(FNVInputStream* stream)
     }
 }
 
-extern char DAT_0106d32c;
+extern char vftable_PathingRequestHide;
 extern float DAT_0101e704;
 
 struct BaseEmpty

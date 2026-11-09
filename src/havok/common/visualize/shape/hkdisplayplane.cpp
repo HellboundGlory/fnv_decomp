@@ -374,7 +374,7 @@ struct Vec4i
     int w;
 };
 
-extern int DAT_010d828c;
+extern int vftable_hkDisplayPlane;
 
 class FUN_00de4f20_cls
 {
@@ -416,7 +416,7 @@ FUN_00de4f20_cls* FUN_00de4f20_cls::InitializeFields_00de4f20(const Vec4i* p0, c
     *(volatile float*)&m_rot1.s.y = one;
     *(volatile float*)&m_rot2.s.z = one;
     _mm_store_ps((float*)&m_kAxisEndPoints.v, _mm_setzero_ps());
-    m_vptr = (int)&DAT_010d828c;
+    m_vptr = (int)&vftable_hkDisplayPlane;
     m_60 = *p0;
     m_70 = *p2;
     m_80 = *p1;

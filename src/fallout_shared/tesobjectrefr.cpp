@@ -2704,7 +2704,7 @@ void FUN_0056e120_shell::bhkTransform_setIdentity()
 }
 
 void __fastcall bhkSphereRepShape_bhkSphereRepShape(void* pThis);
-extern int DAT_01030a24;
+extern int vftable_bhkConvexShape;
 extern int DAT_01268250;
 
 // @fnv 0x0056e690
@@ -2712,7 +2712,7 @@ extern int DAT_01268250;
 void* __fastcall bhkConvexShape_bhkConvexShape(int* pObject)
 {
     bhkSphereRepShape_bhkSphereRepShape(pObject);
-    *pObject = (int)&DAT_01030a24;
+    *pObject = (int)&vftable_bhkConvexShape;
     DAT_01268250 = DAT_01268250 + 1;
     return pObject;
 }
@@ -4995,7 +4995,7 @@ void FUN_0057a3c0_shell::TESObjectREFR_UpdateAddonNodeSounds(bool abDetachAll)
 }
 }  // namespace fnv_0057a3c0
 
-extern int DAT_01030f14;
+extern int vftable_ExtraAnimNoteReceiver;
 
 using ::BSExtraData;
 
@@ -5032,13 +5032,13 @@ FUN_0057a960::FUN_0057a960()
     unk8.FUN_0057c700(0, 1);
 }
 
-extern int DAT_0101fc80;
+extern int vftable_IBSAnimNoteReceiver;
 
 // @fnv 0x0057a9d0
 // src: GUESS 0x0057a9d0 (confidence: low)
 void* __fastcall TESObjectREFR_UpdateState_0057a9d0(void** pThis)
 {
-    *pThis = &DAT_0101fc80;
+    *pThis = &vftable_IBSAnimNoteReceiver;
     return pThis;
 }
 
@@ -5514,14 +5514,14 @@ using ::TESTexture;
 typedef char _sizecheck_TESTexture[sizeof(TESTexture) == 12 ? 1 : -1];
 
 
-extern int DAT_0102583c;
+extern int vftable_PathingLocation;
 void __fastcall _ref_006815c0(void* pThis);
 
 // @fnv 0x006dcbb0
 // src: GUESS 0x006dcbb0 (confidence: low)
 PathingLocation* __fastcall TESObjectREFR_UpdateState_006dcbb0(PathingLocation* pThis)
 {
-    *(int**)pThis = &DAT_0102583c;
+    *(int**)pThis = &vftable_PathingLocation;
     (fnv_006dcbb0::_ref_006815c0)(&pThis->Location);
     *(float*)((char*)&pThis->Location + 0) = 3.4028234663852886e+38f;
     *(float*)((char*)&pThis->Location + 4) = 3.4028234663852886e+38f;
@@ -7656,7 +7656,7 @@ struct RefHelper
 using ::BSOcclusionPlane;
 struct fnv_006dcbb0
 {
-    static int DAT_0102583c;
+    static int vftable_PathingLocation;
 };
 void __fastcall _ref_006815c0(void* pThis);
 extern TES* g_TES;
@@ -7665,7 +7665,7 @@ extern PC7d* g_thePlayer;
 // src: GUESS 0x006dcd70 (confidence: low)
 PathingLocation* __fastcall BSOcclusionPlane_UpdateState_006dcd70(PathingLocation* pPathingLocation, RefArg aRefArg)
 {
-    *(int**)pPathingLocation = &fnv_006dcbb0::DAT_0102583c;
+    *(int**)pPathingLocation = &fnv_006dcbb0::vftable_PathingLocation;
     _ref_006815c0((char*)pPathingLocation + 4);
     int pcell = ((BSOcclusionPlane*)aRefArg.p)->GetCullResult();
     TESWorldSpace* pworld = aRefArg.p->GetParentWorldSpace();
@@ -9851,7 +9851,7 @@ void FUN_0056d490_class::bhkWorldObject_ForceAdd(void* arg)
     vfn_9c(arg);
 }
 
-extern int DAT_0103046c;
+extern int vftable_bhkCollisionObject;
 struct FUN_00c6b950
 {
     void Init(void* arg);
@@ -9865,7 +9865,7 @@ struct FUN_0056d580
 void* FUN_0056d580::Init(void* arg)
 {
     ((FUN_00c6b950*)this)->Init(arg);
-    m_ptr = &DAT_0103046c;
+    m_ptr = &vftable_bhkCollisionObject;
     return this;
 }
 
@@ -17360,7 +17360,7 @@ FUN_0056e1e0::FUN_0056e1e0()
 // `this`, installs the class vtable pointer into the object and bumps a
 // global counter, then returns itself.
 
-extern int DAT_0103078c;
+extern int vftable_bhkPhantom;
 extern int DAT_01268238;
 
 struct FUN_0056e3e0_cls
@@ -17370,13 +17370,13 @@ struct FUN_0056e3e0_cls
     FUN_0056e3e0_cls* bhkPhantom_bhkPhantom();
 };
 
-// Calls FUN_0056d440, sets m_pVTable to &DAT_0103078c, increments DAT_01268238, and returns this.
+// Calls FUN_0056d440, sets m_pVTable to &vftable_bhkPhantom, increments DAT_01268238, and returns this.
 // @fnv 0x0056e3e0
 // src: EXE 0x0056e3e0
 FUN_0056e3e0_cls* FUN_0056e3e0_cls::bhkPhantom_bhkPhantom()
 {
     FUN_0056d440();
-    m_pVTable = (void*)&DAT_0103078c;
+    m_pVTable = (void*)&vftable_bhkPhantom;
     DAT_01268238++;
     return this;
 }
@@ -17406,7 +17406,7 @@ void* FUN_0056e460_cls::FUN_0056e460(int iFlags)
 // `this`, installs the class vtable pointer into the object, bumps a global
 // counter and returns itself.
 
-extern int DAT_01030b0c;
+extern int vftable_bhkSphereRepShape;
 extern int DAT_01268274;
 
 struct FUN_0056e6c0_cls
@@ -17421,7 +17421,7 @@ struct FUN_0056e6c0_cls
 FUN_0056e6c0_cls* FUN_0056e6c0_cls::bhkSphereRepShape_bhkSphereRepShape()
 {
     FUN_0056e6f0();
-    m_pVTable = (void*)&DAT_01030b0c;
+    m_pVTable = (void*)&vftable_bhkSphereRepShape;
     DAT_01268274++;
     return this;
 }
@@ -19928,16 +19928,16 @@ struct S_0094dbb0_Foo
     S_0094dbb0_Foo* UpdateState_0094dbb0();
 };
 
-extern void* DAT_01030cdc;
+extern void* vftable_bhkSphereShape;
 extern int DAT_01268280;
 
-// Calls FUN_0056e690, sets unk00 to &DAT_01030cdc, increments DAT_01268280, and returns this.
+// Calls FUN_0056e690, sets unk00 to &vftable_bhkSphereShape, increments DAT_01268280, and returns this.
 // @fnv 0x0094dbb0
 // src: GUESS 0x0094dbb0 (confidence: low)
 S_0094dbb0_Foo* S_0094dbb0_Foo::UpdateState_0094dbb0()
 {
     bhkConvexShape_bhkConvexShape();
-    unk00 = &DAT_01030cdc;
+    unk00 = &vftable_bhkSphereShape;
     ++DAT_01268280;
     return this;
 }

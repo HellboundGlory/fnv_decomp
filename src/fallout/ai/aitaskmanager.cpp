@@ -124,7 +124,7 @@ FUN_008c8400_shell* FUN_008c8400_shell::FUN_008c8400(unsigned int flags)
     return this;
 }
 
-extern int DAT_01085728;
+extern int vftable_DetectionTaskData;
 struct FUN_008c8430_shell
 {
     int* vtbl;
@@ -135,7 +135,7 @@ struct FUN_008c8430_shell
 // src: GUESS 0x008c8430 (confidence: low)
 void FUN_008c8430_shell::SetVtableAndProcessState_008c8430()
 {
-    vtbl = &DAT_01085728;
+    vtbl = &vftable_DetectionTaskData;
     FUN_008c83a0();
 }
 
@@ -157,19 +157,19 @@ void FUN_008c8490_shell::DetectionTaskData_HandleEndMessage(unsigned int)
     g_011dfbe8.WaitForTasksDuringRendering();
 }
 
-extern int DAT_01085768;
+extern int vftable_AnimationTaskData;
 struct FUN_008c8830_shell
 {
     int* vtable;
     void FUN_008c82e0(int);
     FUN_008c8830_shell* Construct(int p);
 };
-// Calls FUN_008c82e0 with p, sets the vtable to DAT_01085768, and returns this.
+// Calls FUN_008c82e0 with p, sets the vtable to vftable_AnimationTaskData, and returns this.
 // @fnv 0x008c8830
 FUN_008c8830_shell* FUN_008c8830_shell::Construct(int p)
 {
     FUN_008c82e0(p);
-    vtable = &DAT_01085768;
+    vtable = &vftable_AnimationTaskData;
     return this;
 }
 
@@ -190,7 +190,7 @@ void* FUN_008c8860_shell::AnimationTaskData_ScalarDeletingDestructor(unsigned in
     return this;
 }
 
-extern int DAT_01085768;
+extern int vftable_AnimationTaskData;
 struct FUN_008c8890_shell
 {
     int* vtbl;
@@ -201,7 +201,7 @@ struct FUN_008c8890_shell
 // src: GUESS 0x008c8890 (confidence: low)
 void FUN_008c8890_shell::SetVtableAndProcessState_008c8890()
 {
-    vtbl = &DAT_01085768;
+    vtbl = &vftable_AnimationTaskData;
     FUN_008c83a0();
 }
 
@@ -272,7 +272,7 @@ void* FUN_008c89d0_shell::Destroy(unsigned int flags)
     return this;
 }
 
-extern int DAT_01085788;
+extern int vftable_ActorUpdateTaskData;
 struct FUN_008c8a00_shell
 {
     int* vtbl;
@@ -283,7 +283,7 @@ struct FUN_008c8a00_shell
 // src: GUESS 0x008c8a00 (confidence: low)
 void FUN_008c8a00_shell::SetVirtualTableAndProcessState_008c8a00()
 {
-    vtbl = &DAT_01085788;
+    vtbl = &vftable_ActorUpdateTaskData;
     FUN_008c83a0();
 }
 
@@ -332,7 +332,7 @@ void* FUN_008c8b20_shell::DestroyOrReturnSelf(unsigned int flags)
     return this;
 }
 
-extern int DAT_010857a8;
+extern int vftable_PackageUpdateTaskData;
 struct FUN_008c8b50_shell
 {
     int* vtbl;
@@ -343,7 +343,7 @@ struct FUN_008c8b50_shell
 // src: GUESS 0x008c8b50 (confidence: low)
 void FUN_008c8b50_shell::SetVtableAndProcessState_008c8b50()
 {
-    vtbl = &DAT_010857a8;
+    vtbl = &vftable_PackageUpdateTaskData;
     FUN_008c83a0();
 }
 
@@ -417,7 +417,7 @@ void* FUN_008c9050_shell::ActorsScriptTaskData_ScalarDeletingDestructor(unsigned
     return this;
 }
 
-extern int DAT_010857c8;
+extern int vftable_ActorsScriptTaskData;
 struct FUN_008c9080_shell
 {
     int* vtbl;
@@ -428,7 +428,7 @@ struct FUN_008c9080_shell
 // src: GUESS 0x008c9080 (confidence: low)
 void FUN_008c9080_shell::SetVirtualTableAndProcessState_008c9080()
 {
-    vtbl = &DAT_010857c8;
+    vtbl = &vftable_ActorsScriptTaskData;
     FUN_008c83a0();
 }
 
@@ -489,7 +489,7 @@ void* FUN_008c91a0_shell::MovementTaskData_ScalarDeletingDestructor(unsigned int
     return this;
 }
 
-extern int DAT_010857e8;
+extern int vftable_MovementTaskData;
 
 struct FUN_008c91d0_shell
 {
@@ -502,7 +502,7 @@ struct FUN_008c91d0_shell
 // src: GUESS 0x008c91d0 (confidence: low)
 void FUN_008c91d0_shell::UpdateState_008c91d0()
 {
-    m_vft = &DAT_010857e8;
+    m_vft = &vftable_MovementTaskData;
     FUN_008c83a0();
 }
 
@@ -684,13 +684,13 @@ void FUN_008ca330_shell::AITaskThreadManager_WaitForThread(int aiIndex)
     AITaskThread_WaitForCompletion(((void**)this)[aiIndex]);
 }
 
-extern int DAT_0108583c;
+extern int vftable_BSTFreeList_0108583c;
 
 // @fnv 0x008ca3c0
 // src: GUESS 0x008ca3c0 (confidence: low)
 void __fastcall Object_SetVirtualTable_008ca3c0(void* thisPtr)
 {
-    *static_cast<void**>(thisPtr) = &DAT_0108583c;
+    *static_cast<void**>(thisPtr) = &vftable_BSTFreeList_0108583c;
 }
 
 void __cdecl operator delete(void*);
@@ -753,18 +753,18 @@ struct FUN_008ca520_shell
 {
     void __thiscall InitVtbl();
 };
-extern int DAT_01085864;
+extern int vftable_BSTCommonMessageQueue_01085864;
 
 // @fnv 0x008ca500
 // src: GUESS 0x008ca500 (confidence: low)
 void __fastcall Object_UpdateFields_008ca500(void* this_ptr)
 {
-    *(void**)this_ptr = &DAT_01085864;
+    *(void**)this_ptr = &vftable_BSTCommonMessageQueue_01085864;
     ((FUN_008ca520_shell*)this_ptr)->InitVtbl();
 }
 
 namespace fnv_008ca520 {
-extern int DAT_01085884;
+extern int vftable_BSTMessageQueue_01085884;
 struct FUN_008ca520_shell
 {
     int* vtbl;
@@ -773,7 +773,7 @@ struct FUN_008ca520_shell
 // @fnv 0x008ca520
 void FUN_008ca520_shell::InitVtbl()
 {
-    vtbl = &DAT_01085884;
+    vtbl = &vftable_BSTMessageQueue_01085884;
 }
 }  // namespace fnv_008ca520
 

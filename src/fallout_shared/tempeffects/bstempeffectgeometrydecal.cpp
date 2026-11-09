@@ -189,14 +189,14 @@ void __thiscall NiTriShape::NiAVObject_SetWorldRotate(NineDw* apSource)
     *reinterpret_cast<NineDw*>(&m_kWorld) = *apSource;
 }
 
-extern int DAT_01069a84;
+extern int vftable_BSDismemberSkinInstance;
 
 // Calls FUN_006884c0 with a, b, c, then sets the vtable, stores e at +0x34 and d at +0x38, sets the byte at +0x3c to 1, and returns this.
 // @fnv 0x00688470
 void* __thiscall BSDismemberSkinInstance::ConstructShell(int aiArg1, int aiArg2, int aiArg3, int aiValue38, int aiValue34)
 {
     FUN_006884c0(aiArg1, aiArg2, aiArg3);
-    *(int*)this = (int)&DAT_01069a84;
+    *(int*)this = (int)&vftable_BSDismemberSkinInstance;
     unk34 = aiValue34;
     unk38 = (Partition*)aiValue38;
     unk3C = 1;
@@ -207,7 +207,7 @@ void* __thiscall BSDismemberSkinInstance::ConstructShell(int aiArg1, int aiArg2,
 // src: GUESS 0x00688610 (confidence: low)
 void __thiscall BSDismemberSkinInstance::SetVtableAndProcessState_00688610()
 {
-    *reinterpret_cast<int**>(this) = &DAT_01069a84;
+    *reinterpret_cast<int**>(this) = &vftable_BSDismemberSkinInstance;
     if (unk38)
     {
         void* p = unk38;

@@ -195,9 +195,9 @@ struct FUN_00c657e0_class
     void* GetGlobalDataPtr();
 };
 extern "C" void NiFreeAlias(void*);
-extern int DAT_010c377c;
+extern int vftable_NiTArray_010c377c;
 extern "C" void NiFreeAlias(void*);
-extern int DAT_010c3a08;
+extern int vftable_NiTArray_010c3a08;
 struct FUN_00c65680_Class
 {
     void* m_iWordAt00;
@@ -263,7 +263,7 @@ struct FUN_00c64c30_Class
 {
     bool __thiscall BSNodeReferences_IsEqual(int a);
 };
-extern int DAT_010c3384;
+extern int vftable_BSPSysSimpleColorModifier;
 struct FUN_00c60240 : NiPSysPositionModifier
 {
     int m_vt;
@@ -342,7 +342,7 @@ struct NiPoint3_ZERO
 extern NiPoint3_ZERO _NiPoint3_ZERO;
 extern int _DAT_011f4270;
 extern int _DAT_011f4274;
-extern int DAT_010c37fc;
+extern int vftable_BSParentVelocityModifier;
 struct FUN_00c63330 : NiPSysPositionModifier
 {
     FUN_00c63330();
@@ -2479,7 +2479,7 @@ extern unsigned char DAT_012677cc;
 extern float DAT_011afe78, DAT_011afe74, DAT_012677c4;
 extern unsigned long DAT_0126835c;
 extern char str_010c41fc[], str_010c41f8[];
-extern int DAT_010c3bd4, DAT_010c3bb8;
+extern int vftable_hkpWorldRayCaster, vftable_hkpBroadPhaseCastCollector;
 extern "C" __declspec(dllimport) void* __stdcall TlsGetValue(unsigned long);
 extern "C" unsigned __int64 __rdtsc();
 extern "C" void _ReadWriteBarrier();
@@ -2682,7 +2682,7 @@ struct CastCollectorBase
     int* vtable;
     ~CastCollectorBase()
     {
-        vtable = &DAT_010c3bb8;
+        vtable = &vftable_hkpBroadPhaseCastCollector;
     }
 };
 struct __declspec(align(16)) WorldRayCaster : CastCollectorBase
@@ -2697,7 +2697,7 @@ struct __declspec(align(16)) WorldRayCaster : CastCollectorBase
     int field44;
     WorldRayCaster()
     {
-        vtable = &DAT_010c3bd4;
+        vtable = &vftable_hkpWorldRayCaster;
         field40 = 0;
         field44 = 0;
     }
@@ -7003,7 +7003,7 @@ void SupportListener::bhkCharacterListener_AddSupportHeight2(const SupportVector
 }
 
 // Exact matching requires correcting the compiler settings: the original is optimized, while these checks use /Od.
-extern int DAT_01034ec4;
+extern int vftable_hkpClosestRayHitCollector;
 
 struct S00c6e680_C6RayInput
 {
@@ -7062,14 +7062,14 @@ struct S00c6e680_C6Collector
     S00c6e680_C6RayOutputPlain output;
     void* unk60;
 
-    __forceinline S00c6e680_C6Collector() : table(&DAT_01034ec4), unk60(0)
+    __forceinline S00c6e680_C6Collector() : table(&vftable_hkpClosestRayHitCollector), unk60(0)
     {
         output.reset();
         earlyOutHitFraction = 1.0f;
     }
     __forceinline ~S00c6e680_C6Collector()
     {
-        table = &DAT_01034ec4;
+        table = &vftable_hkpClosestRayHitCollector;
     }
 };
 

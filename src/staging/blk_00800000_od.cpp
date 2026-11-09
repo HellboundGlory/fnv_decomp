@@ -55,20 +55,20 @@ void __thiscall FUN_00800a90::SetOcclusionDisabled()
     ((char*)this)[0x118] = 0;
 }
 
-extern int DAT_01079170;
+extern int vftable_NiTMap_01079170;
 struct FUN_00802b20_class
 {
     int* p;
     void __thiscall InitBuffer(int);
     int __thiscall NiTMap_unsigned_int_IDebugTextPage_NiTMap(int a);
 };
-// Calls InitBuffer with a, sets p to point at DAT_01079170, and returns this.
+// Calls InitBuffer with a, sets p to point at vftable_NiTMap_01079170, and returns this.
 // @fnv 0x00802b20
 // src: EXE 0x00802b20
 int __thiscall FUN_00802b20_class::NiTMap_unsigned_int_IDebugTextPage_NiTMap(int a)
 {
     InitBuffer(a);
-    p = &DAT_01079170;
+    p = &vftable_NiTMap_01079170;
     return (int)this;
 }
 
@@ -212,7 +212,7 @@ void FUN_00819a70_class::NiPSysSpawnModifier_SetLifeSpan(float value)
     *(float*)((char*)this + 0x2c) = value;
 }
 
-extern int DAT_01079190;
+extern int vftable_NiTMapBase_01079190;
 extern "C" void* __cdecl NiFreeAlias(void*);
 
 struct FUN_00802c50
@@ -227,7 +227,7 @@ struct FUN_00802c50
 // @fnv 0x00802c50
 void FUN_00802c50::Init()
 {
-    vft = &DAT_01079190;
+    vft = &vftable_NiTMapBase_01079190;
     ((NiTPointerMap<int, int>*)this)->RemoveAll();
     NiFreeAlias((void*)b);
 }
@@ -334,7 +334,7 @@ struct FUN_00802b80_t
 // @fnv 0x00802b80
 void* __thiscall FUN_00802b80_t::InitBuffer(int aiCount)
 {
-    *(int*)this = (int)&DAT_01079190;
+    *(int*)this = (int)&vftable_NiTMapBase_01079190;
     *(int*)((char*)this + 4) = aiCount;
     *(int*)((char*)this + 12) = 0;
     int s = *(int*)((char*)this + 4) * 4;
@@ -773,17 +773,17 @@ struct EffectStorage
 {
     EffectStorage(MagicCaster*, MagicItem*, EffectItem*);
 };
-extern int DAT_01079b3c;
+extern int vftable_CommandHumanoidEffect;
 struct FUN_0080ba90 : EffectStorage
 {
     FUN_0080ba90(MagicCaster* a, MagicItem* b, EffectItem* c);
 };
-// Constructs the EffectStorage base from the caster, item and effect item, then sets the object's vtable pointer to DAT_01079b3c.
+// Constructs the EffectStorage base from the caster, item and effect item, then sets the object's vtable pointer to vftable_CommandHumanoidEffect.
 // @fnv 0x0080ba90
 FUN_0080ba90::FUN_0080ba90(MagicCaster* a, MagicItem* pItem, EffectItem* pEffectItem)
     : EffectStorage(a, pItem, pEffectItem)
 {
-    *(int*)this = (int)&DAT_01079b3c;
+    *(int*)this = (int)&vftable_CommandHumanoidEffect;
 }
 
 struct S_0080bac0_Obj
@@ -2702,7 +2702,7 @@ struct FUN_0080f390_shell : ActiveEffect
 {
     FUN_0080f390_shell(MagicCaster* a, MagicItem* b, EffectItem* c);
 };
-// Constructs a FUN_0080f390_shell ActiveEffect, passing a, b, c to the base and setting the vtable to DAT_0107a4ac.
+// Constructs a FUN_0080f390_shell ActiveEffect, passing a, b, c to the base and setting the vtable to vftable_LockEffect.
 // @fnv 0x0080f390
 FUN_0080f390_shell::FUN_0080f390_shell(MagicCaster* apCaster, MagicItem* apItem, EffectItem* apEffect)
     : ActiveEffect(apCaster, apItem, apEffect)

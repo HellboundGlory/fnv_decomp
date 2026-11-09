@@ -211,7 +211,7 @@ void SaveLoadList::LoadSaveFiles()
     }
 }
 
-extern "C" char DAT_01081a5c;
+extern "C" char vftable_SaveGameFile;
 
 struct SpawnedObject
 {
@@ -311,7 +311,7 @@ struct SpawnedObject
 SpawnedObject* SpawnedObject::InitializeFields_0085fb40(int a1, int a2, int a3)
 {
     this->Init(a1, a2, a3, 0);
-    *(void* volatile*)this = &DAT_01081a5c;
+    *(void* volatile*)this = &vftable_SaveGameFile;
     this->m_158 = 0;
     return this;
 }

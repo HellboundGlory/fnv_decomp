@@ -247,7 +247,7 @@ void IntSeenData::SaveToBuffer(BGSSaveFormBuffer* buffer)
 // @fnv 0x008799a0
 void SeenData::SetVtable()
 {
-    *(void**)this = &DAT_01083fc4;
+    *(void**)this = &vftable_SeenData;
 }
 
 namespace fnv_0087a3e0 {

@@ -423,7 +423,7 @@ const void* const* __thiscall FUN_00458f20_shell::BSTempNode_GetRTTI() const
 }
 
 extern "C" void __fastcall UpdateFields_00c5faa0(void*);
-extern int DAT_01017d24;
+extern int vftable_BSTempNode;
 
 struct FUN_00458f70_shell
 {
@@ -434,7 +434,7 @@ struct FUN_00458f70_shell
 // src: GUESS 0x00458f70 (confidence: low)
 void __thiscall FUN_00458f70_shell::SetVtableAndProcessState_00458f70()
 {
-    *(int*)this = (int)&DAT_01017d24;
+    *(int*)this = (int)&vftable_BSTempNode;
     UpdateFields_00c5faa0(this);
 }
 

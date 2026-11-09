@@ -453,7 +453,7 @@ void __cdecl MapMenu_SetWorldMapMagnification(float afMagnification)
     }
 }
 
-extern int DAT_01075530;
+extern int vftable_BSSimpleArray_01075530;
 
 struct Dummy_007a1a70
 {
@@ -461,12 +461,12 @@ struct Dummy_007a1a70
     void UpdateState_007a63f0(int, int);
 };
 
-// Sets the object's vtable to DAT_01075530 and calls FUN_007a63f0 with 0, 0, returning the object.
+// Sets the object's vtable to vftable_BSSimpleArray_01075530 and calls FUN_007a63f0 with 0, 0, returning the object.
 // @fnv 0x007a1a70
 // src: EXE 0x007a1a70
 Dummy_007a1a70* __fastcall BSSimpleArray_BSStringT_char_1024_BSSimpleArray(Dummy_007a1a70* pThis)
 {
-    pThis->vtable = &DAT_01075530;
+    pThis->vtable = &vftable_BSSimpleArray_01075530;
     pThis->UpdateState_007a63f0(0, 0);
     return pThis;
 }
@@ -1201,7 +1201,7 @@ bool __fastcall HasChallengeDisplayFlag(const TESChallenge* challenge)
     return *(const unsigned short*)((const char*)challenge + 0x5c) & 4;
 }
 
-extern int DAT_01075530;
+extern int vftable_BSSimpleArray_01075530;
 
 struct FUN_007a1aa0_shell : public MapArray<BSStringT<char>, 1024>
 {
@@ -1212,7 +1212,7 @@ struct FUN_007a1aa0_shell : public MapArray<BSStringT<char>, 1024>
 // src: GUESS 0x007a1aa0 (confidence: medium)
 void FUN_007a1aa0_shell::ResetVirtualTableAndClear_007a1aa0()
 {
-    *reinterpret_cast<int**>(this) = &DAT_01075530;
+    *reinterpret_cast<int**>(this) = &vftable_BSSimpleArray_01075530;
     Clear(true);
 }
 

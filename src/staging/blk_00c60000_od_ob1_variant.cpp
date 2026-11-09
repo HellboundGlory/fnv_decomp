@@ -345,9 +345,9 @@ struct FUN_00c657e0_class
     void* GetGlobalDataPtr();
 };
 extern "C" void NiFreeAlias(void*);
-extern int DAT_010c377c;
+extern int vftable_NiTArray_010c377c;
 extern "C" void NiFreeAlias(void*);
-extern int DAT_010c3a08;
+extern int vftable_NiTArray_010c3a08;
 struct FUN_00c65680_Class
 {
     void* m_iWordAt00;
@@ -405,7 +405,7 @@ struct FUN_00c64c30_Class
 {
     bool __thiscall BSNodeReferences_IsEqual(int a);
 };
-extern int DAT_010c3384;
+extern int vftable_BSPSysSimpleColorModifier;
 struct FUN_00c60240 : NiPSysPositionModifier
 {
     int m_vt;
@@ -469,7 +469,7 @@ struct FUN_00c63260_class
 };
 extern int _DAT_011f4270;
 extern int _DAT_011f4274;
-extern int DAT_010c37fc;
+extern int vftable_BSParentVelocityModifier;
 struct FUN_00c63330 : NiPSysPositionModifier
 {
     FUN_00c63330();
@@ -975,7 +975,7 @@ struct FUN_00c65180_Class
 };
 
 extern char* DAT_0109b220;
-extern int DAT_010c3384;
+extern int vftable_BSPSysSimpleColorModifier;
 // These inline bodies belong to this unit's original /Ob1 implementation.
 inline NiFixedString::operator const char*() const
 {
@@ -2426,7 +2426,7 @@ struct S00c62800_Arr
 
 __forceinline S00c62800_Arr::~S00c62800_Arr()
 {
-    *(int*)this = (int)&DAT_010c377c;
+    *(int*)this = (int)&vftable_NiTArray_010c377c;
     void* data = m_data;
     _NiFree_00aa10f0(data);
 }
@@ -2901,7 +2901,7 @@ bool __cdecl NiFixedString_CopyMemory_00c63c30(ObjC63* obj, ObjC63* root)
 }
 }  // namespace fnv_00c63c30
 
-extern int DAT_010c1364;
+extern int vftable_BSReference;
 class FactoryObject : public NiObject
 {
   public:
@@ -2924,8 +2924,8 @@ FactoryObject* __cdecl BSReference_CreateObject()
 }
 
 namespace fnv_00c649f0 {
-extern int DAT_010c13f4;
-extern int DAT_01069d84;
+extern int vftable_BSNodeReferences;
+extern int vftable_NiTPrimitiveArray_01069d84;
 class C649F0_SubBase
 {
   public:
@@ -2943,7 +2943,7 @@ class C649F0_Sub : public C649F0_SubBase
         int unused;
         (void)unused;
         NiTArray_NiAVObject_NiTMallocInterface_NiAVObject_NiTArray_NiAVObject_NiTMallocInterface_NiAVObject(0, 1);
-        m_00 = &DAT_01069d84;
+        m_00 = &vftable_NiTPrimitiveArray_01069d84;
     }
 };
 class C649F0_Object : public NiObject

@@ -736,7 +736,7 @@ void __cdecl RecipeMenu_Close()
     }
 }
 
-extern char DAT_010705d4;
+extern char vftable_ListBox_010705d4;
 
 struct FUN_007299a0 : FUN_007240c0, SL
 {
@@ -758,7 +758,7 @@ struct FUN_007299a0 : FUN_007240c0, SL
 // @fnv 0x007299a0
 FUN_007299a0::FUN_007299a0()
 {
-    *(void**)this = &DAT_010705d4;
+    *(void**)this = &vftable_ListBox_010705d4;
     this->m_14 = 0;
     this->m_10 = 0;
     this->m_0c = 0;
@@ -918,7 +918,7 @@ bool __thiscall Object::SetCurrentItem(Item* pItem)
     }
 }
 
-extern void* DAT_01070610[];
+extern void* vftable_ListBox_01070610[];
 void __cdecl AddToHeadList(void*);
 
 struct FUN_0072a7c0 : FUN_007240c0, SL
@@ -940,7 +940,7 @@ struct FUN_0072a7c0 : FUN_007240c0, SL
 // @fnv 0x0072a7c0
 FUN_0072a7c0::FUN_0072a7c0() : FUN_007240c0(), SL()
 {
-    m_auiShapeKeys = reinterpret_cast<int>(DAT_01070610);
+    m_auiShapeKeys = reinterpret_cast<int>(vftable_ListBox_01070610);
     m_14 = 0;
     m_10 = 0;
     m_0c = 0;
@@ -1370,7 +1370,7 @@ void CMMenu::PopulateChallengeList(int aiUnused, int aiType)
     g_kCMSorter.Sort(CMCompareEntries);
 }
 
-extern char DAT_010705d4;
+extern char vftable_ListBox_010705d4;
 
 struct FUN_00729d80_shell
 {

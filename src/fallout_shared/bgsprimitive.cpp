@@ -714,7 +714,7 @@ bool BGSPrimitiveSphere::IsInside(TESCombatStyle& aPoint)
     return (double)*(float*)((char*)this + 0x18) * *(float*)((char*)this + 0x18) > aPoint.UpdateCombatStyle();
 }
 
-extern int DAT_0101ea8c;
+extern int vftable_BSMultiBoundSphere;
 // Keep the original constructor entry's explicit base initialization: expressing
 // this as a C++ constructor adds exception unwinding absent from this entry.
 struct MultiBoundSphereInitialization : public BSMultiBoundSphere
@@ -727,7 +727,7 @@ struct MultiBoundSphereInitialization : public BSMultiBoundSphere
 BSMultiBoundSphere* MultiBoundSphereInitialization::Initialize(const NiPoint3& aPt, float aRadius)
 {
     this->BSMultiBoundShape::BSMultiBoundShape();
-    *(void**)this = (void*)&DAT_0101ea8c;
+    *(void**)this = (void*)&vftable_BSMultiBoundSphere;
     center = aPt;
     radius = aRadius;
     return this;
@@ -1155,7 +1155,7 @@ PrimitiveAABB* PrimitiveAABB::Initialize(const NiPoint3& aPoint1, const NiPoint3
     return this;
 }
 
-extern int DAT_0101e9a4;
+extern int vftable_BSMultiBoundOBB;
 struct Data9
 {
     int v[9];
@@ -1165,12 +1165,12 @@ struct MultiBoundOBBInitialization : public BSMultiBoundOBB
     void InitializeBase(int a, int b);
     MultiBoundOBBInitialization* Initialize(int a, int b, const Data9& c);
 };
-// Calls FUN_004a6fc0 with a and b, sets the vtable pointer to DAT_0101e9a4, copies c into d, and returns this.
+// Calls FUN_004a6fc0 with a and b, sets the vtable pointer to vftable_BSMultiBoundOBB, copies c into d, and returns this.
 // @fnv 0x004a70b0
 MultiBoundOBBInitialization* MultiBoundOBBInitialization::Initialize(int aiArg1, int aiArg2, const Data9& arData)
 {
     InitializeBase(aiArg1, aiArg2);
-    *(int*)this = (int)&DAT_0101e9a4;
+    *(int*)this = (int)&vftable_BSMultiBoundOBB;
     reinterpret_cast<Data9&>(unk24) = arData;
     return this;
 }
@@ -2494,7 +2494,7 @@ BGSPrimitiveSphere::BGSPrimitiveSphere()
 }
 
 void* __fastcall Object_ProcessAndReturnValue_00c37ec0(void*);
-extern int DAT_0101e9a4;
+extern int vftable_BSMultiBoundOBB;
 struct MultiBoundOBBConstructor
 {
     int __thiscall SetVtableAndProcessState_00c36310();
@@ -2504,16 +2504,16 @@ struct MultiBoundOBBConstructor
 int __thiscall MultiBoundOBBConstructor::SetVtableAndProcessState_00c36310()
 {
     Object_ProcessAndReturnValue_00c37ec0(this);
-    *(int**)this = &DAT_0101e9a4;
+    *(int**)this = &vftable_BSMultiBoundOBB;
     return (int)this;
 }
 
-extern int DAT_0101ea8c;
+extern int vftable_BSMultiBoundSphere;
 // @fnv 0x00c4fb10
 // src: EXE 0x00c4fb10
 void* __fastcall BSMultiBoundSphere_BSMultiBoundSphere(void* apObj)
 {
     static_cast<BSMultiBoundShape*>(apObj)->BSMultiBoundShape::BSMultiBoundShape();
-    *(int*)apObj = (int)&DAT_0101ea8c;
+    *(int*)apObj = (int)&vftable_BSMultiBoundSphere;
     return apObj;
 }

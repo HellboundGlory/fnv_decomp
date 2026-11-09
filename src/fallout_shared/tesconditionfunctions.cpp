@@ -909,14 +909,14 @@ void __fastcall Object_ForwardCall_0059cee0(void* this_ptr)
     Object_UpdateFields_0059cf00(this_ptr);
 }
 
-extern int DAT_01034ec4;
+extern int vftable_hkpClosestRayHitCollector;
 void __fastcall SetVirtualTable_004a3ae0(void*);
 
 // @fnv 0x0059cf00
 // src: GUESS 0x0059cf00 (confidence: low)
 void __fastcall Object_UpdateFields_0059cf00(void** pThis)
 {
-    *pThis = &DAT_01034ec4;
+    *pThis = &vftable_hkpClosestRayHitCollector;
     SetVirtualTable_004a3ae0(pThis);
 }
 

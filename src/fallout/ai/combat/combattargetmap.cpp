@@ -152,7 +152,7 @@ void FUN_009a3fe0_struct::AddAttackerToTarget(void* apTarget, void* apAttacker)
 }
 }  // namespace fnv_009a3fe0
 
-extern void* DAT_0108e1e8;
+extern void* vftable_CombatTargetMap;
 
 struct ActorCombatTargetData;
 

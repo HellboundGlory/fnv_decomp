@@ -4287,12 +4287,12 @@ FUN_0087d4a0::FUN_0087d4a0(bool)
 FUN_0087d4a0::~FUN_0087d4a0()
 {}
 
-extern int DAT_01086f9c;
-extern int DAT_01086fe4;
-extern int DAT_01087014;
-extern int DAT_0108704c;
-extern int DAT_010870a0;
-extern int vftable_FUN_008d4500;
+extern int vftable_Creature_for_CachedValuesOwner;
+extern int vftable_Creature_for_ActorValueOwner;
+extern int vftable_Creature_for_MagicTarget;
+extern int vftable_Creature_for_MagicCaster;
+extern int vftable_Creature_for_TESChildCell;
+extern int vftable_Creature;
 
 struct FUN_008d43a0 : public FUN_0087d4a0
 {
@@ -4302,12 +4302,12 @@ struct FUN_008d43a0 : public FUN_0087d4a0
 // @fnv 0x008d43a0
 FUN_008d43a0::FUN_008d43a0() : FUN_0087d4a0(true)
 {
-    *reinterpret_cast<int*>(this) = reinterpret_cast<int>(&vftable_FUN_008d4500);
-    *reinterpret_cast<int*>(reinterpret_cast<char*>(this) + 0x18) = reinterpret_cast<int>(&DAT_010870a0);
-    *reinterpret_cast<int*>(reinterpret_cast<char*>(this) + 0x88) = reinterpret_cast<int>(&DAT_0108704c);
-    *reinterpret_cast<int*>(reinterpret_cast<char*>(this) + 0x94) = reinterpret_cast<int>(&DAT_01087014);
-    *reinterpret_cast<int*>(reinterpret_cast<char*>(this) + 0xa4) = reinterpret_cast<int>(&DAT_01086fe4);
-    *reinterpret_cast<int*>(reinterpret_cast<char*>(this) + 0xa8) = reinterpret_cast<int>(&DAT_01086f9c);
+    *reinterpret_cast<int*>(this) = reinterpret_cast<int>(&vftable_Creature);
+    *reinterpret_cast<int*>(reinterpret_cast<char*>(this) + 0x18) = reinterpret_cast<int>(&vftable_Creature_for_TESChildCell);
+    *reinterpret_cast<int*>(reinterpret_cast<char*>(this) + 0x88) = reinterpret_cast<int>(&vftable_Creature_for_MagicCaster);
+    *reinterpret_cast<int*>(reinterpret_cast<char*>(this) + 0x94) = reinterpret_cast<int>(&vftable_Creature_for_MagicTarget);
+    *reinterpret_cast<int*>(reinterpret_cast<char*>(this) + 0xa4) = reinterpret_cast<int>(&vftable_Creature_for_ActorValueOwner);
+    *reinterpret_cast<int*>(reinterpret_cast<char*>(this) + 0xa8) = reinterpret_cast<int>(&vftable_Creature_for_CachedValuesOwner);
 
     reinterpret_cast<TESForm*>(this)->SetFormType(static_cast<ENUM_FORM_ID>(0x3c));
 

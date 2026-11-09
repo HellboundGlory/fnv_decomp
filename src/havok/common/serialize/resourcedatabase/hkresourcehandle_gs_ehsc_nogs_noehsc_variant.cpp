@@ -18,7 +18,7 @@ struct FUN_00e2df60_class
 {
     int __thiscall hkMemoryResourceContainer_getName(int);
 };
-extern int DAT_010eb19c;
+extern int vftable_hkResourceMap;
 void __cdecl Deallocate(void*);
 struct FUN_00e2def0_class
 {
@@ -53,7 +53,7 @@ struct FUN_00e2df80_class
 {
     int __thiscall hkContainerResourceMap_findObjectByName(void* a, int* out);
 };
-extern int DAT_010eb288;
+extern int vftable_hkMemoryResourceHandle;
 struct FUN_00cb0a70
 {
     void m(int);
@@ -341,7 +341,7 @@ struct FUN_00e2e9e0_class
 
     void* __thiscall Ctor();
 };
-extern int DAT_010eb288;
+extern int vftable_hkMemoryResourceHandle;
 struct ReferencedE2EB70
 {
     ReferencedE2EB70() throw()
@@ -374,7 +374,7 @@ struct FUN_00e2eb70 : public ReferencedE2EB70
     ArrayE2EB70<int> m_kFirst;
     ArrayE2EB70<int> m_kSecond;
 };
-extern int DAT_010eb2c4;
+extern int vftable_hkMemoryResourceContainer;
 struct Item_e2ebc0
 {
     int unk00;

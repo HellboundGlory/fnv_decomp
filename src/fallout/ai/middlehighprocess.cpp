@@ -14344,7 +14344,7 @@ struct Base96
     int unk0c4;
     virtual ~Base96();
 };
-extern void* DAT_0108904c[];
+extern void* vftable_MiddleHighProcess[];
 struct Global96
 {
     bool FUN_0047c850();

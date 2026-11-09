@@ -120,7 +120,7 @@ struct FUN_0066d3d0_shell
 {
     void __thiscall bhkPCollisionObject_bhkPCollisionObject(void*);
 };
-extern int DAT_01066acc;
+extern int vftable_bhkSPCollisionObject;
 struct FUN_0066d3a0_shell
 {
     void* __thiscall bhkSPCollisionObject_bhkSPCollisionObject(void*);
@@ -279,7 +279,7 @@ struct VisNodeAlpha70
 {
     void Method0094db80(unsigned char aAlpha);
 };
-extern char DAT_01066c5c;
+extern char vftable_bhkMultiSphereShape;
 extern unsigned int DAT_012683dc;
 struct FUN_0066d490_base
 {
@@ -292,7 +292,7 @@ struct FUN_0066d490_cls : FUN_0066d490_base
     void bhkMultiSphereShape_Init(unsigned int a1);
     FUN_0066d490_cls(unsigned int a1);
 };
-extern char DAT_01066d44;
+extern char vftable_bhkTransformShape;
 extern unsigned int DAT_012681b0;
 struct FUN_0066d590_base
 {

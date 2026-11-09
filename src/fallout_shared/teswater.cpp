@@ -3251,7 +3251,7 @@ FUN_004e8e40_owner* FUN_004e8e40_owner::WadingWaterData_WadingWaterData()
     return this;
 }
 
-extern void* DAT_010231cc;
+extern void* vftable_ImageSpaceEffectParam;
 
 struct FUN_004eba20_Sub
 {
@@ -3278,11 +3278,11 @@ struct FUN_004eba20_Base
 {
     void* m_vptr;
 
-    // Sets the object's vtable pointer to DAT_010231cc.
+    // Sets the object's vtable pointer to vftable_ImageSpaceEffectParam.
 // @fnv 0x004eba20
     FUN_004eba20_Base()
     {
-        m_vptr = &DAT_010231cc;
+        m_vptr = &vftable_ImageSpaceEffectParam;
     }
 };
 

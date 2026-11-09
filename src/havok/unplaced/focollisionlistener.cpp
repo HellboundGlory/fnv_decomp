@@ -5,7 +5,7 @@
 #include "../../../include/GO.h"
 #include "../../../include/Actor.h"
 
-extern int DAT_0104dd5c;
+extern int vftable_bhkContactListener;
 struct FUN_006234d0
 {
     void __thiscall SetVtableAndProcessState_006234f0();
@@ -14,11 +14,11 @@ struct FUN_006234d0
 // @fnv 0x006234d0
 FUN_006234d0::~FUN_006234d0()
 {
-    *(int*)this = (int)&DAT_0104dd5c;
+    *(int*)this = (int)&vftable_bhkContactListener;
     SetVtableAndProcessState_006234f0();
 }
 
-extern int DAT_0104dd7c;
+extern int vftable_hkpContactListener;
 
 struct FUN_006234f0_class
 {
@@ -29,10 +29,10 @@ struct FUN_006234f0_class
 // src: GUESS 0x006234f0 (confidence: low)
 void FUN_006234f0_class::SetVtableAndProcessState_006234f0()
 {
-    *reinterpret_cast<int**>(this) = &DAT_0104dd7c;
+    *reinterpret_cast<int**>(this) = &vftable_hkpContactListener;
 }
 
-extern int DAT_0104dd7c;
+extern int vftable_hkpContactListener;
 
 struct FUN_00623570_class
 {
@@ -43,7 +43,7 @@ struct FUN_00623570_class
 // src: EXE 0x00623570
 int __fastcall FUN_00623570_class::hkpContactListener_hkpContactListener()
 {
-    *reinterpret_cast<int**>(this) = &DAT_0104dd7c;
+    *reinterpret_cast<int**>(this) = &vftable_hkpContactListener;
     return reinterpret_cast<int>(this);
 }
 

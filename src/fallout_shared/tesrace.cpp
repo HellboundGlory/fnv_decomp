@@ -222,13 +222,13 @@ void TESRace::ClearFaceGenUndo()
     }
 }
 
-extern int DAT_0104b5f8;
+extern int vftable_BGSTextureModel;
 
 // @fnv 0x006104a0
 TESModel* __fastcall ConstructTESModel(TESModel* pThis)
 {
     pThis->TESModel::TESModel();
-    *(int**)pThis = &DAT_0104b5f8;
+    *(int**)pThis = &vftable_BGSTextureModel;
     return pThis;
 }
 

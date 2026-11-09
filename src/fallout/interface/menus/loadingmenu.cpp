@@ -825,19 +825,19 @@ void LoadingMenu_FillDisplayData()
 
 class NavMeshInfo;
 namespace fnv_0078d880 {
-extern int DAT_0107410c;
+extern int vftable_BSSimpleArray_0107410c;
 
 // @fnv 0x0078d880
 // src: COMMUNITY 0x0078d880
 void* __fastcall BSSimpleArray_TESLoadScreen_1024_BSSimpleArray_TESLoadScreen_1024(void* pThis)
 {
-    *reinterpret_cast<int**>(pThis) = &DAT_0107410c;
+    *reinterpret_cast<int**>(pThis) = &vftable_BSSimpleArray_0107410c;
     reinterpret_cast<BSSimpleArray<NavMeshInfo*, 1024>*>(pThis)->BSSimpleArray_float_1024_InitialSetup(0, false);
     return pThis;
 }
 }  // namespace fnv_0078d880
 
-extern int DAT_0107410c;
+extern int vftable_BSSimpleArray_0107410c;
 
 class GlobalObject_00869f00
 {
@@ -849,7 +849,7 @@ class GlobalObject_00869f00
 // src: GUESS 0x0078d8b0 (confidence: low)
 void __fastcall LoadingMenu_UpdateState_0078d8b0(GlobalObject_00869f00* pThis)
 {
-    *(int**)pThis = &DAT_0107410c;
+    *(int**)pThis = &vftable_BSSimpleArray_0107410c;
     pThis->Clear(true);
 }
 

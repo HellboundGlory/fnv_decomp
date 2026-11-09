@@ -97,7 +97,7 @@ struct FUN_004d8a20_Class
     int* m_p38;
     int GetEntry(unsigned short index);
 };
-extern int DAT_01020fe4;
+extern int vftable_NiTMap_01020fe4;
 struct FUN_004d8fa0_StandIn
 {
     int m_p;
@@ -183,7 +183,7 @@ struct FUN_004d4f10_StandIn : public NiTPointerMap<int, int>
     void ReleaseStorage_004d4f10();
 };
 extern "C" void NiFreeAlias(void*);
-extern int DAT_01021004;
+extern int vftable_NiTMapBase_01021004;
 struct FUN_004d90d0_Class
 {
     void* m_p0;
@@ -202,7 +202,7 @@ struct FUN_004d9160_Class : public FUN_004d9190_Class
 {
     void* FUN_004d9160(unsigned int flags);
 };
-extern int DAT_01020924;
+extern int vftable_NiTMap_01020924;
 struct FUN_004d4e40_Holder
 {
     void __thiscall FUN_004d4e40(unsigned int);
@@ -213,7 +213,7 @@ struct FUN_004d4de0_Class
 };
 extern "C" void* __cdecl NiMalloc(unsigned int size);
 extern "C" void* __cdecl memset(void* dest, int value, unsigned int count);
-extern int DAT_01020944;
+extern int vftable_NiTMapBase_01020944;
 struct FUN_004d4e40_Class
 {
     void* m_pVT;

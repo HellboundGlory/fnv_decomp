@@ -72,7 +72,7 @@ void* DA0890Object::GetUntaggedPointer() const
     return (void*)(m_taggedPointer & ~1u);
 }
 
-extern int DAT_0102e388;
+extern int vftable_hkBaseObject;
 
 struct FUN_00cb0c00_class
 {
@@ -93,7 +93,7 @@ struct SomeClass
 void* SomeClass::hkLocalFrameGroup_ScalarDeletingDestructor(unsigned int flags)
 {
     ((FUN_00cb0c00_class*)((char*)this + 8))->Object_UpdateFields_00cb0c00();
-    this->vptr = (void*)&DAT_0102e388;
+    this->vptr = (void*)&vftable_hkBaseObject;
     if (flags & 1)
     {
         BSAudio* a = hkMemoryRouter_getInstance();
