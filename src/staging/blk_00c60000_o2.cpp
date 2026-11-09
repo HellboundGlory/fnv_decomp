@@ -387,12 +387,12 @@ FUN_00c664e0::FUN_00c664e0(int aiFlags)
 
 extern int vftable_bhkMemoryAllocator;
 void __stdcall UpdateFields_00cbf1a0();
-struct FUN_00c66540_class
+struct bhkMemoryAllocator
 {
     int __thiscall InitVtableAndCall(int);
 };
 // @fnv 0x00c66540
-int __thiscall FUN_00c66540_class::InitVtableAndCall(int aiUnused)
+int __thiscall bhkMemoryAllocator::InitVtableAndCall(int aiUnused)
 {
     *(int*)this = (int)&vftable_bhkMemoryAllocator;
     UpdateFields_00cbf1a0();
@@ -1652,18 +1652,18 @@ char* FUN_00c70c60_Class::FUN_00c70c60(unsigned char abFree)
 }
 
 extern int vftable_bhkWindListener;
-struct FUN_00c74760
+struct bhkWindListener
 {
     int* vtbl;
     int m_uiRefCount;
     unsigned char m_bFlag;
     int m_iFadeIndex;
     int m_iState2;
-    FUN_00c74760();
+    bhkWindListener();
 };
 
 // @fnv 0x00c74760
-FUN_00c74760::FUN_00c74760()
+bhkWindListener::bhkWindListener()
 {
     m_iFadeIndex = 0;
     m_iState2 = 0;
@@ -1927,19 +1927,19 @@ extern int vftable_ahkpWorld;
 
 hkMemoryRouter* __cdecl hkMemoryRouter_getInstance() throw();
 
-struct FUN_00c66510_cls
+struct ahkpWorld
 {
     int m_vptr;
     unsigned short m_uSize;
     unsigned short m_u06;
 
     void BaseRelease();
-    FUN_00c66510_cls* FUN_00c66510(unsigned char acFlags);
+    ahkpWorld* FUN_00c66510(unsigned char acFlags);
 };
 
 // Sets the vtable pointer, calls BaseRelease, and if bit 0 of acFlags is set frees this through the allocator from FUN_00c85750 using m_uSize.
 // @fnv 0x00c66510
-FUN_00c66510_cls* FUN_00c66510_cls::FUN_00c66510(unsigned char acFlags)
+ahkpWorld* ahkpWorld::FUN_00c66510(unsigned char acFlags)
 {
     m_vptr = (int)&vftable_ahkpWorld;
     BaseRelease();
@@ -20994,37 +20994,37 @@ struct EntryBase
     }
     static void operator delete(void* p, unsigned int n);
 };
-struct FUN_00cbc460 : EntryBase
+struct hkpCharacterStateManager : EntryBase
 {
     int unk00, unk04, unk08, unk0c, unk10, unk14, unk18, unk1c;
     int unk20, unk24, unk28, unk2c, unk30;
-    FUN_00cbc460();
+    hkpCharacterStateManager();
     void registerState(hkReferencedObject* obj, int id);
 };
-struct FUN_00cd47e0 : EntryBase
+struct bhkCharacterStateOnGround : EntryBase
 {
     int unk00, unk04, unk08;
-    FUN_00cd47e0();
+    bhkCharacterStateOnGround();
 };
-struct FUN_00cd44c0 : EntryBase
+struct bhkCharacterStateSwimming : EntryBase
 {
     int unk00, unk04;
-    FUN_00cd44c0();
+    bhkCharacterStateSwimming();
 };
-struct FUN_00cd4260 : EntryBase
+struct bhkCharacterStateJumping : EntryBase
 {
     int unk00, unk04;
-    FUN_00cd4260();
+    bhkCharacterStateJumping();
 };
 struct FUN_00cd3f90 : EntryBase
 {
     int unk00, unk04, unk08;
     FUN_00cd3f90();
 };
-struct FUN_00cd3c90 : EntryBase
+struct bhkCharacterStateProjectile : EntryBase
 {
     int unk00, unk04;
-    FUN_00cd3c90();
+    bhkCharacterStateProjectile();
 };
 static void* AllocEntry(unsigned int size)
 {
@@ -21157,32 +21157,32 @@ FUN_00c6da50::FUN_00c6da50(bool a1)
     {
         if (DAT_01267bb8 == 0)
         {
-            FUN_00cbc460* sm = new FUN_00cbc460();
+            hkpCharacterStateManager* sm = new hkpCharacterStateManager();
             DAT_01267bb8 = (CallbackTarget*)sm;
-            FUN_00cd47e0* pEntry0 = new FUN_00cd47e0();
-            ((FUN_00cbc460*)DAT_01267bb8)->registerState((hkReferencedObject*)pEntry0, 0);
+            bhkCharacterStateOnGround* pEntry0 = new bhkCharacterStateOnGround();
+            ((hkpCharacterStateManager*)DAT_01267bb8)->registerState((hkReferencedObject*)pEntry0, 0);
             ((CallbackTarget*)pEntry0)->FUN_00c905b0();
-            FUN_00cd44c0* pEntry5 = new FUN_00cd44c0();
-            ((FUN_00cbc460*)DAT_01267bb8)->registerState((hkReferencedObject*)pEntry5, 5);
+            bhkCharacterStateSwimming* pEntry5 = new bhkCharacterStateSwimming();
+            ((hkpCharacterStateManager*)DAT_01267bb8)->registerState((hkReferencedObject*)pEntry5, 5);
             ((CallbackTarget*)pEntry5)->FUN_00c905b0();
-            FUN_00cd4260* pEntry1 = new FUN_00cd4260();
-            ((FUN_00cbc460*)DAT_01267bb8)->registerState((hkReferencedObject*)pEntry1, 1);
+            bhkCharacterStateJumping* pEntry1 = new bhkCharacterStateJumping();
+            ((hkpCharacterStateManager*)DAT_01267bb8)->registerState((hkReferencedObject*)pEntry1, 1);
             ((CallbackTarget*)pEntry1)->FUN_00c905b0();
             FUN_00cd3f90* pEntry2 = new FUN_00cd3f90();
-            ((FUN_00cbc460*)DAT_01267bb8)->registerState((hkReferencedObject*)pEntry2, 2);
+            ((hkpCharacterStateManager*)DAT_01267bb8)->registerState((hkReferencedObject*)pEntry2, 2);
             ((CallbackTarget*)pEntry2)->FUN_00c905b0();
             char* pEntry3 = (char*)AllocEntry(8);
             ((AllocHeader*)pEntry3)->m_refs = 1;
             ((AllocHeader*)pEntry3)->m_ppVirtualMethodTable = &vftable_bhkCharacterStateClimbing;
-            ((FUN_00cbc460*)DAT_01267bb8)->registerState((hkReferencedObject*)pEntry3, 3);
+            ((hkpCharacterStateManager*)DAT_01267bb8)->registerState((hkReferencedObject*)pEntry3, 3);
             ((CallbackTarget*)pEntry3)->FUN_00c905b0();
             char* pEntry4 = (char*)AllocEntry(8);
             ((AllocHeader*)pEntry4)->m_refs = 1;
             ((AllocHeader*)pEntry4)->m_ppVirtualMethodTable = &vftable_bhkCharacterStateFlying;
-            ((FUN_00cbc460*)DAT_01267bb8)->registerState((hkReferencedObject*)pEntry4, 4);
+            ((hkpCharacterStateManager*)DAT_01267bb8)->registerState((hkReferencedObject*)pEntry4, 4);
             ((CallbackTarget*)pEntry4)->FUN_00c905b0();
-            FUN_00cd3c90* pEntry6 = new FUN_00cd3c90();
-            ((FUN_00cbc460*)DAT_01267bb8)->registerState((hkReferencedObject*)pEntry6, 6);
+            bhkCharacterStateProjectile* pEntry6 = new bhkCharacterStateProjectile();
+            ((hkpCharacterStateManager*)DAT_01267bb8)->registerState((hkReferencedObject*)pEntry6, 6);
             ((CallbackTarget*)pEntry6)->FUN_00c905b0();
         }
         m_a4 = DAT_01267bb8;

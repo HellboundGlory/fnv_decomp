@@ -46,16 +46,16 @@ ExtraCellAcousticSpace::ExtraCellAcousticSpace(BGSAcousticSpace* aField) : BSExt
 
 extern void* vftable_ExtraCellClimate;
 
-struct FUN_0040f070_shell : BE
+struct ExtraCellClimate : BE
 {
     void* pad1;
     void* pad2;
     void* pField;
-    FUN_0040f070_shell(void* aField);
+    ExtraCellClimate(void* aField);
 };
 
 // @fnv 0x0040f070
-FUN_0040f070_shell::FUN_0040f070_shell(void* aField) : BE(8)
+ExtraCellClimate::ExtraCellClimate(void* aField) : BE(8)
 {
     pVftable = &vftable_ExtraCellClimate;
     pField = aField;
@@ -86,17 +86,17 @@ void* FUN_0040f4d0_shell::ExtraCellCanopyShadowMask_ScalarDeletingDestructor(uns
 
 extern void* vftable_ExtraSeenData;
 
-struct FUN_0040f590_shell : BE
+struct ExtraSeenData : BE
 {
     void* pad1;
     void* pad2;
     void* pField;
-    FUN_0040f590_shell();
+    ExtraSeenData();
 };
 
 // Initialises the object with base value 5, sets its vftable pointer to vftable_ExtraSeenData and clears pField.
 // @fnv 0x0040f590
-FUN_0040f590_shell::FUN_0040f590_shell() : BE(5)
+ExtraSeenData::ExtraSeenData() : BE(5)
 {
     pVftable = &vftable_ExtraSeenData;
     pField = 0;
@@ -116,15 +116,15 @@ void* ExtraHavok::ScalarDeletingDestructor(unsigned int flags)
 struct BGSMusicType;
 
 extern int vftable_ExtraCellMusicType;
-struct FUN_0040ef30 : BE
+struct ExtraCellMusicType : BE
 {
     void* pad1;
     void* pad2;
     void* pField;
-    FUN_0040ef30(BGSMusicType* aMusic);
+    ExtraCellMusicType(BGSMusicType* aMusic);
 };
 // @fnv 0x0040ef30
-FUN_0040ef30::FUN_0040ef30(BGSMusicType* aMusic) : BE(7)
+ExtraCellMusicType::ExtraCellMusicType(BGSMusicType* aMusic) : BE(7)
 {
     pVftable = &vftable_ExtraCellMusicType;
     pField = aMusic;

@@ -7115,7 +7115,7 @@ FUN_00cbe820_cls* FUN_00cbe820_cls::hkpHingeConstraintData_Atoms_Atoms()
     return this;
 }
 
-struct FUN_00cbe880_Class
+struct bhkCollisionBox
 {
     int m_iWordAt00;
     void __thiscall UpdateFields_00cbe880();
@@ -7125,7 +7125,7 @@ extern "C" void __cdecl FUN_00c9eec0();
 
 // @fnv 0x00cbe880
 // src: GUESS 0x00cbe880 (confidence: low)
-void __thiscall FUN_00cbe880_Class::UpdateFields_00cbe880()
+void __thiscall bhkCollisionBox::UpdateFields_00cbe880()
 {
     this->m_iWordAt00 = (int)vftable_bhkCollisionBox;
     FUN_00c9eec0();
@@ -9538,22 +9538,22 @@ void bhkRagdollTemplateData::LoadBinary(NiStream& kStream)
     }
 }
 
-struct FUN_00ca0ca0_Class
+struct hkaRagdollRaycastInterface
 {
     void* m_vtbl;
-    FUN_00ca0ca0_Class* __thiscall FUN_00ca0ca0(int flags);
+    hkaRagdollRaycastInterface* __thiscall FUN_00ca0ca0(int flags);
 };
 
 struct MemMgr_00aa4060
 {
-    void __thiscall MemoryManager_Deallocate(FUN_00ca0ca0_Class* p);
+    void __thiscall MemoryManager_Deallocate(hkaRagdollRaycastInterface* p);
 };
 
 extern int vftable_hkaRagdollRaycastInterface;
 
 // Sets the vtable pointer and, when flags has bit 0 set, passes this to FUN_00aa4060 on DAT_011f6238, then returns this.
 // @fnv 0x00ca0ca0
-FUN_00ca0ca0_Class* __thiscall FUN_00ca0ca0_Class::FUN_00ca0ca0(int flags)
+hkaRagdollRaycastInterface* __thiscall hkaRagdollRaycastInterface::FUN_00ca0ca0(int flags)
 {
     m_vtbl = &vftable_hkaRagdollRaycastInterface;
     if (flags & 1)
@@ -10445,7 +10445,7 @@ unsigned int __thiscall FUN_00cbb130_Class::FUN_00cbb130(unsigned char flag)
 
 extern int vftable_hkpCharacterStateManager;
 
-struct FUN_00cbc460
+struct hkpCharacterStateManager
 {
     void* m_ppVirtualMethodTable;
     unsigned short m_04;
@@ -10462,11 +10462,11 @@ struct FUN_00cbc460
     void* volatile m_p28;
     void* volatile m_p2c;
     void* volatile m_p30;
-    FUN_00cbc460();
+    hkpCharacterStateManager();
 };
 
 // @fnv 0x00cbc460
-FUN_00cbc460::FUN_00cbc460()
+hkpCharacterStateManager::hkpCharacterStateManager()
 {
     m_ppVirtualMethodTable = &vftable_hkpCharacterStateManager;
     m_w06 = 1;

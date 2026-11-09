@@ -94,14 +94,14 @@ void __cdecl Runtime_UpdateState_00da0b10(int* p)
 
 extern int vftable_hkStaticClassNameRegistry;
 
-struct FUN_00db7ab0_class
+struct hkStaticClassNameRegistry
 {
     void* __thiscall SetVtableAndProcessState_00db7ab0(void* a, void* b, void* c);
 };
 
 // @fnv 0x00db7ab0
 // src: GUESS 0x00db7ab0 (confidence: low)
-void* __thiscall FUN_00db7ab0_class::SetVtableAndProcessState_00db7ab0(void* a, void* b, void* c)
+void* __thiscall hkStaticClassNameRegistry::SetVtableAndProcessState_00db7ab0(void* a, void* b, void* c)
 {
     *(short*)((char*)this + 6) = 1;
     *(int*)((char*)this + 12) = (int)a;
@@ -1559,7 +1559,7 @@ struct FUN_00da2840_Obj
     void __thiscall hkStackTracerWin32Data_init();
 };
 
-struct FUN_00da2b90_Obj
+struct hkStackTracer
 {
     int unk00;
     short unk04;
@@ -1571,7 +1571,7 @@ struct FUN_00da2b90_Obj
 
 // Sets unk06 to 1, stores pointers to vftable_hkStackTracer and DAT_01269a9c, calls FUN_00da2840 on DAT_01269a9c, and returns this.
 // @fnv 0x00da2b90
-unsigned int* __thiscall FUN_00da2b90_Obj::Initialize()
+unsigned int* __thiscall hkStackTracer::Initialize()
 {
     unk06 = 1;
     unk00 = reinterpret_cast<int>(&vftable_hkStackTracer);

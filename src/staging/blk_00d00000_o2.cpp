@@ -69,17 +69,17 @@ D107A0RTTI* __cdecl Runtime_GetD107A0RTTIAddress()
 
 extern int vftable_hkpNullAgent;
 
-struct FUN_00d107b0
+struct hkpNullAgent
 {
     void** vft;
     unsigned short a;
     unsigned short b;
     int c;
-    FUN_00d107b0();
+    hkpNullAgent();
 };
 
 // @fnv 0x00d107b0
-FUN_00d107b0::FUN_00d107b0()
+hkpNullAgent::hkpNullAgent()
 {
     b = 1;
     c = 0;

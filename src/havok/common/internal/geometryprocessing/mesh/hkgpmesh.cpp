@@ -3431,15 +3431,15 @@ extern int vftable_hkgpMesh__IConvexOverlap__IConvexShape;
 
 namespace fnvc_adapt { hkMemoryRouter* __cdecl hkMemoryRouter_getInstance() throw(); }
 
-struct FUN_00e21e00_cls {
+struct hkgpMesh__IConvexOverlap__IConvexShape {
     int m_vptr;
 
-    FUN_00e21e00_cls* FUN_00e21e00(unsigned char acFlags);
+    hkgpMesh__IConvexOverlap__IConvexShape* FUN_00e21e00(unsigned char acFlags);
 };
 
 // Sets the vtable pointer and, if bit 0 of acFlags is set, frees this object through the audio allocator.
 // @fnv 0x00e21e00
-FUN_00e21e00_cls* FUN_00e21e00_cls::FUN_00e21e00(unsigned char acFlags)
+hkgpMesh__IConvexOverlap__IConvexShape* hkgpMesh__IConvexOverlap__IConvexShape::FUN_00e21e00(unsigned char acFlags)
 {
     m_vptr = (int)&vftable_hkgpMesh__IConvexOverlap__IConvexShape;
     if (acFlags & 1) {

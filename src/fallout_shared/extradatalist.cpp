@@ -5703,10 +5703,10 @@ struct FUN_0041bd10_shell : public ExtraDataList
     void ExtraDataList_SetMusicType(BGSMusicType*);
 };
 
-struct FUN_0040ef30 : public LegacyExtraData
+struct ExtraCellMusicType : public LegacyExtraData
 {
     BGSMusicType* pData;
-    FUN_0040ef30(BGSMusicType*);
+    ExtraCellMusicType(BGSMusicType*);
 };
 
 struct Dummy_00410020
@@ -5729,12 +5729,12 @@ void FUN_0041bd10_shell::ExtraDataList_SetMusicType(BGSMusicType* apData)
     }
     else if (!pExtra)
     {
-        pExtra = reinterpret_cast<BSExtraData*>(new FUN_0040ef30(apData));
+        pExtra = reinterpret_cast<BSExtraData*>(new ExtraCellMusicType(apData));
         ((BaseExtraList*)this)->AddExtra(reinterpret_cast<BSExtraData*>(pExtra));
     }
     else
     {
-        ((FUN_0040ef30*)pExtra)->pData = apData;
+        ((ExtraCellMusicType*)pExtra)->pData = apData;
     }
 }
 }  // namespace fnv_0041bd10
@@ -5816,10 +5816,10 @@ struct FUN_0041c190_shell : public ExtraDataList
     void SetClimate(TESClimate*);
 };
 
-struct FUN_0040f070 : public LegacyExtraData
+struct ExtraCellClimate : public LegacyExtraData
 {
     TESClimate* pData;
-    FUN_0040f070(TESClimate*);
+    ExtraCellClimate(TESClimate*);
 };
 
 struct Dummy_00410020
@@ -5841,12 +5841,12 @@ void FUN_0041c190_shell::SetClimate(TESClimate* apData)
     }
     else if (!pExtra)
     {
-        pExtra = reinterpret_cast<BSExtraData*>(new FUN_0040f070(apData));
+        pExtra = reinterpret_cast<BSExtraData*>(new ExtraCellClimate(apData));
         ((BaseExtraList*)this)->AddExtra(reinterpret_cast<BSExtraData*>(pExtra));
     }
     else
     {
-        ((FUN_0040f070*)pExtra)->pData = apData;
+        ((ExtraCellClimate*)pExtra)->pData = apData;
     }
 }
 }  // namespace fnv_0041c190
@@ -6948,14 +6948,14 @@ struct BE
     __thiscall BE(unsigned char);
 };
 
-struct FUN_0042c9c0 : BE
+struct ExtraObjectHealth : BE
 {
-    __thiscall FUN_0042c9c0();
+    __thiscall ExtraObjectHealth();
 };
 
 // Initialises the object: sets its vtable pointer to vftable_ExtraObjectHealth and zeroes the float at offset 0xc.
 // @fnv 0x0042c9c0
-__thiscall FUN_0042c9c0::FUN_0042c9c0() : BE(0x56)
+__thiscall ExtraObjectHealth::ExtraObjectHealth() : BE(0x56)
 {
     *reinterpret_cast<void**>(this) = &vftable_ExtraObjectHealth;
     *reinterpret_cast<float*>(this + 0xc) = 0.0f;
@@ -11605,14 +11605,14 @@ struct BE
 
 extern int vftable_ExtraModelSwap;
 
-struct FUN_0042c9f0 : BE
+struct ExtraModelSwap : BE
 {
-    FUN_0042c9f0();
+    ExtraModelSwap();
 };
 
 // Initializes the object: sets the vtable pointer to vftable_ExtraModelSwap and zeroes the fields at offsets 0xC and 0x10.
 // @fnv 0x0042c9f0
-FUN_0042c9f0::FUN_0042c9f0() : BE(0x5B)
+ExtraModelSwap::ExtraModelSwap() : BE(0x5B)
 {
     *(int*)this = (int)&vftable_ExtraModelSwap;
     *(int*)((char*)this + 0xC) = 0;

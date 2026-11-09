@@ -6866,7 +6866,7 @@ extern int vftable_StartMenu__UserOption;
 
 void __cdecl FormHeapFreeAndLog_00401030(int value);
 
-struct FUN_007d64d0_cls
+struct StartMenu__UserOption
 {
     int m_vptr;
     int unk04;
@@ -6885,7 +6885,7 @@ struct FUN_007d64d0_cls
 
 // Sets the vtable pointer, passes m_28 to FUN_00401030, then calls InitPointer on this object.
 // @fnv 0x007d64d0
-void FUN_007d64d0_cls::Initialize()
+void StartMenu__UserOption::Initialize()
 {
     m_vptr = (int)&vftable_StartMenu__UserOption;
     int value = m_28;

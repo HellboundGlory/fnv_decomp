@@ -12702,16 +12702,16 @@ struct GlobalObject2_0040c150
 };
 void* __cdecl operator new(unsigned int);
 unsigned int __cdecl PackRgba(unsigned int, unsigned int, unsigned int, unsigned int);
-struct FUN_007192e0
+struct SystemColorManager__SoftSystemColor
 {
     int a, b, c, d;
-    FUN_007192e0(char*, SystemColorInfo*, int);
+    SystemColorManager__SoftSystemColor(char*, SystemColorInfo*, int);
 };
 struct M788
 {
     void NiTPointerListBase_NiTPointerAllocator_unsigned_int_BSMultiBoundRoom_AddTail(void*);
 };
-// When apSetting->Int() is zero, stores FUN_00718e90(...) there; allocates and passes a FUN_007192e0 entry to FUN_004ed8c0, then stores aiID + 1 at offset 0xc.
+// When apSetting->Int() is zero, stores FUN_00718e90(...) there; allocates and passes a SystemColorManager__SoftSystemColor entry to FUN_004ed8c0, then stores aiID + 1 at offset 0xc.
 // @fnv 0x00718db0
 // src: COMMUNITY 0x00718db0
 void FUN_00718db0_shell::SystemColorManager_Add(char* apName, unsigned int aiRed, unsigned int aiGreen, unsigned int aiBlue,
@@ -12719,7 +12719,7 @@ void FUN_00718db0_shell::SystemColorManager_Add(char* apName, unsigned int aiRed
 {
     if (*((GlobalObject2_0040c150*)apSetting)->Int() == 0)
         *((GlobalObject2_0040c150*)apSetting)->Int() = PackRgba(aiRed, aiGreen, aiBlue, 0xff);
-    FUN_007192e0* pColor = new FUN_007192e0(apName, apSetting, aiID);
+    SystemColorManager__SoftSystemColor* pColor = new SystemColorManager__SoftSystemColor(apName, apSetting, aiID);
     ((M788*)this)->NiTPointerListBase_NiTPointerAllocator_unsigned_int_BSMultiBoundRoom_AddTail(&pColor);
     *(int*)((char*)this + 0xc) = aiID + 1;
 }

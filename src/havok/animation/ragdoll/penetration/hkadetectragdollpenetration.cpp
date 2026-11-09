@@ -103,17 +103,17 @@ struct RefObj
     short m_sReferenceCount;
 };
 
-struct FUN_00d1fa50 : RefObj
+struct hkaDetectRagdollPenetration : RefObj
 {
     Desc m_kCreateDesc;
     int m_uiItemCount;
     hkIntArrayLocalForm m_aiIndexedValues;
     bool m_flag;
-    FUN_00d1fa50(const Desc& d);
+    hkaDetectRagdollPenetration(const Desc& d);
 };
 
 // @fnv 0x00d1fa50
-FUN_00d1fa50::FUN_00d1fa50(const Desc& d)
+hkaDetectRagdollPenetration::hkaDetectRagdollPenetration(const Desc& d)
 {
     m_vtbl = vftable_hkaDetectRagdollPenetration;
     m_sReferenceCount = 1;

@@ -41,7 +41,7 @@ void FUN_00e0a070::VisitNode(void* node)
 
 extern "C" void* vftable_hkpMoppDefaultSplitter;
 
-struct FUN_00e09ba0
+struct hkpMoppDefaultSplitter
 {
     void* m_00;
     unsigned short m_04;
@@ -53,12 +53,12 @@ struct FUN_00e09ba0
     int m_18;
     int m_1c;
 
-    FUN_00e09ba0();
+    hkpMoppDefaultSplitter();
 };
 
 // Initializes the object: sets m_06 to 1, points m_00 at vftable_hkpMoppDefaultSplitter, and zeroes m_10, m_14, m_18, m_1c, m_08 and m_0c.
 // @fnv 0x00e09ba0
-FUN_00e09ba0::FUN_00e09ba0()
+hkpMoppDefaultSplitter::hkpMoppDefaultSplitter()
 {
     m_06 = 1;
     m_00 = &vftable_hkpMoppDefaultSplitter;

@@ -407,12 +407,12 @@ struct FUN_00c6aca0_holder
 {
     void* __thiscall FUN_00c6aca0();
 };
-struct FUN_00c9a040_cls
+struct bhkWorldM
 {
     void* __thiscall FUN_00c9a040(bool b);
 };
 // @fnv 0x00c9a040
-void* __thiscall FUN_00c9a040_cls::FUN_00c9a040(bool abFree)
+void* __thiscall bhkWorldM::FUN_00c9a040(bool abFree)
 {
     *(void**)this = (void*)&vftable_bhkWorldM;
     ((FUN_00c6aca0_holder*)this)->FUN_00c6aca0();

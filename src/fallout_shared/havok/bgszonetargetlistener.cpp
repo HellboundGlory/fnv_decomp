@@ -61,7 +61,7 @@ struct FUN_0061fc10_shell
 
 extern void* vftable_TrapEntry;
 
-struct FUN_0062d840_shell
+struct TrapEntry
 {
     void* m_iWordAt00;
     void* m_iWordAt04;
@@ -71,7 +71,7 @@ struct FUN_0062d840_shell
 // Calls FUN_0061fc10 with a and b, sets the first field to point at vftable_TrapEntry, and returns this.
 // @fnv 0x0062d840
 // src: EXE 0x0062d840
-void* __thiscall FUN_0062d840_shell::TrapEntry_TrapEntry(unsigned int a, unsigned int b)
+void* __thiscall TrapEntry::TrapEntry_TrapEntry(unsigned int a, unsigned int b)
 {
     ((FUN_0061fc10_shell*)this)->FUN_0061fc10(a, b);
     m_iWordAt00 = &vftable_TrapEntry;

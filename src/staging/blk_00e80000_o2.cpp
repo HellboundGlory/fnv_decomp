@@ -1501,13 +1501,13 @@ extern "C" void __cdecl operator delete(void* p, unsigned int size);
 void __cdecl FUN_00e989c0();
 extern int vftable_NiDX9ShaderConstantManager;
 
-struct FUN_00e97870_Class {
+struct NiDX9ShaderConstantManager {
     void* m_ppVirtualMethodTable;
-    FUN_00e97870_Class(unsigned char flag);
+    NiDX9ShaderConstantManager(unsigned char flag);
 };
 
 // @fnv 0x00e97870
-FUN_00e97870_Class::FUN_00e97870_Class(unsigned char flag) {
+NiDX9ShaderConstantManager::NiDX9ShaderConstantManager(unsigned char flag) {
     m_ppVirtualMethodTable = &vftable_NiDX9ShaderConstantManager;
     FUN_00e989c0();
     if (flag & 1)

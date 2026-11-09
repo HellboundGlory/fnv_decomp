@@ -7449,9 +7449,9 @@ struct FUN_00cfd450 : CFB240ContactMgrFactory {
     int unk08;
     FUN_00cfd450(void*) throw();
 };
-struct FUN_00cfca20 : CFB240ContactMgrFactory {
+struct hkpReportContactMgr__Factory : CFB240ContactMgrFactory {
     int unk08;
-    FUN_00cfca20(void*) throw();
+    hkpReportContactMgr__Factory(void*) throw();
 };
 struct OtherC912 {
     void* vtable; short unknown; short refs; int kind;
@@ -7473,7 +7473,7 @@ struct CFB240Dispatcher {
 static void RegisterContactMgrFactories(CFB240Dispatcher* dispatcher, void* world)
 {
     FUN_00cfd450* first = new FUN_00cfd450(world);
-    FUN_00cfca20* second = new FUN_00cfca20(world);
+    hkpReportContactMgr__Factory* second = new hkpReportContactMgr__Factory(world);
     FactoryThreeC912* third = new FactoryThreeC912;
     dispatcher->SetContactMgrFactory(first, 1);
     dispatcher->SetContactMgrFactory(second, 2);

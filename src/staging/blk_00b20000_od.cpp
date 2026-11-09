@@ -27,7 +27,7 @@ FUN_00b274a0_class* __thiscall FUN_00b274a0_class::ResetState()
 extern "C" void FUN_0044a450(int);
 extern int vftable_std__out_of_range;
 
-struct FUN_00b3c440_class
+struct std__out_of_range
 {
     int* vtbl;
     int std_out_of_range_out_of_range(int a);
@@ -36,23 +36,23 @@ struct FUN_00b3c440_class
 // Calls FUN_0044a450 on this and a, installs the vftable_std__out_of_range vtable pointer, and returns this.
 // @fnv 0x00b3c440
 // src: EXE 0x00b3c440
-int FUN_00b3c440_class::std_out_of_range_out_of_range(int aiValue)
+int std__out_of_range::std_out_of_range_out_of_range(int aiValue)
 {
     int pad[24];
-    reinterpret_cast<void(__thiscall*)(FUN_00b3c440_class*, int)>(FUN_0044a450)(this, aiValue);
+    reinterpret_cast<void(__thiscall*)(std__out_of_range*, int)>(FUN_0044a450)(this, aiValue);
     *reinterpret_cast<int**>(this) = &vftable_std__out_of_range;
     return reinterpret_cast<int>(this);
 }
 
 extern int vftable_std__locale__facet;
 
-struct FUN_00b3c910_class
+struct std__locale__facet
 {
     void InitVTable();
 };
 
 // @fnv 0x00b3c910
-void FUN_00b3c910_class::InitVTable()
+void std__locale__facet::InitVTable()
 {
     *reinterpret_cast<int*>(this) = reinterpret_cast<int>(&vftable_std__locale__facet);
 }

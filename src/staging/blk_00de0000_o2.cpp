@@ -1879,7 +1879,7 @@ FUN_00de3050::FUN_00de3050() : m_iWordAt00(DAT_01017d00)
 
 extern int vftable_hkpConvexRadiusBuilder;
 
-class FUN_00de3060
+class hkpConvexRadiusBuilder
 {
   public:
     void* m_00;
@@ -1888,12 +1888,12 @@ class FUN_00de3060
     unsigned int m_08;
     unsigned int m_0c;
 
-    FUN_00de3060(const unsigned int* src);
+    hkpConvexRadiusBuilder(const unsigned int* src);
 };
 
 // Initializes the object: sets m_06 to 1, points m_00 at vftable_hkpConvexRadiusBuilder, copies *src into m_08 and zeroes m_0c.
 // @fnv 0x00de3060
-FUN_00de3060::FUN_00de3060(const unsigned int* src)
+hkpConvexRadiusBuilder::hkpConvexRadiusBuilder(const unsigned int* src)
 {
     m_06 = 1;
     m_00 = (void*)&vftable_hkpConvexRadiusBuilder;

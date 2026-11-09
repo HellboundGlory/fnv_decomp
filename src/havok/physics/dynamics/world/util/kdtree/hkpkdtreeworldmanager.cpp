@@ -880,7 +880,7 @@ namespace fnvc_adapt {
 BSAudio* __cdecl hkMemoryRouter_getInstance(void);
 }
 
-struct FUN_00d9df50_Obj
+struct hkpCollidableMediator
 {
     int unk00;
     void InitWalker(int a1, void* a2);
@@ -956,7 +956,7 @@ struct __declspec(align(16)) S00d0a560_S30
 struct S00d0a560_Combo
 {
     FUN_00d9e000_Obj a;
-    FUN_00d9df50_Obj b;
+    hkpCollidableMediator b;
 };
 
 struct __declspec(align(16)) S00d0a560_Frame
@@ -1017,7 +1017,7 @@ struct S00d0a560_Owner
 void S00d0a560_Owner::hkpKdTreeWorldManager_buildTreeSingleThreaded(int* out, int ch)
 {
     S00d0a560_Frame f;
-    ((FUN_00d9df50_Obj*)&f.s24)->InitWalker(ch, unk1C);
+    ((hkpCollidableMediator*)&f.s24)->InitWalker(ch, unk1C);
     FUN_00d97850_Obj* v = (FUN_00d97850_Obj*)*out;
     if (v != 0)
     {

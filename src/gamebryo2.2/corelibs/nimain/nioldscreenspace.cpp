@@ -549,7 +549,7 @@ extern int vftable_NiScreenGeometryData__ScreenElement;
 
 extern MemoryManager g_011f6238;
 
-struct FUN_00a902e0_cls
+struct NiScreenGeometryData__ScreenElement
 {
     int m_vptr00;
     int m_04;
@@ -557,23 +557,23 @@ struct FUN_00a902e0_cls
     void* m_0c;
     void* m_10;
 
-    FUN_00a902e0_cls* FUN_00a902e0(unsigned char acFlags);
+    NiScreenGeometryData__ScreenElement* FUN_00a902e0(unsigned char acFlags);
 };
 
 // @fnv 0x00a902e0
-FUN_00a902e0_cls* FUN_00a902e0_cls::FUN_00a902e0(unsigned char acFlags)
+NiScreenGeometryData__ScreenElement* NiScreenGeometryData__ScreenElement::FUN_00a902e0(unsigned char acFlags)
 {
     if (acFlags & 2)
     {
         char* base = (char*)this - 4;
         int i = *(int*)base;
-        FUN_00a902e0_cls* p = (FUN_00a902e0_cls*)((char*)this + i * 20);
+        NiScreenGeometryData__ScreenElement* p = (NiScreenGeometryData__ScreenElement*)((char*)this + i * 20);
         i = i - 1;
         if (i >= 0)
         {
             do
             {
-                p = (FUN_00a902e0_cls*)((char*)p - 20);
+                p = (NiScreenGeometryData__ScreenElement*)((char*)p - 20);
                 void* a = p->m_08;
                 p->m_vptr00 = (int)&vftable_NiScreenGeometryData__ScreenElement;
                 g_011f6238.Deallocate(a);
@@ -585,7 +585,7 @@ FUN_00a902e0_cls* FUN_00a902e0_cls::FUN_00a902e0(unsigned char acFlags)
         {
             g_011f6238.Deallocate(base);
         }
-        return (FUN_00a902e0_cls*)base;
+        return (NiScreenGeometryData__ScreenElement*)base;
     }
 
     void* a = m_08;

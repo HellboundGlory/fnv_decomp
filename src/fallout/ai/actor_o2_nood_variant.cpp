@@ -2000,7 +2000,7 @@ struct GameForm {
 struct Material { int unk00,unk04; int name; };
 struct Resource { int unk00,unk04; Material* material; };
 struct IndexedRecord { void __thiscall FUN_00c905b0(); };
-struct FUN_00cd8820 : IndexedRecord {
+struct hkaFootPlacementIkSolver : IndexedRecord {
     int vtable;
     unsigned short size, references;
     int unk008;
@@ -2061,7 +2061,7 @@ struct FUN_00cd8820 : IndexedRecord {
     int unk0e4;
     int unk0e8;
     int unk0ec;
-    FUN_00cd8820(Scratch const&);
+    hkaFootPlacementIkSolver(Scratch const&);
     static __forceinline void* operator new(size_t);
     static void operator delete(void*);
 };
@@ -2304,9 +2304,9 @@ static __forceinline hkMemoryRouter* GetEntryRuntime() { return reinterpret_cast
 extern "C" void __cdecl hkArrayUtil__reserve(Allocator*, EntryArray*, int, unsigned);
 extern "C" Resource* __cdecl bhkUtilFunctions_FindNextCollisionObject(GameForm*);
 extern "C" short __cdecl FindIndexByKey(int,int,int);
-__forceinline void* FUN_00cd8820::operator new(size_t bytes) {
+__forceinline void* hkaFootPlacementIkSolver::operator new(size_t bytes) {
     void* ptr=GetEntryRuntime()->heap().blockAlloc(bytes);
-    static_cast<FUN_00cd8820*>(ptr)->size=(unsigned short)bytes;
+    static_cast<hkaFootPlacementIkSolver*>(ptr)->size=(unsigned short)bytes;
     return ptr;
 }
 __forceinline GameForm* GameForm::getLinked() {
@@ -2370,7 +2370,7 @@ void __thiscall ParticleTable::bhkRagdollController_InitFootIK(FNVInput* incomin
             scratch.second=FindIndexByKey(owner,second,0);
             scratch.third=FindIndexByKey(owner,third,0);
             if (scratch.first!=-1 && scratch.second!=-1 && scratch.third!=-1)
-                entries[i].record=new FUN_00cd8820(scratch);
+                entries[i].record=new hkaFootPlacementIkSolver(scratch);
         }
         if (table->mapping) {
             for (int j=0;j<table->mapping->count;++j) {

@@ -279,7 +279,7 @@ bool __thiscall BSTreeNode::SetFrondVisible(bool abVisible)
     return true;
 }
 
-struct FUN_0066d3d0_shell
+struct bhkPCollisionObject
 {
     void __thiscall bhkPCollisionObject_bhkPCollisionObject(void*);
 };
@@ -292,7 +292,7 @@ struct FUN_0066d3a0_shell
 // src: EXE 0x0066d3a0
 void* __thiscall FUN_0066d3a0_shell::bhkSPCollisionObject_bhkSPCollisionObject(void* arg)
 {
-    reinterpret_cast<FUN_0066d3d0_shell*>(this)->bhkPCollisionObject_bhkPCollisionObject(arg);
+    reinterpret_cast<bhkPCollisionObject*>(this)->bhkPCollisionObject_bhkPCollisionObject(arg);
     *reinterpret_cast<void**>(this) = &vftable_bhkSPCollisionObject;
     return this;
 }
@@ -304,7 +304,7 @@ struct FUN_00c6b950_shell
 };
 extern void* vftable_bhkPCollisionObject;
 
-struct FUN_0066d3d0_shell
+struct bhkPCollisionObject
 {
     void* m0;
     void* __thiscall bhkPCollisionObject_bhkPCollisionObject(unsigned int a);
@@ -313,7 +313,7 @@ struct FUN_0066d3d0_shell
 // Calls FUN_00c6b950 with a, then sets m0 to point at vftable_bhkPCollisionObject and returns this.
 // @fnv 0x0066d3d0
 // src: EXE 0x0066d3d0
-void* __thiscall FUN_0066d3d0_shell::bhkPCollisionObject_bhkPCollisionObject(unsigned int a)
+void* __thiscall bhkPCollisionObject::bhkPCollisionObject_bhkPCollisionObject(unsigned int a)
 {
     ((FUN_00c6b950_shell*)this)->FUN_00c6b950(a);
     m0 = &vftable_bhkPCollisionObject;

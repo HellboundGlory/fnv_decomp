@@ -67,19 +67,19 @@ long FUN_00d2bf20_class::hkStdioStreamWriter_tell()
     return _ftell(m8);
 }
 
-struct FUN_00d2bf30
+struct hkStdioStreamWriter
 {
     int* vtable;
     unsigned short unk04;
     unsigned short unk06;
     void* m8;
     unsigned char unk0c;
-    FUN_00d2bf30(int mode);
+    hkStdioStreamWriter(int mode);
 };
 extern void* __cdecl FUN_00ecdf44();
 // Sets the vtable and flags, then stores a pointer into the block returned by FUN_00ecdf44, offset by 0x40 when mode is 2 and 0x20 otherwise.
 // @fnv 0x00d2bf30
-FUN_00d2bf30::FUN_00d2bf30(int mode)
+hkStdioStreamWriter::hkStdioStreamWriter(int mode)
 {
     unk06 = 1;
     vtable = &vftable_hkStdioStreamWriter;

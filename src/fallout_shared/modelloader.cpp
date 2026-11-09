@@ -5750,13 +5750,13 @@ struct FUN_004411d0
     int m_kPointB;
     FUN_004411d0(int a, int b);
 };
-struct FUN_00441920 : FUN_004411d0
+struct QueuedCreature : FUN_004411d0
 {
-    FUN_00441920(int a, int b);
+    QueuedCreature(int a, int b);
 };
 // Constructs the object by forwarding a and b to the base constructor and setting m_vft to vftable_QueuedCreature.
 // @fnv 0x00441920
-FUN_00441920::FUN_00441920(int a, int b) : FUN_004411d0(a, b)
+QueuedCreature::QueuedCreature(int a, int b) : FUN_004411d0(a, b)
 {
     m_vft = &vftable_QueuedCreature;
 }

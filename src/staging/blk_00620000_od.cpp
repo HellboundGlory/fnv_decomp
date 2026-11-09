@@ -1481,14 +1481,14 @@ struct FUN_006241c0_shell
 {
     void __thiscall FUN_006241c0();
 };
-struct FUN_00624150_Class
+struct FOIslandActivationListener
 {
     int m_vtbl;
     int m_kPointA;
-    FUN_00624150_Class();
+    FOIslandActivationListener();
 };
 // @fnv 0x00624150
-FUN_00624150_Class::FUN_00624150_Class()
+FOIslandActivationListener::FOIslandActivationListener()
 {
     ((FUN_006241c0_shell*)this)->FUN_006241c0();
     ((FUN_006c0210_shell*)((char*)this + 4))->ComputeValue_0061f580();
@@ -2552,12 +2552,12 @@ FUN_00624de0_Class* __thiscall FUN_00624de0_Class::SetVirtualTableAndProcessStat
 }
 
 extern int vftable_TESArrowTargetListener;
-struct FUN_0062a460_Class : FUN_0062a480_Class
+struct TESArrowTargetListener : FUN_0062a480_Class
 {
-    FUN_0062a460_Class();
+    TESArrowTargetListener();
 };
 // @fnv 0x0062a460
-FUN_0062a460_Class::FUN_0062a460_Class()
+TESArrowTargetListener::TESArrowTargetListener()
 {
     FUN_0062a480_Class::bhkArrowTargetListener_bhkArrowTargetListener();
     m_vtbl = (int*)&vftable_TESArrowTargetListener;

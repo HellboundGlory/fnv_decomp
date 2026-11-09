@@ -103,7 +103,7 @@ void __cdecl Object_OurMemalign_Thunk(unsigned int blocksize)
     ourMemalign(16, blocksize);
 }
 
-struct FUN_00554590_Class
+struct TESWindListener
 {
     void* vtbl;
     void __thiscall FUN_00c74760();
@@ -114,7 +114,7 @@ extern int vftable_TESWindListener;
 
 // @fnv 0x00554590
 // src: GUESS 0x00554590 (confidence: low)
-void* __thiscall FUN_00554590_Class::SetVtableAndProcessState_00554590()
+void* __thiscall TESWindListener::SetVtableAndProcessState_00554590()
 {
     FUN_00c74760();
     vtbl = &vftable_TESWindListener;

@@ -868,21 +868,21 @@ void FUN_0062de90_shell::TESTrapListener_ClearCurrentRefs(CombatWorldStateListNo
     }
 }
 
-struct FUN_0062d840_shell
+struct TrapEntry
 {
     char _pad[24];
-    FUN_0062d840_shell(unsigned int, unsigned int);
+    TrapEntry(unsigned int, unsigned int);
 };
 struct FUN_0062d7c0_shell
 {
-    FUN_0062d840_shell* TESTrapListener_CreateZoneEntry(unsigned int a, unsigned int b);
+    TrapEntry* TESTrapListener_CreateZoneEntry(unsigned int a, unsigned int b);
 };
-// Allocates and constructs a FUN_0062d840_shell with the two given unsigned int arguments and returns the new object.
+// Allocates and constructs a TrapEntry with the two given unsigned int arguments and returns the new object.
 // @fnv 0x0062d7c0
 // src: XBOX_PDB 0x0062d7c0
-FUN_0062d840_shell* FUN_0062d7c0_shell::TESTrapListener_CreateZoneEntry(unsigned int a, unsigned int b)
+TrapEntry* FUN_0062d7c0_shell::TESTrapListener_CreateZoneEntry(unsigned int a, unsigned int b)
 {
-    return new FUN_0062d840_shell(a, b);
+    return new TrapEntry(a, b);
 }
 
 TESObjectREFR* __cdecl TESHavokUtilities_FindCollidableRef(void*);

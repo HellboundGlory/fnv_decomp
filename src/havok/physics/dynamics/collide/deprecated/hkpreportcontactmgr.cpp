@@ -71,17 +71,17 @@ inline const hkVector4& hkContactPoint::getNormal() const
 
 extern "C" void* vftable_hkpReportContactMgr__Factory;
 
-struct FUN_00cfca20
+struct hkpReportContactMgr__Factory
 {
     void* m_ppVirtualMethodTable;
     unsigned short m_auiShapeKeys;
     unsigned short m_flag;
     void* m_data;
-    FUN_00cfca20(void* data);
+    hkpReportContactMgr__Factory(void* data);
 };
 
 // @fnv 0x00cfca20
-FUN_00cfca20::FUN_00cfca20(void* data)
+hkpReportContactMgr__Factory::hkpReportContactMgr__Factory(void* data)
 {
     m_flag = 1;
     m_ppVirtualMethodTable = &vftable_hkpReportContactMgr__Factory;

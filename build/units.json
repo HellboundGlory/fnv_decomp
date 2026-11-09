@@ -42169,7 +42169,7 @@
    "symbols": {
     "?get@Router@@SAAAV1@XZ": "0x00c85750",
     "??0FUN_00a5d3a0@@QAE@XZ": "0x00a5d3a0",
-    "??0FUN_00cd8820@@QAE@ABUScratch@@@Z": "0x00cd8820",
+    "??0hkaFootPlacementIkSolver@@QAE@ABUScratch@@@Z": "0x00cd8820",
     "??0FUN_00cdb400@@QAE@PAX@Z": "0x00cdb400",
     "??0FUN_00ce4a20@@QAE@PAUPoseBuffer@@@Z": "0x00ce4a20",
     "??_7BoneRecordArray@SkeletonBuild@@6B@": "0x010c4ce4",
@@ -94083,7 +94083,7 @@
     "??0FUN_00709840@@QAE@XZ": "0x00709840",
     "??0FUN_0070a8a0@fnv_007164c0@@QAE@XZ": "0x0070a8a0",
     "??0FUN_00719250_stand@fnv_00718ee0@@QAE@PBDIH@Z": "0x00719250",
-    "??0FUN_007192e0@fnv_00718db0@@QAE@PADPAUSystemColorInfo@1@H@Z": "0x007192e0",
+    "??0SystemColorManager__SoftSystemColor@fnv_00718db0@@QAE@PADPAUSystemColorInfo@1@H@Z": "0x007192e0",
     "??0FUN_007f7a70@@QAE@XZ": "0x007f7a70",
     "??0GlobalObject2_0096a2d0@@QAE@XZ": "0x0096a2d0",
     "??0GlobalObject_0048f200@@QAE@XZ": "0x0048f200",
@@ -120859,7 +120859,7 @@
     },
     {
      "address": "0x007d64d0",
-     "symbol": "?Initialize@FUN_007d64d0_cls@@QAEXXZ",
+     "symbol": "?Initialize@StartMenu__UserOption@@QAEXXZ",
      "size": 51
     },
     {
@@ -121116,7 +121116,7 @@
     "?HandleSliderTileInput@StartMenuSI@@QAEXHPAUTile@@@Z": "0x007cf6a0",
     "?InitSaveLoadTile@fnv_007d67b0@@YAXPAUTile@1@PAVBGSSaveLoadFileEntry@@@Z": "0x007d67b0",
     "?InitStartMenu@@YA_N_N0@Z": "0x007cb7d0",
-    "?Initialize@FUN_007d64d0_cls@@QAEXXZ": "0x007d64d0",
+    "?Initialize@StartMenu__UserOption@@QAEXXZ": "0x007d64d0",
     "?IsAutoSave@SaveLoadEntryHelper@fnv_007d67b0@@QAE_NXZ": "0x00846b10",
     "?IsFlagSet@FUN_007cb5b0@fnv_007cb5b0@@QAE_NW4Flag@StartMenu@@@Z": "0x004a4080",
     "?IsKeyActive@FUN_007d6030_shell@@QAE_NXZ": "0x007d6030",
@@ -164982,7 +164982,7 @@
     },
     {
      "address": "0x0040ef30",
-     "symbol": "??0FUN_0040ef30@@QAE@PAUBGSMusicType@@@Z",
+     "symbol": "??0ExtraCellMusicType@@QAE@PAUBGSMusicType@@@Z",
      "size": 44
     },
     {
@@ -165002,7 +165002,7 @@
     },
     {
      "address": "0x0040f070",
-     "symbol": "??0FUN_0040f070_shell@@QAE@PAX@Z",
+     "symbol": "??0ExtraCellClimate@@QAE@PAX@Z",
      "size": 44
     },
     {
@@ -165072,7 +165072,7 @@
     },
     {
      "address": "0x0040f590",
-     "symbol": "??0FUN_0040f590_shell@@QAE@XZ",
+     "symbol": "??0ExtraSeenData@@QAE@XZ",
      "size": 43
     },
     {
@@ -167519,12 +167519,12 @@
     },
     {
      "address": "0x0042c9c0",
-     "symbol": "??0FUN_0042c9c0@fnv_0042c9c0@@QAE@XZ",
+     "symbol": "??0ExtraObjectHealth@fnv_0042c9c0@@QAE@XZ",
      "size": 41
     },
     {
      "address": "0x0042c9f0",
-     "symbol": "??0FUN_0042c9f0@fnv_0042c9f0@@QAE@XZ",
+     "symbol": "??0ExtraModelSwap@fnv_0042c9f0@@QAE@XZ",
      "size": 53
     },
     {
@@ -168535,8 +168535,8 @@
     "??0Extra_00432870@@QAE@PAUPackage_0041c930@@IIEEE@Z": "0x00432870",
     "??0FUN_0040ec00@fnv_0041b7e0@@QAE@XZ": "0x0040ec00",
     "??0FUN_0040ec80@@QAE@H@Z": "0x0040ec80",
-    "??0FUN_0040ef30@fnv_0041bd10@@QAE@PAUBGSMusicType@@@Z": "0x0040ef30",
-    "??0FUN_0040f070@fnv_0041c190@@QAE@PAVTESClimate@@@Z": "0x0040f070",
+    "??0ExtraCellMusicType@fnv_0041bd10@@QAE@PAUBGSMusicType@@@Z": "0x0040ef30",
+    "??0ExtraCellClimate@fnv_0041c190@@QAE@PAVTESClimate@@@Z": "0x0040f070",
     "??0FUN_0040f110@fnv_0041c290@@QAE@PAUTESImageSpace@@@Z": "0x0040f110",
     "??0FUN_0040f1b0_shell@fnv_0041c390@@QAE@XZ": "0x0040f1b0",
     "??0FUN_0040f6b0@@QAE@XZ": "0x0040f6b0",
@@ -179349,7 +179349,7 @@
     },
     {
      "address": "0x0062d840",
-     "symbol": "?TrapEntry_TrapEntry@FUN_0062d840_shell@@QAEPAXII@Z",
+     "symbol": "?TrapEntry_TrapEntry@TrapEntry@@QAEPAXII@Z",
      "size": 41
     },
     {
@@ -180384,7 +180384,7 @@
     },
     {
      "address": "0x0062d7c0",
-     "symbol": "?TESTrapListener_CreateZoneEntry@FUN_0062d7c0_shell@@QAEPAUFUN_0062d840_shell@@II@Z",
+     "symbol": "?TESTrapListener_CreateZoneEntry@FUN_0062d7c0_shell@@QAEPAUTrapEntry@@II@Z",
      "size": 127
     },
     {
@@ -180567,7 +180567,7 @@
     "?RemoveFirstNode@NiTPointerMap@fnv_0062cb60@@QAEPAXXZ": "0x0062e0a0",
     "?RemoveMatchingListEntry@TargetClass@@QAEXPAUArgClass@@@Z": "0x0062da90",
     "?_ref_0084e3a0@Subject62@@QAEPAUTESObjectREFR@@XZ": "0x0084e3a0",
-    "??0FUN_0062d840_shell@@QAE@II@Z": "0x0062d840",
+    "??0TrapEntry@@QAE@II@Z": "0x0062d840",
     "??0FX62c640_Member@@QAE@XZ": "0x0062c6e0",
     "??0FilterWord@@QAE@I@Z": "0x008c71b0",
     "??0GlobalObject_008c71b0@@QAE@H@Z": "0x008c71b0",
@@ -180705,7 +180705,7 @@
     "__ehhandler$??1FUN_0062e170@@QAE@XZ": "0x00f005f8",
     "__ehhandler$??1hkpAllCdBodyPairCollector@@UAE@XZ": "0x00efc5e8",
     "__ehhandler$?AddListener@TrapListener@@QAEXPAUCollisionArgument@@@Z": "0x00f0d3ab",
-    "__ehhandler$?TESTrapListener_CreateZoneEntry@FUN_0062d7c0_shell@@QAEPAUFUN_0062d840_shell@@II@Z": "0x00eed64b",
+    "__ehhandler$?TESTrapListener_CreateZoneEntry@FUN_0062d7c0_shell@@QAEPAUTrapEntry@@II@Z": "0x00eed64b",
     "__ehhandler$?ProcessCollisionPairs@Subject62@@QAE_NH@Z": "0x00efc58b"
    },
    "eh_tails": [
@@ -188812,7 +188812,7 @@
     },
     {
      "address": "0x00441920",
-     "symbol": "??0FUN_00441920@fnv_00441920@@QAE@HH@Z",
+     "symbol": "??0QueuedCreature@fnv_00441920@@QAE@HH@Z",
      "size": 41
     },
     {
@@ -216361,7 +216361,7 @@
     },
     {
      "address": "0x0066d3d0",
-     "symbol": "?bhkPCollisionObject_bhkPCollisionObject@FUN_0066d3d0_shell@fnv_0066d3d0@@QAEPAXI@Z",
+     "symbol": "?bhkPCollisionObject_bhkPCollisionObject@bhkPCollisionObject@fnv_0066d3d0@@QAEPAXI@Z",
      "size": 37
     },
     {
@@ -216562,7 +216562,7 @@
     "?CombatProcedure_GetFinished@BSTreeModel@@QAE_NXZ": "0x00666f00",
     "?GetNumBranchLODLevels@BSTreeModel@@QAEGXZ": "0x00669990",
     "?FUN_006699d0@BSTreeModel@@QAEGXZ": "0x006699d0",
-    "?bhkPCollisionObject_bhkPCollisionObject@FUN_0066d3d0_shell@@QAEXPAX@Z": "0x0066d3d0",
+    "?bhkPCollisionObject_bhkPCollisionObject@bhkPCollisionObject@@QAEXPAX@Z": "0x0066d3d0",
     "?ForwardCall_0066d410@FUN_0066d470_shell@@QAEXXZ": "0x0066d410",
     "?ForwardCall_0066d470@FUN_0066d440_shell@@QAEXXZ": "0x0066d470",
     "?FUN_0066da50@FUN_0066da50_t@@QAEXXZ": "0x0066da50",
@@ -312172,7 +312172,7 @@
     },
     {
      "address": "0x00a902e0",
-     "symbol": "?FUN_00a902e0@FUN_00a902e0_cls@@QAEPAU1@E@Z",
+     "symbol": "?FUN_00a902e0@NiScreenGeometryData__ScreenElement@@QAEPAU1@E@Z",
      "size": 184
     },
     {
@@ -478684,7 +478684,7 @@
    "functions": [
     {
      "address": "0x00d1fa50",
-     "symbol": "??0FUN_00d1fa50@@QAE@ABUDesc@@@Z",
+     "symbol": "??0hkaDetectRagdollPenetration@@QAE@ABUDesc@@@Z",
      "size": 163
     },
     {
@@ -481127,7 +481127,7 @@
     "??_C@_0LO@JBCJHNB@?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK@": "0x010d1258",
     "?CallWithFirstArg@FUN_00d5f290_class@@QAEXPAH@Z": "0x00d5f290",
     "?DAT_01269a84@@3PAXA": "0x01269a84",
-    "?DAT_01269a90@fnv_00da2bc0@@3UFUN_00da2b90_class@1@A": "0x01269a90",
+    "?DAT_01269a90@fnv_00da2bc0@@3UhkStackTracer@1@A": "0x01269a90",
     "?hkMemoryRouter_getInstance@@YAPAURouterD5@@XZ": "0x00c85750",
     "?FUN_00c903a0@Existing@@QAEXXZ": "0x00c903a0",
     "?FUN_00c905b0@S_00d5f320_RefObj@@QAEXXZ": "0x00c905b0",
@@ -481148,7 +481148,7 @@
     "?FreeStorage@FUN_00d5f640_cls@@QAEXPAUDeallocator@@@Z": "0x00d5f640",
     "?FreeStorage@S_00d5f320_Map@@QAEXAAUS_00d5f320_Allocator@@@Z": "0x00d5f640",
     "?InitWithAllocator@FUN_00d5ee80_class@@QAEXPAX000@Z": "0x00d5ee80",
-    "?Initialize@FUN_00da2b90_class@fnv_00da2bc0@@QAEPAU12@XZ": "0x00da2b90",
+    "?Initialize@hkStackTracer@fnv_00da2bc0@@QAEPAU12@XZ": "0x00da2b90",
     "?LogAddressAndSize@FUN_00d5edc0_cls@@QAEXHHPAH@Z": "0x00d5edc0",
     "?LogAddressAndSize@LeakDetectAllocator@@QAEXPBDKPAULeakAllocInfo@@@Z": "0x00d5edc0",
     "?LogAddressAndSize@S_00d5f320_LeakDetect@@QAEXPBDKABUS_00d5f320_AllocInfo@@@Z": "0x00d5edc0",
@@ -483695,7 +483695,7 @@
     }
    ],
    "symbols": {
-    "??0FUN_00db7870@@QAE@H@Z": "0x00db7870",
+    "??0hkCrc32StreamWriter@@QAE@H@Z": "0x00db7870",
     "??1FUN_00db7860@@QAE@XZ": "0x00db7860",
     "?CollectMatchingEntries@hkOwnerXdb76f0@@QAE_NIAAV?$hkArrayXdb76f0@PAX@@PAI@Z": "0x00db76f0",
     "?writeSignature@hkObjDB76@@QAEXPAUFUN_00db7860@@@Z": "0x00db7600",
@@ -485438,7 +485438,7 @@
     },
     {
      "address": "0x00d466e0",
-     "symbol": "??0FUN_00d466e0@@QAE@HH@Z",
+     "symbol": "??0hkMemoryTrackStreamReader@@QAE@HH@Z",
      "size": 41
     },
     {
@@ -485683,7 +485683,7 @@
     },
     {
      "address": "0x00db7870",
-     "symbol": "??0FUN_00db7870_cls@@QAE@I@Z",
+     "symbol": "??0hkCrc32StreamWriter@@QAE@I@Z",
      "size": 29
     },
     {
@@ -485822,7 +485822,7 @@
     },
     {
      "address": "0x00d2bf30",
-     "symbol": "??0FUN_00d2bf30@@QAE@H@Z",
+     "symbol": "??0hkStdioStreamWriter@@QAE@H@Z",
      "size": 58
     },
     {
@@ -490243,7 +490243,7 @@
     },
     {
      "address": "0x00e21e00",
-     "symbol": "?FUN_00e21e00@FUN_00e21e00_cls@fnv_00e21e00@@QAEPAU12@E@Z",
+     "symbol": "?FUN_00e21e00@hkgpMesh__IConvexOverlap__IConvexShape@fnv_00e21e00@@QAEPAU12@E@Z",
      "size": 40
     },
     {
@@ -499166,8 +499166,8 @@
     "?_D1A0E0GetMemoryRouter@@YAPAUFUN_00d61260_Router@@XZ": "0x00c85750",
     "_hkMemoryRouter_getInstance": "0x00c85750",
     "??0FUN_00cf6da0@fnv_00dd9cc0@@QAE@H@Z": "0x00cf6da0",
-    "??0FUN_00dd9cc0@fnv_00d60f30@@QAE@PAUFUN_00dda6e0@1@@Z": "0x00dd9cc0",
-    "??0FUN_00dda6e0@fnv_00d60f30@@QAE@PAX@Z": "0x00dda6e0",
+    "??0FUN_00dd9cc0@fnv_00d60f30@@QAE@PAUhkDisplaySerializeOStream@1@@Z": "0x00dd9cc0",
+    "??0hkDisplaySerializeOStream@fnv_00d60f30@@QAE@PAX@Z": "0x00dda6e0",
     "??0FUN_00ddabe0@fnv_00d60f30@@QAE@PAX@Z": "0x00ddabe0",
     "??_7FUN_00d60f30@fnv_00d60f30@@6BListenerB@1@@": "0x010d1578",
     "??_7FUN_00d60f30@fnv_00d60f30@@6BListenerC@1@@": "0x010d1558",
@@ -500625,7 +500625,7 @@
     },
     {
      "address": "0x00de4f20",
-     "symbol": "?InitializeFields_00de4f20@FUN_00de4f20_cls@@QAEPAV1@PBUVec4i@@000@Z",
+     "symbol": "?InitializeFields_00de4f20@hkDisplayPlane@@QAEPAV1@PBUVec4i@@000@Z",
      "size": 201
     },
     {
@@ -503481,7 +503481,7 @@
     },
     {
      "address": "0x00d32060",
-     "symbol": "?Init@FUN_00d32060_Class@@QAEPAU1@ABUSourceRef@@HHH@Z",
+     "symbol": "?Init@hkpHeightFieldAgent@@QAEPAU1@ABUSourceRef@@HHH@Z",
      "size": 164
     },
     {
@@ -514020,7 +514020,7 @@
     },
     {
      "address": "0x00cfca20",
-     "symbol": "??0FUN_00cfca20@@QAE@PAX@Z",
+     "symbol": "??0hkpReportContactMgr__Factory@@QAE@PAX@Z",
      "size": 27
     },
     {
@@ -520731,7 +520731,7 @@
     "?removeReference@hkReferencedObjectC93@@QBEXXZ": "0x00c905b0",
     "??0FUN_00cbfba0@fnv_00c977c0@@QAE@XZ": "0x00cbfba0",
     "??0FUN_00cf3ea0@@QAE@PAX0PAUInfoC97E@@_N@Z": "0x00cf3ea0",
-    "??0FUN_00cfca20@@QAE@PAX@Z": "0x00cfca20",
+    "??0hkpReportContactMgr__Factory@@QAE@PAX@Z": "0x00cfca20",
     "??0FUN_00cfd450@@QAE@PAX@Z": "0x00cfd450",
     "??0FUN_00d065e0@@QAE@XZ": "0x00d065e0",
     "??0FUN_00d07830@@IAE@PAVTW@@@Z": "0x00d07830",
@@ -524744,7 +524744,7 @@
     "?HandleArg@FUN_00d0a360_Owner@@QAEXH@Z": "0x00d0a360",
     "?Init@FUN_00d97970_Obj@fnv_00d0a560@@QAEHPAX@Z": "0x00d97970",
     "?Init@Tree@@QAEPAU1@PAUTreeInfo@@@Z": "0x00d97970",
-    "?InitWalker@FUN_00d9df50_Obj@fnv_00d0a560@@QAEXHPAX@Z": "0x00d9df50",
+    "?InitWalker@hkpCollidableMediator@fnv_00d0a560@@QAEXHPAX@Z": "0x00d9df50",
     "?RayCast@hkQueryD0A3@@QAEXPAUhkInputD0A3@@PAVhkPhantomD0A3@@H@Z": "0x00d0a390",
     "?SetFlag0C@FUN_00d0a290_cls@@QAEXH@Z": "0x00d0a290",
     "?SetFlagOrForward@FUN_00d0a340_StandIn@@QAEXH@Z": "0x00d0a340",
@@ -526356,7 +526356,7 @@
     },
     {
      "address": "0x00e09ba0",
-     "symbol": "??0FUN_00e09ba0@@QAE@XZ",
+     "symbol": "??0hkpMoppDefaultSplitter@@QAE@XZ",
      "size": 38
     },
     {
@@ -533237,7 +533237,7 @@
     },
     {
      "address": "0x00d62fe0",
-     "symbol": "?UpdateFields_00d62fe0@FUN_00d62fe0_cls@@QAEXXZ",
+     "symbol": "?UpdateFields_00d62fe0@hkpWorldSnapshotViewer@@QAEXXZ",
      "size": 25
     },
     {
@@ -533533,7 +533533,7 @@
     "??0FUN_00d22dc0@@QAE@ABVDisplayVectorCallLocal_00ddfd10@@0MHH@Z": "0x00d22dc0",
     "??0FUN_00d58510@@QAE@ABVDisplayVectorCallLocal_00ddfd10@@0MHH@Z": "0x00d58510",
     "??0FUN_00de1f50@@QAE@ABVDisplayVectorCallLocal_00ddfd10@@@Z": "0x00de1f50",
-    "??0FUN_00de4f20@@QAE@ABVDisplayVectorCallLocal_00ddfd10@@000@Z": "0x00de4f20",
+    "??0hkDisplayPlane@@QAE@ABVDisplayVectorCallLocal_00ddfd10@@000@Z": "0x00de4f20",
     "?DAT_01017d10@@3VDisplayVectorCallLocal_00ddfd10@@A": "0x01017d10",
     "?DAT_01267e30@@3VDisplayVectorCallLocal_00ddfd10@@A": "0x01267e30",
     "?setTransformedPos_00c7f640@DisplayVectorCallLocal_00ddfd10@@QAEXABVTransform@@ABV1@@Z": "0x00c7f640"
@@ -538780,7 +538780,7 @@
     "??0FUN_00b10dc0@@QAE@PAU0@@Z": "0x00b10dc0",
     "??0FUN_00b130a0@@QAE@XZ": "0x00b130a0",
     "??0FUN_00b37660@@QAE@ABUB13970Tmp@@@Z": "0x00b37660",
-    "??0FUN_00b40070@fnv_00b13c10@@QAE@HHH@Z": "0x00b40070",
+    "??0CBillboardLeaf@fnv_00b13c10@@QAE@HHH@Z": "0x00b40070",
     "??1FUN_00b10dc0@@QAE@XZ": "0x00b10e90",
     "??2@YAPAXI@Z": "0x00401000",
     "??3@YAXPAX@Z": "0x00401030",
@@ -555186,10 +555186,10 @@
    ],
    "symbols": {
     "??0FUN_00404eb0@@QAE@HHPBDH@Z": "0x00404eb0",
-    "??0FUN_00554590@@QAE@XZ": "0x00554590",
+    "??0TESWindListener@@QAE@XZ": "0x00554590",
     "??0FUN_0061f460@@QAE@XZ": "0x0061f460",
-    "??0FUN_00624150@@QAE@XZ": "0x00624150",
-    "??0FUN_0062a460@@QAE@XZ": "0x0062a460",
+    "??0FOIslandActivationListener@@QAE@XZ": "0x00624150",
+    "??0TESArrowTargetListener@@QAE@XZ": "0x0062a460",
     "??0FUN_0062d5c0@@QAE@XZ": "0x0062d5c0",
     "??0FUN_006815c0@@QAE@XZ": "0x006815c0",
     "??0FUN_00c681c0@@QAE@XZ": "0x00c681c0",
@@ -555214,7 +555214,7 @@
     "?TESWaterListener_GetExteriorListener@@YAPAXXZ": "0x0062f3d0",
     "?bhkWorld_SetOrigin@ParticleSystem@@QAEXPAUFUN_006815c0@@@Z": "0x00c68750",
     "?hkpWorldCinfo_setBroadPhaseWorldSize@FUN_00c681c0@@QAEXM@Z": "0x00c90db0",
-    "?NotifyActivation@FUN_00624150@@QAEXPAUComponent@@@Z": "0x006242a0",
+    "?NotifyActivation@FOIslandActivationListener@@QAEXPAUComponent@@@Z": "0x006242a0",
     "?SetField@ParticleSystem@@QAEXPAX@Z": "0x00c6a620",
     "?SetProcessEnabled@ParticleSystem@@QAEXH@Z": "0x00c6a640",
     "@__security_check_cookie@4": "0x00ec408c",
@@ -555470,7 +555470,7 @@
     },
     {
      "address": "0x00554590",
-     "symbol": "?SetVtableAndProcessState_00554590@FUN_00554590_Class@@QAEPAXXZ",
+     "symbol": "?SetVtableAndProcessState_00554590@TESWindListener@@QAEPAXXZ",
      "size": 31
     },
     {
@@ -555982,7 +555982,7 @@
     "?GetRefList_009604f0@CellQ@@QAEPAULstQ@@XZ": "0x009604f0",
     "?GetRefList_009604f0@FUN_005512f0_shell@@QAEPAUItemList@@XZ": "0x009604f0",
     "?GetRefList_009604f0@TESObjectCELL@@QAEPAV?$BSSimpleList@PAVBGSPerkEntry@@@@XZ": "0x009604f0",
-    "?FUN_00c74760@FUN_00554590_Class@@QAEXXZ": "0x00c74760",
+    "?FUN_00c74760@TESWindListener@@QAEXXZ": "0x00c74760",
     "?FreeMemory@Unk6b@@QAEXPAX@Z": "0x006b8310",
     "?Get@B40AD0Helper@@QAEPAXPAX@Z": "0x004a4840",
     "?GetExtraDataList@Cell@CellLighting@@QAEPAUExtras@2@XZ": "0x004610d0",
@@ -561251,7 +561251,7 @@
     },
     {
      "address": "0x00624150",
-     "symbol": "??0FUN_00624150_Class@@QAE@XZ",
+     "symbol": "??0FOIslandActivationListener@@QAE@XZ",
      "size": 52
     },
     {
@@ -561651,7 +561651,7 @@
     },
     {
      "address": "0x0062a460",
-     "symbol": "??0FUN_0062a460_Class@@QAE@XZ",
+     "symbol": "??0TESArrowTargetListener@@QAE@XZ",
      "size": 31
     },
     {
@@ -578174,7 +578174,7 @@
     },
     {
      "address": "0x0080ba90",
-     "symbol": "??0FUN_0080ba90@@QAE@PAVMagicCaster@@PAVMagicItem@@PAVEffectItem@@@Z",
+     "symbol": "??0CommandHumanoidEffect@@QAE@PAVMagicCaster@@PAVMagicItem@@PAVEffectItem@@@Z",
      "size": 45
     },
     {
@@ -604553,7 +604553,7 @@
     },
     {
      "address": "0x00b3c440",
-     "symbol": "?std_out_of_range_out_of_range@FUN_00b3c440_class@@QAEHH@Z",
+     "symbol": "?std_out_of_range_out_of_range@std__out_of_range@@QAEHH@Z",
      "size": 39
     },
     {
@@ -604598,7 +604598,7 @@
     },
     {
      "address": "0x00b3c910",
-     "symbol": "?InitVTable@FUN_00b3c910_class@@QAEXXZ",
+     "symbol": "?InitVTable@std__locale__facet@@QAEXXZ",
      "size": 20
     },
     {
@@ -604666,7 +604666,7 @@
     "?GetElementAtOffset@FNV_00b3efe0_Obj@@QAEIXZ": "0x00b3efe0",
     "?GetVtblAndValue@FUN_00b393b0_Class@@QAEHH@Z": "0x00b393b0",
     "?InitBuffer@FnvB2e080@@QAE_NI@Z": "0x00b2e080",
-    "?InitVTable@FUN_00b3c910_class@@QAEXXZ": "0x00b3c910",
+    "?InitVTable@std__locale__facet@@QAEXXZ": "0x00b3c910",
     "?Initialize@FUN_00b3c3b0_Class@@QAEXXZ": "0x00b3c3b0",
     "?NormalizeData@FUN_00b3c600_class@@QAEXXZ": "0x00b3c600",
     "?Reset@FUN_00b276f0_cls@@QAEXXZ": "0x00b276f0",
@@ -616408,7 +616408,7 @@
     },
     {
      "address": "0x00c22a80",
-     "symbol": "?InitDefaults@FUN_00c22a80_cls@@QAEPAU1@XZ",
+     "symbol": "?InitDefaults@NiPSysGravityModifier@@QAEPAU1@XZ",
      "size": 71
     },
     {
@@ -616727,7 +616727,7 @@
     "?NiPSysModifierBoolCtlr_NiPSysModifierBoolCtlr@fnv_00c29d00@@YIPAXPAX@Z": "0x00c32b60",
     "?FUN_00c32d80@BSFadeNode@@QAEPAXXZ": "0x00c32d80",
     "?Init@FUN_00c31ff0@@QAEXXZ": "0x00c31ff0",
-    "?InitDefaults@FUN_00c22a80_cls@@QAEPAU1@XZ": "0x00c22a80",
+    "?InitDefaults@NiPSysGravityModifier@@QAEPAU1@XZ": "0x00c22a80",
     "?InitDefaults@FUN_00c22ad0_object@@QAEPAVBSFadeNode@@XZ": "0x00c22a80",
     "?IsEquivalentTo@@YA_NHH@Z": "0x00c313a0",
     "?_DAT_01015f5c@@3MA": "0x01015f5c",
@@ -621863,12 +621863,12 @@
     },
     {
      "address": "0x00c66510",
-     "symbol": "?FUN_00c66510@FUN_00c66510_cls@@QAEPAU1@E@Z",
+     "symbol": "?FUN_00c66510@ahkpWorld@@QAEPAU1@E@Z",
      "size": 48
     },
     {
      "address": "0x00c66540",
-     "symbol": "?InitVtableAndCall@FUN_00c66540_class@@QAEHH@Z",
+     "symbol": "?InitVtableAndCall@bhkMemoryAllocator@@QAEHH@Z",
      "size": 20
     },
     {
@@ -622733,7 +622733,7 @@
     },
     {
      "address": "0x00c74760",
-     "symbol": "??0FUN_00c74760@@QAE@XZ",
+     "symbol": "??0bhkWindListener@@QAE@XZ",
      "size": 28
     },
     {
@@ -623242,12 +623242,12 @@
     "??0FUN_00a5ecb0@fnv_00c6fd80@@QAE@I@Z": "0x00a5ecb0",
     "??0FUN_00c6cde0@@QAE@XZ": "0x00c6cde0",
     "??0FUN_00c87c30_owner@@QAE@XZ": "0x00c87c30",
-    "??0FUN_00cbc460@@QAE@XZ": "0x00cbc460",
-    "??0FUN_00cd3c90@@QAE@XZ": "0x00cd3c90",
+    "??0hkpCharacterStateManager@@QAE@XZ": "0x00cbc460",
+    "??0bhkCharacterStateProjectile@@QAE@XZ": "0x00cd3c90",
     "??0FUN_00cd3f90@@QAE@XZ": "0x00cd3f90",
-    "??0FUN_00cd4260@@QAE@XZ": "0x00cd4260",
-    "??0FUN_00cd44c0@@QAE@XZ": "0x00cd44c0",
-    "??0FUN_00cd47e0@@QAE@XZ": "0x00cd47e0",
+    "??0bhkCharacterStateJumping@@QAE@XZ": "0x00cd4260",
+    "??0bhkCharacterStateSwimming@@QAE@XZ": "0x00cd44c0",
+    "??0bhkCharacterStateOnGround@@QAE@XZ": "0x00cd47e0",
     "??0Key@@QAE@H@Z": "0x00cc04d0",
     "??0LocalRef@@QAE@H@Z": "0x00633c90",
     "??0MemberC76@@QAE@XZ": "0x00a86bf0",
@@ -623346,7 +623346,7 @@
     "?AttachTarget@C69960Arg@@QAEXPAX@Z": "0x0062bc90",
     "?AttachTarget@ResObj@@QAEXPAX@Z": "0x0062bc90",
     "?BC6DF60GetRouter@@YAPAVhkMemoryRouter@@XZ": "0x00c85750",
-    "?BaseRelease@FUN_00c66510_cls@@QAEXXZ": "0x00c93e50",
+    "?BaseRelease@ahkpWorld@@QAEXXZ": "0x00c93e50",
     "?Call@FUN_00c6b670_helper@@QAEXXZ": "0x00a68bf0",
     "?CallTargetWithArgs@FUN_00c6cef0_cls@@QAEXHH@Z": "0x00c6cef0",
     "?CallVirtualWithArg@@YAHPAVFUN_00c66280_obj@@PAUFUN_00c66280_arg@@@Z": "0x00c66280",
@@ -623666,7 +623666,7 @@
     "?hkpLimitedHingeConstraintData_setMotorActive@Behavior@@QAEXPAURecord@@UStateFlag@@@Z": "0x00cb8fe0",
     "?hkpLimitedHingeConstraintData_setMotorActive@ObjectView@@QAEXPAUComponentEntry@@UUpdateOptions@@@Z": "0x00cb8fe0",
     "?hkMemorySystem_replaceInstance@@YAXH@Z": "0x00cbbfb0",
-    "?registerState@FUN_00cbc460@@QAEXPAVhkReferencedObject@@H@Z": "0x00cbc4e0",
+    "?registerState@hkpCharacterStateManager@@QAEXPAVhkReferencedObject@@H@Z": "0x00cbc4e0",
     "?UpdateFields_00cbe880@FUN_00c6d260_class@fnv_00c6d260@@QAEXXZ": "0x00cbe880",
     "?UpdateFields_00cbf1a0@@YGXXZ": "0x00cbf1a0",
     "?UpdateFields_00cbf1a0@FUN_00c66560_class@@QAEXXZ": "0x00cbf1a0",
@@ -623737,7 +623737,7 @@
     "?Init@FUN_00c6d1e0@@QAEXHH@Z": "0x00cbe9f0",
     "?Init@FUN_00cd2de0@@QAEXXZ": "0x00cd2de0",
     "?InitOnce@FUN_00c81ae0_Tgt@@QAEXXZ": "0x00c81ae0",
-    "?InitVtableAndCall@FUN_00c66540_class@@QAEHH@Z": "0x00c66540",
+    "?InitVtableAndCall@bhkMemoryAllocator@@QAEHH@Z": "0x00c66540",
     "?Initialize@ControllerC73@@QAEXPAUInputC73@@@Z": "0x00c72410",
     "?InsertOrUpdate@MapTable@@QAEXII@Z": "0x00c74910",
     "?IsBodyValid@C75850Body@@QAEHXZ": "0x00c75850",
@@ -626832,7 +626832,7 @@
     },
     {
      "address": "0x00c9a040",
-     "symbol": "?FUN_00c9a040@FUN_00c9a040_cls@@QAEPAX_N@Z",
+     "symbol": "?FUN_00c9a040@bhkWorldM@@QAEPAX_N@Z",
      "size": 46
     },
     {
@@ -628105,7 +628105,7 @@
     },
     {
      "address": "0x00ca0ca0",
-     "symbol": "?FUN_00ca0ca0@FUN_00ca0ca0_Class@@QAEPAU1@H@Z",
+     "symbol": "?FUN_00ca0ca0@hkaRagdollRaycastInterface@@QAEPAU1@H@Z",
      "size": 33
     },
     {
@@ -629240,7 +629240,7 @@
     },
     {
      "address": "0x00cbc460",
-     "symbol": "??0FUN_00cbc460@@QAE@XZ",
+     "symbol": "??0hkpCharacterStateManager@@QAE@XZ",
      "size": 53
     },
     {
@@ -629335,7 +629335,7 @@
     },
     {
      "address": "0x00cbe880",
-     "symbol": "?UpdateFields_00cbe880@FUN_00cbe880_Class@@QAEXXZ",
+     "symbol": "?UpdateFields_00cbe880@bhkCollisionBox@@QAEXXZ",
      "size": 11
     },
     {
@@ -629786,7 +629786,7 @@
     "?Game_DoHeapAlloc@Pool_ca57@@QAEPAXI@Z": "0x00aa3e40",
     "?Game_DoHeapAlloc@S_ca9f40_Pool@fnv_00ca9f40@@QAEPAXI@Z": "0x00aa3e40",
     "?MemoryManager_Deallocate@FUN_00aa4060_Class@@QAEXPAX@Z": "0x00aa4060",
-    "?MemoryManager_Deallocate@MemMgr_00aa4060@@QAEXPAUFUN_00ca0ca0_Class@@@Z": "0x00aa4060",
+    "?MemoryManager_Deallocate@MemMgr_00aa4060@@QAEXPAUhkaRagdollRaycastInterface@@@Z": "0x00aa4060",
     "?MemoryManager_Deallocate@S_00aa4060_Class@fnv_00cb9cb0@@QAEXXZ": "0x00aa4060",
     "?bhkCollisionObject_SaveBinary@@YAXXZ": "0x00c65820",
     "?bhkWorld_SetDebugObjectColor@FUN_00c68e30_cls@@QAEXPAX0@Z": "0x00c68e30",
@@ -632509,7 +632509,7 @@
     },
     {
      "address": "0x00cd3c90",
-     "symbol": "?InitializeFields_00cd3c90@FUN_00cd3c90_cls@@QAEPAXXZ",
+     "symbol": "?InitializeFields_00cd3c90@bhkCharacterStateProjectile@@QAEPAXXZ",
      "size": 18
     },
     {
@@ -632519,17 +632519,17 @@
     },
     {
      "address": "0x00cd4260",
-     "symbol": "?SetVirtualTable_00cd4260@FUN_00cd4260_cls@@QAEPAU1@XZ",
+     "symbol": "?SetVirtualTable_00cd4260@bhkCharacterStateJumping@@QAEPAU1@XZ",
      "size": 18
     },
     {
      "address": "0x00cd44c0",
-     "symbol": "?SetVirtualTable_00cd44c0@FUN_00cd44c0_cls@@QAEPAU1@XZ",
+     "symbol": "?SetVirtualTable_00cd44c0@bhkCharacterStateSwimming@@QAEPAU1@XZ",
      "size": 18
     },
     {
      "address": "0x00cd47e0",
-     "symbol": "??0FUN_00cd47e0_t@@QAE@XZ",
+     "symbol": "??0bhkCharacterStateOnGround@@QAE@XZ",
      "size": 21
     },
     {
@@ -635046,7 +635046,7 @@
     },
     {
      "address": "0x00cf4190",
-     "symbol": "??0FUN_00cf4190@@QAE@XZ",
+     "symbol": "??0bhkPositionConstraintMotor@@QAE@XZ",
      "size": 24
     },
     {
@@ -635086,7 +635086,7 @@
     },
     {
      "address": "0x00cf45d0",
-     "symbol": "??0FUN_00cf45d0_class@@QAE@XZ",
+     "symbol": "??0bhkSpringDamperConstraintMotor@@QAE@XZ",
      "size": 18
     },
     {
@@ -635925,7 +635925,7 @@
     },
     {
      "address": "0x00d107b0",
-     "symbol": "??0FUN_00d107b0@@QAE@XZ",
+     "symbol": "??0hkpNullAgent@@QAE@XZ",
      "size": 25
     },
     {
@@ -641071,7 +641071,7 @@
     },
     {
      "address": "0x00da2b90",
-     "symbol": "?Initialize@FUN_00da2b90_Obj@@QAEPAIXZ",
+     "symbol": "?Initialize@hkStackTracer@@QAEPAIXZ",
      "size": 35
     },
     {
@@ -641266,7 +641266,7 @@
     },
     {
      "address": "0x00db7ab0",
-     "symbol": "?SetVtableAndProcessState_00db7ab0@FUN_00db7ab0_class@@QAEPAXPAX00@Z",
+     "symbol": "?SetVtableAndProcessState_00db7ab0@hkStaticClassNameRegistry@@QAEPAXPAX00@Z",
      "size": 48
     },
     {
@@ -641456,7 +641456,7 @@
     "?InitAndReturnTail@@YAPAXPAX00@Z": "0x00da6fa0",
     "?InitBlockPool@@YAXPAX@Z": "0x00da4430",
     "?InitLoadedObject@@YAXPAXH@Z": "0x00db7c20",
-    "?Initialize@FUN_00da2b90_Obj@@QAEPAIXZ": "0x00da2b90",
+    "?Initialize@hkStackTracer@@QAEPAIXZ": "0x00da2b90",
     "?InvokeCallback@FUN_00da2b30_Class@@QAEXXZ": "0x00da2b30",
     "?Mark@DBA430Inner@@QAEXXZ": "0x00a29680",
     "?NotifyAudioListener@DA2D70Object@@QAEPAXH@Z": "0x00da2d70",
@@ -641923,7 +641923,7 @@
     },
     {
      "address": "0x00dcd4b0",
-     "symbol": "?InitializeAndMaybeFree@FUN_00dcd4b0_Class@@QAEPAU1@H@Z",
+     "symbol": "?InitializeAndMaybeFree@hkpSaveContactPointsUtil__EntitySelector@@QAEPAU1@H@Z",
      "size": 31
     },
     {
@@ -642264,7 +642264,7 @@
     "?Init@SpawnedBlob@fnv_00dcc6a0@@QAEPAXHHH@Z": "0x00e05b40",
     "?Init@SpawnedBlob@fnv_00dcc6f0@@QAEPAXHH@Z": "0x00d466e0",
     "?InitFromValue@FUN_00dcc670_Class@@QAEPAHPAH@Z": "0x00dcc670",
-    "?InitializeAndMaybeFree@FUN_00dcd4b0_Class@@QAEPAU1@H@Z": "0x00dcd4b0",
+    "?InitializeAndMaybeFree@hkpSaveContactPointsUtil__EntitySelector@@QAEPAU1@H@Z": "0x00dcd4b0",
     "?InvokeRecord@FUN_00dd92f0_cls@@QAEHHH@Z": "0x00dd92f0",
     "?InvokeRecord@Lock_dd9@@QAEHHH@Z": "0x00dd92f0",
     "?IsValidChunk@S_00dd8cf0@@QAE_NH@Z": "0x00dd8c40",
@@ -642673,7 +642673,7 @@
     },
     {
      "address": "0x00de3060",
-     "symbol": "??0FUN_00de3060@@QAE@PBI@Z",
+     "symbol": "??0hkpConvexRadiusBuilder@@QAE@PBI@Z",
      "size": 36
     },
     {
@@ -654693,7 +654693,7 @@
     },
     {
      "address": "0x00e97870",
-     "symbol": "??0FUN_00e97870_Class@@QAE@E@Z",
+     "symbol": "??0NiDX9ShaderConstantManager@@QAE@E@Z",
      "size": 41
     },
     {

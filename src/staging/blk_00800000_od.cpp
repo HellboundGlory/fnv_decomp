@@ -774,13 +774,13 @@ struct EffectStorage
     EffectStorage(MagicCaster*, MagicItem*, EffectItem*);
 };
 extern int vftable_CommandHumanoidEffect;
-struct FUN_0080ba90 : EffectStorage
+struct CommandHumanoidEffect : EffectStorage
 {
-    FUN_0080ba90(MagicCaster* a, MagicItem* b, EffectItem* c);
+    CommandHumanoidEffect(MagicCaster* a, MagicItem* b, EffectItem* c);
 };
 // Constructs the EffectStorage base from the caster, item and effect item, then sets the object's vtable pointer to vftable_CommandHumanoidEffect.
 // @fnv 0x0080ba90
-FUN_0080ba90::FUN_0080ba90(MagicCaster* a, MagicItem* pItem, EffectItem* pEffectItem)
+CommandHumanoidEffect::CommandHumanoidEffect(MagicCaster* a, MagicItem* pItem, EffectItem* pEffectItem)
     : EffectStorage(a, pItem, pEffectItem)
 {
     *(int*)this = (int)&vftable_CommandHumanoidEffect;

@@ -11,14 +11,14 @@ extern int vftable_hkpWorldSnapshotViewer_for_hkProcess;
 extern int vftable_hkpWorldSnapshotViewer;
 extern void __cdecl FUN_00ddcc60();
 
-struct FUN_00d62fe0_cls
+struct hkpWorldSnapshotViewer
 {
     void __thiscall UpdateFields_00d62fe0();
 };
 
 // @fnv 0x00d62fe0
 // src: GUESS 0x00d62fe0 (confidence: low)
-void __thiscall FUN_00d62fe0_cls::UpdateFields_00d62fe0()
+void __thiscall hkpWorldSnapshotViewer::UpdateFields_00d62fe0()
 {
     *(int*)this = (int)&vftable_hkpWorldSnapshotViewer;
     *(int*)((char*)this + 8) = (int)&vftable_hkpWorldSnapshotViewer_for_hkProcess;

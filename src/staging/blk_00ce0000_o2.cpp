@@ -74,14 +74,14 @@ template <typename T> __forceinline void hkMemoryAllocator::_bufFree(void* p, in
 extern int vftable_bhkSpringDamperConstraintMotor;
 void __cdecl FUN_00d86220();
 
-struct FUN_00cf45d0_class
+struct bhkSpringDamperConstraintMotor
 {
     int vtable;
-    FUN_00cf45d0_class();
+    bhkSpringDamperConstraintMotor();
 };
 
 // @fnv 0x00cf45d0
-FUN_00cf45d0_class::FUN_00cf45d0_class()
+bhkSpringDamperConstraintMotor::bhkSpringDamperConstraintMotor()
 {
     FUN_00d86220();
     vtable = (int)&vftable_bhkSpringDamperConstraintMotor;
@@ -1227,12 +1227,12 @@ struct FUN_00cdf560
     int m8;
     FUN_00cdf560(float);
 };
-struct FUN_00cf4190 : FUN_00cdf560
+struct bhkPositionConstraintMotor : FUN_00cdf560
 {
-    FUN_00cf4190();
+    bhkPositionConstraintMotor();
 };
 // @fnv 0x00cf4190
-FUN_00cf4190::FUN_00cf4190() : FUN_00cdf560(0.0f)
+bhkPositionConstraintMotor::bhkPositionConstraintMotor() : FUN_00cdf560(0.0f)
 {
     m0 = (int)&vftable_bhkPositionConstraintMotor;
 }

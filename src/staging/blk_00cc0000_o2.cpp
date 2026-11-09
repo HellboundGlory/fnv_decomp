@@ -2061,15 +2061,15 @@ void Object::bhkShapeCollection_GetViewerStrings(StrArr* pStrArr)
 }  // namespace fnv_00cd2fd0
 
 extern int vftable_bhkCharacterStateSwimming;
-struct FUN_00cd44c0_cls {
+struct bhkCharacterStateSwimming {
     int m_vft;
     unsigned short m_kPointA;
     unsigned short m_kPointB;
-    FUN_00cd44c0_cls* SetVirtualTable_00cd44c0();
+    bhkCharacterStateSwimming* SetVirtualTable_00cd44c0();
 };
 // @fnv 0x00cd44c0
 // src: GUESS 0x00cd44c0 (confidence: low)
-FUN_00cd44c0_cls* FUN_00cd44c0_cls::SetVirtualTable_00cd44c0()
+bhkCharacterStateSwimming* bhkCharacterStateSwimming::SetVirtualTable_00cd44c0()
 {
     m_kPointB = 1;
     m_vft = (int)&vftable_bhkCharacterStateSwimming;
@@ -2077,15 +2077,15 @@ FUN_00cd44c0_cls* FUN_00cd44c0_cls::SetVirtualTable_00cd44c0()
 }
 
 extern int vftable_bhkCharacterStateOnGround;
-struct FUN_00cd47e0_t {
+struct bhkCharacterStateOnGround {
     void* m_pVtable;
     unsigned int m_uiRefCount;
     unsigned char m_bFlag;
     unsigned short m_usFlags;
-    FUN_00cd47e0_t();
+    bhkCharacterStateOnGround();
 };
 // @fnv 0x00cd47e0
-FUN_00cd47e0_t::FUN_00cd47e0_t()
+bhkCharacterStateOnGround::bhkCharacterStateOnGround()
 {
     *(unsigned short*)((char*)this + 6) = 1;
     m_pVtable = (void*)&vftable_bhkCharacterStateOnGround;
@@ -13269,7 +13269,7 @@ int __cdecl Object_ReturnSix()
 
 extern int vftable_bhkCharacterStateProjectile;
 
-struct FUN_00cd3c90_cls
+struct bhkCharacterStateProjectile
 {
     void* m_pVtable;
     unsigned short m_uiValue1;
@@ -13280,7 +13280,7 @@ struct FUN_00cd3c90_cls
 
 // @fnv 0x00cd3c90
 // src: GUESS 0x00cd3c90 (confidence: low)
-void* FUN_00cd3c90_cls::InitializeFields_00cd3c90()
+void* bhkCharacterStateProjectile::InitializeFields_00cd3c90()
 {
     m_uiUnk = 1;
     m_pVtable = (void*)&vftable_bhkCharacterStateProjectile;
@@ -13316,17 +13316,17 @@ FUN_00cd3f90::FUN_00cd3f90()
 
 extern char vftable_bhkCharacterStateJumping[];
 
-struct FUN_00cd4260_cls {
+struct bhkCharacterStateJumping {
     void* m_vptr;
     unsigned short unk04;
     unsigned short m_w06;
 
-    FUN_00cd4260_cls* SetVirtualTable_00cd4260();
+    bhkCharacterStateJumping* SetVirtualTable_00cd4260();
 };
 
 // @fnv 0x00cd4260
 // src: GUESS 0x00cd4260 (confidence: low)
-FUN_00cd4260_cls* FUN_00cd4260_cls::SetVirtualTable_00cd4260()
+bhkCharacterStateJumping* bhkCharacterStateJumping::SetVirtualTable_00cd4260()
 {
     m_w06 = 1;
     m_vptr = vftable_bhkCharacterStateJumping;

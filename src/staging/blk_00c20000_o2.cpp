@@ -610,7 +610,7 @@ extern int DAT_011a946c;
 extern int DAT_011a9470;
 extern int DAT_011a9474;
 
-struct FUN_00c22a80_cls : NiPSysPositionModifier
+struct NiPSysGravityModifier : NiPSysPositionModifier
 {
     int m_18;
     int m_1c;
@@ -622,12 +622,12 @@ struct FUN_00c22a80_cls : NiPSysPositionModifier
     float m_34;
     float m_38;
 
-    FUN_00c22a80_cls* InitDefaults();
+    NiPSysGravityModifier* InitDefaults();
 };
 
 // Calls InitBase, sets the vtable pointer and initialises the object's fields to zero, one and the DAT_011a946c/9470/9474 values, then returns this.
 // @fnv 0x00c22a80
-FUN_00c22a80_cls* FUN_00c22a80_cls::InitDefaults()
+NiPSysGravityModifier* NiPSysGravityModifier::InitDefaults()
 {
     this->NiPSysPositionModifier::NiPSysPositionModifier();
     m_18 = 0;

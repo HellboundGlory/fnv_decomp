@@ -313,14 +313,14 @@ void __cdecl Runtime_UpdateState_00dccb10(char* p)
 extern int vftable_hkpSaveContactPointsUtil__EntitySelector[];
 extern void __cdecl _Deallocate(void* p);
 
-struct FUN_00dcd4b0_Class
+struct hkpSaveContactPointsUtil__EntitySelector
 {
     void* m_ppVirtualMethodTable;
-    FUN_00dcd4b0_Class* __thiscall InitializeAndMaybeFree(int flags);
+    hkpSaveContactPointsUtil__EntitySelector* __thiscall InitializeAndMaybeFree(int flags);
 };
 
 // @fnv 0x00dcd4b0
-FUN_00dcd4b0_Class* __thiscall FUN_00dcd4b0_Class::InitializeAndMaybeFree(int flags)
+hkpSaveContactPointsUtil__EntitySelector* __thiscall hkpSaveContactPointsUtil__EntitySelector::InitializeAndMaybeFree(int flags)
 {
     m_ppVirtualMethodTable = vftable_hkpSaveContactPointsUtil__EntitySelector;
     if (flags & 1)
