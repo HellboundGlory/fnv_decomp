@@ -2641,11 +2641,12 @@ void FUN_00c8e9c0();
 struct Obj56d550
 {
     void FUN_00c8e9c0();
-    void* FUN_0056d550(unsigned int);
+    void* bhkRigidBody_ScalarDeletingDestructor(unsigned int);
 };
 // Calls FUN_00c8e9c0, then if flags has bit 1 set frees this via NiMemObject::operator delete with size 0x1c, and returns this.
 // @fnv 0x0056d550
-void* Obj56d550::FUN_0056d550(unsigned int flags)
+// src: EXE 0x0056d550
+void* Obj56d550::bhkRigidBody_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00c8e9c0();
     if (flags & 1)
@@ -7738,11 +7739,12 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_0055a3d0(unsigned int flags);
+    void* TESObjectREFR_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls the destructor on this object, frees it with Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x0055a3d0
-void* DelStandIn::FUN_0055a3d0(unsigned int flags)
+// src: EXE 0x0055a3d0
+void* DelStandIn::TESObjectREFR_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)
@@ -9280,7 +9282,8 @@ extern "C" void __cdecl __Dummy_00b6fef0(void* ptr, unsigned int size);
 
 
 // @fnv 0x0056e420
-void* bhkPhantom::FUN_0056e420(unsigned int flags)
+// src: EXE 0x0056e420
+void* bhkPhantom::ScalarDeletingDestructor(unsigned int flags)
 {
     this->FUN_00c9f3b0();
     if (flags & 1)
@@ -9290,7 +9293,7 @@ void* bhkPhantom::FUN_0056e420(unsigned int flags)
 
 struct FUN_0056e4b0_Class
 {
-    void* FUN_0056e4b0(unsigned int flags);
+    void* bhkSimpleShapePhantom_ScalarDeletingDestructor(unsigned int flags);
 };
 
 struct FUN_00c9eec0_Class
@@ -9301,7 +9304,8 @@ struct FUN_00c9eec0_Class
 void __cdecl __Dummy_00b6fef0(void* obj, unsigned int size);
 
 // @fnv 0x0056e4b0
-void* FUN_0056e4b0_Class::FUN_0056e4b0(unsigned int flags)
+// src: EXE 0x0056e4b0
+void* FUN_0056e4b0_Class::bhkSimpleShapePhantom_ScalarDeletingDestructor(unsigned int flags)
 {
     reinterpret_cast<FUN_00c9eec0_Class*>(this)->FUN_00c9eec0();
     if (flags & 1)
@@ -9312,14 +9316,15 @@ void* FUN_0056e4b0_Class::FUN_0056e4b0(unsigned int flags)
 struct FUN_0056e780_Class
 {
     void FUN_00ca0540();
-    void* FUN_0056e780(unsigned int flags);
+    void* bhkSphereRepShape_ScalarDeletingDestructor(unsigned int flags);
 };
 
 void FUN_00ca0540(void* p);
 extern "C" void __cdecl __Dummy_00b6fef0(void* p, unsigned int flags);
 
 // @fnv 0x0056e780
-void* FUN_0056e780_Class::FUN_0056e780(unsigned int flags)
+// src: EXE 0x0056e780
+void* FUN_0056e780_Class::bhkSphereRepShape_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00ca0540();
     if (flags & 1)
@@ -9332,11 +9337,12 @@ extern "C" void __cdecl __Dummy_00b6fef0(void* obj, unsigned int size);
 struct FUN_0056e7c0_Class
 {
     void FUN_00c9fb00();
-    void* FUN_0056e7c0(unsigned int flags);
+    void* bhkConvexShape_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // @fnv 0x0056e7c0
-void* FUN_0056e7c0_Class::FUN_0056e7c0(unsigned int flags)
+// src: EXE 0x0056e7c0
+void* FUN_0056e7c0_Class::bhkConvexShape_ScalarDeletingDestructor(unsigned int flags)
 {
     this->FUN_00c9fb00();
     if (flags & 1)
@@ -9563,7 +9569,8 @@ extern "C" void* __cdecl _delete(void* ptr, unsigned int size);
 
 // Calls FUN_00c85790, deletes this with size 20 when flags has bit 0 set, and returns this.
 // @fnv 0x0056d4c0
-void* bhkWorldObject::FUN_0056d4c0(unsigned int flags)
+// src: EXE 0x0056d4c0
+void* bhkWorldObject::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00c85790();
     if (flags & 1)
@@ -9588,7 +9595,8 @@ FUN_0056e2a0::FUN_0056e2a0()
 
 // Calls FUN_00c9f530, then frees this with operator delete when flags has bit 0 set, and returns this.
 // @fnv 0x0056e5e0
-void* bhkAabbPhantom::FUN_0056e5e0(unsigned int flags)
+// src: EXE 0x0056e5e0
+void* bhkAabbPhantom::ScalarDeletingDestructor(unsigned int flags)
 {
     this->FUN_00c9f530();
     if (flags & 1)
@@ -9602,7 +9610,8 @@ extern void __cdecl _delete(void* p, unsigned int size);
 
 
 // @fnv 0x0056e740
-void* bhkShape::FUN_0056e740(unsigned int flags)
+// src: EXE 0x0056e740
+void* bhkShape::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00c84c50();
     if (flags & 1)
@@ -14901,7 +14910,8 @@ void _Deallocate(void*);
 
 // Calls FUN_0057a8d0 on this, frees this when flags has bit 0 set, and returns this.
 // @fnv 0x0057a8a0
-void* ExtraAnimNoteReceiver::FUN_0057a8a0(unsigned int flags)
+// src: EXE 0x0057a8a0
+void* ExtraAnimNoteReceiver::ScalarDeletingDestructor(unsigned int flags)
 {
     this->FUN_0057a8d0();
 

@@ -554,11 +554,12 @@ struct FUN_00435f80_shell
 };
 struct FUN_00435f50_class : FUN_00435f80_shell
 {
-    void* __thiscall FUN_00435f50(unsigned int flags);
+    void* __thiscall ExtraRefractionProperty_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_00435f80, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x00435f50
-void* __thiscall FUN_00435f50_class::FUN_00435f50(unsigned int flags)
+// src: EXE 0x00435f50
+void* __thiscall FUN_00435f50_class::ExtraRefractionProperty_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00435f80();
     if (flags & 1)
@@ -582,10 +583,11 @@ void __cdecl Deallocate(void*);
 struct FUN_00436150_Class
 {
     void __thiscall FUN_00436180();
-    void* __thiscall FUN_00436150(unsigned int flags);
+    void* __thiscall ExtraSound_ScalarDeletingDestructor(unsigned int flags);
 };
 // @fnv 0x00436150
-void* __thiscall FUN_00436150_Class::FUN_00436150(unsigned int flags)
+// src: EXE 0x00436150
+void* __thiscall FUN_00436150_Class::ExtraSound_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00436180();
     if (flags & 1)
@@ -596,11 +598,12 @@ void* __thiscall FUN_00436150_Class::FUN_00436150(unsigned int flags)
 struct FUN_00436390_Class
 {
     void __thiscall FUN_004363c0();
-    void* __thiscall FUN_00436390(unsigned int flags);
+    void* __thiscall ExtraCreatureMovementSound_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // @fnv 0x00436390
-void* FUN_00436390_Class::FUN_00436390(unsigned int flags)
+// src: EXE 0x00436390
+void* FUN_00436390_Class::ExtraCreatureMovementSound_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004363c0();
     if (flags & 1)
@@ -611,11 +614,12 @@ void* FUN_00436390_Class::FUN_00436390(unsigned int flags)
 struct FUN_004364b0_Class
 {
     void __thiscall FUN_004364e0();
-    void* __thiscall FUN_004364b0(unsigned int flags);
+    void* __thiscall ExtraWeaponIdleSound_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_004364e0, then deallocates this if flags has bit 0 set, and returns this.
 // @fnv 0x004364b0
-void* FUN_004364b0_Class::FUN_004364b0(unsigned int flags)
+// src: EXE 0x004364b0
+void* FUN_004364b0_Class::ExtraWeaponIdleSound_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004364e0();
     if (flags & 1)
@@ -626,11 +630,12 @@ void* FUN_004364b0_Class::FUN_004364b0(unsigned int flags)
 struct FUN_004365d0_class
 {
     void* __thiscall FUN_00436600();
-    void* __thiscall FUN_004365d0(unsigned int flags);
+    void* __thiscall ExtraWeaponAttackSound_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_00436600, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x004365d0
-void* __thiscall FUN_004365d0_class::FUN_004365d0(unsigned int flags)
+// src: EXE 0x004365d0
+void* __thiscall FUN_004365d0_class::ExtraWeaponAttackSound_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00436600();
     if (flags & 1)
@@ -644,12 +649,13 @@ void __cdecl Deallocate(void*);
 struct FUN_004366f0_class
 {
     void __thiscall FUN_00436720();
-    void* __thiscall FUN_004366f0(unsigned int flags);
+    void* __thiscall ExtraActivateLoopSound_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_00436720, frees this via Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x004366f0
-void* __thiscall FUN_004366f0_class::FUN_004366f0(unsigned int flags)
+// src: EXE 0x004366f0
+void* __thiscall FUN_004366f0_class::ExtraActivateLoopSound_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00436720();
     if (flags & 1)
@@ -662,10 +668,11 @@ void FUN_00436bb0();
 struct FUN_00436af0_Class
 {
     void FUN_00436bb0();
-    void* FUN_00436af0(unsigned int flags);
+    void* ExtraTalkingActor_ScalarDeletingDestructor(unsigned int flags);
 };
 // @fnv 0x00436af0
-void* FUN_00436af0_Class::FUN_00436af0(unsigned int flags)
+// src: EXE 0x00436af0
+void* FUN_00436af0_Class::ExtraTalkingActor_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00436bb0();
     if (flags & 1)
@@ -1662,12 +1669,13 @@ FUN_00435f80::~FUN_00435f80()
 struct FUN_004362a0
 {
     ~FUN_004362a0();
-    void* __thiscall FUN_00436270(unsigned int flags);
+    void* __thiscall ExtraCreatureAwakeSound_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Runs the destructor, frees this with _Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x00436270
-void* FUN_004362a0::FUN_00436270(unsigned int flags)
+// src: EXE 0x00436270
+void* FUN_004362a0::ExtraCreatureAwakeSound_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004362a0::~FUN_004362a0();
 

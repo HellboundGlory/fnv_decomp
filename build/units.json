@@ -146339,7 +146339,7 @@
     },
     {
      "address": "0x0048efc0",
-     "symbol": "?FUN_0048efc0@DelStandIn@p07@@QAEPAXI@Z",
+     "symbol": "?AnimSequenceSingle_ScalarDeletingDestructor@DelStandIn@p07@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -146764,7 +146764,7 @@
     },
     {
      "address": "0x004968e0",
-     "symbol": "?FUN_004968e0@FUN_004968e0_shell@@QAEPAXI@Z",
+     "symbol": "?NiRefObject_ScalarDeletingDestructor@FUN_004968e0_shell@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -146784,7 +146784,7 @@
     },
     {
      "address": "0x00496980",
-     "symbol": "?FUN_00496980@FUN_00496980_caller@@QAEPAXI@Z",
+     "symbol": "?AnimIdle_ScalarDeletingDestructor@FUN_00496980_caller@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -146974,7 +146974,7 @@
     },
     {
      "address": "0x0049bb20",
-     "symbol": "?FUN_0049bb20@FUN_0049bb20_cls@@QAEPAXI@Z",
+     "symbol": "?BSAnimGroupSequence_ScalarDeletingDestructor@FUN_0049bb20_cls@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -148134,7 +148134,7 @@
     },
     {
      "address": "0x00589930",
-     "symbol": "?FUN_00589930@Standin00589930@@QAEPAXI@Z",
+     "symbol": "?BGSAcousticSpace_ScalarDeletingDestructor@Standin00589930@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -148287,7 +148287,7 @@
     },
     {
      "address": "0x004f8b90",
-     "symbol": "?FUN_004f8b90@Proxy_004f8b90@@QAEPAXI@Z",
+     "symbol": "?BGSAddonNode_ScalarDeletingDestructor@Proxy_004f8b90@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -148342,7 +148342,7 @@
     },
     {
      "address": "0x004f9240",
-     "symbol": "?FUN_004f9240@BGSAddonNodeSoundHandleExtra@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@BGSAddonNodeSoundHandleExtra@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -150320,7 +150320,7 @@
     },
     {
      "address": "0x004a0ff0",
-     "symbol": "?FUN_004a0ff0@BSCullingProcess@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@BSCullingProcess@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -152329,7 +152329,7 @@
     },
     {
      "address": "0x005e64e0",
-     "symbol": "?FUN_005e65d0@BGSEntryPointFunctionDataActivateChoice@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@BGSEntryPointFunctionDataActivateChoice@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -152841,7 +152841,7 @@
     },
     {
      "address": "0x004facf0",
-     "symbol": "?FUN_004facf0@ScalarHelper@@QAEPAXI@Z",
+     "symbol": "?BGSExplosion_ScalarDeletingDestructor@ScalarHelper@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -153345,7 +153345,7 @@
    "functions": [
     {
      "address": "0x00401a90",
-     "symbol": "?FUN_00401a90@BGSHungerStage@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@BGSHungerStage@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -154892,7 +154892,7 @@
    "functions": [
     {
      "address": "0x005912a0",
-     "symbol": "?FUN_005912a0@MusicTypeDeletion@@QAEPAXI@Z",
+     "symbol": "?BGSMusicType_ScalarDeletingDestructor@MusicTypeDeletion@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -156486,7 +156486,7 @@
     },
     {
      "address": "0x004a6110",
-     "symbol": "?FUN_004a6110@BSOcclusionPlane@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@BSOcclusionPlane@@QAEPAXI@Z",
      "size": 49
     },
     {
@@ -156566,7 +156566,7 @@
     },
     {
      "address": "0x004a7060",
-     "symbol": "?FUN_004a7060@BSMultiBoundAABB@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@BSMultiBoundAABB@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -156581,7 +156581,7 @@
     },
     {
      "address": "0x004a7100",
-     "symbol": "?FUN_004a7100@BSMultiBoundOBB@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@BSMultiBoundOBB@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -156651,7 +156651,7 @@
     },
     {
      "address": "0x004a7bf0",
-     "symbol": "?FUN_004a7bf0@BSMultiBoundSphere@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@BSMultiBoundSphere@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -159173,7 +159173,7 @@
     },
     {
      "address": "0x004fe2e0",
-     "symbol": "?FUN_004fe2e0@Dummy@@QAEPAXI@Z",
+     "symbol": "?BGSStaticCollection_ScalarDeletingDestructor@Dummy@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -159287,7 +159287,7 @@
     },
     {
      "address": "0x004fe6e0",
-     "symbol": "?FUN_004fe6e0@FUN_004fe6e0_Class@@QAEPAXI@Z",
+     "symbol": "?BGSTalkingActivator_ScalarDeletingDestructor@FUN_004fe6e0_Class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -161935,12 +161935,12 @@
    "functions": [
     {
      "address": "0x004b0550",
-     "symbol": "?FUN_004b0550@IBSAnimNoteReceiver@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@IBSAnimNoteReceiver@@QAEPAXI@Z",
      "size": 44
     },
     {
      "address": "0x004b0580",
-     "symbol": "?FUN_004b0580@BSAnimNoteReceiver@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@BSAnimNoteReceiver@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -164967,7 +164967,7 @@
     },
     {
      "address": "0x0040ee40",
-     "symbol": "?FUN_0040ee40@ExtraHavok@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraHavok@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -165027,7 +165027,7 @@
     },
     {
      "address": "0x0040f1e0",
-     "symbol": "?FUN_0040f1e0@ExtraCellImpactSwap@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraCellImpactSwap@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -165062,7 +165062,7 @@
     },
     {
      "address": "0x0040f4d0",
-     "symbol": "?FUN_0040f4d0@FUN_0040f4d0_shell@@QAEPAXI@Z",
+     "symbol": "?ExtraCellCanopyShadowMask_ScalarDeletingDestructor@FUN_0040f4d0_shell@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -165209,7 +165209,7 @@
     },
     {
      "address": "0x0040f780",
-     "symbol": "?FUN_0040f780@FUN_0040f780_struct@@QAEPAXI@Z",
+     "symbol": "?BaseExtraList_ScalarDeletingDestructor@FUN_0040f780_struct@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -165309,7 +165309,7 @@
     },
     {
      "address": "0x00410380",
-     "symbol": "?FUN_00410380@FUN_00410380_class@fnv_00410380@@QAEPAXI@Z",
+     "symbol": "?ExtraDataList_ScalarDeletingDestructor@FUN_00410380_class@fnv_00410380@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -165329,7 +165329,7 @@
     },
     {
      "address": "0x00411bb0",
-     "symbol": "?FUN_00411bb0@ExtraReflectedRefs@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraReflectedRefs@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -165349,7 +165349,7 @@
     },
     {
      "address": "0x00411cf0",
-     "symbol": "?FUN_00411cf0@FUN_00411cf0_class@fnv_00411cf0@@QAEPAXI@Z",
+     "symbol": "?ExtraWaterLightRefs_ScalarDeletingDestructor@FUN_00411cf0_class@fnv_00411cf0@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -165359,7 +165359,7 @@
     },
     {
      "address": "0x00411d90",
-     "symbol": "?FUN_00411d90@ExtraLitWaterRefs@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraLitWaterRefs@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -166784,7 +166784,7 @@
     },
     {
      "address": "0x0041fb20",
-     "symbol": "?FUN_0041fd80@ExtraPatrolRefData@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraPatrolRefData@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -166809,7 +166809,7 @@
     },
     {
      "address": "0x0041fd80",
-     "symbol": "?FUN_00411c50@ExtraReflectorRefs@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraReflectorRefs@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -166849,7 +166849,7 @@
     },
     {
      "address": "0x00420030",
-     "symbol": "?FUN_00420030@ExtraOcclusionPlaneRefData@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraOcclusionPlaneRefData@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -166894,7 +166894,7 @@
     },
     {
      "address": "0x00420380",
-     "symbol": "?FUN_00420380@ExtraPortalRefData@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraPortalRefData@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -166924,7 +166924,7 @@
     },
     {
      "address": "0x00420600",
-     "symbol": "?FUN_0041fb20@ExtraPrimitive@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraPrimitive@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -167414,7 +167414,7 @@
     },
     {
      "address": "0x0042c5b0",
-     "symbol": "?FUN_0042c5b0@DelStandIn@p07@fnv_0042c5b0@@QAEPAXI@Z",
+     "symbol": "?ExtraTeleport_ScalarDeletingDestructor@DelStandIn@p07@fnv_0042c5b0@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -167509,7 +167509,7 @@
     },
     {
      "address": "0x0042c960",
-     "symbol": "?FUN_0042c960@ExtraHeadingTarget@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraHeadingTarget@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -167544,7 +167544,7 @@
     },
     {
      "address": "0x0042cb00",
-     "symbol": "?FUN_0042cb00@ExtraActorCause@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraActorCause@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -167554,7 +167554,7 @@
     },
     {
      "address": "0x0042cd40",
-     "symbol": "?FUN_0042cd40@ExtraSecuritronFace@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraSecuritronFace@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -170765,7 +170765,7 @@
     },
     {
      "address": "0x0042cc70",
-     "symbol": "?FUN_0042cc70@FUN_0042cc70_Class@@QAEPAXI@Z",
+     "symbol": "?ExtraWeaponModFlags_ScalarDeletingDestructor@FUN_0042cc70_Class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -170935,7 +170935,7 @@
     },
     {
      "address": "0x00430e70",
-     "symbol": "?FUN_00430e70@ExtraFollower@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraFollower@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -171260,7 +171260,7 @@
     },
     {
      "address": "0x00432440",
-     "symbol": "?FUN_00432440@ExtraInfoGeneralTopic@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraInfoGeneralTopic@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -171435,7 +171435,7 @@
     },
     {
      "address": "0x004330b0",
-     "symbol": "?FUN_004330b0@ExtraRunOncePacks@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraRunOncePacks@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -171470,7 +171470,7 @@
     },
     {
      "address": "0x00433410",
-     "symbol": "?FUN_00433410@ExtraEnableStateChildren@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraEnableStateChildren@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -171535,12 +171535,12 @@
     },
     {
      "address": "0x00433800",
-     "symbol": "?FUN_00433800@ExtraActivateRefChildren@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraActivateRefChildren@@QAEPAXI@Z",
      "size": 44
     },
     {
      "address": "0x00433940",
-     "symbol": "?FUN_00433940@DelStandIn@p07@fnv_00433940@@QAEPAXI@Z",
+     "symbol": "?ExtraActivateRef_ScalarDeletingDestructor@DelStandIn@p07@fnv_00433940@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -171860,7 +171860,7 @@
     },
     {
      "address": "0x004359c0",
-     "symbol": "?FUN_004359c0@ExtraDroppedItemList@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraDroppedItemList@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -172020,7 +172020,7 @@
     },
     {
      "address": "0x004374e0",
-     "symbol": "?FUN_004374e0@ExtraSayTopicInfoOnceADay@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraSayTopicInfoOnceADay@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -172045,7 +172045,7 @@
     },
     {
      "address": "0x004377c0",
-     "symbol": "?FUN_004377c0@ExtraWaterZoneMap@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraWaterZoneMap@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -172120,7 +172120,7 @@
     },
     {
      "address": "0x00437ce0",
-     "symbol": "?FUN_00437ce0@ExtraFollowerSwimBreadcrumbs@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@ExtraFollowerSwimBreadcrumbs@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -177316,7 +177316,7 @@
     },
     {
      "address": "0x004b5160",
-     "symbol": "?FUN_004b5160@bhkSerializable@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@bhkSerializable@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -177326,7 +177326,7 @@
     },
     {
      "address": "0x004b51a0",
-     "symbol": "?FUN_004b51a0@FUN_004b51a0_shell@@QAEPAXI@Z",
+     "symbol": "?bhkAction_ScalarDeletingDestructor@FUN_004b51a0_shell@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -177336,7 +177336,7 @@
     },
     {
      "address": "0x004b51e0",
-     "symbol": "?FUN_004b51e0@UnaryActionDeletingDestructor@@QAEPAXI@Z",
+     "symbol": "?bhkUnaryAction_ScalarDeletingDestructor@UnaryActionDeletingDestructor@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -177346,7 +177346,7 @@
     },
     {
      "address": "0x004b5230",
-     "symbol": "?FUN_004b5230@bhkMouseSpringAction@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@bhkMouseSpringAction@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -179443,7 +179443,7 @@
     },
     {
      "address": "0x006210a0",
-     "symbol": "?FUN_006210a0@FUN_006210a0_shell@@QAEPAXI@Z",
+     "symbol": "?hkpCdPointCollector_ScalarDeletingDestructor@FUN_006210a0_shell@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -180319,7 +180319,7 @@
     },
     {
      "address": "0x0062d3f0",
-     "symbol": "?FUN_0062d3f0@FUN_0062d3f0_Standin@@QAEPAXI@Z",
+     "symbol": "?hkpCdBodyPairCollector_ScalarDeletingDestructor@FUN_0062d3f0_Standin@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -180329,7 +180329,7 @@
     },
     {
      "address": "0x0062d440",
-     "symbol": "?FUN_0062d440@hkpAllCdBodyPairCollector@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@hkpAllCdBodyPairCollector@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -180369,7 +180369,7 @@
     },
     {
      "address": "0x0062d710",
-     "symbol": "?FUN_0062d710@FUN_0062d710_shell@@QAEPAXI@Z",
+     "symbol": "?hkpPhantomListener_ScalarDeletingDestructor@FUN_0062d710_shell@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -180823,7 +180823,7 @@
     },
     {
      "address": "0x0062e750",
-     "symbol": "?FUN_0062e750@FUN_0062e750_shell@@QAEPAXI@Z",
+     "symbol": "?TESWaterListener_ScalarDeletingDestructor@FUN_0062e750_shell@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -185207,7 +185207,7 @@
     },
     {
      "address": "0x004049a0",
-     "symbol": "?FUN_004049a0@Setting@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@Setting@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -185988,7 +185988,7 @@
     },
     {
      "address": "0x00409270",
-     "symbol": "?FUN_00409270@Unnamed@@QAEPAXI@Z",
+     "symbol": "?MagicItemForm_ScalarDeletingDestructor@Unnamed@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -186113,7 +186113,7 @@
     },
     {
      "address": "0x00409b10",
-     "symbol": "?FUN_00409b10@FUN_00409b10_shell@@QAEPAXI@Z",
+     "symbol": "?IngredientItem_ScalarDeletingDestructor@FUN_00409b10_shell@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -187927,7 +187927,7 @@
     },
     {
      "address": "0x0043be30",
-     "symbol": "?FUN_0043be30@DelStandIn@p07@@QAEPAXI@Z",
+     "symbol": "?QueuedTexture_ScalarDeletingDestructor@DelStandIn@p07@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -188067,7 +188067,7 @@
     },
     {
      "address": "0x0043c800",
-     "symbol": "?FUN_0043c800@DelStandIn@p07@fnv_0043c800@@QAEPAXI@Z",
+     "symbol": "?QueuedModel_ScalarDeletingDestructor@DelStandIn@p07@fnv_0043c800@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -188172,7 +188172,7 @@
     },
     {
      "address": "0x0043d150",
-     "symbol": "?FUN_0043d150@BSStream@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@BSStream@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -188307,7 +188307,7 @@
     },
     {
      "address": "0x0043e180",
-     "symbol": "?FUN_0043e180@DelStandIn@p07@fnv_0043e180@@QAEPAXI@Z",
+     "symbol": "?QueuedKF_ScalarDeletingDestructor@DelStandIn@p07@fnv_0043e180@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -188352,7 +188352,7 @@
     },
     {
      "address": "0x0043e600",
-     "symbol": "?FUN_0043e600@DelStandIn@p07@fnv_0043e600@@QAEPAXI@Z",
+     "symbol": "?QueuedAnimIdle_ScalarDeletingDestructor@DelStandIn@p07@fnv_0043e600@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -188402,7 +188402,7 @@
     },
     {
      "address": "0x0043e8f0",
-     "symbol": "?FUN_0043e8f0@FUN_0043e920_class@fnv_0043e8f0@@QAEPAXI@Z",
+     "symbol": "?QueuedReplacementKF_ScalarDeletingDestructor@FUN_0043e920_class@fnv_0043e8f0@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -188452,7 +188452,7 @@
     },
     {
      "address": "0x0043eb80",
-     "symbol": "?FUN_0043eb80@DelStandIn@p07@fnv_0043eb80@@QAEPAXI@Z",
+     "symbol": "?QueuedHead_ScalarDeletingDestructor@DelStandIn@p07@fnv_0043eb80@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -188582,7 +188582,7 @@
     },
     {
      "address": "0x0043fe10",
-     "symbol": "?FUN_0043fe10@FUN_00440eb0_class@fnv_0043fe10@@QAEPAXI@Z",
+     "symbol": "?QueuedReference_ScalarDeletingDestructor@FUN_00440eb0_class@fnv_0043fe10@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -188632,7 +188632,7 @@
     },
     {
      "address": "0x00440610",
-     "symbol": "?FUN_00440610@FUN_00440640_shell@@QAEPAXI@Z",
+     "symbol": "?IOTask_ScalarDeletingDestructor@FUN_00440640_shell@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -188647,7 +188647,7 @@
     },
     {
      "address": "0x00440680",
-     "symbol": "?FUN_00440680@AttachDistant3DTask@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@AttachDistant3DTask@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -188767,7 +188767,7 @@
     },
     {
      "address": "0x004414c0",
-     "symbol": "?FUN_004414c0@DelStandIn@p07@fnv_004414c0@@QAEPAXI@Z",
+     "symbol": "?QueuedCharacter_ScalarDeletingDestructor@DelStandIn@p07@fnv_004414c0@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -188817,7 +188817,7 @@
     },
     {
      "address": "0x00441950",
-     "symbol": "?FUN_00441950@FUN_00441980_Class@fnv_00441950@@QAEPAXI@Z",
+     "symbol": "?QueuedCreature_ScalarDeletingDestructor@FUN_00441980_Class@fnv_00441950@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -188842,7 +188842,7 @@
     },
     {
      "address": "0x00441b50",
-     "symbol": "?FUN_00441b50@DelStandIn@p07@fnv_00441b50@@QAEPAXI@Z",
+     "symbol": "?QueuedPlayer_ScalarDeletingDestructor@DelStandIn@p07@fnv_00441b50@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -188867,7 +188867,7 @@
     },
     {
      "address": "0x00441cf0",
-     "symbol": "?FUN_00441cf0@QueuedFileLoad@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@QueuedFileLoad@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -188897,7 +188897,7 @@
     },
     {
      "address": "0x00442010",
-     "symbol": "?FUN_00442010@DelStandIn@p07@fnv_00442010@@QAEPAXI@Z",
+     "symbol": "?QueuedFaceGenFile_ScalarDeletingDestructor@DelStandIn@p07@fnv_00442010@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -192943,7 +192943,7 @@
     },
     {
      "address": "0x004392f0",
-     "symbol": "?FUN_004392f0@NiAlphaProperty@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@NiAlphaProperty@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -210883,7 +210883,7 @@
    "functions": [
     {
      "address": "0x004f1690",
-     "symbol": "?FUN_004f1690@Dummy1690@@QAEPAXI@Z",
+     "symbol": "?TESRegionDataGrass_ScalarDeletingDestructor@Dummy1690@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -211991,7 +211991,7 @@
    "functions": [
     {
      "address": "0x004f55d0",
-     "symbol": "?FUN_004f55d0@FUN_004f55d0_shell@fnv_004f55d0@@QAEPAXI@Z",
+     "symbol": "?TESRegionGrassObject_ScalarDeletingDestructor@FUN_004f55d0_shell@fnv_004f55d0@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -219418,7 +219418,7 @@
     },
     {
      "address": "0x00450630",
-     "symbol": "?FUN_00450630@BSTempNodeManager@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@BSTempNodeManager@@QAEPAXI@Z",
      "size": 49
     },
     {
@@ -223237,7 +223237,7 @@
     },
     {
      "address": "0x005f22a0",
-     "symbol": "?FUN_005f22a0@TESAnimGroup@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@TESAnimGroup@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -223584,7 +223584,7 @@
     },
     {
      "address": "0x0057ede0",
-     "symbol": "?FUN_0057ede0@Unk_57@@QAEPAXI@Z",
+     "symbol": "?TESWaterForm_ScalarDeletingDestructor@Unk_57@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -224126,7 +224126,7 @@
     },
     {
      "address": "0x0059b910",
-     "symbol": "?FUN_0059b910@FUN_0059b910_shell@@QAEPAXI@Z",
+     "symbol": "?TESCaravanDeck_ScalarDeletingDestructor@FUN_0059b910_shell@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -228657,7 +228657,7 @@
     },
     {
      "address": "0x005f75b0",
-     "symbol": "?FUN_005f75b0@DelStandIn@p07@@QAEPAXI@Z",
+     "symbol": "?TESCreature_ScalarDeletingDestructor@DelStandIn@p07@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -235084,7 +235084,7 @@
     },
     {
      "address": "0x005fdb60",
-     "symbol": "?FUN_005fdb60@S@@QAEPAXI@Z",
+     "symbol": "?TESHair_ScalarDeletingDestructor@S@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -235288,7 +235288,7 @@
    "functions": [
     {
      "address": "0x005fe130",
-     "symbol": "?FUN_005fe130@FUN_005fe130_shell@@QAEPAXI@Z",
+     "symbol": "?TESIdleForm_ScalarDeletingDestructor@FUN_005fe130_shell@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -236150,7 +236150,7 @@
     },
     {
      "address": "0x0052cf90",
-     "symbol": "?FUN_0052cf90@Obj52@@QAEPAXI@Z",
+     "symbol": "?NiFloatData_ScalarDeletingDestructor@Obj52@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -236744,7 +236744,7 @@
     },
     {
      "address": "0x00533210",
-     "symbol": "?FUN_00533210@FUN_00533210_class@@QAEPAXI@Z",
+     "symbol": "?TESObjectLAND_ScalarDeletingDestructor@FUN_00533210_class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -236894,7 +236894,7 @@
     },
     {
      "address": "0x00537cb0",
-     "symbol": "?FUN_00537cb0@NiAdditionalGeometryData@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@NiAdditionalGeometryData@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -236909,7 +236909,7 @@
     },
     {
      "address": "0x00537d10",
-     "symbol": "?FUN_00537d10@FUN_00537d10_Class@@QAEPAXI@Z",
+     "symbol": "?BSPackedAdditionalGeometryData_ScalarDeletingDestructor@FUN_00537d10_Class@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -236964,12 +236964,12 @@
     },
     {
      "address": "0x00538e50",
-     "symbol": "?FUN_00538e50@FUN_00538e30_class@fnv_00538e50@@QAEPAXI@Z",
+     "symbol": "?hkBaseObject_ScalarDeletingDestructor@FUN_00538e30_class@fnv_00538e50@@QAEPAXI@Z",
      "size": 44
     },
     {
      "address": "0x00538e80",
-     "symbol": "?FUN_00538e80@B1@@QAEPAXI@Z",
+     "symbol": "?hkReferencedObject_ScalarDeletingDestructor@B1@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -238255,7 +238255,7 @@
     },
     {
      "address": "0x0050a820",
-     "symbol": "?FUN_0050a820@FUN_0050a820_shell@@QAEPAXI@Z",
+     "symbol": "?TESLevCharacter_ScalarDeletingDestructor@FUN_0050a820_shell@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -239755,7 +239755,7 @@
     },
     {
      "address": "0x00489010",
-     "symbol": "?FUN_00489010@TESModel@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@TESModel@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -242371,7 +242371,7 @@
     },
     {
      "address": "0x0050f710",
-     "symbol": "?FUN_0050f710@FUN_0050f740_shell@fnv_0050f710@@QAEPAXI@Z",
+     "symbol": "?TESBoundAnimObject_ScalarDeletingDestructor@FUN_0050f740_shell@fnv_0050f710@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -242406,7 +242406,7 @@
     },
     {
      "address": "0x0050f900",
-     "symbol": "?FUN_0050f900@FUN_0050f900_Class@@QAEPAXI@Z",
+     "symbol": "?TESObject_ScalarDeletingDestructor@FUN_0050f900_Class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -243609,7 +243609,7 @@
     },
     {
      "address": "0x005105f0",
-     "symbol": "?FUN_005105f0@Holder005105F0@@QAEPAXI@Z",
+     "symbol": "?TESObjectACTI_ScalarDeletingDestructor@Holder005105F0@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -244540,7 +244540,7 @@
     },
     {
      "address": "0x005417e0",
-     "symbol": "?FUN_005417e0@FUN_005417e0_class@@QAEPAXI@Z",
+     "symbol": "?TESObjectCELL_ScalarDeletingDestructor@FUN_005417e0_class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -245150,7 +245150,7 @@
     },
     {
      "address": "0x0054ab30",
-     "symbol": "?FUN_0054ab30@CheckWithinMultiBoundTask@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@CheckWithinMultiBoundTask@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -250784,7 +250784,7 @@
     },
     {
      "address": "0x0055a3d0",
-     "symbol": "?FUN_0055a3d0@DelStandIn@p07@@QAEPAXI@Z",
+     "symbol": "?TESObjectREFR_ScalarDeletingDestructor@DelStandIn@p07@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -251934,7 +251934,7 @@
     },
     {
      "address": "0x0056d4c0",
-     "symbol": "?FUN_0056d4c0@bhkWorldObject@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@bhkWorldObject@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -251949,7 +251949,7 @@
     },
     {
      "address": "0x0056d550",
-     "symbol": "?FUN_0056d550@Obj56d550@@QAEPAXI@Z",
+     "symbol": "?bhkRigidBody_ScalarDeletingDestructor@Obj56d550@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -252029,7 +252029,7 @@
     },
     {
      "address": "0x0056e420",
-     "symbol": "?FUN_0056e420@bhkPhantom@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@bhkPhantom@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -252054,7 +252054,7 @@
     },
     {
      "address": "0x0056e4b0",
-     "symbol": "?FUN_0056e4b0@FUN_0056e4b0_Class@@QAEPAXI@Z",
+     "symbol": "?bhkSimpleShapePhantom_ScalarDeletingDestructor@FUN_0056e4b0_Class@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -252074,7 +252074,7 @@
     },
     {
      "address": "0x0056e5e0",
-     "symbol": "?FUN_0056e5e0@bhkAabbPhantom@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@bhkAabbPhantom@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -252104,7 +252104,7 @@
     },
     {
      "address": "0x0056e740",
-     "symbol": "?FUN_0056e740@bhkShape@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@bhkShape@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -252114,7 +252114,7 @@
     },
     {
      "address": "0x0056e780",
-     "symbol": "?FUN_0056e780@FUN_0056e780_Class@@QAEPAXI@Z",
+     "symbol": "?bhkSphereRepShape_ScalarDeletingDestructor@FUN_0056e780_Class@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -252124,7 +252124,7 @@
     },
     {
      "address": "0x0056e7c0",
-     "symbol": "?FUN_0056e7c0@FUN_0056e7c0_Class@@QAEPAXI@Z",
+     "symbol": "?bhkConvexShape_ScalarDeletingDestructor@FUN_0056e7c0_Class@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -258751,7 +258751,7 @@
     },
     {
      "address": "0x0051dad0",
-     "symbol": "?FUN_0051dad0@FUN_0051dad0_This@@QAEPAXI@Z",
+     "symbol": "?TESObjectWEAP_ScalarDeletingDestructor@FUN_0051dad0_This@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -320317,7 +320317,7 @@
     },
     {
      "address": "0x0051d160",
-     "symbol": "?FUN_0051d160@Dummy_0051d160@@QAEPAXI@Z",
+     "symbol": "?BSShaderTextureSet_ScalarDeletingDestructor@Dummy_0051d160@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -536229,7 +536229,7 @@
     },
     {
      "address": "0x00622440",
-     "symbol": "?FUN_00622440@FUN_00622440_Class@@QAEPAXI@Z",
+     "symbol": "?bhkTriSampledHeightFieldBvTreeShape_ScalarDeletingDestructor@FUN_00622440_Class@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -536612,7 +536612,7 @@
     },
     {
      "address": "0x00623510",
-     "symbol": "?FUN_00623510@FUN_00623510_class@@QAEPAXI@Z",
+     "symbol": "?hkpContactListener_ScalarDeletingDestructor@FUN_00623510_class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -536627,7 +536627,7 @@
     },
     {
      "address": "0x00623590",
-     "symbol": "?FUN_00623590@FUN_00623590_class@@QAEPAXI@Z",
+     "symbol": "?FOCollisionListener_ScalarDeletingDestructor@FUN_00623590_class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -536860,7 +536860,7 @@
     },
     {
      "address": "0x00625b10",
-     "symbol": "?FUN_00625b10@FUN_00625b40_class@@QAEPAXI@Z",
+     "symbol": "?HavokError_ScalarDeletingDestructor@FUN_00625b40_class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -536925,7 +536925,7 @@
     },
     {
      "address": "0x00626030",
-     "symbol": "?FUN_00626030@FUN_00626030_class@@QAEPAXI@Z",
+     "symbol": "?HavokFileStreambufReader_ScalarDeletingDestructor@FUN_00626030_class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -536955,7 +536955,7 @@
     },
     {
      "address": "0x00626250",
-     "symbol": "?FUN_00626250@FUN_00626250_class@@QAEPAXI@Z",
+     "symbol": "?HavokFileStreambufWriter_ScalarDeletingDestructor@FUN_00626250_class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -537501,7 +537501,7 @@
    "functions": [
     {
      "address": "0x006270c0",
-     "symbol": "?FUN_006270c0@LoadedAreaBound@@QAEPAXI@Z",
+     "symbol": "?ScalarDeletingDestructor@LoadedAreaBound@@QAEPAXI@Z",
      "size": 46
     },
     {
@@ -544548,7 +544548,7 @@
     },
     {
      "address": "0x00435f50",
-     "symbol": "?FUN_00435f50@FUN_00435f50_class@@QAEPAXI@Z",
+     "symbol": "?ExtraRefractionProperty_ScalarDeletingDestructor@FUN_00435f50_class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -544573,7 +544573,7 @@
     },
     {
      "address": "0x00436150",
-     "symbol": "?FUN_00436150@FUN_00436150_Class@@QAEPAXI@Z",
+     "symbol": "?ExtraSound_ScalarDeletingDestructor@FUN_00436150_Class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -544583,7 +544583,7 @@
     },
     {
      "address": "0x00436270",
-     "symbol": "?FUN_00436270@FUN_004362a0@@QAEPAXI@Z",
+     "symbol": "?ExtraCreatureAwakeSound_ScalarDeletingDestructor@FUN_004362a0@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -544593,7 +544593,7 @@
     },
     {
      "address": "0x00436390",
-     "symbol": "?FUN_00436390@FUN_00436390_Class@@QAEPAXI@Z",
+     "symbol": "?ExtraCreatureMovementSound_ScalarDeletingDestructor@FUN_00436390_Class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -544603,7 +544603,7 @@
     },
     {
      "address": "0x004364b0",
-     "symbol": "?FUN_004364b0@FUN_004364b0_Class@@QAEPAXI@Z",
+     "symbol": "?ExtraWeaponIdleSound_ScalarDeletingDestructor@FUN_004364b0_Class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -544613,7 +544613,7 @@
     },
     {
      "address": "0x004365d0",
-     "symbol": "?FUN_004365d0@FUN_004365d0_class@@QAEPAXI@Z",
+     "symbol": "?ExtraWeaponAttackSound_ScalarDeletingDestructor@FUN_004365d0_class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -544623,7 +544623,7 @@
     },
     {
      "address": "0x004366f0",
-     "symbol": "?FUN_004366f0@FUN_004366f0_class@@QAEPAXI@Z",
+     "symbol": "?ExtraActivateLoopSound_ScalarDeletingDestructor@FUN_004366f0_class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -544638,7 +544638,7 @@
     },
     {
      "address": "0x00436af0",
-     "symbol": "?FUN_00436af0@FUN_00436af0_Class@@QAEPAXI@Z",
+     "symbol": "?ExtraTalkingActor_ScalarDeletingDestructor@FUN_00436af0_Class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -550127,7 +550127,7 @@
     },
     {
      "address": "0x004a4ba0",
-     "symbol": "?FUN_004a4ba0@FUN_004a4bd0_shell@@QAEPAXI@Z",
+     "symbol": "?BGSPrimitive_ScalarDeletingDestructor@FUN_004a4bd0_shell@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -555495,7 +555495,7 @@
     },
     {
      "address": "0x00554670",
-     "symbol": "?FUN_00554670@FUN_00554670_Class@@QAEPAXI@Z",
+     "symbol": "?hkpEntityListener_ScalarDeletingDestructor@FUN_00554670_Class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -558306,7 +558306,7 @@
     },
     {
      "address": "0x005e2c70",
-     "symbol": "?FUN_005e2c70@FUN_005e2c70_s@@QAEPAXI@Z",
+     "symbol": "?TESSound_ScalarDeletingDestructor@FUN_005e2c70_s@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -558376,7 +558376,7 @@
     },
     {
      "address": "0x005e4b90",
-     "symbol": "?FUN_005e4b90@DeletingObject@@QAEPAXI@Z",
+     "symbol": "?BGSBodyPartData_ScalarDeletingDestructor@DeletingObject@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -560003,7 +560003,7 @@
     },
     {
      "address": "0x0061f550",
-     "symbol": "?FUN_0061f550@FUN_005545d0_Class@@QAEPAXI@Z",
+     "symbol": "?bhkEntityListener_ScalarDeletingDestructor@FUN_005545d0_Class@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -561661,7 +561661,7 @@
     },
     {
      "address": "0x0062a4b0",
-     "symbol": "?FUN_0062a4b0@FUN_0062a4b0_Class@fnv_0062a4b0@@QAEPAXI@Z",
+     "symbol": "?bhkArrowTargetListener_ScalarDeletingDestructor@FUN_0062a4b0_Class@fnv_0062a4b0@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -657244,7 +657244,7 @@
     },
     {
      "address": "0x0051b900",
-     "symbol": "?FUN_0051b900@S_0051b900@@QAEPAXI@Z",
+     "symbol": "?TESObjectTREE_ScalarDeletingDestructor@S_0051b900@@QAEPAXI@Z",
      "size": 44
     },
     {
@@ -657688,7 +657688,7 @@
     },
     {
      "address": "0x004f4390",
-     "symbol": "?FUN_004f4390@F4390_standin@@QAEPAXI@Z",
+     "symbol": "?TESRegionDataSound_ScalarDeletingDestructor@F4390_standin@@QAEPAXI@Z",
      "size": 44
     },
     {

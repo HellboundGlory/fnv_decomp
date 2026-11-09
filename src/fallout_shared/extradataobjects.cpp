@@ -1520,10 +1520,11 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_00433940(unsigned int flags);
+    void* ExtraActivateRef_ScalarDeletingDestructor(unsigned int flags);
 };
 // @fnv 0x00433940
-void* DelStandIn::FUN_00433940(unsigned int flags)
+// src: EXE 0x00433940
+void* DelStandIn::ExtraActivateRef_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)
@@ -1868,7 +1869,8 @@ void __thiscall ExtraFollower::FUN_00430ea0()
 
 // Calls FUN_00430ea0, then frees this when flags has bit 0 set, and returns this.
 // @fnv 0x00430e70
-void* __thiscall ExtraFollower::FUN_00430e70(unsigned int flags)
+// src: EXE 0x00430e70
+void* __thiscall ExtraFollower::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00430ea0();
     if (flags & 1)
@@ -1880,7 +1882,8 @@ extern "C" void __cdecl _Deallocate(void*);
 
 // Calls FUN_00431520 on this, deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x004314f0
-void* ExtraAudioMarker::FUN_004314f0(unsigned int flags)
+// src: EXE 0x004314f0
+void* ExtraAudioMarker::ScalarDeletingDestructor(unsigned int flags)
 {
     this->FUN_00431520();
     if (flags & 1)
@@ -2136,7 +2139,8 @@ extern "C" void __cdecl _Deallocate(void* p);
 
 // Calls FUN_004335d0, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x004335a0
-void* __thiscall ExtraLinkedRefChildren::FUN_004335a0(unsigned int flags)
+// src: EXE 0x004335a0
+void* __thiscall ExtraLinkedRefChildren::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004335d0();
     if (flags & 1)
@@ -2161,7 +2165,8 @@ void __cdecl _Deallocate(void*);
 // Calls FUN_00433830, then deallocates this if flags has bit 0 set, and returns this.
 
 // @fnv 0x00433800
-void* __thiscall ExtraActivateRefChildren::FUN_00433800(unsigned int flags)
+// src: EXE 0x00433800
+void* __thiscall ExtraActivateRefChildren::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00433830();
     if (flags & 1)
@@ -2224,7 +2229,8 @@ extern "C" void __cdecl _Deallocate(void*);
 
 // Calls FUN_004359f0, then frees this with _Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x004359c0
-void* __thiscall ExtraDroppedItemList::FUN_004359c0(unsigned int flags)
+// src: EXE 0x004359c0
+void* __thiscall ExtraDroppedItemList::ScalarDeletingDestructor(unsigned int flags)
 {
     this->ExtraDroppedItemList::~ExtraDroppedItemList();
     if (flags & 1)
@@ -2243,7 +2249,8 @@ void __cdecl _Deallocate(void*);
 
 // Calls FUN_004375c0, then frees this with _Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x004374e0
-void* ExtraSayTopicInfoOnceADay::FUN_004374e0(unsigned int flags)
+// src: EXE 0x004374e0
+void* ExtraSayTopicInfoOnceADay::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004375c0();
     if (flags & 1)
@@ -2275,7 +2282,8 @@ void __thiscall ExtraFollowerSwimBreadcrumbs::FUN_00437d10()
 {}
 
 // @fnv 0x00437ce0
-void* __thiscall ExtraFollowerSwimBreadcrumbs::FUN_00437ce0(unsigned int flags)
+// src: EXE 0x00437ce0
+void* __thiscall ExtraFollowerSwimBreadcrumbs::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00437d10();
     if (flags & 1)
@@ -2371,7 +2379,8 @@ extern "C" void __cdecl _Deallocate(void*);
 }  // namespace fnv_004300f0
 
 // @fnv 0x004302a0
-void* __thiscall ExtraDismemberedLimbs::FUN_004302a0(unsigned int flags)
+// src: EXE 0x004302a0
+void* __thiscall ExtraDismemberedLimbs::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004302d0();
     if (flags & 1)
@@ -3147,12 +3156,13 @@ void __cdecl _Deallocate(void* p);
 struct FUN_0042cc70_Class
 {
     void FUN_0042cca0();
-    void* FUN_0042cc70(unsigned int flags);
+    void* ExtraWeaponModFlags_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_0042cca0, then deallocates this object if bit 0 of flags is set, and returns this.
 // @fnv 0x0042cc70
-void* FUN_0042cc70_Class::FUN_0042cc70(unsigned int flags)
+// src: EXE 0x0042cc70
+void* FUN_0042cc70_Class::ExtraWeaponModFlags_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0042cca0();
     if (flags & 1)
@@ -3254,7 +3264,8 @@ void __cdecl _Deallocate(void* p);
 
 // Runs the base destructor, frees this with _Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x00432440
-void* ExtraInfoGeneralTopic::FUN_00432440(unsigned int flags)
+// src: EXE 0x00432440
+void* ExtraInfoGeneralTopic::ScalarDeletingDestructor(unsigned int flags)
 {
     ExtraInfoGeneralTopic::~ExtraInfoGeneralTopic();
     if (flags & 1)
@@ -3297,7 +3308,8 @@ ExtraPlayerCrimeList::ExtraPlayerCrimeList() : BSExtraData(0x35)
 void __cdecl _Deallocate(void* ptr);
 
 // @fnv 0x004330b0
-void* ExtraRunOncePacks::FUN_004330b0(unsigned int flags)
+// src: EXE 0x004330b0
+void* ExtraRunOncePacks::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004330e0();
     if (flags & 1)
@@ -3316,7 +3328,8 @@ void _Deallocate(void*);
 
 // Calls FUN_00433440, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x00433410
-void* ExtraEnableStateChildren::FUN_00433410(unsigned int flags)
+// src: EXE 0x00433410
+void* ExtraEnableStateChildren::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00433440();
     if (flags & 1)
@@ -3453,7 +3466,8 @@ extern void __cdecl _Deallocate(void*);
 
 
 // @fnv 0x004377c0
-void* ExtraWaterZoneMap::FUN_004377c0(unsigned int flags)
+// src: EXE 0x004377c0
+void* ExtraWaterZoneMap::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004377f0();
     if (flags & 1)

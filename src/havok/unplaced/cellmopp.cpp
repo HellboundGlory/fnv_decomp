@@ -207,12 +207,13 @@ void* __thiscall FUN_00622390_Class::bhkBvTreeShape_bhkBvTreeShape()
 struct FUN_00622440_Class
 {
     void __thiscall FUN_00caff80();
-    void* __thiscall FUN_00622440(unsigned int flags);
+    void* __thiscall bhkTriSampledHeightFieldBvTreeShape_ScalarDeletingDestructor(unsigned int flags);
     static void operator delete(void* p, unsigned int size);
 };
 
 // @fnv 0x00622440
-void* __thiscall FUN_00622440_Class::FUN_00622440(unsigned int flags)
+// src: EXE 0x00622440
+void* __thiscall FUN_00622440_Class::bhkTriSampledHeightFieldBvTreeShape_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00caff80();
     if (flags & 1)

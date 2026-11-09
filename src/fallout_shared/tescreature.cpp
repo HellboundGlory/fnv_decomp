@@ -313,11 +313,12 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_005f75b0(unsigned int flags);
+    void* TESCreature_ScalarDeletingDestructor(unsigned int flags);
 };
 // Runs the destructor on this object, then frees it with Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x005f75b0
-void* DelStandIn::FUN_005f75b0(unsigned int flags)
+// src: EXE 0x005f75b0
+void* DelStandIn::TESCreature_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)

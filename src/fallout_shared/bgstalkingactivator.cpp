@@ -377,11 +377,12 @@ void _Deallocate(void*);
 struct FUN_004fe6e0_Class
 {
     void __thiscall FUN_004fe710();
-    void* __thiscall FUN_004fe6e0(unsigned int);
+    void* __thiscall BGSTalkingActivator_ScalarDeletingDestructor(unsigned int);
 };
 // Calls FUN_004fe710, then deallocates this if bit 0 of flags is set, and returns this.
 // @fnv 0x004fe6e0
-void* __thiscall FUN_004fe6e0_Class::FUN_004fe6e0(unsigned int flags)
+// src: EXE 0x004fe6e0
+void* __thiscall FUN_004fe6e0_Class::BGSTalkingActivator_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004fe710();
     if (flags & 1)

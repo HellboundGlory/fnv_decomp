@@ -1131,7 +1131,8 @@ void* StandIn::FUN_004a0490(unsigned int flags)
 void _Deallocate(void*);
 // Calls FUN_004a0f60, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x004a0ff0
-void* BSCullingProcess::FUN_004a0ff0(unsigned int flags)
+// src: EXE 0x004a0ff0
+void* BSCullingProcess::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004a0f60();
     if (flags & 1)

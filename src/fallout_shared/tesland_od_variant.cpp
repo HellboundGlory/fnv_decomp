@@ -58,11 +58,12 @@ struct FUN_00533260_holder {
 };
 
 struct FUN_00533210_class {
-    void* __thiscall FUN_00533210(unsigned int flags);
+    void* __thiscall TESObjectLAND_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // @fnv 0x00533210
-void* __thiscall FUN_00533210_class::FUN_00533210(unsigned int flags)
+// src: EXE 0x00533210
+void* __thiscall FUN_00533210_class::TESObjectLAND_ScalarDeletingDestructor(unsigned int flags)
 {
     ((FUN_00533260_holder*)this)->FUN_00533260();
     if (flags & 1)
@@ -334,7 +335,8 @@ struct FUN_00a73080_holder { void ReleaseEntries_00a73080(); };
 void __cdecl operator delete(void* p, unsigned int size);
 
 // @fnv 0x00537cb0
-void* NiAdditionalGeometryData::FUN_00537cb0(unsigned int flags)
+// src: EXE 0x00537cb0
+void* NiAdditionalGeometryData::ScalarDeletingDestructor(unsigned int flags)
 {
     reinterpret_cast<FUN_00a73080_holder*>(this)->ReleaseEntries_00a73080();
     if (flags & 1)
@@ -369,12 +371,13 @@ void* __thiscall FUN_00537d00_Class::BSPackedAdditionalGeometryData_GetRTTI()
 
 struct FUN_00537d10_Class {
     void FUN_00537d40();
-    void* FUN_00537d10(unsigned int flags);
+    void* BSPackedAdditionalGeometryData_ScalarDeletingDestructor(unsigned int flags);
     static void operator delete(void* p, unsigned int size);
 };
 
 // @fnv 0x00537d10
-void* FUN_00537d10_Class::FUN_00537d10(unsigned int flags)
+// src: EXE 0x00537d10
+void* FUN_00537d10_Class::BSPackedAdditionalGeometryData_ScalarDeletingDestructor(unsigned int flags)
 {
     this->FUN_00537d40();
     if (flags & 1)
@@ -433,10 +436,11 @@ void __fastcall FUN_00538e10_class::UpdateState_00538e10()
 namespace fnv_00538e50 {
 struct FUN_00538e30_class {
     void __fastcall SetVtable();
-    void* __thiscall FUN_00538e50(unsigned int flags);
+    void* __thiscall hkBaseObject_ScalarDeletingDestructor(unsigned int flags);
 };
 // @fnv 0x00538e50
-void* __thiscall FUN_00538e30_class::FUN_00538e50(unsigned int flags)
+// src: EXE 0x00538e50
+void* __thiscall FUN_00538e30_class::hkBaseObject_ScalarDeletingDestructor(unsigned int flags)
 {
     SetVtable();
     if (flags & 1)
@@ -445,10 +449,11 @@ void* __thiscall FUN_00538e30_class::FUN_00538e50(unsigned int flags)
 }
 }  // namespace fnv_00538e50
 
-struct B1 { virtual ~B1(); void* FUN_00538e80(unsigned int); };
+struct B1 { virtual ~B1(); void* hkReferencedObject_ScalarDeletingDestructor(unsigned int); };
 void __cdecl Tesland_UpdateState_00538eb0(void*);
 // @fnv 0x00538e80
-void* B1::FUN_00538e80(unsigned int flags)
+// src: EXE 0x00538e80
+void* B1::hkReferencedObject_ScalarDeletingDestructor(unsigned int flags)
 {
     this->B1::~B1();
     if (flags & 1)

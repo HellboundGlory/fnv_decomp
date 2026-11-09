@@ -1935,7 +1935,7 @@ struct FUN_005e2ca0_s
 };
 struct FUN_005e2c70_s : FUN_005e2ca0_s
 {
-    void* FUN_005e2c70(unsigned int flags);
+    void* TESSound_ScalarDeletingDestructor(unsigned int flags);
 };
 struct SoundData
 {
@@ -2335,7 +2335,7 @@ void __cdecl operator delete(void*);
 struct DeletingObject
 {
     void FUN_005e4bc0();
-    void* FUN_005e4b90(unsigned int flags);
+    void* BGSBodyPartData_ScalarDeletingDestructor(unsigned int flags);
 };
 class FUN_00483630_holder
 {

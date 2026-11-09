@@ -40,7 +40,7 @@ struct FUN_0062dfe0_shell
 };
 struct FUN_0062d710_shell : FUN_0062d740_shell
 {
-    void* FUN_0062d710(unsigned int flags);
+    void* hkpPhantomListener_ScalarDeletingDestructor(unsigned int flags);
 };
 struct FUN_0062e200_shell
 {

@@ -67,7 +67,7 @@ struct FUN_0040f4d0_shell : BE
     void* pad2;
     void* pField;
     FUN_0040f4d0_shell(void* aField);
-    void* FUN_0040f4d0(unsigned int flags);
+    void* ExtraCellCanopyShadowMask_ScalarDeletingDestructor(unsigned int flags);
     void FUN_0040f500();
 };
 
@@ -75,7 +75,8 @@ extern void* _Deallocate(void*);
 
 // Calls FUN_0040f500, then deallocates this if bit 0 of flags is set, and returns this.
 // @fnv 0x0040f4d0
-void* FUN_0040f4d0_shell::FUN_0040f4d0(unsigned int flags)
+// src: EXE 0x0040f4d0
+void* FUN_0040f4d0_shell::ExtraCellCanopyShadowMask_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0040f500();
     if (flags & 1)
@@ -103,7 +104,8 @@ FUN_0040f590_shell::FUN_0040f590_shell() : BE(5)
 
 // Calls FUN_0040ee70, then deallocates this if bit 0 of flags is set, and returns this.
 // @fnv 0x0040ee40
-void* ExtraHavok::FUN_0040ee40(unsigned int flags)
+// src: EXE 0x0040ee40
+void* ExtraHavok::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0040ee70();
     if (flags & 1)
@@ -129,7 +131,8 @@ FUN_0040ef30::FUN_0040ef30(BGSMusicType* aMusic) : BE(7)
 }
 
 // @fnv 0x0040f1e0
-void* ExtraCellImpactSwap::FUN_0040f1e0(unsigned int flags)
+// src: EXE 0x0040f1e0
+void* ExtraCellImpactSwap::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0040f210();
     if (flags & 1)

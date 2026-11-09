@@ -1771,11 +1771,12 @@ struct FUN_005545b0
 };
 struct FUN_0062a4b0_Class : public FUN_005545b0
 {
-    void* __thiscall FUN_0062a4b0(unsigned int flags);
+    void* __thiscall bhkArrowTargetListener_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_005545d0, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x0062a4b0
-void* __thiscall FUN_0062a4b0_Class::FUN_0062a4b0(unsigned int flags)
+// src: EXE 0x0062a4b0
+void* __thiscall FUN_0062a4b0_Class::bhkArrowTargetListener_ScalarDeletingDestructor(unsigned int flags)
 {
     ForwardCall_005545d0();
     if (flags & 1)

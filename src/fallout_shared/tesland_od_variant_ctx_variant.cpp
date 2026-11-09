@@ -73,7 +73,7 @@ struct FUN_00533260_holder {
     void __thiscall FUN_00533260();
 };
 struct FUN_00533210_class {
-    void* __thiscall FUN_00533210(unsigned int flags);
+    void* __thiscall TESObjectLAND_ScalarDeletingDestructor(unsigned int flags);
 };
 struct CellH {
     int GetCellGridX();
@@ -150,7 +150,7 @@ struct FUN_00537d00_Class {
 };
 struct FUN_00537d10_Class {
     void FUN_00537d40();
-    void* FUN_00537d10(unsigned int flags);
+    void* BSPackedAdditionalGeometryData_ScalarDeletingDestructor(unsigned int flags);
     static void operator delete(void* p, unsigned int size);
 };
 struct QuantityData { void SetQuantity(unsigned int); };
@@ -171,7 +171,7 @@ struct FUN_00538e10_class {
     int* m_vtbl;
     void __fastcall UpdateState_00538e10();
 };
-struct B1 { virtual ~B1(); void* FUN_00538e80(unsigned int); };
+struct B1 { virtual ~B1(); void* hkReferencedObject_ScalarDeletingDestructor(unsigned int); };
 void __cdecl Tesland_UpdateState_00538eb0(void*);
 extern "C" void __cdecl FUN_00538f20();
 extern int DAT_0102e378;

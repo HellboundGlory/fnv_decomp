@@ -5036,11 +5036,12 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_0042c5b0(unsigned int flags);
+    void* ExtraTeleport_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls the destructor on this object, frees it when flags has bit 0 set, and returns this.
 // @fnv 0x0042c5b0
-void* DelStandIn::FUN_0042c5b0(unsigned int flags)
+// src: EXE 0x0042c5b0
+void* DelStandIn::ExtraTeleport_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)
@@ -6331,12 +6332,13 @@ void FUN_0042f300_shell::ExtraDataList_SetPatrolRefInUse(TESObjectREFR* apUser)
 struct FUN_0040f780_struct
 {
     void SetVtableAndProcessState_0040f7b0();
-    void* FUN_0040f780(unsigned int flags);
+    void* BaseExtraList_ScalarDeletingDestructor(unsigned int flags);
 };
 void _Deallocate(void*);
 // Calls FUN_0040f7b0, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x0040f780
-void* FUN_0040f780_struct::FUN_0040f780(unsigned int flags)
+// src: EXE 0x0040f780
+void* FUN_0040f780_struct::BaseExtraList_ScalarDeletingDestructor(unsigned int flags)
 {
     SetVtableAndProcessState_0040f7b0();
     if (flags & 1)
@@ -6348,7 +6350,8 @@ void __cdecl _Deallocate(void*);
 
 // Calls FUN_00434dc0, then frees this object with _Deallocate if flags has bit 0 set, and returns this.
 // @fnv 0x00411d90
-void* ExtraLitWaterRefs::FUN_00411d90(unsigned int flags)
+// src: EXE 0x00411d90
+void* ExtraLitWaterRefs::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00434dc0();
     if (flags & 1)
@@ -6745,7 +6748,8 @@ bool ExtraPatrolRefData::Compare_0041fd20(ExtraPatrolRefData* apCompare)
 
 // Calls FUN_0041fdb0, then frees this with _Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x0041fd80
-void* __thiscall ExtraPatrolRefData::FUN_0041fd80(unsigned int flags)
+// src: EXE 0x0041fd80
+void* __thiscall ExtraPatrolRefData::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0041fdb0();
     if (flags & 1)
@@ -6962,7 +6966,8 @@ void __cdecl _Deallocate(void* p);
 
 // Calls FUN_0042cd70, frees this when flags has bit 0 set, and returns this.
 // @fnv 0x0042cd40
-void* __thiscall ExtraSecuritronFace::FUN_0042cd40(unsigned int flags)
+// src: EXE 0x0042cd40
+void* __thiscall ExtraSecuritronFace::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0042cd70();
     if (flags & 1)
@@ -7125,7 +7130,8 @@ void* __thiscall ExtraReflectorRefs::FUN_00434af0()
 
 // Returns this, and when bit 0 of flags is set, deallocates this before returning it.
 // @fnv 0x00411c50
-void* __thiscall ExtraReflectorRefs::FUN_00411c50(unsigned int flags)
+// src: EXE 0x00411c50
+void* __thiscall ExtraReflectorRefs::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00434af0();
     if (flags & 1)
@@ -7269,7 +7275,8 @@ void __cdecl _Deallocate(void*);
 
 // Calls FUN_0041fb50, then frees this with _Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x0041fb20
-void* __thiscall ExtraPrimitive::FUN_0041fb20(unsigned int flags)
+// src: EXE 0x0041fb20
+void* __thiscall ExtraPrimitive::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0041fb50();
     if (flags & 1)
@@ -7301,7 +7308,8 @@ void __cdecl _Deallocate(void*);
 
 // Calls FUN_004203b0, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x00420380
-void* ExtraPortalRefData::FUN_00420380(unsigned int flags)
+// src: EXE 0x00420380
+void* ExtraPortalRefData::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004203b0();
     if (flags & 1)
@@ -7420,7 +7428,8 @@ ExtraTresPassPackage* __fastcall InitializeTrespassExtra(ExtraTresPassPackage* e
 void __cdecl _Deallocate(void*);
 
 // @fnv 0x0042c960
-void* __thiscall ExtraHeadingTarget::FUN_0042c960(unsigned int flags)
+// src: EXE 0x0042c960
+void* __thiscall ExtraHeadingTarget::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00435ef0();
     if (flags & 1)
@@ -7432,7 +7441,8 @@ void* __thiscall ExtraHeadingTarget::FUN_0042c960(unsigned int flags)
 
 // Calls FUN_0042cb30, deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x0042cb00
-void* ExtraActorCause::FUN_0042cb00(unsigned int flags)
+// src: EXE 0x0042cb00
+void* ExtraActorCause::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0042cb30();
     if (flags & 1)
@@ -8245,12 +8255,13 @@ void __cdecl _Deallocate(void*);
 struct FUN_00410380_class
 {
     void FUN_004103b0();
-    void* FUN_00410380(unsigned int flags);
+    void* ExtraDataList_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_004103b0, frees this via _Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x00410380
-void* FUN_00410380_class::FUN_00410380(unsigned int flags)
+// src: EXE 0x00410380
+void* FUN_00410380_class::ExtraDataList_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004103b0();
     if (flags & 1)
@@ -8265,12 +8276,13 @@ void __cdecl _Deallocate(void*);
 struct FUN_00411cf0_class
 {
     void __thiscall FUN_00434950();
-    void* __thiscall FUN_00411cf0(unsigned int flags);
+    void* __thiscall ExtraWaterLightRefs_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_00434950, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x00411cf0
-void* __thiscall FUN_00411cf0_class::FUN_00411cf0(unsigned int flags)
+// src: EXE 0x00411cf0
+void* __thiscall FUN_00411cf0_class::ExtraWaterLightRefs_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00434950();
     if (flags & 1)
@@ -8383,7 +8395,8 @@ FUN_0042c640::FUN_0042c640() : BE(0x23)
 void __cdecl _Deallocate(void*);
 // Calls FUN_00434560, deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x00411bb0
-void* ExtraReflectedRefs::FUN_00411bb0(unsigned int flags)
+// src: EXE 0x00411bb0
+void* ExtraReflectedRefs::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00434560();
     if (flags & 1)
@@ -11361,7 +11374,8 @@ void __cdecl _Deallocate(void* p);
 
 // Calls FUN_00420060, then deallocates this if flags has bit 0 set, and returns this.
 // @fnv 0x00420030
-void* ExtraOcclusionPlaneRefData::FUN_00420030(unsigned int flags)
+// src: EXE 0x00420030
+void* ExtraOcclusionPlaneRefData::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00420060();
     if (flags & 1)
@@ -11370,7 +11384,8 @@ void* ExtraOcclusionPlaneRefData::FUN_00420030(unsigned int flags)
 }
 
 // @fnv 0x00420600
-void* ExtraRoomRefData::FUN_00420600(unsigned int flags)
+// src: EXE 0x00420600
+void* ExtraRoomRefData::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00420630();
     if (flags & 1)
@@ -11571,7 +11586,8 @@ void* ExtraLock::ReleaseIfFlagged(unsigned int flags)
 }
 
 // @fnv 0x0042c890
-void* ExtraTresPassPackage::FUN_0042c890(unsigned int flags)
+// src: EXE 0x0042c890
+void* ExtraTresPassPackage::ScalarDeletingDestructor(unsigned int flags)
 {
     this->FUN_00432900();
 

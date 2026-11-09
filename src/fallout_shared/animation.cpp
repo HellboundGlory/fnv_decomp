@@ -1509,12 +1509,13 @@ void __fastcall FUN_004969b0(void*);
 
 struct FUN_00496980_caller
 {
-    void* FUN_00496980(unsigned int flags);
+    void* AnimIdle_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_004969b0 on this, then frees this with NiMemObject::operator delete when flags has bit 1 set, and returns this.
 // @fnv 0x00496980
-void* FUN_00496980_caller::FUN_00496980(unsigned int flags)
+// src: EXE 0x00496980
+void* FUN_00496980_caller::AnimIdle_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004969b0(this);
     if (flags & 1)
@@ -2191,11 +2192,12 @@ bool FUN_00498f80_cls::Animation_SpecialIdleWorking()
 struct FUN_0049bb20_cls : public NiMemObject
 {
     void FUN_004eeb00();
-    void* FUN_0049bb20(unsigned int f);
+    void* BSAnimGroupSequence_ScalarDeletingDestructor(unsigned int f);
 };
 // Calls FUN_004eeb00, then if bit 0 of f is set frees this with operator delete and returns this.
 // @fnv 0x0049bb20
-void* FUN_0049bb20_cls::FUN_0049bb20(unsigned int auiFlags)
+// src: EXE 0x0049bb20
+void* FUN_0049bb20_cls::BSAnimGroupSequence_ScalarDeletingDestructor(unsigned int auiFlags)
 {
     FUN_004eeb00();
     if (auiFlags & 1)
@@ -2280,10 +2282,11 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_0048efc0(unsigned int flags);
+    void* AnimSequenceSingle_ScalarDeletingDestructor(unsigned int flags);
 };
 // @fnv 0x0048efc0
-void* DelStandIn::FUN_0048efc0(unsigned int flags)
+// src: EXE 0x0048efc0
+void* DelStandIn::AnimSequenceSingle_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)
@@ -3428,11 +3431,12 @@ struct EBase
 void __cdecl _delete(void*, unsigned int);
 struct FUN_004968e0_shell : EBase
 {
-    void* FUN_004968e0(unsigned int);
+    void* NiRefObject_ScalarDeletingDestructor(unsigned int);
 };
 // Runs the base destructor, frees this with _delete when flags has bit 0 set, and returns this.
 // @fnv 0x004968e0
-void* FUN_004968e0_shell::FUN_004968e0(unsigned int flags)
+// src: EXE 0x004968e0
+void* FUN_004968e0_shell::NiRefObject_ScalarDeletingDestructor(unsigned int flags)
 {
     this->EBase::~EBase();
     if (flags & 1)

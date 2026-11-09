@@ -50,11 +50,12 @@ int __fastcall FUN_00623570_class::hkpContactListener_hkpContactListener()
 struct FUN_00623590_class
 {
     void __thiscall FUN_006235c0();
-    void* __thiscall FUN_00623590(unsigned int flags);
+    void* __thiscall FOCollisionListener_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_006235c0, then deletes this if flags has bit 0 set, and returns this.
 // @fnv 0x00623590
-void* __thiscall FUN_00623590_class::FUN_00623590(unsigned int flags)
+// src: EXE 0x00623590
+void* __thiscall FUN_00623590_class::FOCollisionListener_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_006235c0();
     if (flags & 1)
@@ -95,10 +96,11 @@ FUN_00623850::~FUN_00623850()
 
 struct FUN_00623510_class
 {
-    void* FUN_00623510(unsigned int flags);
+    void* hkpContactListener_ScalarDeletingDestructor(unsigned int flags);
 };
 // @fnv 0x00623510
-void* FUN_00623510_class::FUN_00623510(unsigned int flags)
+// src: EXE 0x00623510
+void* FUN_00623510_class::hkpContactListener_ScalarDeletingDestructor(unsigned int flags)
 {
     ((FUN_006234d0*)this)->SetVtableAndProcessState_006234f0();
     if (flags & 1)

@@ -805,11 +805,12 @@ void __thiscall TESTopicInfo::MarkAsRefusal()
 struct FUN_005545d0_Class
 {
     void FUN_005545f0();
-    void* FUN_0061f550(unsigned int flags);
+    void* bhkEntityListener_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_005545f0, deletes this when flags has bit 0 set, and returns this.
 // @fnv 0x0061f550
-void* __thiscall FUN_005545d0_Class::FUN_0061f550(unsigned int flags)
+// src: EXE 0x0061f550
+void* __thiscall FUN_005545d0_Class::bhkEntityListener_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_005545f0();
     if (flags & 1)

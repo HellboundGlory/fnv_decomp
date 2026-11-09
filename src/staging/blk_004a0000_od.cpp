@@ -963,11 +963,12 @@ void __cdecl Deallocate(void*);
 struct FUN_004a4bd0_shell
 {
     void __thiscall FUN_004a4bd0();
-    void* __thiscall FUN_004a4ba0(unsigned int flags);
+    void* __thiscall BGSPrimitive_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_004a4bd0, then frees this with Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x004a4ba0
-void* __thiscall FUN_004a4bd0_shell::FUN_004a4ba0(unsigned int flags)
+// src: EXE 0x004a4ba0
+void* __thiscall FUN_004a4bd0_shell::BGSPrimitive_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004a4bd0();
     if (flags & 1)

@@ -3478,11 +3478,12 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_0043be30(unsigned int flags);
+    void* QueuedTexture_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls the destructor on this object, frees it when flags has bit 0 set, and returns this.
 // @fnv 0x0043be30
-void* DelStandIn::FUN_0043be30(unsigned int flags)
+// src: EXE 0x0043be30
+void* DelStandIn::QueuedTexture_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)
@@ -3512,11 +3513,12 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_0043c800(unsigned int flags);
+    void* QueuedModel_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls the destructor on this object, frees it when flags has bit 0 set, and returns the object pointer.
 // @fnv 0x0043c800
-void* DelStandIn::FUN_0043c800(unsigned int flags)
+// src: EXE 0x0043c800
+void* DelStandIn::QueuedModel_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)
@@ -3542,11 +3544,12 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_0043e180(unsigned int flags);
+    void* QueuedKF_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls the destructor on this object, frees it when flags has bit 0 set, and returns the object pointer.
 // @fnv 0x0043e180
-void* DelStandIn::FUN_0043e180(unsigned int flags)
+// src: EXE 0x0043e180
+void* DelStandIn::QueuedKF_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)
@@ -3565,11 +3568,12 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_0043e600(unsigned int flags);
+    void* QueuedAnimIdle_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls the destructor on this, then frees this when flags has bit 0 set, and returns this.
 // @fnv 0x0043e600
-void* DelStandIn::FUN_0043e600(unsigned int flags)
+// src: EXE 0x0043e600
+void* DelStandIn::QueuedAnimIdle_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)
@@ -3607,11 +3611,12 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_0043eb80(unsigned int flags);
+    void* QueuedHead_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls the destructor on this, then frees this when bit 0 of flags is set, and returns this.
 // @fnv 0x0043eb80
-void* DelStandIn::FUN_0043eb80(unsigned int flags)
+// src: EXE 0x0043eb80
+void* DelStandIn::QueuedHead_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)
@@ -3630,11 +3635,12 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_004414c0(unsigned int flags);
+    void* QueuedCharacter_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls the destructor on this, then frees this when flags has bit 0 set, and returns this.
 // @fnv 0x004414c0
-void* DelStandIn::FUN_004414c0(unsigned int flags)
+// src: EXE 0x004414c0
+void* DelStandIn::QueuedCharacter_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)
@@ -3676,11 +3682,12 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_00441b50(unsigned int flags);
+    void* QueuedPlayer_ScalarDeletingDestructor(unsigned int flags);
 };
 // Runs the destructor on this object, then frees it via Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x00441b50
-void* DelStandIn::FUN_00441b50(unsigned int flags)
+// src: EXE 0x00441b50
+void* DelStandIn::QueuedPlayer_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)
@@ -3699,11 +3706,12 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_00442010(unsigned int flags);
+    void* QueuedFaceGenFile_ScalarDeletingDestructor(unsigned int flags);
 };
 // Runs the destructor on this, then frees this via Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x00442010
-void* DelStandIn::FUN_00442010(unsigned int flags)
+// src: EXE 0x00442010
+void* DelStandIn::QueuedFaceGenFile_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)
@@ -4912,7 +4920,8 @@ void __cdecl _Deallocate(void*);
 
 // Calls FUN_004406b0, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x00440680
-void* AttachDistant3DTask::FUN_00440680(unsigned int flags)
+// src: EXE 0x00440680
+void* AttachDistant3DTask::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_004406b0();
     if (flags & 1)
@@ -4935,7 +4944,8 @@ void FUN_00441980_Class::DoNothing_00441980()
 
 // Calls FUN_004422c0, then deletes this if flags has bit 0 set, and returns this.
 // @fnv 0x00442290
-void* BackgroundCloneThread::FUN_00442290(unsigned int flags)
+// src: EXE 0x00442290
+void* BackgroundCloneThread::ScalarDeletingDestructor(unsigned int flags)
 {
     this->BackgroundCloneThread::~BackgroundCloneThread();
     if (flags & 1)
@@ -5313,14 +5323,15 @@ namespace fnv_0043ea00 {
 struct FUN_00440640_shell
 {
     void ForwardCall_00440640();
-    void* FUN_00440610(unsigned int flags);
+    void* IOTask_ScalarDeletingDestructor(unsigned int flags);
 };
 
 void _Deallocate(void*);
 
 // Calls FUN_00440640, then deallocates this if flags has bit 0 set, and returns this.
 // @fnv 0x00440610
-void* FUN_00440640_shell::FUN_00440610(unsigned int flags)
+// src: EXE 0x00440610
+void* FUN_00440640_shell::IOTask_ScalarDeletingDestructor(unsigned int flags)
 {
     ForwardCall_00440640();
     if (flags & 1)
@@ -5364,7 +5375,7 @@ namespace fnv_00441950 {
 struct FUN_00441980_Class
 {
     void DoNothing_00441980(void);
-    void* FUN_00441950(unsigned int flags);
+    void* QueuedCreature_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // src: GUESS 0x00441980 (confidence: high)
@@ -5375,7 +5386,8 @@ extern "C" void __cdecl _Deallocate(void*);
 
 // Calls FUN_00441980, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x00441950
-void* FUN_00441980_Class::FUN_00441950(unsigned int flags)
+// src: EXE 0x00441950
+void* FUN_00441980_Class::QueuedCreature_ScalarDeletingDestructor(unsigned int flags)
 {
     DoNothing_00441980();
     if (flags & 1)
@@ -8424,7 +8436,8 @@ void __cdecl _Deallocate(void*);
 
 // Destroys the BSStream, deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x0043d150
-void* BSStream::FUN_0043d150(unsigned int flags)
+// src: EXE 0x0043d150
+void* BSStream::ScalarDeletingDestructor(unsigned int flags)
 {
     this->BSStream::~BSStream();
     if (flags & 1)
@@ -8483,7 +8496,7 @@ class FUN_0043e920_class
 {
   public:
     void DoNothing_0043e920();
-    void* FUN_0043e8f0(unsigned int flags);
+    void* QueuedReplacementKF_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // src: GUESS 0x0043e920 (confidence: high)
@@ -8492,7 +8505,8 @@ void FUN_0043e920_class::DoNothing_0043e920()
 
 // Calls FUN_0043e920, deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x0043e8f0
-void* FUN_0043e920_class::FUN_0043e8f0(unsigned int flags)
+// src: EXE 0x0043e8f0
+void* FUN_0043e920_class::QueuedReplacementKF_ScalarDeletingDestructor(unsigned int flags)
 {
     DoNothing_0043e920();
     if (flags & 1)
@@ -8565,11 +8579,12 @@ void _Deallocate(void*);
 struct FUN_00440eb0_class
 {
     void FUN_0043fe40(void);
-    void* FUN_0043fe10(unsigned int flags);
+    void* QueuedReference_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // @fnv 0x0043fe10
-void* FUN_00440eb0_class::FUN_0043fe10(unsigned int flags)
+// src: EXE 0x0043fe10
+void* FUN_00440eb0_class::QueuedReference_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0043fe40();
 
@@ -8583,7 +8598,8 @@ void* FUN_00440eb0_class::FUN_0043fe10(unsigned int flags)
 void __cdecl _Deallocate(void*);
 
 // @fnv 0x00441cf0
-void* QueuedFileLoad::FUN_00441cf0(unsigned int flags)
+// src: EXE 0x00441cf0
+void* QueuedFileLoad::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00441d20();
     if (flags & 1)
@@ -17963,7 +17979,8 @@ bool QueuedTreeBillboard::GetDescription_0043d820(char* apDescription, unsigned 
 }
 
 // @fnv 0x0043d580
-void* __thiscall QueuedTreeBillboard::FUN_0043d580(unsigned int flags)
+// src: EXE 0x0043d580
+void* __thiscall QueuedTreeBillboard::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0043d5b0();
     if (flags & 1)
@@ -18044,7 +18061,8 @@ void QueuedHelmet::UpdateFaceGenModels()
 }
 
 // @fnv 0x0043d8c0
-void* QueuedTreeModel::FUN_0043d8c0(unsigned int flags)
+// src: EXE 0x0043d8c0
+void* QueuedTreeModel::ScalarDeletingDestructor(unsigned int flags)
 {
     this->SetVtableAndProcessState_0043d8f0();
 
@@ -18092,7 +18110,8 @@ void QueuedTreeModel::Run_0043da00()
 }
 
 // @fnv 0x0043f030
-void* QueuedHelmet::FUN_0043f030(unsigned int flags)
+// src: EXE 0x0043f030
+void* QueuedHelmet::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0043f080();
 

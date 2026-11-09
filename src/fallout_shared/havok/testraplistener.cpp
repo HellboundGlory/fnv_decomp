@@ -124,12 +124,13 @@ void FUN_0062c700_shell::ForwardCall_0062c700()
 
 struct FUN_0062d710_shell : FUN_0062d740_shell
 {
-    void* FUN_0062d710(unsigned int flags);
+    void* hkpPhantomListener_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_0062d740, deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x0062d710
-void* FUN_0062d710_shell::FUN_0062d710(unsigned int flags)
+// src: EXE 0x0062d710
+void* FUN_0062d710_shell::hkpPhantomListener_ScalarDeletingDestructor(unsigned int flags)
 {
     this->UpdateFields_0062d740();
     if (flags & 1)
@@ -327,11 +328,12 @@ void* MyCollector::hkpCdBodyPairCollector_hkpCdBodyPairCollector()
 void __cdecl Cameracaster_UpdateState_006210d0(void*);
 struct FUN_0062d3f0_Standin : hkpCdBodyPairCollector
 {
-    void* FUN_0062d3f0(unsigned int);
+    void* hkpCdBodyPairCollector_ScalarDeletingDestructor(unsigned int);
 };
 // Calls FUN_0062d420, then if bit 0 of flags is set calls FUN_006210d0 on this, and returns this.
 // @fnv 0x0062d3f0
-void* FUN_0062d3f0_Standin::FUN_0062d3f0(unsigned int flags)
+// src: EXE 0x0062d3f0
+void* FUN_0062d3f0_Standin::hkpCdBodyPairCollector_ScalarDeletingDestructor(unsigned int flags)
 {
     SetVirtualTable_0062d420();
     if (flags & 1)
@@ -342,7 +344,8 @@ void* FUN_0062d3f0_Standin::FUN_0062d3f0(unsigned int flags)
 void __cdecl BSAudio_UpdateState_0062d470(void*);
 // Calls FUN_0062d4b0 on this, then FUN_0062d470(this) if bit 0 of flags is set, and returns this.
 // @fnv 0x0062d440
-void* hkpAllCdBodyPairCollector::FUN_0062d440(unsigned int flags)
+// src: EXE 0x0062d440
+void* hkpAllCdBodyPairCollector::ScalarDeletingDestructor(unsigned int flags)
 {
     this->hkpAllCdBodyPairCollector::~hkpAllCdBodyPairCollector();
     if (flags & 1)

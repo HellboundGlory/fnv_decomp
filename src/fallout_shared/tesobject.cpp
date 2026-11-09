@@ -766,14 +766,15 @@ namespace fnv_0050f710 {
 struct FUN_0050f740_shell
 {
     void UpdateFields_0050f740(void);
-    void* FUN_0050f710(unsigned int flags);
+    void* TESBoundAnimObject_ScalarDeletingDestructor(unsigned int flags);
 };
 
 void* _Deallocate(void* p);
 
 // Calls FUN_0050f740, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x0050f710
-void* FUN_0050f740_shell::FUN_0050f710(unsigned int flags)
+// src: EXE 0x0050f710
+void* FUN_0050f740_shell::TESBoundAnimObject_ScalarDeletingDestructor(unsigned int flags)
 {
     UpdateFields_0050f740();
     if (flags & 1)
@@ -787,12 +788,13 @@ void _Deallocate(void* obj);
 
 struct FUN_0050f900_Class
 {
-    void* __thiscall FUN_0050f900(unsigned int flags);
+    void* __thiscall TESObject_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_0050f930 on this, deallocates this when bit 0 of flags is set, and returns this.
 // @fnv 0x0050f900
-void* __thiscall FUN_0050f900_Class::FUN_0050f900(unsigned int flags)
+// src: EXE 0x0050f900
+void* __thiscall FUN_0050f900_Class::TESObject_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0050f930(this);
     if (flags & 1)

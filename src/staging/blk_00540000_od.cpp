@@ -407,12 +407,13 @@ void __cdecl Deallocate(void*);
 
 struct FUN_00554670_Class : public FUN_00554650_Class
 {
-    void* FUN_00554670(unsigned int flags);
+    void* hkpEntityListener_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls the base cleanup, frees this object when flags has bit 0 set, and returns this.
 // @fnv 0x00554670
-void* FUN_00554670_Class::FUN_00554670(unsigned int flags)
+// src: EXE 0x00554670
+void* FUN_00554670_Class::hkpEntityListener_ScalarDeletingDestructor(unsigned int flags)
 {
     UpdateState_00554650();
     if (flags & 1)

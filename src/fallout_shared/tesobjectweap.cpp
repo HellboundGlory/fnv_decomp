@@ -1480,11 +1480,12 @@ char FUN_00524d50_shell::GetByteAtOffset1F8()
 void __cdecl _Deallocate(void*);
 struct FUN_0051dad0_This {
     void FUN_0051db00();
-    void* FUN_0051dad0(unsigned int);
+    void* TESObjectWEAP_ScalarDeletingDestructor(unsigned int);
 };
 // Calls FUN_0051db00 on this, frees this with _Deallocate when flags has bit 1 set, and returns this.
 // @fnv 0x0051dad0
-void* FUN_0051dad0_This::FUN_0051dad0(unsigned int flags)
+// src: EXE 0x0051dad0
+void* FUN_0051dad0_This::TESObjectWEAP_ScalarDeletingDestructor(unsigned int flags)
 {
     this->FUN_0051db00();
     if (flags & 1)

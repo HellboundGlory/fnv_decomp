@@ -1962,12 +1962,13 @@ unsigned short __thiscall TESNPCSaveSizeQueries::TESNPC_GetSaveSize(unsigned int
 
 struct TESNPCDeleteAccess : TESNPC
 {
-    void* FUN_00601370(unsigned int);
+    void* TESNPC_ScalarDeletingDestructor(unsigned int);
 };
 void __cdecl _Deallocate(void*);
 // Calls FUN_006013c0, then frees this with _Deallocate when flags has bit 1 set, and returns this.
 // @fnv 0x00601370
-void* TESNPCDeleteAccess::FUN_00601370(unsigned int flags)
+// src: EXE 0x00601370
+void* TESNPCDeleteAccess::TESNPC_ScalarDeletingDestructor(unsigned int flags)
 {
     this->TESNPC::~TESNPC();
     if (flags & 1)

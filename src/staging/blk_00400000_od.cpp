@@ -411,7 +411,8 @@ void* FUN_004053d0_class::FUN_004053d0(unsigned int flags)
 
 // Calls the BSExtraData destructor and, when flags has bit 0 set, frees this; returns this.
 // @fnv 0x0040ecd0
-void* BSExtraData::FUN_0040ecd0(unsigned int flags)
+// src: EXE 0x0040ecd0
+void* BSExtraData::ScalarDeletingDestructor(unsigned int flags)
 {
     BSExtraData::~BSExtraData();
     if (flags & 1)

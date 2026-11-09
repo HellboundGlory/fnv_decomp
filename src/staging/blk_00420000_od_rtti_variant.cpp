@@ -208,7 +208,7 @@ struct FUN_00435f80_shell
 };
 struct FUN_00435f50_class : FUN_00435f80_shell
 {
-    void* __thiscall FUN_00435f50(unsigned int flags);
+    void* __thiscall ExtraRefractionProperty_ScalarDeletingDestructor(unsigned int flags);
 };
 extern "C" void* DAT_01015974;
 struct FUN_00436090 : public BE
@@ -223,36 +223,36 @@ void __cdecl Deallocate(void*);
 struct FUN_00436150_Class
 {
     void __thiscall FUN_00436180();
-    void* __thiscall FUN_00436150(unsigned int flags);
+    void* __thiscall ExtraSound_ScalarDeletingDestructor(unsigned int flags);
 };
 struct FUN_00436390_Class
 {
     void __thiscall FUN_004363c0();
-    void* __thiscall FUN_00436390(unsigned int flags);
+    void* __thiscall ExtraCreatureMovementSound_ScalarDeletingDestructor(unsigned int flags);
 };
 struct FUN_004364b0_Class
 {
     void __thiscall FUN_004364e0();
-    void* __thiscall FUN_004364b0(unsigned int flags);
+    void* __thiscall ExtraWeaponIdleSound_ScalarDeletingDestructor(unsigned int flags);
 };
 struct FUN_004365d0_class
 {
     void* __thiscall FUN_00436600();
-    void* __thiscall FUN_004365d0(unsigned int flags);
+    void* __thiscall ExtraWeaponAttackSound_ScalarDeletingDestructor(unsigned int flags);
 };
 void FUN_00436720();
 void __cdecl Deallocate(void*);
 struct FUN_004366f0_class
 {
     void __thiscall FUN_00436720();
-    void* __thiscall FUN_004366f0(unsigned int flags);
+    void* __thiscall ExtraActivateLoopSound_ScalarDeletingDestructor(unsigned int flags);
 };
 void Deallocate(void*);
 void FUN_00436bb0();
 struct FUN_00436af0_Class
 {
     void FUN_00436bb0();
-    void* FUN_00436af0(unsigned int flags);
+    void* ExtraTalkingActor_ScalarDeletingDestructor(unsigned int flags);
 };
 void __cdecl FUN_00438720(FUN_004383b0_Class*);
 struct FUN_00438410_Class
@@ -670,7 +670,7 @@ struct FUN_00435f80 : public BSExtraDataHelper
 struct FUN_004362a0
 {
     ~FUN_004362a0();
-    void* __thiscall FUN_00436270(unsigned int flags);
+    void* __thiscall ExtraCreatureAwakeSound_ScalarDeletingDestructor(unsigned int flags);
 };
 struct FUN_00436bb0 : public BSExtraData
 {

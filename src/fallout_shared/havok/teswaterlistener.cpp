@@ -25,7 +25,7 @@
 
 struct FUN_0062e750_shell
 {
-    void* __thiscall FUN_0062e750(unsigned int flags);
+    void* __thiscall TESWaterListener_ScalarDeletingDestructor(unsigned int flags);
     void __thiscall FUN_0062e860();
 };
 
@@ -33,7 +33,8 @@ void __cdecl _Deallocate(void* p);
 
 // Calls FUN_0062e860, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x0062e750
-void* FUN_0062e750_shell::FUN_0062e750(unsigned int flags)
+// src: EXE 0x0062e750
+void* FUN_0062e750_shell::TESWaterListener_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0062e860();
     if (flags & 1)

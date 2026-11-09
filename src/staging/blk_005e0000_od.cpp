@@ -3891,11 +3891,12 @@ struct FUN_005e2ca0_s
 };
 struct FUN_005e2c70_s : FUN_005e2ca0_s
 {
-    void* FUN_005e2c70(unsigned int flags);
+    void* TESSound_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_005e2ca0, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x005e2c70
-void* FUN_005e2c70_s::FUN_005e2c70(unsigned int flags)
+// src: EXE 0x005e2c70
+void* FUN_005e2c70_s::TESSound_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_005e2ca0();
     if (flags & 1)
@@ -4607,11 +4608,12 @@ void __cdecl operator delete(void*);
 struct DeletingObject
 {
     void FUN_005e4bc0();
-    void* FUN_005e4b90(unsigned int flags);
+    void* BGSBodyPartData_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_005e4bc0, then deletes this via operator delete if the low bit of flags is set, and returns this.
 // @fnv 0x005e4b90
-void* DeletingObject::FUN_005e4b90(unsigned int flags)
+// src: EXE 0x005e4b90
+void* DeletingObject::BGSBodyPartData_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_005e4bc0();
     if (flags & 1)

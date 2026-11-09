@@ -496,7 +496,8 @@ void PrimitiveSphereDestruction::Destroy()
 
 // Calls DestroyBase, frees this with _delete when flags has bit 0 set, and returns this.
 // @fnv 0x004a7bf0
-void* BSMultiBoundSphere::FUN_004a7bf0(unsigned int flags)
+// src: EXE 0x004a7bf0
+void* BSMultiBoundSphere::ScalarDeletingDestructor(unsigned int flags)
 {
     DestroyBase();
     if (flags & 1)
@@ -634,7 +635,8 @@ bool NiColorA::operator!=(const NiColorA& c) const
 void __cdecl _delete(void*, unsigned int);
 
 // @fnv 0x004a6110
-void* BSOcclusionPlane::FUN_004a6110(unsigned int flags)
+// src: EXE 0x004a6110
+void* BSOcclusionPlane::ScalarDeletingDestructor(unsigned int flags)
 {
     this->BSOcclusionPlane::~BSOcclusionPlane();
     if (flags & 1)
@@ -673,7 +675,8 @@ void __cdecl _delete(void*, unsigned int);
 
 // Calls DestroyBase on this, optionally frees this with _delete when flags has bit 0 set, and returns this.
 // @fnv 0x004a7060
-void* BSMultiBoundAABB::FUN_004a7060(unsigned int flags)
+// src: EXE 0x004a7060
+void* BSMultiBoundAABB::ScalarDeletingDestructor(unsigned int flags)
 {
     reinterpret_cast<BSMultiBoundSphere*>(this)->DestroyBase();
     if (flags & 1)
@@ -683,7 +686,8 @@ void* BSMultiBoundAABB::FUN_004a7060(unsigned int flags)
 
 void __cdecl _delete(void*, unsigned int);
 // @fnv 0x004a7100
-void* BSMultiBoundOBB::FUN_004a7100(unsigned int flags)
+// src: EXE 0x004a7100
+void* BSMultiBoundOBB::ScalarDeletingDestructor(unsigned int flags)
 {
     this->DestroyBase_Thunk();
     if (flags & 1)

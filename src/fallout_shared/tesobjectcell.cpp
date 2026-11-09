@@ -3217,7 +3217,8 @@ void __cdecl _Deallocate(void* p);
 
 // Calls FUN_0054ab60, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x0054ab30
-void* __thiscall CheckWithinMultiBoundTask::FUN_0054ab30(unsigned int flags)
+// src: EXE 0x0054ab30
+void* __thiscall CheckWithinMultiBoundTask::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0054ab60();
     if (flags & 1)
@@ -5628,12 +5629,13 @@ extern void __cdecl _Deallocate(void* pointer);
 struct FUN_005417e0_class
 {
     void FUN_00541810();
-    void* FUN_005417e0(unsigned int flags);
+    void* TESObjectCELL_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_00541810, deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x005417e0
-void* FUN_005417e0_class::FUN_005417e0(unsigned int flags)
+// src: EXE 0x005417e0
+void* FUN_005417e0_class::TESObjectCELL_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00541810();
 
