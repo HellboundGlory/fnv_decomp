@@ -130,7 +130,8 @@ extern "C" void __cdecl _delete(void*, unsigned int);
 
 // Destroys the constraint and, when flags has bit 0 set, frees the 0x10-byte object; returns this.
 // @fnv 0x009ba520
-void* bhkHingeConstraint::FUN_009ba520(unsigned int flags)
+// src: EXE 0x009ba520
+void* bhkHingeConstraint::ScalarDeletingDestructor(unsigned int flags)
 {
     this->bhkHingeConstraint::~bhkHingeConstraint();
     if (flags & 1)
@@ -140,7 +141,8 @@ void* bhkHingeConstraint::FUN_009ba520(unsigned int flags)
 
 void __cdecl _Deallocate(void*);
 // @fnv 0x009b7a20
-void* MissileProjectile::FUN_009b7a20(unsigned int flags)
+// src: EXE 0x009b7a20
+void* MissileProjectile::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_009b7bc0();
     if (flags & 1)
@@ -266,12 +268,13 @@ void __cdecl operator delete(void*);
 struct FUN_009ba5c0_shell
 {
     void UpdateState_009ba5f0();
-    void* __thiscall FUN_009ba5c0(unsigned int flags);
+    void* __thiscall hkConstraintCinfo_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_009ba5f0, frees this with operator delete when flags has bit 0 set, and returns this.
 // @fnv 0x009ba5c0
-void* __thiscall FUN_009ba5c0_shell::FUN_009ba5c0(unsigned int flags)
+// src: EXE 0x009ba5c0
+void* __thiscall FUN_009ba5c0_shell::hkConstraintCinfo_ScalarDeletingDestructor(unsigned int flags)
 {
     UpdateState_009ba5f0();
     if (flags & 1)

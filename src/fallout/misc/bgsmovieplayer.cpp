@@ -143,7 +143,8 @@ void __thiscall BGSMoviePlayer::PauseMusic()
 void _Deallocate(void*);
 // Calls FUN_00867180, then deallocates this if the low bit of flags is set, and returns this.
 // @fnv 0x00867150
-void* __thiscall BGSMoviePlayer::FUN_00867150(unsigned int flags)
+// src: EXE 0x00867150
+void* __thiscall BGSMoviePlayer::ScalarDeletingDestructor(unsigned int flags)
 {
     UpdateFields_00867180();
     if (flags & 1)

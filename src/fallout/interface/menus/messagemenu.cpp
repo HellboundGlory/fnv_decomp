@@ -299,11 +299,12 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_007a8ae0(unsigned int flags);
+    void* MessageMenu_ScalarDeletingDestructor(unsigned int flags);
 };
 // Runs the destructor on this object, then frees it with Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x007a8ae0
-void* DelStandIn::FUN_007a8ae0(unsigned int flags)
+// src: EXE 0x007a8ae0
+void* DelStandIn::MessageMenu_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)

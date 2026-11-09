@@ -179,13 +179,13 @@ struct FUN_00c65680_Class
 struct FUN_00c600c0_class
 {
     void* __thiscall UpdateState_00c5fd50();
-    void* __thiscall FUN_00c600c0(unsigned int flags);
+    void* __thiscall BSPSysStripUpdateModifier_ScalarDeletingDestructor(unsigned int flags);
     static void __cdecl operator delete(void* p, unsigned int size);
 };
 struct FUN_00c613a0_Class
 {
     void __thiscall FUN_00c613a0();
-    void* __thiscall FUN_00c617e0(unsigned int flags);
+    void* __thiscall BSWArray_ScalarDeletingDestructor(unsigned int flags);
     void operator delete(void* p, unsigned int size);
 };
 extern "C" void NiFree(void*);
@@ -202,7 +202,7 @@ struct FUN_00a7b300_shell
 };
 struct FUN_00c632f0_class
 {
-    void* __thiscall FUN_00c632f0(unsigned int flags);
+    void* __thiscall PArrayPoint_ScalarDeletingDestructor(unsigned int flags);
 };
 void __cdecl operator delete(void*, int);
 struct FUN_00c63840_Class : NiPSysModifier
@@ -221,7 +221,7 @@ void __cdecl operator delete(void* p, unsigned int size);
 struct FUN_00c64610_Class
 {
     void __thiscall FUN_00c63b40();
-    void* __thiscall FUN_00c64610(unsigned int flags);
+    void* __thiscall BSDecalPlacementVectorExtraData_ScalarDeletingDestructor(unsigned int flags);
 };
 struct FUN_00c64930_Class
 {
@@ -371,7 +371,7 @@ void __cdecl operator delete(void* p, unsigned int size);
 struct FUN_00c60d10_Class
 {
     void FUN_00c31750();
-    void* __thiscall FUN_00c60d10(unsigned int flags);
+    void* __thiscall BSPSysSimpleColorModifier_ScalarDeletingDestructor(unsigned int flags);
 };
 struct A51BF0Base
 {
@@ -413,7 +413,7 @@ struct FUN_00c31750_Class
 };
 struct FUN_00c63a70_Class
 {
-    void* __thiscall FUN_00c63a70(unsigned int flags);
+    void* __thiscall BSParentVelocityModifier_ScalarDeletingDestructor(unsigned int flags);
 };
 struct FUN_00c64500_Class : FUN_00c61490_Class
 {
@@ -448,7 +448,7 @@ void __cdecl operator delete(void* p, unsigned int size);
 struct FUN_00c64e70_Class
 {
     void __thiscall FUN_00c64e70();
-    void* __thiscall FUN_00c65650(unsigned int flags);
+    void* __thiscall BSAttachPoints_ScalarDeletingDestructor(unsigned int flags);
 };
 void* __cdecl Object_DispatchCommandFour(unsigned int size);
 struct SpawnedObject_b9118

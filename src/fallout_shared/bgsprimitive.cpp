@@ -539,11 +539,12 @@ void __cdecl _delete(void* p, unsigned int size);
 
 struct FUN_00c4f820_shell
 {
-    void* FUN_00c4f820(unsigned int flags);
+    void* BSPortalSharedNode_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // @fnv 0x00c4f820
-void* FUN_00c4f820_shell::FUN_00c4f820(unsigned int flags)
+// src: EXE 0x00c4f820
+void* FUN_00c4f820_shell::BSPortalSharedNode_ScalarDeletingDestructor(unsigned int flags)
 {
     reinterpret_cast<FUN_00c4f550_shell*>(this)->FUN_00c4f550();
     if (flags & 1)
@@ -903,11 +904,12 @@ namespace fnv_00c4fad0 {
 void __cdecl _delete(void*, unsigned int);
 struct FUN_00c4fad0_host : NiRefObject
 {
-    void* FUN_00c4fad0(unsigned int);
+    void* BSMultiBoundShape_ScalarDeletingDestructor(unsigned int);
 };
 // Destructs the NiRefObject base and, when flags has bit 0 set, frees this with _delete, returning this.
 // @fnv 0x00c4fad0
-void* FUN_00c4fad0_host::FUN_00c4fad0(unsigned int flags)
+// src: EXE 0x00c4fad0
+void* FUN_00c4fad0_host::BSMultiBoundShape_ScalarDeletingDestructor(unsigned int flags)
 {
     this->NiRefObject::~NiRefObject();
     if (flags & 1)

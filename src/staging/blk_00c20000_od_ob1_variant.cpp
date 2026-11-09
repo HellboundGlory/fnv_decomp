@@ -219,7 +219,7 @@ extern "C" void __cdecl operator delete(void*, unsigned int);
 struct FUN_00c3a140_Class
 {
     void __thiscall FUN_00c39770();
-    void* __thiscall FUN_00c3a140(unsigned int flags);
+    void* __thiscall BSMultiBoundRoom_ScalarDeletingDestructor(unsigned int flags);
 };
 struct FUN_00c3a620_Class
 {
@@ -328,7 +328,7 @@ extern "C" void __cdecl operator delete(void*, unsigned int);
 struct FUN_00c3ba80_Class
 {
     void __thiscall FUN_00c3bab0();
-    void* __thiscall FUN_00c3ba80(unsigned int flags);
+    void* __thiscall BSNodeReferences_ScalarDeletingDestructor(unsigned int flags);
     int a, b, c, d;
 };
 extern "C" unsigned char DAT_01202d55;

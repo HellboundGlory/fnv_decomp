@@ -1119,11 +1119,12 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_009e0160(unsigned int flags);
+    void* DetailedActorPathHandler_ScalarDeletingDestructor(unsigned int flags);
 };
 // Runs the destructor on this, then frees this when flags has bit 0 set, and returns this.
 // @fnv 0x009e0160
-void* DelStandIn::FUN_009e0160(unsigned int flags)
+// src: EXE 0x009e0160
+void* DelStandIn::DetailedActorPathHandler_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)

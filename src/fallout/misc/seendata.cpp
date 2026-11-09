@@ -217,7 +217,8 @@ void SeenData::SaveGame_0087a060(bool abRecursing)
 void _Deallocate(void*);
 // Calls FUN_0087a170, then if the low bit of flags is set deallocates this, and returns this.
 // @fnv 0x0087a140
-void* IntSeenData::FUN_0087a140(unsigned int flags)
+// src: EXE 0x0087a140
+void* IntSeenData::ScalarDeletingDestructor(unsigned int flags)
 {
     IntSeenData::~IntSeenData();
     if (flags & 1)

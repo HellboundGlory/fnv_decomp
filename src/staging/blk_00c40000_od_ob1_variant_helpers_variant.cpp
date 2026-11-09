@@ -456,7 +456,7 @@ struct FUN_00c40930_Class {
 void __cdecl SetVtableAndProcessState_00c43070(void*);
 struct FUN_00c43620_Class {
     void __thiscall SetVtableAndProcessState_00c43070();
-    void* __thiscall FUN_00c43620(unsigned int flags);
+    void* __thiscall BSXFlags_ScalarDeletingDestructor(unsigned int flags);
     static void __cdecl operator delete(void* p, unsigned int size);
 };
 struct FUN_00c43850_Class {
@@ -545,12 +545,12 @@ struct FUN_00878690_shell {
 };
 void __cdecl operator delete(void* ptr, unsigned int size);
 struct FUN_00c52830_class {
-    void* __thiscall FUN_00c52830(unsigned int flags);
+    void* __thiscall BSSceneGraph_ScalarDeletingDestructor(unsigned int flags);
 };
 
 struct FUN_00a7b300_shell { void __thiscall DestroyFields_00a7b300(); };
 struct FUN_00c55330_class {
-    void* __thiscall FUN_00c55330(unsigned int flags);
+    void* __thiscall BSBound_ScalarDeletingDestructor(unsigned int flags);
     void operator delete(void* p, unsigned int size);
 };
 extern int DAT_010c2d54;
@@ -599,14 +599,14 @@ struct FUN_00c5db90_Class {
 };
 void __cdecl operator delete(void* p, unsigned int size);
 struct FUN_00c5eb20_Class {
-    void* __thiscall FUN_00c5eb20(unsigned int flags);
+    void* __thiscall BSMasterParticleSystem_ScalarDeletingDestructor(unsigned int flags);
 };
 void __cdecl operator delete(void* p, unsigned int size);
 struct FUN_00c5ed60_Class {
     void __thiscall FUN_00c5ed60();
 };
 struct FUN_00c5f360_Class {
-    void* __thiscall FUN_00c5f360(unsigned int flags);
+    void* __thiscall BSTextureData_ScalarDeletingDestructor(unsigned int flags);
 };
 struct FUN_00c5f390_class {
     void __thiscall BSSimpleArray_enum_hkpConstraintData_ConstraintType_1024_SetSize(int a, int b);
@@ -618,7 +618,7 @@ struct FUN_00c5f500_class {
     unsigned int count;
 };
 struct FUN_00c5fc20_class {
-    void* __thiscall FUN_00c5fc20(unsigned int flags);
+    void* __thiscall BSNiNode_ScalarDeletingDestructor(unsigned int flags);
     void __cdecl operator delete(void* p, unsigned int size);
     void __thiscall FUN_00c5faa0();
 };
@@ -892,7 +892,7 @@ struct FUN_00c43950_Class : MyBase {
 };
 struct FUN_00c43cb0_class {
     void __thiscall FUN_00c5faa0();
-    void* __thiscall FUN_00c43cb0(unsigned int flags);
+    void* __thiscall BSValueNode_ScalarDeletingDestructor(unsigned int flags);
 };
 struct FUN_00c457e0_class {
     char pad[0xb0];
@@ -906,7 +906,7 @@ struct FUN_00c46230_Class {
 void __cdecl FUN_00c31750();
 struct FUN_00c46930_class {
     void __thiscall FUN_00c31750();
-    void* __thiscall FUN_00c46930(unsigned int flags);
+    void* __thiscall BSWindModifier_ScalarDeletingDestructor(unsigned int flags);
 };
 struct A51BF0Base {
     char pad[0xb4];
@@ -925,7 +925,7 @@ struct FUN_00c46cd0_Class {
 };
 struct FUN_00c46af0 {
     void __thiscall Destruct();
-    void* __thiscall FUN_00c47610(unsigned int flags);
+    void* __thiscall BSMultiBoundNode_ScalarDeletingDestructor(unsigned int flags);
 };
 struct FUN_00c47a00_Class {
     char pad0[0x18];
@@ -987,7 +987,7 @@ struct FUN_00c5d260_view {
     static void __cdecl operator delete(void* p, unsigned int sz);
 };
 struct FUN_00c5d260 : FUN_00c5d260_view {
-    void* __thiscall FUN_00c5d260_method(unsigned int flags);
+    void* __thiscall BSScissorTriShape_ScalarDeletingDestructor(unsigned int flags);
 };
 extern double runtimeInitializationDouble5;
 extern double DAT_01034208;

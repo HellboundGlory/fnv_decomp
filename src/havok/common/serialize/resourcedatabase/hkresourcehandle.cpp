@@ -252,12 +252,13 @@ hkMemoryRouter* _D1A0E0GetMemoryRouter();
 struct FUN_00e2f210_class : public FUN_00e2ea40_class
 {
     unsigned short m_handle;
-    void* __thiscall FUN_00e2f210(unsigned int flags);
+    void* __thiscall hkMemoryResourceHandle_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Runs the base constructor, and if flags has bit 0 set, releases m_handle through the memory router's manager, then returns this.
 // @fnv 0x00e2f210
-void* FUN_00e2f210_class::FUN_00e2f210(unsigned int flags)
+// src: EXE 0x00e2f210
+void* FUN_00e2f210_class::hkMemoryResourceHandle_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00e2ea40_class::FUN_00e2ea40();
 

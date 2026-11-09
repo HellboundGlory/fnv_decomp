@@ -2086,11 +2086,12 @@ struct StructArrayImplementation
     void* m_00;
     unsigned short m_04;
     void ProcessEntries_00dcb890();
-    void* __thiscall FUN_00dcb960(unsigned int flags);
+    void* __thiscall ScalarDeletingDestructor(unsigned int flags);
 };
 
 // @fnv 0x00dcb960
-void* __thiscall StructArrayImplementation::FUN_00dcb960(unsigned int flags)
+// src: EXE 0x00dcb960
+void* __thiscall StructArrayImplementation::ScalarDeletingDestructor(unsigned int flags)
 {
     ProcessEntries_00dcb890();
 

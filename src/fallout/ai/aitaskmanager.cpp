@@ -177,11 +177,12 @@ void __cdecl operator delete(void*);
 struct FUN_008c8860_shell
 {
     void SetVtableAndProcessState_008c8890();
-    void* FUN_008c8860(unsigned int flags);
+    void* AnimationTaskData_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_008c8890, deletes this when flags has bit 0 set, and returns this.
 // @fnv 0x008c8860
-void* FUN_008c8860_shell::FUN_008c8860(unsigned int flags)
+// src: EXE 0x008c8860
+void* FUN_008c8860_shell::AnimationTaskData_ScalarDeletingDestructor(unsigned int flags)
 {
     SetVtableAndProcessState_008c8890();
     if (flags & 1)
@@ -403,11 +404,12 @@ void __cdecl operator delete(void*);
 struct FUN_008c9050_shell
 {
     void SetVirtualTableAndProcessState_008c9080();
-    void* FUN_008c9050(unsigned int flags);
+    void* ActorsScriptTaskData_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_008c9080, deletes this when flags has bit 0 set, and returns this.
 // @fnv 0x008c9050
-void* FUN_008c9050_shell::FUN_008c9050(unsigned int flags)
+// src: EXE 0x008c9050
+void* FUN_008c9050_shell::ActorsScriptTaskData_ScalarDeletingDestructor(unsigned int flags)
 {
     SetVirtualTableAndProcessState_008c9080();
     if (flags & 1)
@@ -474,11 +476,12 @@ void __cdecl operator delete(void*);
 struct FUN_008c91a0_shell
 {
     void UpdateState_008c91d0();
-    void* FUN_008c91a0(unsigned int flags);
+    void* MovementTaskData_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_008c91d0, then frees this with operator delete when flags has bit 0 set, and returns this.
 // @fnv 0x008c91a0
-void* FUN_008c91a0_shell::FUN_008c91a0(unsigned int flags)
+// src: EXE 0x008c91a0
+void* FUN_008c91a0_shell::MovementTaskData_ScalarDeletingDestructor(unsigned int flags)
 {
     UpdateState_008c91d0();
     if (flags & 1)
@@ -580,10 +583,11 @@ void __cdecl operator delete(void*);
 struct FUN_008c9ec0_shell
 {
     void FUN_008c9ef0();
-    void* FUN_008c9ec0(unsigned int flags);
+    void* AITaskThread_ScalarDeletingDestructor(unsigned int flags);
 };
 // @fnv 0x008c9ec0
-void* FUN_008c9ec0_shell::FUN_008c9ec0(unsigned int flags)
+// src: EXE 0x008c9ec0
+void* FUN_008c9ec0_shell::AITaskThread_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_008c9ef0();
     if (flags & 1)

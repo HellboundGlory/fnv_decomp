@@ -2561,10 +2561,11 @@ void __cdecl Deallocate(void*);
 namespace p07 {
 struct DtorStandIn { void FUN_0083dec0(); };
 struct DelStandIn {
-    void* FUN_00709980(unsigned int flags);
+    void* TileRect_ScalarDeletingDestructor(unsigned int flags);
 };
 // @fnv 0x00709980
-void* DelStandIn::FUN_00709980(unsigned int flags)
+// src: EXE 0x00709980
+void* DelStandIn::TileRect_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)
@@ -2591,10 +2592,11 @@ void __cdecl Deallocate(void*);
 namespace p07 {
 struct DtorStandIn { void FUN_0083dec0(); };
 struct DelStandIn {
-    void* FUN_00709a60(unsigned int flags);
+    void* TileMenu_ScalarDeletingDestructor(unsigned int flags);
 };
 // @fnv 0x00709a60
-void* DelStandIn::FUN_00709a60(unsigned int flags)
+// src: EXE 0x00709a60
+void* DelStandIn::TileMenu_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)

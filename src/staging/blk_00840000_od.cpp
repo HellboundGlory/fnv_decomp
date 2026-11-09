@@ -1890,11 +1890,12 @@ void __thiscall FUN_008431c0_Class::ConstructAndForward(void* pFirst, void* pSec
 
 struct FUN_008431f0_Class : FUN_00843220_Class
 {
-    void* __thiscall FUN_008431f0(unsigned int flags);
+    void* __thiscall BGSOffsetDataArray_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls the base constructor, then deallocates this if bit 0 of flags is set, and returns this.
 // @fnv 0x008431f0
-void* __thiscall FUN_008431f0_Class::FUN_008431f0(unsigned int flags)
+// src: EXE 0x008431f0
+void* __thiscall FUN_008431f0_Class::BGSOffsetDataArray_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00843220_Class::ForwardCall_00843220();
     if (flags & 1)

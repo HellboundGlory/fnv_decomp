@@ -114,7 +114,7 @@ S6* __cdecl CopyTripleShorts(S6* a1, S6* a2, S6* a3);
 struct FUN_00661d40_shell
 {
     void __thiscall SetVTableAndDestroy();
-    void* __thiscall FUN_00661d60(unsigned int);
+    void* __thiscall BSFaceGenMorphData_ScalarDeletingDestructor(unsigned int);
 };
 void __cdecl _delete(void*, unsigned int);
 extern const char* DAT_0119b49c[];

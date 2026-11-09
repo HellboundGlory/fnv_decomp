@@ -69,7 +69,8 @@ bool FUN_006e08f0_shell::PathingLOSGrid_GetNavMesh(NavMeshPtr& aArg)
 void __cdecl _delete(void*, unsigned int);
 // Calls FUN_006e02a0, then frees this with _delete when flags has bit 0 set, and returns this.
 // @fnv 0x006e0270
-void* __thiscall PathingLOSGridMap::FUN_006e0270(unsigned int flags)
+// src: EXE 0x006e0270
+void* __thiscall PathingLOSGridMap::ScalarDeletingDestructor(unsigned int flags)
 {
     this->FUN_006e02a0();
     if (flags & 1)

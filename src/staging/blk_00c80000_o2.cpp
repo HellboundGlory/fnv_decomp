@@ -11446,11 +11446,12 @@ struct FUN_00c90880_Class
     void* m_00;
     unsigned short m_04;
 
-    void* FUN_00c90880(unsigned int flags);
+    void* hkReferencedObjectLock_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // @fnv 0x00c90880
-void* FUN_00c90880_Class::FUN_00c90880(unsigned int flags)
+// src: EXE 0x00c90880
+void* FUN_00c90880_Class::hkReferencedObjectLock_ScalarDeletingDestructor(unsigned int flags)
 {
     DeleteCriticalSection((char*)this + 0x18);
     m_00 = &DAT_0102e388;

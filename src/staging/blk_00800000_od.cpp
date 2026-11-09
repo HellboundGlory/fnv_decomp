@@ -458,12 +458,13 @@ extern "C" void __cdecl Deallocate(void*);
 struct FUN_0081de70_shell
 {
     void __thiscall FUN_0081de70();
-    void* __thiscall FUN_0081dcd0(unsigned int flags);
+    void* __thiscall MagicProjectile_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_0081de70, then frees this via Deallocate when flags has bit 1 set, and returns this.
 // @fnv 0x0081dcd0
-void* __thiscall FUN_0081de70_shell::FUN_0081dcd0(unsigned int flags)
+// src: EXE 0x0081dcd0
+void* __thiscall FUN_0081de70_shell::MagicProjectile_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0081de70();
     if (flags & 1)

@@ -298,11 +298,12 @@ extern "C" void __cdecl operator delete(void*, unsigned int);
 struct FUN_00c3a140_Class
 {
     void __thiscall FUN_00c39770();
-    void* __thiscall FUN_00c3a140(unsigned int flags);
+    void* __thiscall BSMultiBoundRoom_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_00c39770, then deletes this with operator delete when flags has bit 0 set, and returns this.
 // @fnv 0x00c3a140
-void* FUN_00c3a140_Class::FUN_00c3a140(unsigned int flags)
+// src: EXE 0x00c3a140
+void* FUN_00c3a140_Class::BSMultiBoundRoom_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00c39770();
     if (flags & 1)
@@ -744,13 +745,14 @@ extern "C" void __cdecl operator delete(void*, unsigned int);
 struct FUN_00c3ba80_Class
 {
     void __thiscall FUN_00c3bab0();
-    void* __thiscall FUN_00c3ba80(unsigned int flags);
+    void* __thiscall BSNodeReferences_ScalarDeletingDestructor(unsigned int flags);
     int a, b, c, d;
 };
 
 // Calls FUN_00c3bab0, then deletes this with operator delete when flags has bit 0 set, and returns this.
 // @fnv 0x00c3ba80
-void* __thiscall FUN_00c3ba80_Class::FUN_00c3ba80(unsigned int flags)
+// src: EXE 0x00c3ba80
+void* __thiscall FUN_00c3ba80_Class::BSNodeReferences_ScalarDeletingDestructor(unsigned int flags)
 {
     int x, y, z;
     FUN_00c3bab0();

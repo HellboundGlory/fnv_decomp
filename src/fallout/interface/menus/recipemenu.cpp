@@ -151,7 +151,8 @@ void BSSimpleArray<unsigned int>::ReleaseElements(unsigned int* apFirstAddr, uns
 }
 
 // @fnv 0x00726f20
-void* __thiscall RecipeMenu::FUN_00726f20(unsigned int flags)
+// src: EXE 0x00726f20
+void* __thiscall RecipeMenu::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00726f50();
     if (flags & 1)

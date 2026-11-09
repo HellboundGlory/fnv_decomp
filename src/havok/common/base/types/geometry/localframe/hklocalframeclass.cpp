@@ -84,12 +84,13 @@ struct SomeClass
 {
     void* vptr;
     unsigned short unk04;
-    void* FUN_00da0800(unsigned int flags);
+    void* hkLocalFrameGroup_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls a virtual method on the object at offset 8, sets the vtable, and if flags bit 0 is set releases this via the audio manager using unk04.
 // @fnv 0x00da0800
-void* SomeClass::FUN_00da0800(unsigned int flags)
+// src: EXE 0x00da0800
+void* SomeClass::hkLocalFrameGroup_ScalarDeletingDestructor(unsigned int flags)
 {
     ((FUN_00cb0c00_class*)((char*)this + 8))->Object_UpdateFields_00cb0c00();
     this->vptr = (void*)&DAT_0102e388;

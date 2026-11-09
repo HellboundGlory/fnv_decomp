@@ -328,7 +328,8 @@ extern "C" void _Deallocate(void*);
 
 // Calls FUN_008411f0, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x008411c0
-void* BGSReconstructFormsMap::FUN_008411c0(unsigned int flags)
+// src: EXE 0x008411c0
+void* BGSReconstructFormsMap::ScalarDeletingDestructor(unsigned int flags)
 {
     this->FUN_008411f0();
     if (flags & 1)
@@ -3119,12 +3120,13 @@ extern "C" void _Deallocate(void*);
 
 struct ReconstructMapDeletingView : BGSReconstructFormsInAllFilesMap
 {
-    void* __thiscall FUN_00843440(unsigned int flags);
+    void* __thiscall BGSReconstructFormsInAllFilesMap_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Destroys the BGSReconstructFormsInAllFilesMap base and deallocates the object when flags has bit 0 set.
 // @fnv 0x00843440
-void* __thiscall ReconstructMapDeletingView::FUN_00843440(unsigned int flags)
+// src: EXE 0x00843440
+void* __thiscall ReconstructMapDeletingView::BGSReconstructFormsInAllFilesMap_ScalarDeletingDestructor(unsigned int flags)
 {
     BGSReconstructFormsInAllFilesMap::~BGSReconstructFormsInAllFilesMap();
     if (flags & 1)

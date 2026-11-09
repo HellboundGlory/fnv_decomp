@@ -375,7 +375,7 @@ extern "C" void __cdecl _delete(void* p, unsigned int size);
 struct FUN_008df980_Class
 {
     void __thiscall FUN_008df9b0();
-    void* __thiscall FUN_008df980(unsigned int flags);
+    void* __thiscall ActorPathingMessageQueue_ScalarDeletingDestructor(unsigned int flags);
 };
 struct NiFixedStr
 {

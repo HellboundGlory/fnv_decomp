@@ -251,7 +251,8 @@ void PlayerMover::ResetVtableAndDestroyActorMover()
 void __cdecl _Deallocate(void*);
 // Calls FUN_009e9e30, then deallocates this object if auFlags has bit 0 set, and returns this.
 // @fnv 0x009e9e00
-void* PlayerMover::FUN_009e9e00(unsigned int auFlags)
+// src: EXE 0x009e9e00
+void* PlayerMover::ScalarDeletingDestructor(unsigned int auFlags)
 {
     ResetVtableAndDestroyActorMover();
     if (auFlags & 1)

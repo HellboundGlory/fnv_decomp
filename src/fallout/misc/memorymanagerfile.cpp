@@ -54,11 +54,12 @@ void* _Deallocate(void* p);
 
 struct FUN_00878450_shell : FUN_00878430_shell
 {
-    void* __thiscall FUN_00878450(unsigned int flags);
+    void* __thiscall IMemoryManagerFile_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // @fnv 0x00878450
-void* __thiscall FUN_00878450_shell::FUN_00878450(unsigned int flags)
+// src: EXE 0x00878450
+void* __thiscall FUN_00878450_shell::IMemoryManagerFile_ScalarDeletingDestructor(unsigned int flags)
 {
     SetPtr();
     if (flags & 1)
@@ -68,12 +69,13 @@ void* __thiscall FUN_00878450_shell::FUN_00878450(unsigned int flags)
 
 struct FUN_00878480_shell : FUN_00878450_shell
 {
-    void* __thiscall FUN_00878480(unsigned int flags);
+    void* __thiscall MemoryManagerFile_ScalarDeletingDestructor(unsigned int flags);
     void __thiscall FUN_008784d0();
 };
 // Calls FUN_008784d0, then deallocates this if flags has bit 0 set, and returns this.
 // @fnv 0x00878480
-void* __thiscall FUN_00878480_shell::FUN_00878480(unsigned int flags)
+// src: EXE 0x00878480
+void* __thiscall FUN_00878480_shell::MemoryManagerFile_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_008784d0();
     if (flags & 1)

@@ -7458,7 +7458,7 @@ struct FUN_00c90880_Class
     void* m_00;
     unsigned short m_04;
 
-    void* FUN_00c90880(unsigned int flags);
+    void* hkReferencedObjectLock_ScalarDeletingDestructor(unsigned int flags);
 };
 int __stdcall Runtime_ReturnZero_00c90e30(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8);
 struct FUN_00c92b00_Entry

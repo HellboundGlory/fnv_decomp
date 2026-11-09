@@ -284,11 +284,12 @@ S6* __cdecl CopyTripleShorts(S6* apBegin, S6* apEnd, S6* apDest)
 struct FUN_00661d40_shell
 {
     void __thiscall SetVTableAndDestroy();
-    void* __thiscall FUN_00661d60(unsigned int);
+    void* __thiscall BSFaceGenMorphData_ScalarDeletingDestructor(unsigned int);
 };
 void __cdecl _delete(void*, unsigned int);
 // @fnv 0x00661d60
-void* __thiscall FUN_00661d40_shell::FUN_00661d60(unsigned int flags)
+// src: EXE 0x00661d60
+void* __thiscall FUN_00661d40_shell::BSFaceGenMorphData_ScalarDeletingDestructor(unsigned int flags)
 {
     this->SetVTableAndDestroy();
     if (flags & 1)
@@ -675,12 +676,13 @@ extern "C" void __cdecl Deallocate(void*);
 struct FUN_0067d940_Class
 {
     void __thiscall SetM();
-    void* __thiscall FUN_0067d940(unsigned int flags);
+    void* __thiscall ActorPackageData_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_0067d970, then frees this object with Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x0067d940
-void* __thiscall FUN_0067d940_Class::FUN_0067d940(unsigned int flags)
+// src: EXE 0x0067d940
+void* __thiscall FUN_0067d940_Class::ActorPackageData_ScalarDeletingDestructor(unsigned int flags)
 {
     SetM();
     if (flags & 1)

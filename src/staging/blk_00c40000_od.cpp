@@ -1108,11 +1108,12 @@ FUN_00c40b40_class* __thiscall FUN_00c40b40_class::FUN_00c40b40(int a)
 void __cdecl SetVtableAndProcessState_00c43070(void*);
 struct FUN_00c43620_Class {
     void __thiscall SetVtableAndProcessState_00c43070();
-    void* __thiscall FUN_00c43620(unsigned int flags);
+    void* __thiscall BSXFlags_ScalarDeletingDestructor(unsigned int flags);
     static void __cdecl operator delete(void* p, unsigned int size);
 };
 // @fnv 0x00c43620
-void* __thiscall FUN_00c43620_Class::FUN_00c43620(unsigned int flags)
+// src: EXE 0x00c43620
+void* __thiscall FUN_00c43620_Class::BSXFlags_ScalarDeletingDestructor(unsigned int flags)
 {
     SetVtableAndProcessState_00c43070();
     if (flags & 1)
@@ -1196,10 +1197,11 @@ namespace fnv_00c44df0 {
 extern MemoryManager _g_memoryManager;
 struct FUN_00c44df0_class {
     void __thiscall FUN_008c77c0();
-    void* __thiscall FUN_00c44df0(unsigned int flags);
+    void* __thiscall BSParallelTaskThread_ScalarDeletingDestructor(unsigned int flags);
 };
 // @fnv 0x00c44df0
-void* FUN_00c44df0_class::FUN_00c44df0(unsigned int flags)
+// src: EXE 0x00c44df0
+void* FUN_00c44df0_class::BSParallelTaskThread_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_008c77c0();
     if (flags & 1)
@@ -1427,10 +1429,11 @@ struct FUN_00878690_shell {
 };
 void __cdecl operator delete(void* ptr, unsigned int size);
 struct FUN_00c52830_class {
-    void* __thiscall FUN_00c52830(unsigned int flags);
+    void* __thiscall BSSceneGraph_ScalarDeletingDestructor(unsigned int flags);
 };
 // @fnv 0x00c52830
-void* __thiscall FUN_00c52830_class::FUN_00c52830(unsigned int flags)
+// src: EXE 0x00c52830
+void* __thiscall FUN_00c52830_class::BSSceneGraph_ScalarDeletingDestructor(unsigned int flags)
 {
     reinterpret_cast<FUN_00878690_shell*>(this)->FUN_00c51df0();
     if (flags & 1)
@@ -1475,11 +1478,12 @@ void __thiscall FUN_00c54ec0_class::BSBound_SaveBinary(NiStream& stream)
 }
 
 struct FUN_00c55330_class {
-    void* __thiscall FUN_00c55330(unsigned int flags);
+    void* __thiscall BSBound_ScalarDeletingDestructor(unsigned int flags);
     void operator delete(void* p, unsigned int size);
 };
 // @fnv 0x00c55330
-void* __thiscall FUN_00c55330_class::FUN_00c55330(unsigned int flags)
+// src: EXE 0x00c55330
+void* __thiscall FUN_00c55330_class::BSBound_ScalarDeletingDestructor(unsigned int flags)
 {
     reinterpret_cast<NiExtraData*>(this)->DestroyFields_00a7b300();
     if (flags & 1)
@@ -1492,12 +1496,13 @@ extern "C" void __cdecl operator delete(void*, unsigned int);
 
 struct FUN_00c5ac00_class {
     void __thiscall FUN_00c5ac00();
-    void* __thiscall FUN_00c5bae0(unsigned int flags);
+    void* __thiscall BSPortalGraph_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_00c5ac00, then frees this with operator delete when flags has bit 0 set, and returns this.
 // @fnv 0x00c5bae0
-void* __thiscall FUN_00c5ac00_class::FUN_00c5bae0(unsigned int flags)
+// src: EXE 0x00c5bae0
+void* __thiscall FUN_00c5ac00_class::BSPortalGraph_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00c5ac00();
     if (flags & 1)
@@ -1581,11 +1586,12 @@ namespace fnv_00c5ce10 {
 extern "C" void __cdecl operator delete(void*, unsigned int);
 struct FUN_00c5ce10_Class {
     void __thiscall Constructor();
-    void* __thiscall FUN_00c5ce10(unsigned int a);
+    void* __thiscall BSPSysMultiTargetEmitterCtlr_ScalarDeletingDestructor(unsigned int a);
 };
 // Calls Constructor on this, deletes this with size 0x64 when bit 0 of a is set, and returns this.
 // @fnv 0x00c5ce10
-void* FUN_00c5ce10_Class::FUN_00c5ce10(unsigned int uiFlags)
+// src: EXE 0x00c5ce10
+void* FUN_00c5ce10_Class::BSPSysMultiTargetEmitterCtlr_ScalarDeletingDestructor(unsigned int uiFlags)
 {
     this->Constructor();
     if (uiFlags & 1)
@@ -1710,10 +1716,11 @@ struct FUN_00c5db90_Class {
 };
 void __cdecl operator delete(void* p, unsigned int size);
 struct FUN_00c5eb20_Class {
-    void* __thiscall FUN_00c5eb20(unsigned int flags);
+    void* __thiscall BSMasterParticleSystem_ScalarDeletingDestructor(unsigned int flags);
 };
 // @fnv 0x00c5eb20
-void* __thiscall FUN_00c5eb20_Class::FUN_00c5eb20(unsigned int flags)
+// src: EXE 0x00c5eb20
+void* __thiscall FUN_00c5eb20_Class::BSMasterParticleSystem_ScalarDeletingDestructor(unsigned int flags)
 {
     ((FUN_00c5db90_Class*)this)->FUN_00c5db90();
     if (flags & 1) operator delete(this, 0xe0);
@@ -1749,12 +1756,13 @@ struct FUN_00c5ed60_Class {
 };
 
 struct FUN_00c5f360_Class {
-    void* __thiscall FUN_00c5f360(unsigned int flags);
+    void* __thiscall BSTextureData_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_00c5ed60 on this, then deletes this with size 0x1c if flags has bit 0 set, and returns this.
 // @fnv 0x00c5f360
-void* __thiscall FUN_00c5f360_Class::FUN_00c5f360(unsigned int flags)
+// src: EXE 0x00c5f360
+void* __thiscall FUN_00c5f360_Class::BSTextureData_ScalarDeletingDestructor(unsigned int flags)
 {
     ((FUN_00c5ed60_Class*)this)->FUN_00c5ed60();
     if (flags & 1)
@@ -1782,13 +1790,14 @@ void __thiscall FUN_00c5f500_class::BSSimpleArray_NiAVObject_1024_CopyTo_1024(FU
 }
 
 struct FUN_00c5fc20_class {
-    void* __thiscall FUN_00c5fc20(unsigned int flags);
+    void* __thiscall BSNiNode_ScalarDeletingDestructor(unsigned int flags);
     void __cdecl operator delete(void* p, unsigned int size);
     void __thiscall FUN_00c5faa0();
 };
 // Calls FUN_00c5faa0, then frees this with operator delete when flags has bit 0 set, and returns this.
 // @fnv 0x00c5fc20
-void* __thiscall FUN_00c5fc20_class::FUN_00c5fc20(unsigned int flags)
+// src: EXE 0x00c5fc20
+void* __thiscall FUN_00c5fc20_class::BSNiNode_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00c5faa0();
     if (flags & 1)
@@ -2477,11 +2486,12 @@ void __thiscall FUN_00c43950_Class::BSValueNode_SaveBinary(NiStream& stream)
 
 struct FUN_00c43cb0_class {
     void __thiscall FUN_00c5faa0();
-    void* __thiscall FUN_00c43cb0(unsigned int flags);
+    void* __thiscall BSValueNode_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_00c5faa0, then frees this with operator delete when flags has bit 0 set, and returns this.
 // @fnv 0x00c43cb0
-void* FUN_00c43cb0_class::FUN_00c43cb0(unsigned int flags)
+// src: EXE 0x00c43cb0
+void* FUN_00c43cb0_class::BSValueNode_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00c5faa0();
     if (flags & 1)
@@ -2526,11 +2536,12 @@ void __cdecl FUN_00c31750();
 
 struct FUN_00c46930_class {
     void __thiscall FUN_00c31750();
-    void* __thiscall FUN_00c46930(unsigned int flags);
+    void* __thiscall BSWindModifier_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // @fnv 0x00c46930
-void* FUN_00c46930_class::FUN_00c46930(unsigned int flags)
+// src: EXE 0x00c46930
+void* FUN_00c46930_class::BSWindModifier_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00c31750();
     if (flags & 1)
@@ -2582,11 +2593,12 @@ void FUN_00c46cd0_Class::LoadFromStream(void* stream)
 
 struct FUN_00c46af0 {
     void __thiscall Destruct();
-    void* __thiscall FUN_00c47610(unsigned int flags);
+    void* __thiscall BSMultiBoundNode_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls Destruct, then frees this with operator delete when flags has bit 0 set, and returns this.
 // @fnv 0x00c47610
-void* FUN_00c46af0::FUN_00c47610(unsigned int flags)
+// src: EXE 0x00c47610
+void* FUN_00c46af0::BSMultiBoundNode_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00c46af0::Destruct();
     if (flags & 1)
@@ -3018,11 +3030,12 @@ struct FUN_00c5d260_view {
     static void __cdecl operator delete(void* p, unsigned int sz);
 };
 struct FUN_00c5d260 : FUN_00c5d260_view {
-    void* __thiscall FUN_00c5d260_method(unsigned int flags);
+    void* __thiscall BSScissorTriShape_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls Destruct, frees this with operator delete when flags has bit 0 set, and returns this.
 // @fnv 0x00c5d260
-void* __thiscall FUN_00c5d260::FUN_00c5d260_method(unsigned int flags)
+// src: EXE 0x00c5d260
+void* __thiscall FUN_00c5d260::BSScissorTriShape_ScalarDeletingDestructor(unsigned int flags)
 {
     reinterpret_cast<FUN_00c5d260_view*>(this)->Destruct();
     if (flags & 1)

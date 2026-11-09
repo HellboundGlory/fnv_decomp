@@ -108,7 +108,8 @@ void FUN_00822a20_shell::CheckModifierNonZero(float a)
 void _Deallocate(void*);
 
 // @fnv 0x0080f7e0
-void* MagicBallProjectile::FUN_0080f7e0(unsigned int flags)
+// src: EXE 0x0080f7e0
+void* MagicBallProjectile::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_0080fb30();
     if (flags & 1)
@@ -166,12 +167,13 @@ unsigned short FUN_00811070_shell::MagicBallProjectile_GetSaveSize(unsigned int 
 struct FUN_008229d0_shell
 {
     void ForwardCall_00822a00();
-    void* FUN_008229d0(unsigned int);
+    void* MagicSprayProjectile_ScalarDeletingDestructor(unsigned int);
 };
 void _Deallocate(void*);
 // Calls FUN_00822a00, then deallocates this when bit 0 of flags is set, and returns this.
 // @fnv 0x008229d0
-void* FUN_008229d0_shell::FUN_008229d0(unsigned int flags)
+// src: EXE 0x008229d0
+void* FUN_008229d0_shell::MagicSprayProjectile_ScalarDeletingDestructor(unsigned int flags)
 {
     ForwardCall_00822a00();
     if (flags & 1)
@@ -196,11 +198,12 @@ void FUN_00822a00_shell::ForwardCall_00822a00()
 
 struct FUN_008cac30_shell
 {
-    void* FUN_008cac30(unsigned int flags);
+    void* ArrowProjectile_ScalarDeletingDestructor(unsigned int flags);
     void FUN_008cac60();
 };
 // @fnv 0x008cac30
-void* FUN_008cac30_shell::FUN_008cac30(unsigned int flags)
+// src: EXE 0x008cac30
+void* FUN_008cac30_shell::ArrowProjectile_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_008cac60();
     if (flags & 1)

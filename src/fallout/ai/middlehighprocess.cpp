@@ -3521,11 +3521,12 @@ void _Deallocate(void*);
 struct S9145e0
 {
     void FUN_00914610();
-    void* FUN_009145e0(unsigned int);
+    void* MiddleHighProcess_ScalarDeletingDestructor(unsigned int);
 };
 // Calls FUN_00914610, then if bit 0 of flags is set calls _Deallocate on this, and returns this.
 // @fnv 0x009145e0
-void* S9145e0::FUN_009145e0(unsigned int flags)
+// src: EXE 0x009145e0
+void* S9145e0::MiddleHighProcess_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00914610();
     if (flags & 1)

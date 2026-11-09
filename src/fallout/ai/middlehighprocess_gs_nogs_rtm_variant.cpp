@@ -506,7 +506,7 @@ void _Deallocate(void*);
 struct S9145e0
 {
     void FUN_00914610();
-    void* FUN_009145e0(unsigned int);
+    void* MiddleHighProcess_ScalarDeletingDestructor(unsigned int);
 };
 void __cdecl _Deallocate(void*);
 struct Unk147

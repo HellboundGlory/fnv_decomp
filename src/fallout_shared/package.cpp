@@ -3445,12 +3445,13 @@ void __cdecl operator delete(void*);
 
 struct FUN_00670880_shell : FUN_006708b0
 {
-    void* FUN_00670880(unsigned int flags);
+    void* TESPackage_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Runs the destructor, then frees this with operator delete when flags has bit 0 set, and returns this.
 // @fnv 0x00670880
-void* FUN_00670880_shell::FUN_00670880(unsigned int flags)
+// src: EXE 0x00670880
+void* FUN_00670880_shell::TESPackage_ScalarDeletingDestructor(unsigned int flags)
 {
     this->FUN_006708b0::~FUN_006708b0();
     if (flags & 1)

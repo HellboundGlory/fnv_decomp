@@ -89,7 +89,8 @@ void* __cdecl __Dummy_00b6fef0(void* p, unsigned int size);
 
 // Calls FUN_00688610, then if bit 0 of flags is set calls __Dummy_00b6fef0 with this and 0x40, and returns this.
 // @fnv 0x006885e0
-void* __thiscall BSDismemberSkinInstance::FUN_006885e0(unsigned int flags)
+// src: EXE 0x006885e0
+void* __thiscall BSDismemberSkinInstance::ScalarDeletingDestructor(unsigned int flags)
 {
     SetVtableAndProcessState_00688610();
     if (flags & 1)
@@ -113,7 +114,8 @@ void __thiscall FUN_00685e60_shell::NiSkinPartition_ReplacePartitions(unsigned i
 extern "C" void __cdecl _delete(void* p, unsigned int size);
 // Calls FUN_00a85580, then frees this with _delete when flags has bit 0 set, and returns this.
 // @fnv 0x006885a0
-void* NiSkinInstance::FUN_006885a0(unsigned int flags)
+// src: EXE 0x006885a0
+void* NiSkinInstance::ScalarDeletingDestructor(unsigned int flags)
 {
     this->FUN_00a85580();
     if (flags & 1)

@@ -943,12 +943,13 @@ extern "C" void __cdecl _delete(void* p, unsigned int size);
 struct FUN_008df980_Class
 {
     void __thiscall FUN_008df9b0();
-    void* __thiscall FUN_008df980(unsigned int flags);
+    void* __thiscall ActorPathingMessageQueue_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_008df9b0, frees this with _delete when flags has bit 0 set, and returns this.
 // @fnv 0x008df980
-void* __thiscall FUN_008df980_Class::FUN_008df980(unsigned int flags)
+// src: EXE 0x008df980
+void* __thiscall FUN_008df980_Class::ActorPathingMessageQueue_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_008df9b0();
     if (flags & 1)

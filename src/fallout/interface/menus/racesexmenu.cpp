@@ -159,12 +159,13 @@ void FUN_007b4180_shell::SetSelected()
 struct FUN_007ac530_shell
 {
     void FUN_007ac560();
-    void* FUN_007ac530(unsigned int);
+    void* RaceSexMenu_ScalarDeletingDestructor(unsigned int);
 };
 void __cdecl _Deallocate(void*);
 // Calls FUN_007ac560, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x007ac530
-void* FUN_007ac530_shell::FUN_007ac530(unsigned int flags)
+// src: EXE 0x007ac530
+void* FUN_007ac530_shell::RaceSexMenu_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_007ac560();
     if (flags & 1)
@@ -195,11 +196,12 @@ extern "C" void __cdecl _Deallocate(void*);
 struct FUN_007acb30_shell
 {
     void __thiscall FUN_007fed10();
-    void* __thiscall FUN_007acb30(unsigned int flags);
+    void* __thiscall FORenderedMenuRaceSex_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls FUN_007fed10, then deallocates this when flags has bit 0 set, and returns this.
 // @fnv 0x007acb30
-void* __thiscall FUN_007acb30_shell::FUN_007acb30(unsigned int flags)
+// src: EXE 0x007acb30
+void* __thiscall FUN_007acb30_shell::FORenderedMenuRaceSex_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_007fed10();
     if (flags & 1)

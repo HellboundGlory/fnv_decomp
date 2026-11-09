@@ -205,11 +205,12 @@ void _Deallocate(void*);
 struct S
 {
     void FUN_008d45f0();
-    void* FUN_008d44d0(unsigned int);
+    void* Creature_ScalarDeletingDestructor(unsigned int);
 };
 // Calls FUN_008d45f0, then deallocates this if bit 0 of flags is set, and returns this.
 // @fnv 0x008d44d0
-void* S::FUN_008d44d0(unsigned int flags)
+// src: EXE 0x008d44d0
+void* S::Creature_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_008d45f0();
     if (flags & 1)

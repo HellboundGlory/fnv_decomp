@@ -1229,11 +1229,12 @@ extern "C" void __cdecl __Dummy_00b6fef0(void*, unsigned int);
 struct ObstacleData_shell
 {
     void __thiscall DestroyMembers();
-    void* __thiscall FUN_006c2490(unsigned int flags);
+    void* __thiscall ObstacleData_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // @fnv 0x006c2490
-void* __thiscall ObstacleData_shell::FUN_006c2490(unsigned int flags)
+// src: EXE 0x006c2490
+void* __thiscall ObstacleData_shell::ObstacleData_ScalarDeletingDestructor(unsigned int flags)
 {
     this->DestroyMembers();
     if (flags & 1)
@@ -1246,12 +1247,13 @@ void __cdecl operator delete(void*);
 
 struct FUN_006c5e90_shell
 {
-    void* __thiscall FUN_006c5e90(unsigned int flags);
+    void* __thiscall BSTasklet_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_006c5e70 on this object, deletes it when flags has bit 0 set, and returns this.
 // @fnv 0x006c5e90
-void* __thiscall FUN_006c5e90_shell::FUN_006c5e90(unsigned int flags)
+// src: EXE 0x006c5e90
+void* __thiscall FUN_006c5e90_shell::BSTasklet_ScalarDeletingDestructor(unsigned int flags)
 {
     NavMeshObstacleManager_UpdateState_006c5e70((int**)this);
     if (flags & 1)
@@ -1269,12 +1271,13 @@ extern void _Deallocate(void*);
 
 struct FUN_006c0120_shell : FUN_006c0150_shell
 {
-    void* FUN_006c0120(unsigned int flags);
+    void* hkpEntityActivationListener_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_006c0150, then deallocates this when bit 0 of flags is set, and returns this.
 // @fnv 0x006c0120
-void* FUN_006c0120_shell::FUN_006c0120(unsigned int flags)
+// src: EXE 0x006c0120
+void* FUN_006c0120_shell::hkpEntityActivationListener_ScalarDeletingDestructor(unsigned int flags)
 {
     SetVtableAndProcessState_006c0150();
     if (flags & 1)
@@ -1351,11 +1354,12 @@ void __cdecl _Deallocate(void*);
 struct Dummy
 {
     void ForwardCall_006c0170();
-    void* FUN_006c00d0(unsigned int);
+    void* bhkObstacleDeactivationListener_ScalarDeletingDestructor(unsigned int);
 };
 // Calls FUN_006c0170, then if the low bit of flags is set calls _Deallocate on this, and returns this.
 // @fnv 0x006c00d0
-void* Dummy::FUN_006c00d0(unsigned int flags)
+// src: EXE 0x006c00d0
+void* Dummy::bhkObstacleDeactivationListener_ScalarDeletingDestructor(unsigned int flags)
 {
     ForwardCall_006c0170();
     if (flags & 1)
@@ -1402,10 +1406,11 @@ void __fastcall UpdateFields_006c0260(void*);
 void __cdecl _Deallocate(void*);
 struct FUN_006c0230_shell
 {
-    void* FUN_006c0230(unsigned int);
+    void* bhkObstacleRemovalListener_ScalarDeletingDestructor(unsigned int);
 };
 // @fnv 0x006c0230
-void* FUN_006c0230_shell::FUN_006c0230(unsigned int flags)
+// src: EXE 0x006c0230
+void* FUN_006c0230_shell::bhkObstacleRemovalListener_ScalarDeletingDestructor(unsigned int flags)
 {
     UpdateFields_006c0260(this);
     if (flags & 1)

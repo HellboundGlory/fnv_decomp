@@ -83,7 +83,7 @@ struct FUN_00e2ea40_class
 struct FUN_00e2f210_class : public FUN_00e2ea40_class
 {
     unsigned short m_handle;
-    void* __thiscall FUN_00e2f210(unsigned int flags);
+    void* __thiscall hkMemoryResourceHandle_ScalarDeletingDestructor(unsigned int flags);
 };
 struct FUN_00e2df50_Obj
 {

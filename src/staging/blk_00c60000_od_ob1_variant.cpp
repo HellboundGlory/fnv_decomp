@@ -357,13 +357,13 @@ struct FUN_00c65680_Class
 struct FUN_00c600c0_class
 {
     void* __thiscall UpdateState_00c5fd50();
-    void* __thiscall FUN_00c600c0(unsigned int flags);
+    void* __thiscall BSPSysStripUpdateModifier_ScalarDeletingDestructor(unsigned int flags);
     static void __cdecl operator delete(void* p, unsigned int size);
 };
 struct FUN_00c613a0_Class
 {
     void __thiscall FUN_00c613a0();
-    void* __thiscall FUN_00c617e0(unsigned int flags);
+    void* __thiscall BSWArray_ScalarDeletingDestructor(unsigned int flags);
     void operator delete(void* p, unsigned int size);
 };
 extern "C" void NiFree(void*);
@@ -376,7 +376,7 @@ struct FUN_00c63210_Class
 };
 struct FUN_00c632f0_class
 {
-    void* __thiscall FUN_00c632f0(unsigned int flags);
+    void* __thiscall PArrayPoint_ScalarDeletingDestructor(unsigned int flags);
 };
 void __cdecl operator delete(void*, int);
 struct CloningProcess;
@@ -532,7 +532,7 @@ void __cdecl operator delete(void* p, unsigned int size);
 struct FUN_00c60d10_Class
 {
     void FUN_00c31750();
-    void* __thiscall FUN_00c60d10(unsigned int flags);
+    void* __thiscall BSPSysSimpleColorModifier_ScalarDeletingDestructor(unsigned int flags);
 };
 struct A51BF0Base
 {
@@ -605,7 +605,7 @@ void __cdecl operator delete(void* p, unsigned int size);
 struct FUN_00c64e70_Class
 {
     void __thiscall FUN_00c64e70();
-    void* __thiscall FUN_00c65650(unsigned int flags);
+    void* __thiscall BSAttachPoints_ScalarDeletingDestructor(unsigned int flags);
 };
 void* __cdecl Object_DispatchCommandFour(unsigned int size);
 struct SpawnedObject_b9118
@@ -2468,14 +2468,15 @@ struct S00c62800_Obj : S00c62800_Base
 {
     S00c62800_Arr m_aiIndexedValues;
     __forceinline ~S00c62800_Obj();
-    void* __thiscall FUN_00c62800(unsigned int flags);
+    void* __thiscall BSPSysArrayEmitter_ScalarDeletingDestructor(unsigned int flags);
 };
 
 __forceinline S00c62800_Obj::~S00c62800_Obj()
 {}
 
 // @fnv 0x00c62800
-void* __thiscall S00c62800_Obj::FUN_00c62800(unsigned int flags)
+// src: EXE 0x00c62800
+void* __thiscall S00c62800_Obj::BSPSysArrayEmitter_ScalarDeletingDestructor(unsigned int flags)
 {
     this->S00c62800_Obj::~S00c62800_Obj();
     if (flags & 1)

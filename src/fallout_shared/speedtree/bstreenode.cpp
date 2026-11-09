@@ -56,7 +56,8 @@ NiNode* BSTreeNode::GetLeavesNode()
 void __cdecl __Dummy_00b6fef0(void*, unsigned int);
 
 // @fnv 0x0066b680
-void* BSTreeNode::FUN_0066b680(unsigned int flags)
+// src: EXE 0x0066b680
+void* BSTreeNode::ScalarDeletingDestructor(unsigned int flags)
 {
     this->BSTreeNode::~BSTreeNode();
     if (flags & 1)
@@ -138,11 +139,12 @@ void __cdecl __Dummy_00b6fef0(void* p, unsigned int size);
 struct FUN_0066d440_shell
 {
     void ForwardCall_0066d470();
-    void* FUN_0066d440(unsigned int flags);
+    void* bhkSPCollisionObject_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // @fnv 0x0066d440
-void* FUN_0066d440_shell::FUN_0066d440(unsigned int flags)
+// src: EXE 0x0066d440
+void* FUN_0066d440_shell::bhkSPCollisionObject_ScalarDeletingDestructor(unsigned int flags)
 {
     this->ForwardCall_0066d470();
     if (flags & 1)
@@ -180,13 +182,14 @@ const void* FUN_0066d510_shell::bhkMultiSphereShape_GetRTTI()
 struct FUN_0066d520_shell
 {
     void FUN_00cb78b0();
-    void* FUN_0066d520(unsigned int flags);
+    void* bhkMultiSphereShape_ScalarDeletingDestructor(unsigned int flags);
 };
 
 void __cdecl __Dummy_00b6fef0(void* p, unsigned int size);
 
 // @fnv 0x0066d520
-void* __thiscall FUN_0066d520_shell::FUN_0066d520(unsigned int flags)
+// src: EXE 0x0066d520
+void* __thiscall FUN_0066d520_shell::bhkMultiSphereShape_ScalarDeletingDestructor(unsigned int flags)
 {
     this->FUN_00cb78b0();
     if (flags & 1)

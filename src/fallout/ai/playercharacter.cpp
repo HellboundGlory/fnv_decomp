@@ -2475,12 +2475,13 @@ void __cdecl operator delete(void* p);
 struct FUN_009398a0_Class
 {
     void __thiscall FUN_009398d0();
-    void* __thiscall FUN_009398a0(unsigned int flags);
+    void* __thiscall PlayerCharacter_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_009398d0, deletes this if bit 0 of flags is set, and returns this.
 // @fnv 0x009398a0
-void* __thiscall FUN_009398a0_Class::FUN_009398a0(unsigned int flags)
+// src: EXE 0x009398a0
+void* __thiscall FUN_009398a0_Class::PlayerCharacter_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_009398d0();
     if (flags & 1)

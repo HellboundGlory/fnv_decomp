@@ -373,7 +373,8 @@ void _Deallocate(void* p);
 
 // Calls FUN_00855310, then frees this with _Deallocate when flags has bit 0 set, and returns this.
 // @fnv 0x008552e0
-void* InteriorCellNewReferencesMap::FUN_008552e0(unsigned int flags)
+// src: EXE 0x008552e0
+void* InteriorCellNewReferencesMap::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00855310();
     if (flags & 1)
@@ -1631,7 +1632,8 @@ void _Deallocate(void*);
 
 
 // @fnv 0x00855410
-void* ExteriorCellNewReferencesMap::FUN_00855410(unsigned int flags)
+// src: EXE 0x00855410
+void* ExteriorCellNewReferencesMap::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00855440();
 
@@ -1647,7 +1649,8 @@ void __cdecl _Deallocate(void*);
 
 // Calls FUN_008555b0, then deallocates this when bit 0 of flags is set, and returns this.
 // @fnv 0x00855580
-void* NumericIDBufferMap::FUN_00855580(unsigned int flags)
+// src: EXE 0x00855580
+void* NumericIDBufferMap::ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_008555b0();
 

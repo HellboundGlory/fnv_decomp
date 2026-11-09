@@ -352,12 +352,13 @@ void __fastcall FUN_00659b50(void*);
 
 struct FUN_00659b20_thiscall
 {
-    void* FUN_00659b20(unsigned int flags);
+    void* BSFaceGenModel_ScalarDeletingDestructor(unsigned int flags);
 };
 
 // Calls FUN_00659b50 on this, frees this with NiMemObject::operator delete when flags has bit 1 set, and returns this.
 // @fnv 0x00659b20
-void* FUN_00659b20_thiscall::FUN_00659b20(unsigned int flags)
+// src: EXE 0x00659b20
+void* FUN_00659b20_thiscall::BSFaceGenModel_ScalarDeletingDestructor(unsigned int flags)
 {
     FUN_00659b50(this);
     if (flags & 1)
@@ -1045,7 +1046,8 @@ extern "C" void __cdecl _delete(void*, unsigned int);
 
 // Calls FUN_0065bf20, frees this with _delete when flags has bit 0 set, and returns this.
 // @fnv 0x0065bef0
-void* BSFaceGenModelExtraData::FUN_0065bef0(unsigned int flags)
+// src: EXE 0x0065bef0
+void* BSFaceGenModelExtraData::ScalarDeletingDestructor(unsigned int flags)
 {
     this->FUN_0065bf20();
     if (flags & 1)

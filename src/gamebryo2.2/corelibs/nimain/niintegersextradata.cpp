@@ -173,11 +173,12 @@ struct S_FUN_00c53fa0
 };
 struct S_FUN_00c547e0
 {
-    void* __thiscall FUN_00c547e0(unsigned int);
+    void* __thiscall BSFurnitureMarker_ScalarDeletingDestructor(unsigned int);
 };
 // Calls FUN_00c53fa0 on this, then frees this with _delete when bit 0 of flags is set, and returns this.
 // @fnv 0x00c547e0
-void* __thiscall S_FUN_00c547e0::FUN_00c547e0(unsigned int flags)
+// src: EXE 0x00c547e0
+void* __thiscall S_FUN_00c547e0::BSFurnitureMarker_ScalarDeletingDestructor(unsigned int flags)
 {
     reinterpret_cast<S_FUN_00c53fa0*>(this)->FUN_00c53fa0();
     if (flags & 1)

@@ -431,11 +431,12 @@ struct DtorStandIn
 };
 struct DelStandIn
 {
-    void* FUN_007f7cb0(unsigned int flags);
+    void* FOPipboyManager_ScalarDeletingDestructor(unsigned int flags);
 };
 // Calls the destructor, frees this when flags has bit 0 set, and returns this.
 // @fnv 0x007f7cb0
-void* DelStandIn::FUN_007f7cb0(unsigned int flags)
+// src: EXE 0x007f7cb0
+void* DelStandIn::FOPipboyManager_ScalarDeletingDestructor(unsigned int flags)
 {
     ((DtorStandIn*)this)->FUN_0083dec0();
     if (flags & 1)
