@@ -36,7 +36,7 @@ extern "C" __declspec(dllimport) void* __stdcall FindFirstFileA(const char*, _WI
 extern "C" __declspec(dllimport) int __stdcall FindNextFileA(void*, _WIN32_FIND_DATAA*);
 extern "C" __declspec(dllimport) int __stdcall FindClose(void*);
 struct DebrisData;
-extern StartMenu g_011c3f74;
+extern StartMenu sLocalSavePath_General;
 const char* __cdecl PrepareScriptMessage(const char*, bool);
 char* __cdecl BSUtilities_GetPersonalPath();
 int __cdecl _sprintf_s(char*, unsigned int, const char*, ...);
@@ -188,7 +188,7 @@ void SaveLoadList::LoadSaveFiles()
                         DeleteAllItems();
                     list = new SL;
                     lstrcpy(path, BSUtilities_GetPersonalPath());
-                    lstrcatA(path, PrepareScriptMessage(static_cast<const StartMenu&>(g_011c3f74).GetMenuTitle(), false));
+                    lstrcatA(path, PrepareScriptMessage(static_cast<const StartMenu&>(sLocalSavePath_General).GetMenuTitle(), false));
                     lstrcatA(path, "*.ess");
                     handle = FindFirstFileA(path, (_WIN32_FIND_DATAA*)&findData);
                     if (handle != (void*)-1)
@@ -198,7 +198,7 @@ void SaveLoadList::LoadSaveFiles()
                             if (findData.nFileSizeHigh || findData.nFileSizeLow)
                             {
                                 _sprintf_s(fullPath, 260, "%s%s%s", BSUtilities_GetPersonalPath(),
-                                           PrepareScriptMessage(static_cast<const StartMenu&>(g_011c3f74).GetMenuTitle(), false), findData.cFileName);
+                                           PrepareScriptMessage(static_cast<const StartMenu&>(sLocalSavePath_General).GetMenuTitle(), false), findData.cFileName);
                                 file = new FUN_0085fb40(fullPath, 0, 0x20000);
                                 ((AEList*)list)->Insert((DebrisData*)file, CompareFileWriteTimes);
                             }

@@ -1804,8 +1804,8 @@ struct ConsoleSetting
 {
     int* Setting_Int();
 };
-extern ConsoleSetting g_011d8d38;
-extern ConsoleSetting g_011d8cf0;
+extern ConsoleSetting iConsoleFont_Menu;
+extern ConsoleSetting iConsoleHistorySize_Menu;
 struct ConsoleFont
 {
     int Font_LineBreakText(BSStringT<char>*, int*, int*, int, int);
@@ -1850,7 +1850,7 @@ void ConsoleText::Console_Print(const char* format, char* arguments)
     WriteLine(a.String());
     int s = 1200;
     int p = 0;
-    int h = FUN_005bd5b0()->FUN_005bd5c0(*g_011d8d38.Setting_Int() - 1)->Font_LineBreakText(&a, &s, &p, 0, 0);
+    int h = FUN_005bd5b0()->FUN_005bd5c0(*iConsoleFont_Menu.Setting_Int() - 1)->Font_LineBreakText(&a, &s, &p, 0, 0);
     if (h == 0)
         return;
     char i[2048];
@@ -1868,7 +1868,7 @@ void ConsoleText::Console_Print(const char* format, char* arguments)
         lines.NiTPointerListBase_DFALL_NiTListItem_BSStringT_char_BSStringT_char_AddTail(l);
         if (j)
             currentLine = lines.FUN_0044ddc0();
-        while (lines.FUN_0044ddc0() > *g_011d8cf0.Setting_Int())
+        while (lines.FUN_0044ddc0() > *iConsoleHistorySize_Menu.Setting_Int())
         {
             lines.PopFront();
             currentLine--;

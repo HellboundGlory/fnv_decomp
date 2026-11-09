@@ -3583,7 +3583,7 @@ struct SaveSetting
 {
     const char* String();
 };
-extern SaveSetting g_011c3f74;
+extern SaveSetting sLocalSavePath_General;
 const char* PrepareScriptMessage(const char*, bool);
 char* BSUtilities_GetPersonalPath();
 int strcpy_s(char*, unsigned int, const char*);
@@ -3621,13 +3621,13 @@ SaveFile* SaveOwner::OpenSaveFile(SaveFile* file, const char* name, unsigned int
             BuildSaveFilename(basename9);
         else
             strcpy_s(basename9, 260, name);
-        sprintf_s(pathX, 260, "%s%s%s.ess", BSUtilities_GetPersonalPath(), PrepareScriptMessage(g_011c3f74.String(), false),
+        sprintf_s(pathX, 260, "%s%s%s.ess", BSUtilities_GetPersonalPath(), PrepareScriptMessage(sLocalSavePath_General.String(), false),
                   basename9);
         if (mode == 0)
         {
             char directory6[260];
             strcpy_s(directory6, 260, BSUtilities_GetPersonalPath());
-            strcat_s(directory6, 260, PrepareScriptMessage(g_011c3f74.String(), false));
+            strcat_s(directory6, 260, PrepareScriptMessage(sLocalSavePath_General.String(), false));
             CreateDirectoryA(directory6, 0);
             int kBackupCount = 1;
             if (kBackupCount > 10)
@@ -3637,7 +3637,7 @@ SaveFile* SaveOwner::OpenSaveFile(SaveFile* file, const char* name, unsigned int
                 char destination3[260];
                 char source_[260];
                 strcpy_s(source_, 260, BSUtilities_GetPersonalPath());
-                strcat_s(source_, 260, PrepareScriptMessage(g_011c3f74.String(), false));
+                strcat_s(source_, 260, PrepareScriptMessage(sLocalSavePath_General.String(), false));
                 strcat_s(source_, 260, basename9);
                 for (int suffix = 0; suffix < backup; ++suffix)
                     strcat_s(source_, 260, ".bak");

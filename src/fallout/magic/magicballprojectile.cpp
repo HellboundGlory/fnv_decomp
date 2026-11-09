@@ -3738,7 +3738,7 @@ struct SaveSetting
 {
     bool* Bool();
 };
-extern SaveSetting g_011de4e8;
+extern SaveSetting bDebugSaveBuffer_Debug;
 struct SaveForm
 {
     virtual void v0();
@@ -3911,7 +3911,7 @@ unsigned short ArrowSave::ArrowProjectile_GetSaveSize(unsigned flags)
         size7 += 1;
     if (((SaveState*)g_TESSaveLoadGame)->FUN_008df040() >= 85)
         size7 += 1;
-    if (*g_011de4e8.Bool())
+    if (*bDebugSaveBuffer_Debug.Bool())
     {
         ValueReferencePair* entry = ((SaveState*)g_TESSaveLoadGame)->GetHitSound();
         if (entry)

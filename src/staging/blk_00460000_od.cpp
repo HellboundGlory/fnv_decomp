@@ -2582,7 +2582,7 @@ struct NamedObject_47ab40
 {
     NiFixedString& GetName();
 };
-extern Setting g_011c4c64;
+extern Setting bAnimateDoorPhysics_General;
 int FUN_00ec6da0(const char*, const char*);
 bool AILinearTaskThreadManager_ShouldQueue3DTask();
 
@@ -2782,7 +2782,7 @@ bool BGSOpenCloseForm_HandleAnimEndHavok(Ref_47ab40* ref, NamedObject_47ab40* ob
     {
         if (!FUN_00ec6da0(obj->GetName(), "Open") || !FUN_00ec6da0(obj->GetName(), "Close"))
             result = true;
-        if (!*g_011c4c64.Bool() && result && !*g_011c4c64.Bool())
+        if (!*bAnimateDoorPhysics_General.Bool() && result && !*bAnimateDoorPhysics_General.Bool())
         {
             NiNode* node = ref->Get3D();
             if (node)

@@ -2198,19 +2198,19 @@ struct S0042fa20
 {
     void ProcessAndReturnValue_0045ce80(int);
 };
-extern GlobalObject_0045cfe0 g_011c63cc;
+extern GlobalObject_0045cfe0 uGridsToLoad_General;
 // @fnv 0x004bc4c0
 // src: COMMUNITY 0x004bc4c0
 void GridCellArray_FixGridsToLoadINISetting()
 {
     bool flag = false;
-    if (flag && *reinterpret_cast<GlobalObject_0045cfe0*>(&g_011c63cc)->Int() < 3)
-        reinterpret_cast<S0042fa20*>(&g_011c63cc)->ProcessAndReturnValue_0045ce80(3);
-    else if (!flag && *reinterpret_cast<GlobalObject_0045cfe0*>(&g_011c63cc)->Int() < 5)
-        reinterpret_cast<S0042fa20*>(&g_011c63cc)->ProcessAndReturnValue_0045ce80(5);
-    else if ((*reinterpret_cast<GlobalObject_0045cfe0*>(&g_011c63cc)->Int() & 1) == 0)
-        reinterpret_cast<S0042fa20*>(&g_011c63cc)
-            ->ProcessAndReturnValue_0045ce80(*reinterpret_cast<GlobalObject_0045cfe0*>(&g_011c63cc)->Int() + 1);
+    if (flag && *reinterpret_cast<GlobalObject_0045cfe0*>(&uGridsToLoad_General)->Int() < 3)
+        reinterpret_cast<S0042fa20*>(&uGridsToLoad_General)->ProcessAndReturnValue_0045ce80(3);
+    else if (!flag && *reinterpret_cast<GlobalObject_0045cfe0*>(&uGridsToLoad_General)->Int() < 5)
+        reinterpret_cast<S0042fa20*>(&uGridsToLoad_General)->ProcessAndReturnValue_0045ce80(5);
+    else if ((*reinterpret_cast<GlobalObject_0045cfe0*>(&uGridsToLoad_General)->Int() & 1) == 0)
+        reinterpret_cast<S0042fa20*>(&uGridsToLoad_General)
+            ->ProcessAndReturnValue_0045ce80(*reinterpret_cast<GlobalObject_0045cfe0*>(&uGridsToLoad_General)->Int() + 1);
 }
 
 struct FUN_004a46b0_class
@@ -3235,7 +3235,7 @@ struct FUN_004ba280 : Base_4ba280
 FUN_004ba280::FUN_004ba280() : m_pController(0)
 {
     GridCellArray_FixGridsToLoadINISetting();
-    SetType_4ba280(*g_011c63cc.Int());
+    SetType_4ba280(*uGridsToLoad_General.Int());
     grid = new int[GetDim_4ba280() * GetDim_4ba280()];
     memset(grid, 0, GetDim_4ba280() * 4 * GetDim_4ba280());
     origin = NiPoint3(0.0f, 0.0f, 0.0f);

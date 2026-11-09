@@ -783,13 +783,13 @@ struct GlobalObject_0045cf30
     unsigned char* Bool();
 };
 
-extern GlobalObject_0045cf30 g_01267c24;
+extern GlobalObject_0045cf30 bRagdollAnim_RagdollAnim;
 
 // @fnv 0x00456c90
 // src: XBOX_PDB 0x00456c90
 void bhkRagdollController_SetRagdollAnim(unsigned char value)
 {
-    *g_01267c24.Bool() = value;
+    *bRagdollAnim_RagdollAnim.Bool() = value;
 }
 }  // namespace fnv_00456c90
 
@@ -866,7 +866,7 @@ struct GlobalObject_0045cf30
 {
     unsigned char* Bool();
 };
-extern GlobalObject_0045cf30 g_011c3dbc;
+extern GlobalObject_0045cf30 bShowLoadingAreaMessage_General;
 struct FUN_004581e0_Class
 {
     unsigned char* __thiscall TES_ShowLoadingAreaMessage(int);
@@ -875,7 +875,7 @@ struct FUN_004581e0_Class
 // src: XBOX_PDB 0x004581e0
 unsigned char* __thiscall FUN_004581e0_Class::TES_ShowLoadingAreaMessage(int)
 {
-    return g_011c3dbc.Bool();
+    return bShowLoadingAreaMessage_General.Bool();
 }
 }  // namespace fnv_004581e0
 
@@ -2401,9 +2401,9 @@ struct GlobalObject_0045d060
 {
     float* Float();
 };
-extern GlobalObject_0045d060 g_011c3d0c;
-extern GlobalObject_0045d060 g_011c3d78;
-extern GlobalObject_0045d060 g_011c3ec0;
+extern GlobalObject_0045d060 fLODFadeOutMultItems_LOD;
+extern GlobalObject_0045d060 fLODFadeOutMultObjects_LOD;
+extern GlobalObject_0045d060 fLODFadeOutMultActors_LOD;
 void __cdecl SetFloatAt(int, float);
 // Reads floats from three global objects and passes them to SetFloatAt with several slot indices.
 // @fnv 0x004506b0
@@ -2411,11 +2411,11 @@ void __cdecl SetFloatAt(int, float);
 void TES_InitFadeOutMultipliers()
 {
     float v;
-    v = *g_011c3d0c.Float();
+    v = *fLODFadeOutMultItems_LOD.Float();
     SetFloatAt(2, v);
-    v = *g_011c3ec0.Float();
+    v = *fLODFadeOutMultActors_LOD.Float();
     SetFloatAt(3, v);
-    v = *g_011c3d78.Float();
+    v = *fLODFadeOutMultObjects_LOD.Float();
     SetFloatAt(0, v);
     SetFloatAt(1, v);
     SetFloatAt(4, v);
@@ -4888,7 +4888,7 @@ struct GlobalObject2_0045cfe0
 {
     int* Int();
 };
-extern GlobalObject2_0045cfe0 g_011c63cc;
+extern GlobalObject2_0045cfe0 uGridsToLoad_General;
 
 struct Target_00458440
 {
@@ -4914,7 +4914,7 @@ int Obj_00458440::ApplyOrNotify(int a, bool abApply)
         Target_00458440* p = Find();
         if (p == 0)
         {
-            p = this->m_08->Get((unsigned int)*g_011c63cc.Int() >> 1, (unsigned int)*g_011c63cc.Int() >> 1)->unk00;
+            p = this->m_08->Get((unsigned int)*uGridsToLoad_General.Int() >> 1, (unsigned int)*uGridsToLoad_General.Int() >> 1)->unk00;
         }
         return p ? p->Apply(a) : 0;
     }

@@ -11120,10 +11120,10 @@ class GlobalObject_0044f440
   public:
     float* Float();
 };
-extern GlobalObject_0044f440 g_011c5724;
-extern GlobalObject_0044f440 g_011e0474;
-extern GlobalObject_0044f440 g_011e048c;
-extern GlobalObject_0044f440 g_011e0498;
+extern GlobalObject_0044f440 fAnimationMult_General;
+extern GlobalObject_0044f440 fAimChaseLookingMult_Combat;
+extern GlobalObject_0044f440 fAimUpDegrees_Combat;
+extern GlobalObject_0044f440 fAimDownDegrees_Combat;
 float BSMIN(float, float);
 float BSMAX_00404010(float, float);
 struct AimProcess : MiddleHighProcess

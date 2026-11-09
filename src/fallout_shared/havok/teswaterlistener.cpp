@@ -1100,7 +1100,7 @@ struct SettingWater
 {
     unsigned char* Bool();
 };
-extern SettingWater g_011cc5a8;
+extern SettingWater bAutoWaterUsesHavokShapes_HAVOK;
 void __cdecl ResetWater(int);
 void TESWaterSystem_SetCameraRelevantWaterHeight(float);
 void TESWaterSystem_SetCameraInPlaceableWater(unsigned char);
@@ -1189,7 +1189,7 @@ bool WaterManager::TESWaterListener_contactPointRemovedCallback(EventWater* even
     if (!eb)
         return false;
     BGSPlaceableWater* i = dynamic_cast<BGSPlaceableWater*>(eb->GetBase());
-    if (!*g_011cc5a8.Bool() && i->IsRestricted())
+    if (!*bAutoWaterUsesHavokShapes_HAVOK.Bool() && i->IsRestricted())
         return false;
     Group* p = groups ? groups->Find(event->water) : 0;
     Group* q = p;
@@ -1360,7 +1360,7 @@ bool WaterOwner::TESWaterListener_contactPointAddedCallback(WaterRequest* reques
             if (!f)
                 return false;
             BGSPlaceableWater* g = dynamic_cast<BGSPlaceableWater*>(f->GetBase());
-            if (!*g_011cc5a8.Bool() && g->IsRestricted())
+            if (!*bAutoWaterUsesHavokShapes_HAVOK.Bool() && g->IsRestricted())
                 return false;
             TESWaterSystem_SetCameraRelevantWaterHeight(static_cast<const TESObjectREFR*>(f)->GetPos()->z);
             TESWaterSystem_SetPlayerForceUnderwater(1);
@@ -1374,7 +1374,7 @@ bool WaterOwner::TESWaterListener_contactPointAddedCallback(WaterRequest* reques
     if (!b)
         return false;
     BGSPlaceableWater* c = dynamic_cast<BGSPlaceableWater*>(b->GetBase());
-    if (!*g_011cc5a8.Bool() && c->IsRestricted())
+    if (!*bAutoWaterUsesHavokShapes_HAVOK.Bool() && c->IsRestricted())
         return false;
     if (d == (TESObjectREFR*)_g_thePlayer)
         TESWaterSystem_SetCurrentWaterType((int)static_cast<const TESObject*>(c)->GetAssociatedWaterForm());

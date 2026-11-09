@@ -257,12 +257,12 @@ struct GlobalObject_0045cf30
 {
     unsigned char* Bool();
 };
-extern GlobalObject_0045cf30 g_011c7ac4;
+extern GlobalObject_0045cf30 bUseWaterDisplacements_Water;
 // @fnv 0x004e89e0
 // src: COMMUNITY 0x004e89e0
 unsigned char Water_bUseWaterDisplacements_Get()
 {
-    return *g_011c7ac4.Bool();
+    return *bUseWaterDisplacements_Water.Bool();
 }
 
 
@@ -3899,7 +3899,7 @@ struct Map6c
     bool NiTMapBase_NiTPointerAllocator_unsigned_int_TESObjectREFR_bool_GetAt(Obj20* obj, bool& oflag);
     void NiTMapBase_NiTPointerAllocator_unsigned_int_TESObjectREFR_bool_SetAt(Obj20* obj, bool value);
 };
-extern GlobalObject_0045cf30 g_011c7b98;
+extern GlobalObject_0045cf30 bUsePerWorldSpaceWaterNoise_Water;
 
 
 struct TESObj
@@ -3972,7 +3972,7 @@ void Self::TESWaterSystem_UpdateWaterNoise(ParamObj* param)
                         {
                             PropObj* propTemp = item->FUN_00a59d30(3);
                             PropObj* pprop = propTemp;
-                            if (*g_011c7b98.Bool())
+                            if (*bUsePerWorldSpaceWaterNoise_Water.Bool())
                             {
                                 if (pprop->m_134.Modelloader_GetReferencedThis() == 0)
                                 {

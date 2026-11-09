@@ -7436,7 +7436,7 @@ struct MoveBoolSetting
 {
     bool* Bool();
 };
-extern MoveBoolSetting g_011f1840;
+extern MoveBoolSetting bEncounterZoneTargetRestrict_Combat;
 extern float DAT_011a56b4, DAT_011a5654;
 void* __cdecl operator new(unsigned int);
 void __cdecl operator delete(void*);
@@ -7616,7 +7616,7 @@ void CombatMove::CombatController_UpdateLow()
     {
         timer.FUN_008d7f40(1.0f);
         elapsed = 0.0f;
-        if (target && *g_011f1840.Bool() && target->TESObjectREFR_GetLocationEncounterZone() != actor->TESObjectREFR_GetLocationEncounterZone())
+        if (target && *bEncounterZoneTargetRestrict_Combat.Bool() && target->TESObjectREFR_GetLocationEncounterZone() != actor->TESObjectREFR_GetLocationEncounterZone())
             SetTarget_00980830(0);
     }
     if (timer.FUN_008d7f80())

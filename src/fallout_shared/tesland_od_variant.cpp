@@ -693,13 +693,13 @@ struct GlobalObject_0044f440 {
     float* Float();
 };
 
-extern GlobalObject_0044f440 g_011c8dcc;
+extern GlobalObject_0044f440 fWaveOffsetRange_Grass;
 
 // @fnv 0x0053ca40
 // src: COMMUNITY 0x0053ca40
 float TESGrass_GetWaveOffsetRange()
 {
-    return *g_011c8dcc.Float();
+    return *fWaveOffsetRange_Grass.Float();
 }
 
 struct FUN_0053ca60 {
@@ -4071,8 +4071,8 @@ struct TerrainData {
  TextureGrass* base[4]; TextureGrass** layers[4]; float** weights[4];
  int u50; SampleMap maps[4];
 };
-struct SampleSetting { float* Float(); }; extern SampleSetting g_011c9f38;
-struct IntSetting { int* Int(); }; extern IntSetting g_011c9f74,g_011c9fb8;
+struct SampleSetting { float* Float(); }; extern SampleSetting fTexturePctThreshold_Grass;
+struct IntSetting { int* Int(); }; extern IntSetting iMaxGrassTypesPerTexure_Grass,iGrassDensityEvalSize_Grass;
 extern unsigned long DAT_011c9f6c;
 struct TerrainOwner {
  int u00,u04,u08,u0c,u10,u14,u18,u1c,u20,u24; TerrainData* data;
@@ -4083,12 +4083,12 @@ struct TerrainOwner {
 // src: COMMUNITY 0x0053bc10
 bool TerrainOwner::TESObjectLAND_CalculateGrassParams() {
  if (!data) return false;
- float threshold2=*g_011c9f38.Float();
+ float threshold2=*fTexturePctThreshold_Grass.Float();
  threshold2=threshold2 < 0.0 ? 0.0 : threshold2;
  threshold2=threshold2 > 1.0 ? 0.9 : threshold2;
  GrassNode* nodeBTmp=0; Grass* _activeProcess=0; float density5=0.0f; int count1=0; int _actors=0;
- int limitVal=*g_011c9f74.Int(); int indexValue4=0; int capacity8=16; float sumHigh_2=0.0f; Sample** samples4;
- DAT_011c9f6c=*g_011c9fb8.Int();
+ int limitVal=*iMaxGrassTypesPerTexure_Grass.Int(); int indexValue4=0; int capacity8=16; float sumHigh_2=0.0f; Sample** samples4;
+ DAT_011c9f6c=*iGrassDensityEvalSize_Grass.Int();
  if (DAT_011c9f6c!=1 && DAT_011c9f6c!=2 && DAT_011c9f6c!=4 && DAT_011c9f6c!=8) DAT_011c9f6c=2;
  for (int quad=0;quad<4;quad++) {
  count1=0;

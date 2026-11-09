@@ -1062,7 +1062,7 @@ struct NamedObject_47ab40
 {
     NiFixedString& GetName();
 };
-extern Setting g_011c4c64;
+extern Setting bAnimateDoorPhysics_General;
 int FUN_00ec6da0(const char*, const char*);
 bool AILinearTaskThreadManager_ShouldQueue3DTask();
 struct World_47ab40

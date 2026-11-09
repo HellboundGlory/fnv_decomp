@@ -258,7 +258,7 @@ struct FUN_0053ae30_class {
 struct GlobalObject_0044f440 {
     float* Float();
 };
-extern GlobalObject_0044f440 g_011c8dcc;
+extern GlobalObject_0044f440 fWaveOffsetRange_Grass;
 float TESGrass_GetWaveOffsetRange();
 struct FUN_0053ca60 {
     void FUN_00b600e0();
@@ -2043,9 +2043,9 @@ struct TerrainData {
  int u50; SampleMap maps[4];
 };
 struct SampleSetting { float* Float(); };
-extern SampleSetting g_011c9f38;
+extern SampleSetting fTexturePctThreshold_Grass;
 struct IntSetting { int* Int(); };
-extern IntSetting g_011c9f74,g_011c9fb8;
+extern IntSetting iMaxGrassTypesPerTexure_Grass,iGrassDensityEvalSize_Grass;
 extern unsigned long DAT_011c9f6c;
 struct TerrainOwner {
  int u00,u04,u08,u0c,u10,u14,u18,u1c,u20,u24; TerrainData* data;

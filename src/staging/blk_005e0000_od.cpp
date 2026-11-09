@@ -63,14 +63,14 @@ struct FUN_00851d70_shell
 {
     void SetFlagByte();
 };
-extern GlobalObject_0045cf30 g_011de29c;
+extern GlobalObject_0045cf30 bAllowScriptedAutosave_SaveGame;
 extern void* DAT_011de134;
 // If the global bool is set, calls SetFlagByte on the object at DAT_011de134, then returns true.
 // @fnv 0x005e0160
 // src: EXE 0x005e0160
 bool Cmd_SystemSave_Execute()
 {
-    if (*g_011de29c.Bool())
+    if (*bAllowScriptedAutosave_SaveGame.Bool())
         reinterpret_cast<FUN_00851d70_shell*>(DAT_011de134)->SetFlagByte();
     return true;
 }
@@ -3658,7 +3658,7 @@ struct ChallengeReward
     void RunScriptOnTarget(void*, int);
 };
 extern ChallengeNode DAT_011cb448;
-extern GlobalObject_0045cf30 g_011cb4d4;
+extern GlobalObject_0045cf30 bShowChallengeUpdates_GamePlay;
 extern void* DAT_011dea3c;
 void __cdecl FUN_004d5c60(int);
 int __cdecl BSsprintf(char*, int, const char*, ...);
@@ -3703,7 +3703,7 @@ bool __cdecl IncrementScriptedChallenge(ChallengeView* pSourceChallenge, int amo
                     ((ChallengeReward*)reinterpret_cast<ChallengeNode*>(reinterpret_cast<char*>(found) + sizeof(TESForm) + sizeof(TESFullName) + sizeof(TESDescription))->FUN_00726070())->RunScriptOnTarget(DAT_011dea3c, 0);
                 if (found->GetField54() != 11 || found->GetShortAtOffset64() != 27)
                     FUN_004d5c60(27);
-                if (reinterpret_cast<ChallengeName*>(reinterpret_cast<char*>(found) + sizeof(TESForm))->TESModel_GetModel() && reinterpret_cast<ChallengeDescription*>(reinterpret_cast<char*>(found) + sizeof(TESForm) + sizeof(TESFullName))->GetText(0, 0x43534544) && *g_011cb4d4.Bool())
+                if (reinterpret_cast<ChallengeName*>(reinterpret_cast<char*>(found) + sizeof(TESForm))->TESModel_GetModel() && reinterpret_cast<ChallengeDescription*>(reinterpret_cast<char*>(found) + sizeof(TESForm) + sizeof(TESFullName))->GetText(0, 0x43534544) && *bShowChallengeUpdates_GamePlay.Bool())
                 {
                     char message[512];
                     BSsprintf(message, 512, "%s   %d\\%d\n%s", reinterpret_cast<ChallengeName*>(reinterpret_cast<char*>(found) + sizeof(TESForm))->TESModel_GetModel(), found->FUN_006286d0(),
@@ -3733,7 +3733,7 @@ bool __cdecl IncrementScriptedChallenge(ChallengeView* pSourceChallenge, int amo
                     if (current == 0)
                     {
                         if (reinterpret_cast<ChallengeName*>(reinterpret_cast<char*>(found) + sizeof(TESForm))->TESModel_GetModel() && reinterpret_cast<ChallengeDescription*>(reinterpret_cast<char*>(found) + sizeof(TESForm) + sizeof(TESFullName))->GetText(0, 0x43534544) &&
-                            *g_011cb4d4.Bool())
+                            *bShowChallengeUpdates_GamePlay.Bool())
                         {
                             char message[512];
                             BSsprintf(message, 512, "%s   %d\\%d\n%s", reinterpret_cast<ChallengeName*>(reinterpret_cast<char*>(found) + sizeof(TESForm))->TESModel_GetModel(),

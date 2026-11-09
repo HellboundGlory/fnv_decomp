@@ -36,7 +36,7 @@ struct FUN_00851d70_shell
 {
     void SetFlagByte();
 };
-extern GlobalObject_0045cf30 g_011de29c;
+extern GlobalObject_0045cf30 bAllowScriptedAutosave_SaveGame;
 extern void* DAT_011de134;
 bool Cmd_SystemSave_Execute();
 extern "C" void __cdecl j_Deallocate_NiTNewInterface_V_NiPointer_VNiAVObject_SAXPAV_NiPointer_VNiAVObject_Z(int);
@@ -1882,7 +1882,7 @@ struct ChallengeReward
     void RunScriptOnTarget(void*, int);
 };
 extern ChallengeNode DAT_011cb448;
-extern GlobalObject_0045cf30 g_011cb4d4;
+extern GlobalObject_0045cf30 bShowChallengeUpdates_GamePlay;
 extern void* DAT_011dea3c;
 void __cdecl FUN_004d5c60(int);
 int __cdecl BSsprintf(char*, int, const char*, ...);

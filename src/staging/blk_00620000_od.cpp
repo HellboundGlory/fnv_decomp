@@ -7422,7 +7422,7 @@ struct Member34
     ~Member34();
 };
 
-extern GlobalObject_0045cfe0 g_011c63cc;
+extern GlobalObject_0045cfe0 uGridsToLoad_General;
 
 struct FUN_0062e780 : CB75D0Base, SecBase14
 {
@@ -7437,11 +7437,11 @@ struct FUN_0062e780 : CB75D0Base, SecBase14
     virtual ~FUN_0062e780();
 };
 
-// Initializes m_1c to 1.0f, reads a size from g_011c63cc into m_28, and allocates an int array of m_28 squared elements into m_20.
+// Initializes m_1c to 1.0f, reads a size from uGridsToLoad_General into m_28, and allocates an int array of m_28 squared elements into m_20.
 // @fnv 0x0062e780
 FUN_0062e780::FUN_0062e780() : m_1c(1.0f)
 {
-    m_28 = *g_011c63cc.Int();
+    m_28 = *uGridsToLoad_General.Int();
     int iSize = m_28 * m_28;
     m_20 = new int[iSize];
 }

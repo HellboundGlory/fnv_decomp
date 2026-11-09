@@ -4697,7 +4697,7 @@ struct GlobalSetting_011f18d8
 {
     unsigned char* Bool();
 };
-extern GlobalSetting_011f18d8 g_011f18d8;
+extern GlobalSetting_011f18d8 bDisableCombatGroupStrategies_Combat;
 
 
 struct CombatContext
@@ -4733,7 +4733,7 @@ CombatStyleHandler* __cdecl CombatGroupStrategies_GetStrategy(unsigned int index
 // @fnv 0x009900f0
 CombatStyleHandler* __cdecl SelectCombatStyleHandler(CombatActor* actor)
 {
-    if (*g_011f18d8.Bool())
+    if (*bDisableCombatGroupStrategies_Combat.Bool())
         return 0;
     CombatContext ctx(actor);
     CombatStyleHandler* pCurrentHandler = actor->GetCurrentHandler();
@@ -8669,7 +8669,7 @@ struct Set99
 extern Set99 originalRuntimeFloatSetting434, originalRuntimeFloatSetting433, originalRuntimeFloatSetting430,
     originalRuntimeFloatSetting445, originalRuntimeFloatSetting444, originalRuntimeFloatSetting435,
     originalRuntimeFloatSetting446;
-extern Set99 g_011f1840;
+extern Set99 bEncounterZoneTargetRestrict_Combat;
 struct BaseData99
 {
     virtual bool v0();
@@ -9126,7 +9126,7 @@ bool Self99::CombatState_FindBestFleeLocation(void* arg, Out99* output, int mode
                     Ref99* linked0 = link36->Modelloader_GetReferencedThis();
                     if (linked0->GetHavokWorldObjectCountInSceneGraph_0084e3a0() == excluded || linked0->TESForm_GetDisabledOrDeleted())
                         continue;
-                    if (*g_011f1840.FUN_00408d60())
+                    if (*bEncounterZoneTargetRestrict_Combat.FUN_00408d60())
                     {
                         void* world0 = linked0->FUN_00567d20();
                         void* actorWorld5 = actor15->FUN_00567d20();

@@ -776,7 +776,7 @@ struct GlobalObject_0045cf30
 {
     unsigned char* Bool();
 };
-extern GlobalObject_0045cf30 g_011db620;
+extern GlobalObject_0045cf30 bUseRenderedTerminals_RenderedTerminal;
 void* __cdecl operator new(unsigned int);
 void __cdecl operator delete(void*);
 struct FUN_007ac9f0
@@ -928,7 +928,7 @@ Tile* __cdecl GetOrCreateMenuTile(int param)
             }
         }
         ((RaceInit*)DAT_011da634)->SetupRaceMenu(param);
-        if (*g_011db620.Bool())
+        if (*bUseRenderedTerminals_RenderedTerminal.Bool())
         {
             Tile::UpdateAll(false);
             FUN_007ac9f0* pRenderData = new FUN_007ac9f0;

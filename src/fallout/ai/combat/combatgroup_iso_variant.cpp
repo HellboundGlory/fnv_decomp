@@ -855,7 +855,7 @@ struct S00992700
 {
     void CombatManager_NotifyCombatGroupAddedMember(void*, ActorV*);
 };
-extern Setting g_011f1878;
+extern Setting bDebugCombatGroups_Combat;
 int __cdecl BSTestObjects_GetColor(unsigned int);
 void TintScenegraph(void*, NiPoint3*, int);
 struct FUN_0072ba80_shell

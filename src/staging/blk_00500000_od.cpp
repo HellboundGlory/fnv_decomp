@@ -843,42 +843,42 @@ typedef bool (__thiscall *AssignSettingByteFn)(Setting*, unsigned char);
 extern unsigned char DAT_011c8fa0;
 extern double _DAT_01012060;
 
-extern Setting g_011c8fb0;
-extern Setting g_011c8ff0;
-extern Setting g_011c9028;
-extern Setting g_011c9054;
-extern Setting g_011c9060;
-extern Setting g_011c906c;
-extern Setting g_011c907c;
+extern Setting fLinearRadiusMult_bLightAttenuation;
+extern Setting bUseLinear_bLightAttenuation;
+extern Setting bUseQuadratic_bLightAttenuation;
+extern Setting uLinearMethod_bLightAttenuation;
+extern Setting bUseConstant_bLightAttenuation;
+extern Setting fQuadraticRadiusMult_bLightAttenuation;
+extern Setting uQuadraticMethod_bLightAttenuation;
 
 // @fnv 0x0050e6c0
 bool __cdecl InitSettingsDefaults()
 {
     DAT_011c8fa0 = 0;
 
-    if (reinterpret_cast<AssignSettingByteFn>(AssignSettingByte)(&g_011c9060, 1))
+    if (reinterpret_cast<AssignSettingByteFn>(AssignSettingByte)(&bUseConstant_bLightAttenuation, 1))
         DAT_011c8fa0 |= 1;
 
-    if (reinterpret_cast<AssignSettingByteFn>(AssignSettingByte)(&g_011c8ff0, 1))
+    if (reinterpret_cast<AssignSettingByteFn>(AssignSettingByte)(&bUseLinear_bLightAttenuation, 1))
         DAT_011c8fa0 |= 2;
 
-    if (reinterpret_cast<AssignSettingByteFn>(AssignSettingByte)(&g_011c9028, 1))
+    if (reinterpret_cast<AssignSettingByteFn>(AssignSettingByte)(&bUseQuadratic_bLightAttenuation, 1))
         DAT_011c8fa0 |= 4;
 
     if (!DAT_011c8fa0)
         DAT_011c8fa0 |= 4;
 
-    if (*g_011c9054.Int() != 0 && *g_011c9054.Int() != 1 && *g_011c9054.Int() != 2)
-        g_011c9054.ProcessAndReturnValue_0045ce80(1);
+    if (*uLinearMethod_bLightAttenuation.Int() != 0 && *uLinearMethod_bLightAttenuation.Int() != 1 && *uLinearMethod_bLightAttenuation.Int() != 2)
+        uLinearMethod_bLightAttenuation.ProcessAndReturnValue_0045ce80(1);
 
-    if (*g_011c907c.Int() != 0 && *g_011c907c.Int() != 1 && *g_011c907c.Int() != 2)
-        g_011c907c.ProcessAndReturnValue_0045ce80(2);
+    if (*uQuadraticMethod_bLightAttenuation.Int() != 0 && *uQuadraticMethod_bLightAttenuation.Int() != 1 && *uQuadraticMethod_bLightAttenuation.Int() != 2)
+        uQuadraticMethod_bLightAttenuation.ProcessAndReturnValue_0045ce80(2);
 
-    if (*g_011c8fb0.Float() == 0.0)
-        reinterpret_cast<AssignSettingFloatFn>(AssignSettingFloat)(&g_011c8fb0, 1.0f);
+    if (*fLinearRadiusMult_bLightAttenuation.Float() == 0.0)
+        reinterpret_cast<AssignSettingFloatFn>(AssignSettingFloat)(&fLinearRadiusMult_bLightAttenuation, 1.0f);
 
-    if (*g_011c906c.Float() == 0.0)
-        reinterpret_cast<AssignSettingFloatFn>(AssignSettingFloat)(&g_011c906c, 1.0f);
+    if (*fQuadraticRadiusMult_bLightAttenuation.Float() == 0.0)
+        reinterpret_cast<AssignSettingFloatFn>(AssignSettingFloat)(&fQuadraticRadiusMult_bLightAttenuation, 1.0f);
 
     return true;
 }

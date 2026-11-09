@@ -5449,7 +5449,7 @@ void FUN_006738b0_shell::TESPackage_Save()
 }
 }  // namespace fnv_006738b0
 
-extern Setting g_011de4e8;
+extern Setting bDebugSaveBuffer_Debug;
 
 extern TESSaveLoadGame* DAT_011de45c;
 
@@ -5523,7 +5523,7 @@ unsigned short FUN_00678fd0_shell::TESPackage_GetSaveSize()
 
         size += 4;
 
-        if (*g_011de4e8.Bool())
+        if (*bDebugSaveBuffer_Debug.Bool())
         {
             HitSoundData* hitSound;
             {
@@ -9609,7 +9609,7 @@ void Package679120::SavePackage()
     unsigned short blockLength = 0;
     unsigned int start = 0;
     unsigned int blockStart = DAT_011de45c->FUN_00825c00();
-    if (*g_011de4e8.Bool())
+    if (*bDebugSaveBuffer_Debug.Bool())
         blockStart = DAT_011de45c->FUN_00825c00();
     if (DAT_011de45c->TESSaveLoadGame_UseSaveGameBlocks())
     {
@@ -9630,7 +9630,7 @@ void Package679120::SavePackage()
     if (target)
         ((Target679120*)target)->SaveLoad();
     DAT_011de45c->TESSaveLoadGame_SaveGameDataOLD(&procedureArrayIndex, 4);
-    if (*g_011de4e8.Bool())
+    if (*bDebugSaveBuffer_Debug.Bool())
     {
         unsigned int end = DAT_011de45c->FUN_00825c00();
         Record679120* record = (Record679120*)DAT_011de45c->GetHitSound();

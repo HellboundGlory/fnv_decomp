@@ -746,7 +746,7 @@ struct InfoMapS
 unsigned int EdgeExtraInfo_GetSizeOfV0();
 TESForm* __fastcall NavMeshInfo_GetParentSpace(const NavMeshInfo*);
 extern TESObjectCELL* DAT_011c3f30;
-extern ProcessListsView g_011d6ca8;
+extern ProcessListsView bGlobalNavMeshCheck_NavMeshGeneration;
 
 // Reads a NavMesh record from a TESFile, parsing subrecords, converting old versions, and resolving the parent cell and NavMeshInfo.
 // @fnv 0x00692950
@@ -1092,7 +1092,7 @@ bool FUN_00692950_shell::NavMesh_Load(TESFile* apFile)
             }
         }
     }
-    if ((*g_011d6ca8.GetLifeStateControlFlag() || !apFile->IsMasterFile()) && !((TESForm*)this)->IsDeleted())
+    if ((*bGlobalNavMeshCheck_NavMeshGeneration.GetLifeStateControlFlag() || !apFile->IsMasterFile()) && !((TESForm*)this)->IsDeleted())
         Validate(false);
     return true;
 }

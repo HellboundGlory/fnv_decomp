@@ -3504,7 +3504,7 @@ struct FireFace {
 struct FireTransform { FirePoint ComputeValue_00524c40(const FirePoint&); };
 
 struct FireSetting { float* Float(); unsigned char* Bool(); };
-extern FireSetting g_011c94a0, g_011c94b0, g_011ce23c;
+extern FireSetting bLaserSights_Combat, bAimSights_Combat, g_011ce23c;
 struct FireSmart {
  FireNode* ptr;
  FireSmart(FireNode*); ~FireSmart();
@@ -3626,7 +3626,7 @@ void FireWeapon::TESObjectWEAP_Fire(FireRef* reference) {
      float roll4;
      ((FireNode*)muzzle11->NiAVObject_GetWorldRotate())->NiMatrix3_ToEulerAnglesZXY(&yaw21,&pitch37,&roll4);
     }
-    if (*g_011c94a0.Bool()) {
+    if (*bLaserSights_Combat.Bool()) {
      FireNode* root = muzzle11->node();
      if (!root) root = muzzle11->NiAVObject_GetParent()->node();
      if (root) {
@@ -3671,7 +3671,7 @@ void FireWeapon::TESObjectWEAP_Fire(FireRef* reference) {
     FirePoint direction = targetPosition-position6;
     yaw21 = FUN_004b1550(&direction);
     pitch37 = -NiASin_004b54c0(direction.z/direction.Length());
-    if (*g_011c94b0.Bool()) {
+    if (*bAimSights_Combat.Bool()) {
      FireNode* cellNode = (FireNode*)TESObjectCELL_GetMarkerNode((TESObjectCELL*)actor19->FUN_008d6f30());
      if (cellNode) {
       FireSmart cellMarker31(cellNode->find((void*)get_g_AimSight()));

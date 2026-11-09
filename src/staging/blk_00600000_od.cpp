@@ -103,13 +103,13 @@ struct GlobalObject_0045cf30
     unsigned char* Bool();
 };
 
-GlobalObject_0045cf30 g_011cb99c;
+GlobalObject_0045cf30 bFaceGenTexturing_General;
 
 // @fnv 0x00605d50
 // src: COMMUNITY 0x00605d50
 unsigned char General_bFaceGenTexturing_Get()
 {
-    return g_011cb99c.Bool()[0];
+    return bFaceGenTexturing_General.Bool()[0];
 }
 
 extern int vftable_BSSimpleArray_0104ab04;

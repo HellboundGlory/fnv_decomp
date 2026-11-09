@@ -2214,7 +2214,7 @@ struct GlobalObject_0045cf30
 {
     unsigned char* Bool();
 };
-extern GlobalObject_0045cf30 g_011d5adc;
+extern GlobalObject_0045cf30 bLoadFaceGenHeadEGTFiles_General;
 struct Helper62d0
 {
     void* operator=(void const*);
@@ -2229,7 +2229,7 @@ void* GetFaceGenManagerValue();
 // @fnv 0x006044e0
 void TESNPCPartTextures::CreatePartTexture(int aePart, void* aspTexture)
 {
-    if (*g_011d5adc.Bool() || (TESObject*)this == ((TESObject*)g_thePlayer)->GetNext())
+    if (*bLoadFaceGenHeadEGTFiles_General.Bool() || (TESObject*)this == ((TESObject*)g_thePlayer)->GetNext())
     {
         *(GO*)aspTexture = 0;
         return;

@@ -11822,7 +11822,7 @@ struct GlobalObject_0045cfe0
 };
 
 extern GlobalObject_0044fae0 g_011c3d84;
-extern GlobalObject_0045cfe0 g_011c3ea4;
+extern GlobalObject_0045cfe0 iNumHWThreads_General;
 
 #include "../../include/ActorTaskManager.h"
 // If the global int is not 1, either queries the performance counter or waits for rendering tasks depending on flag.
@@ -11830,7 +11830,7 @@ extern GlobalObject_0045cfe0 g_011c3ea4;
 // src: COMMUNITY 0x00453860
 void ActorTaskManager::TES_LockHavokUpdateMT(bool abQueryCounter)
 {
-    if (*g_011c3ea4.Int() != 1)
+    if (*iNumHWThreads_General.Int() != 1)
     {
         if (abQueryCounter)
             g_011c3d84.QueryPerformanceCounter(0);

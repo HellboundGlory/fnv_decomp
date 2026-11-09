@@ -386,7 +386,7 @@ void ArrHelper::ConstructParentSpaceNodes(ParentSpaceNode* apNodes, unsigned int
     }
 }
 
-extern SettingT_GameSettingCollection_ g_011f2af8, g_011f2b04, g_011f2ba8;
+extern SettingT_GameSettingCollection_ fAvoidanceWiderConeAngle_Pathfinding, fRunningWiderConeAngle_Pathfinding, fAvoidanceConeAngle_Pathfinding;
 extern const double DAT_01023128;
 extern float DAT_011a5cf4, DAT_011a5cf8, DAT_011a5cfc;
 float __cdecl NiCos(float);
@@ -394,9 +394,9 @@ float __cdecl NiCos(float);
 // src: COMMUNITY 0x006d0870
 bool Pathing_Init()
 {
-    DAT_011a5cf4 = NiCos(g_011f2ba8.Float()->f * DAT_01023128);
-    DAT_011a5cf8 = NiCos(g_011f2af8.Float()->f * DAT_01023128);
-    DAT_011a5cfc = NiCos(g_011f2b04.Float()->f * DAT_01023128);
+    DAT_011a5cf4 = NiCos(fAvoidanceConeAngle_Pathfinding.Float()->f * DAT_01023128);
+    DAT_011a5cf8 = NiCos(fAvoidanceWiderConeAngle_Pathfinding.Float()->f * DAT_01023128);
+    DAT_011a5cfc = NiCos(fRunningWiderConeAngle_Pathfinding.Float()->f * DAT_01023128);
     return true;
 }
 

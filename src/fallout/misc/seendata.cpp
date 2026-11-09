@@ -107,7 +107,7 @@ struct GlobalObject2_0040c150
 {
     int* Int();
 };
-extern GlobalObject2_0040c150 g_011df198;
+extern GlobalObject2_0040c150 iNumBitsForFullySeen_General;
 float __cdecl GetRuntimeFloatSetting37();
 
 // @fnv 0x00879ad0
@@ -137,7 +137,7 @@ bool SeenData::HasEnoughSeenPoints(const NiPoint3& aPoint, const NiPoint3& aOffs
             iSeenCount++;
         }
     }
-    return iSeenCount >= *g_011df198.Int();
+    return iSeenCount >= *iNumBitsForFullySeen_General.Int();
 }
 
 int __cdecl TruncateFloatToInt(float);

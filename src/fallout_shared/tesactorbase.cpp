@@ -399,7 +399,7 @@ struct GlobalObject_0045cf30
 {
     unsigned char* Bool();
 };
-extern GlobalObject_0045cf30 g_011de4e8;
+extern GlobalObject_0045cf30 bDebugSaveBuffer_Debug;
 
 struct SaveSizeNamedForm
 {
@@ -527,7 +527,7 @@ unsigned short TESActorBase::GetSaveSize_005f16f0(unsigned int changeFlags)
         totalSize += 1;
         totalSize += BSStringLength(((FNStub*)((char*)this + 0xd0))->GetFullName());
     }
-    if (*g_011de4e8.Bool())
+    if (*bDebugSaveBuffer_Debug.Bool())
     {
         FormIDEntry* pFormHeader = (FormIDEntry*)g_TESSaveLoadGame->FUN_004fd3e0();
         if (pFormHeader)
@@ -562,7 +562,7 @@ struct GlobalObject_0045cf30
 {
     unsigned char* Bool();
 };
-extern GlobalObject_0045cf30 g_011de4e8;
+extern GlobalObject_0045cf30 bDebugSaveBuffer_Debug;
 struct SaveInventory
 {
     void SaveSpellList(unsigned int);
@@ -671,7 +671,7 @@ void TESActorBase::SaveGame_005f18c0(unsigned int flags)
     unsigned short size = 0;
     unsigned short* pos2 = 0;
     unsigned int offset2 = fnv_005f18c0::g_TESSaveLoadGame->GetTimeStamp();
-    if (*fnv_005f18c0::g_011de4e8.Bool())
+    if (*fnv_005f18c0::bDebugSaveBuffer_Debug.Bool())
         offset2 = fnv_005f18c0::g_TESSaveLoadGame->GetTimeStamp();
     if (fnv_005f18c0::g_TESSaveLoadGame->TESSaveLoadGame_UseSaveGameBlocks())
     {
@@ -699,7 +699,7 @@ void TESActorBase::SaveGame_005f18c0(unsigned int flags)
         if (pos)
             ((SaveFormAccess*)this)->TESForm_SaveGameDataOLD(data, pos);
     }
-    if (*fnv_005f18c0::g_011de4e8.Bool())
+    if (*fnv_005f18c0::bDebugSaveBuffer_Debug.Bool())
     {
         unsigned int end = fnv_005f18c0::g_TESSaveLoadGame->GetTimeStamp();
         SaveRecord* record = (SaveRecord*)fnv_005f18c0::g_TESSaveLoadGame->GetHitSound();

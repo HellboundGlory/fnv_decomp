@@ -1571,7 +1571,7 @@ struct S00992700
     void CombatManager_NotifyCombatGroupAddedMember(void*, ActorV*);
 };
 
-extern Setting g_011f1878;
+extern Setting bDebugCombatGroups_Combat;
 int __cdecl BSTestObjects_GetColor(unsigned int);
 
 
@@ -1614,7 +1614,7 @@ bool CombatMemberInsertionView::CombatGroup_AddMember(ActorV* apActor)
             ->Add(*(const CombatClusterMember*)member.CombatMember_CombatMember(apActor));
     }
     ((S00992700*)BGSSaveLoadGlobalDataWorldspacePtr)->CombatManager_NotifyCombatGroupAddedMember(this, apActor);
-    if (*g_011f1878.Bool() && apActor->V1d0())
+    if (*bDebugCombatGroups_Combat.Bool() && apActor->V1d0())
     {
         *reinterpret_cast<NiColorA*>(colorA) = *(NiColorA*)BSTestObjects_GetColor(m_uiActorFormID);
         reinterpret_cast<NiPoint3*>(color)->Set(colorA[0], colorA[1], colorA[2]);
@@ -2068,7 +2068,7 @@ void FUN_009869a0_shell::CombatGroup_RemoveMember(Actor* apActor)
             if (*reinterpret_cast<Actor**>(reinterpret_cast<unsigned char*>(this) + 0xEC) == apActor)
                 *reinterpret_cast<Actor**>(reinterpret_cast<unsigned char*>(this) + 0xEC) = 0;
 
-            if (*g_011f1878.Bool())
+            if (*bDebugCombatGroups_Combat.Bool())
             {
                 if (reinterpret_cast<ActorDispatch*>(apActor)->M117())
                     UnTintScenegraph(reinterpret_cast<ActorDispatch*>(apActor)->M117());

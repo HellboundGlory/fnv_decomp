@@ -404,13 +404,13 @@ struct GlobalObject_0045cf30 : FUN_0050e620_S
 };
 extern unsigned char DAT_011c8fa0;
 extern double _DAT_01012060;
-extern Setting g_011c8fb0;
-extern GlobalObject_0045cf30 g_011c8ff0;
-extern GlobalObject_0045cf30 g_011c9028;
-extern Setting g_011c9054;
-extern GlobalObject_0045cf30 g_011c9060;
-extern Setting g_011c906c;
-extern Setting g_011c907c;
+extern Setting fLinearRadiusMult_bLightAttenuation;
+extern GlobalObject_0045cf30 bUseLinear_bLightAttenuation;
+extern GlobalObject_0045cf30 bUseQuadratic_bLightAttenuation;
+extern Setting uLinearMethod_bLightAttenuation;
+extern GlobalObject_0045cf30 bUseConstant_bLightAttenuation;
+extern Setting fQuadraticRadiusMult_bLightAttenuation;
+extern Setting uQuadraticMethod_bLightAttenuation;
 bool __cdecl InitSettingsDefaults();
 struct TESBoundObject;
 struct LockExtraData

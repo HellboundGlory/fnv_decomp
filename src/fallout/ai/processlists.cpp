@@ -2313,7 +2313,7 @@ struct GlobalObject_0045cf30
 {
     bool* GetLifeStateControlFlag();
 };
-extern GlobalObject_0045cf30 g_011f1260;
+extern GlobalObject_0045cf30 bTaskletActorSceneGraphUpdates_General;
 
 struct AnimUpdateHelper
 {
@@ -2342,7 +2342,7 @@ void FUN_0096c970_shell::ProcessLists_ParallelUpdateAnimationScenegraph()
     bool buseParallelTask;
     unsigned int ilastActor = m_kMobileObjectProcessList.GetTail(PROCESS_TYPE_PROCESS_TYPE_MIDDLE_HIGH);
     unsigned int inumActors = ilastActor - ifirstActor;
-    buseParallelTask = *g_011f1260.GetLifeStateControlFlag();
+    buseParallelTask = *bTaskletActorSceneGraphUpdates_General.GetLifeStateControlFlag();
     if (inumActors)
     {
         BSScrapArray<Animation*, 1024> animationArray;
@@ -4298,7 +4298,7 @@ struct ProcTaskManager
     void Queue(ProcParallelTask*);
 };
 extern ProcTaskManager* DAT_01202df4_mgr;
-extern Setting g_011f126c;
+extern Setting bTaskletActorAnimMovementUpdates_General;
 struct ProcScrapArray
 {
     ProcScrapArray();
@@ -4324,7 +4324,7 @@ void ProcListsExt::ProcessLists_ParallelActorAnimationMovementUpdates()
     unsigned int head8 = m_kMobileObjectProcessList.GetHead((PROCESS_TYPE)0);
     unsigned int tailVal = m_kMobileObjectProcessList.GetTail((PROCESS_TYPE)0);
     unsigned int count = tailVal - head8;
-    bool bParallel = *g_011f126c.Bool();
+    bool bParallel = *bTaskletActorAnimMovementUpdates_General.Bool();
     if (count)
     {
         ProcScrapArray actors;
@@ -10167,7 +10167,7 @@ void ProcessListsCellAccess::ProcessLists_RemoveTempEffectsForCell(TESObjectCELL
     }
 }
 
-extern Setting g_011f127c;
+extern Setting bTaskletTempEffectsUpdate_General;
 struct EffectListCount
 {
     unsigned int CountReferencedNodes();
@@ -10210,7 +10210,7 @@ struct EffectProcessLists : ProcessLists
 // src: XBOX_PDB 0x009746c0
 void EffectProcessLists::ProcessLists_UpdateTempEffectsParallel(float delta)
 {
-    if (!*g_011f127c.Bool())
+    if (!*bTaskletTempEffectsUpdate_General.Bool())
     {
         FUN_00974420(delta);
         return;

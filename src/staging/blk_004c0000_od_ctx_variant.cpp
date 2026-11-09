@@ -351,7 +351,7 @@ struct GlobalObject_004a4a40
 {
     int GetCellStandValue();
 };
-extern GlobalObject_004a4a40 g_011c738c;
+extern GlobalObject_004a4a40 iAdapter_Display;
 int __cdecl TESRenderer_GetAdapterIndex();
 struct CellStand
 {
@@ -361,7 +361,7 @@ struct GlobalObject_0045cfe0
 {
     CellStand m_cell;
 };
-extern GlobalObject_0045cfe0 g_011c7100;
+extern GlobalObject_0045cfe0 iNPatches_Display;
 void __cdecl TESRenderer_GetNPatchSegments();
 extern float DAT_0118945c;
 extern float DAT_011ad83c;
@@ -452,9 +452,9 @@ struct GlobalObject_0044f440
 {
     float* Float();
 };
-extern GlobalObject_0044f440 g_011c6528;
-extern GlobalObject_0044f440 g_011c6534;
-extern GlobalObject_0044f440 g_011c651c;
+extern GlobalObject_0044f440 fDialogueHeadPitchExaggeration_Audio;
+extern GlobalObject_0044f440 fDialogueHeadRollExaggeration_Audio;
+extern GlobalObject_0044f440 fDialogueHeadYawExaggeration_Audio;
 struct Buf
 {
     unsigned int m0;

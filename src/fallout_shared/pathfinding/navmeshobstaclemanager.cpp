@@ -49,7 +49,7 @@ using ::SettingT;
 class GlobalObject_0045cf30
 {
 };
-extern GlobalObject_0045cf30 g_011d71a0;
+extern GlobalObject_0045cf30 bBackgroundNavmeshUpdate_Pathfinding;
 class BGSPerkEntry;
 class ActorCause;
 class BGSCameraShot;
@@ -130,7 +130,7 @@ void NavMeshObstacleManager::QueueObstacleTasks()
     {
         ((NiTMap<unsigned int, ObstacleTaskData*>*)((char*)this + 0x12c))
             ->GetNext(locals.iterator, locals.key, locals.task);
-        if (((SettingT<INISettingCollection>*)&g_011d71a0)->Bool()[0])
+        if (((SettingT<INISettingCollection>*)&bBackgroundNavmeshUpdate_Pathfinding)->Bool()[0])
             ProcessObstacleTask(locals.task);
         else
         {
@@ -903,7 +903,7 @@ void __fastcall ProcessObstacleTasks(NavMeshObstacleManager* pObstacleManager)
         unsigned int formID;
         ((NiTMap<unsigned int, ObstacleTaskData*>*)((char*)pObstacleManager + 0x12c))
             ->GetNext(taskIt, formID, ptaskData);
-        if (((SettingT<INISettingCollection>*)&g_011d71a0)->Bool()[0])
+        if (((SettingT<INISettingCollection>*)&bBackgroundNavmeshUpdate_Pathfinding)->Bool()[0])
         {
             pObstacleManager->ProcessObstacleTask(ptaskData);
         }
@@ -1420,7 +1420,7 @@ void* FUN_006c0230_shell::bhkObstacleRemovalListener_ScalarDeletingDestructor(un
 
 class Actor;
 namespace fnv_006c0c30 {
-extern GlobalObject_0045cf30 g_011d73e4;
+extern GlobalObject_0045cf30 bUseObstacleAvoidance_Pathfinding;
 struct LH
 {
     bool IsInList(Actor*&);
@@ -1438,7 +1438,7 @@ struct Mgr006c0c30
 // src: XBOX_PDB 0x006c0c30
 void Mgr006c0c30::NavMeshObstacleManager_AddObstacleForReference(Actor* apRef)
 {
-    if (!*(unsigned char*)(((SettingT_GameSettingCollection_*)&g_011d73e4)->Bool()))
+    if (!*(unsigned char*)(((SettingT_GameSettingCollection_*)&bUseObstacleAvoidance_Pathfinding)->Bool()))
         return;
     if (!((LH*)((char*)this + 0x2c))->IsInList(apRef))
         ((G2*)((char*)this + 0x2c))->AddHead((int*)&apRef);
@@ -6514,7 +6514,7 @@ struct GlobalObject_0044f440
 {
     float* Setting_Float_00403e20();
 };
-extern GlobalObject_0044f440 g_011d71b0;
+extern GlobalObject_0044f440 fObstacleUpdateDeltaWhenMoving_Pathfinding;
 struct TimeGlobal
 {
     unsigned int FUN_00825c00();
@@ -6547,7 +6547,7 @@ struct ObsMgr
 // src: COMMUNITY 0x006c4d30
 void ObsMgr::NavMeshObstacleManager_ProcessMovingReferences()
 {
-    unsigned int uiTimeLimitMs = (unsigned int)(*g_011d71b0.Setting_Float_00403e20() * 1000.0);
+    unsigned int uiTimeLimitMs = (unsigned int)(*fObstacleUpdateDeltaWhenMoving_Pathfinding.Setting_Float_00403e20() * 1000.0);
     for (ObstList* node = &list3C; node && !node->BSSimpleList_NiRefObjectPtr_IsEmpty();)
     {
         NiPointer<ObstData1920> item(node->FUN_006815c0());
@@ -6669,7 +6669,7 @@ struct RemoveObstacleManagerView
 // src: XBOX_PDB 0x006c0c80
 void RemoveObstacleManagerView::NavMeshObstacleManager_RemoveObstacleForReference(::TESObjectREFR* ref)
 {
-    if (!reinterpret_cast< ::SettingT< ::INISettingCollection>*>(&::fnv_006c0c30::g_011d73e4)->Bool()[0])
+    if (!reinterpret_cast< ::SettingT< ::INISettingCollection>*>(&::fnv_006c0c30::bUseObstacleAvoidance_Pathfinding)->Bool()[0])
         return;
     pending.RemoveMatchingItem(&ref);
     if (!removed.IsInList(reinterpret_cast< ::TESForm*>(ref)->GetFormID()))

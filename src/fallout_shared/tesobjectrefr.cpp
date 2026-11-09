@@ -11184,8 +11184,8 @@ struct GlobalObject_0045cf30
 {
     unsigned char* Bool();
 };
-extern GlobalObject_0045cf30 g_011ca394;
-extern GlobalObject_0045cf30 g_011ca3ec;
+extern GlobalObject_0045cf30 bPreventHavokAddAll_HAVOK;
+extern GlobalObject_0045cf30 bPreventHavokAddClutter_HAVOK;
 using ::NiAVObject;
 
 struct TaskQueueInterface
@@ -11223,11 +11223,11 @@ void bhkWorld_AddObject(TesobjectrefrOffset08View*, UpdateArg*);
 // src: COMMUNITY 0x005764f0
 void TESObjectREFR_FilteredAddObject(TesobjectrefrOffset08View* apObj, UpdateArg* apArg)
 {
-    if (!*g_011ca394.Bool())
+    if (!*bPreventHavokAddAll_HAVOK.Bool())
     {
         bool bQueue = true;
         RefOps* pRef;
-        if (*g_011ca3ec.Bool() && apObj)
+        if (*bPreventHavokAddClutter_HAVOK.Bool() && apObj)
         {
             NiNode* pNiNode = apObj->GetFlags();
             pRef = (RefOps*)GetReferenceFromNiAVObject((NiAVObject*)pNiNode);
@@ -22256,7 +22256,7 @@ struct GlobalObject_0045cf30
 {
     unsigned char* Bool();
 };
-extern GlobalObject_0045cf30 g_011de4e8;
+extern GlobalObject_0045cf30 bDebugSaveBuffer_Debug;
 struct SaveInventory
 {
     unsigned short InventoryChanges_GetSaveSize();
@@ -22375,7 +22375,7 @@ unsigned short SaveReference::TESObjectREFR_GetSaveSize(unsigned int flags)
     {
         uiTotalSize += 4;
     }
-    if (*g_011de4e8.Bool())
+    if (*bDebugSaveBuffer_Debug.Bool())
     {
         SaveChangeRecord* record = static_cast<SaveChangeRecord*>(g_TESSaveLoadGame->FUN_004fd3e0());
         if (record)
@@ -22407,7 +22407,7 @@ struct GlobalObject_0045cf30
 {
     unsigned char* Bool();
 };
-extern GlobalObject_0045cf30 g_011de4e8;
+extern GlobalObject_0045cf30 bDebugSaveBuffer_Debug;
 struct SaveExtras;
 struct ScriptSaveData
 {
@@ -22604,7 +22604,7 @@ void SaveReference::TESObjectREFR_SaveGame(unsigned int flags)
         pusBlockSize = 0;
         {
             unsigned int start = g_TESSaveLoadGame->FUN_00825c00();
-            if (*g_011de4e8.Bool())
+            if (*bDebugSaveBuffer_Debug.Bool())
                 start = g_TESSaveLoadGame->FUN_00825c00();
             if (g_TESSaveLoadGame->TESSaveLoadGame_UseSaveGameBlocks())
             {
@@ -22639,7 +22639,7 @@ void SaveReference::TESObjectREFR_SaveGame(unsigned int flags)
             }
             if (g_TESSaveLoadGame->FUN_008df040() >= 0x43 && (flags & 0x10))
                 TESForm_SaveGameDataOLD(&referenceScale, 4);
-            if (*g_011de4e8.Bool())
+            if (*bDebugSaveBuffer_Debug.Bool())
             {
                 SavedChangeRecord* record;
                 {

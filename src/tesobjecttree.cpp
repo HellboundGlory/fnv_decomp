@@ -259,12 +259,12 @@ struct GlobalObject_0045cf30 : Setting
 {
 };
 
-extern GlobalObject_0045cf30 g_011d5ce8;
+extern GlobalObject_0045cf30 bEnableTrees_SpeedTree;
 
 // @fnv 0x0051d740
 unsigned char GetFirstProcessListByte()
 {
-    return g_011d5ce8.FUN_00408d60()[0];
+    return bEnableTrees_SpeedTree.FUN_00408d60()[0];
 }
 
 struct FUN_006447b0_shell

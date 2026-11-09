@@ -1143,13 +1143,13 @@ unsigned char __fastcall GetMaxByte(unsigned char* pThis)
 
 
 
-extern Setting g_01267c30;
+extern Setting bFootIK_RagdollAnim;
 
 // @fnv 0x00495580
 // src: XBOX_PDB 0x00495580
 unsigned char bhkRagdollController_QFootIK()
 {
-    return *g_01267c30.FUN_00408d60();
+    return *bFootIK_RagdollAnim.FUN_00408d60();
 }
 
 class NiMatrix3;
@@ -3907,7 +3907,7 @@ struct FUN_00451530_shell
     bool TES_CellTestRunning();
 };
 extern PC_00605d70* g_thePlayer;
-extern GlobalObject_0045cfe0 g_011c5778;
+extern GlobalObject_0045cfe0 iAnimationClonePerLoop_BackgroundLoad;
 extern BGSSaveLoadGame* g_BGSSaveLoadGame;
 extern FUN_00451530_shell* g_TES;
 
@@ -3916,7 +3916,7 @@ bool FUN_00490e60_shell::ShouldQueueAnimations()
 {
     bool bqueueAnims = false;
     bqueueAnims = true;
-    if (!g_thePlayer || !g_thePlayer->GetNode(false) || !*g_011c5778.Int())
+    if (!g_thePlayer || !g_thePlayer->GetNode(false) || !*iAnimationClonePerLoop_BackgroundLoad.Int())
     {
         bqueueAnims = false;
     }
@@ -5424,8 +5424,8 @@ struct TESAnimGroupActionEntry
 };
 
 extern TimeGlobalStub g_timeGlobal;
-extern IntSettingStub g_011c5778;
-extern GlobalObject_0044f440 g_011c5724;
+extern IntSettingStub iAnimationClonePerLoop_BackgroundLoad;
+extern GlobalObject_0044f440 fAnimationMult_General;
 extern unsigned int DAT_011c56e8;
 extern bool DAT_011e0783;
 extern PlayerCharacter* g_thePlayer;
@@ -5456,7 +5456,7 @@ void FUN_00491180_shell::Animation_Update(TESObjectREFR* apRef, float afDelta, f
     float fTimeMultiplier = g_timeGlobal.GetTimeMult() * m_fEquipAnimationRate;
     if (HasQueuedSequences())
     {
-        for (; DAT_011c56e8 < *g_011c5778.Int(); DAT_011c56e8++)
+        for (; DAT_011c56e8 < *iAnimationClonePerLoop_BackgroundLoad.Int(); DAT_011c56e8++)
         {
             KFModel* m_kModelObjectsItem = kfModelList.GetItem();
             AddAnimation(m_kModelObjectsItem, false);
@@ -5988,7 +5988,7 @@ void FUN_00491180_shell::Animation_Update(TESObjectREFR* apRef, float afDelta, f
                     if (iType == ((SeqStub*)m_pChildTile[1])->GetAnimGroup()->GetGroupType())
                     {
                         kMoveDelta = ((SeqStub*)m_pChildTile[1])->GetAnimGroup()->GetMoveVector() *
-                                     fTimeMultiplier * *g_011c5724.Float() * m_fMovementRate;
+                                     fTimeMultiplier * *fAnimationMult_General.Float() * m_fMovementRate;
                     }
                     else
                     {
@@ -6002,7 +6002,7 @@ void FUN_00491180_shell::Animation_Update(TESObjectREFR* apRef, float afDelta, f
                                 SeqStub* pMoveSeq = (SeqStub*)pSeqBase->GetSequenceAtIndex(-1);
                                 if (pMoveSeq)
                                     kMoveDelta = pMoveSeq->GetAnimGroup()->GetMoveVector() * fTimeMultiplier *
-                                                 *g_011c5724.Float() * m_fMovementRate;
+                                                 *fAnimationMult_General.Float() * m_fMovementRate;
                             }
                         }
                     }
@@ -6166,7 +6166,7 @@ struct GlobalObject2_0040c150
 {
     int* Int();
 };
-extern GlobalObject2_0040c150 g_011c3ea4;
+extern GlobalObject2_0040c150 iNumHWThreads_General;
 extern char DAT_011e07a8;
 
 extern BGSSaveLoadGame* g_BGSSaveLoadGame;
@@ -6238,7 +6238,7 @@ void AnimSwap::Animation_UpdateSceneGraphNoController()
 {
     if (!m_pRootNode || !pOther)
         return;
-    if (*g_011c3ea4.Int() > 1 && !DAT_011e07a8 && !Animation_GetDelayUpdateScenegraph() && !g_BGSSaveLoadGame->IsLoading())
+    if (*iNumHWThreads_General.Int() > 1 && !DAT_011e07a8 && !Animation_GetDelayUpdateScenegraph() && !g_BGSSaveLoadGame->IsLoading())
     {
         Animation_SetDelayUpdateScenegraph(1);
         return;
@@ -9503,7 +9503,7 @@ struct BoolSetting
 {
     unsigned char* Bool();
 };
-extern BoolSetting g_011de4e8;
+extern BoolSetting bDebugSaveBuffer_Debug;
 
 struct SaveRef
 {
@@ -9610,7 +9610,7 @@ void AnimIdle_SaveAnimIdle(void* apUnused, SavedAnim* apAnim, int aiState, float
     unsigned short usBlockSize4 = 0;
     char* pSizePos8 = 0;
     char* pStart4 = g_TESSaveLoadGame->GetBufferPos();
-    if (*g_011de4e8.Bool())
+    if (*bDebugSaveBuffer_Debug.Bool())
         pStart4 = g_TESSaveLoadGame->GetBufferPos();
     if (g_TESSaveLoadGame->IsSaving())
     {
@@ -9629,7 +9629,7 @@ void AnimIdle_SaveAnimIdle(void* apUnused, SavedAnim* apAnim, int aiState, float
         g_TESSaveLoadGame->WriteData(&usGroup, 2);
         apAnim->SaveState(afTime, aiState);
     }
-    if (*g_011de4e8.Bool())
+    if (*bDebugSaveBuffer_Debug.Bool())
     {
         char* pEnd6 = g_TESSaveLoadGame->GetBufferPos();
         SaveFormInfo* pInfo2 = g_TESSaveLoadGame->GetCurrentForm();

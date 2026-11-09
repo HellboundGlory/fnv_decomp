@@ -135,13 +135,13 @@ struct GlobalObject2_0045cfe0
     int* Int();
 };
 
-GlobalObject2_0045cfe0 g_011c59e0;
+GlobalObject2_0045cfe0 uActorMemoryBudgetCap_BudgetCaps;
 
 // @fnv 0x004a9100
 // src: XBOX_PDB 0x004a9100
 int BGSSceneInfo_GetActorMemoryBudgetCap()
 {
-    return *g_011c59e0.Int();
+    return *uActorMemoryBudgetCap_BudgetCaps.Int();
 }
 
 // @fnv 0x004a95b0
@@ -389,15 +389,15 @@ struct CP_008c48d0
 {
     int GetPrevPath();
 };
-extern GlobalObject_0045cfe0 g_011c5b20;
-extern GlobalObject_0045cfe0 g_011c5ae0;
-extern GlobalObject2_0045cfe0 g_011c5c04;
+extern GlobalObject_0045cfe0 uLoadedAreaNonActorMemoryBudgetCap_BudgetCaps;
+extern GlobalObject_0045cfe0 uWastelandLODBudgetAdjustment_BudgetCaps;
+extern GlobalObject2_0045cfe0 uCityLODBudgetAdjustment_BudgetCaps;
 extern int g_TES;
 // @fnv 0x004a9050
 // src: XBOX_PDB 0x004a9050
 int BGSSceneInfo_GetLoadedAreaNonActorMemoryBudgetCap()
 {
-    int iValue = *g_011c5b20.Int();
+    int iValue = *uLoadedAreaNonActorMemoryBudgetCap_BudgetCaps.Int();
     if (!((CP_008c48d0*)g_TES)->GetPrevPath())
     {
         TESWorldSpace* pworld = (TESWorldSpace*)((TESSaveLoadGame*)g_TES)->GetHitSound();
@@ -409,9 +409,9 @@ int BGSSceneInfo_GetLoadedAreaNonActorMemoryBudgetCap()
         {
             int iadjust = 0;
             if (pLODworld->GetHavokWorldObjectCountInSceneGraph_0084e3a0() == 0x3c)
-                iadjust = *g_011c5ae0.Int();
+                iadjust = *uWastelandLODBudgetAdjustment_BudgetCaps.Int();
             else
-                iadjust = *g_011c5c04.Int();
+                iadjust = *uCityLODBudgetAdjustment_BudgetCaps.Int();
             iValue -= iadjust;
         }
     }

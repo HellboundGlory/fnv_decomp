@@ -458,7 +458,7 @@ struct HitSoundData_0092e420
     unsigned char pad;
 };
 
-extern Setting g_011de4e8;
+extern Setting bDebugSaveBuffer_Debug;
 extern TESSaveLoadGame* DAT_011de45c;
 
 TESForm* _GetFormByNumericID(unsigned int);
@@ -503,7 +503,7 @@ unsigned short FUN_0092e420_shell::MiddleLowProcess_GetSaveSize(unsigned int fla
         usSize += this->saveSizePart.ModifierList_GetSaveSize();
     }
 
-    if (*g_011de4e8.Bool())
+    if (*bDebugSaveBuffer_Debug.Bool())
     {
         hitSound = static_cast<HitSoundData_0092e420*>(DAT_011de45c->GetHitSound());
 

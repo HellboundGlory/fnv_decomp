@@ -2889,13 +2889,13 @@ struct GlobalObjectO2_0045cf30
     G7d1 m_g7d1;
 };
 
-GlobalObjectO2_0045cf30 g_01267b28;
+GlobalObjectO2_0045cf30 bHavokDebug_HAVOK;
 
 // @fnv 0x00454ae0
 // src: XBOX_PDB 0x00454ae0
 void __cdecl bhkWorld_IsHavokDebug()
 {
-    g_01267b28.m_g7d1.GetBoolValue();
+    bHavokDebug_HAVOK.m_g7d1.GetBoolValue();
 }
 
 struct FUN_005422b0Class
@@ -2983,13 +2983,13 @@ struct GlobalObjectO2_0045cf30
     unsigned char* GetLifeStateControlFlag(void);
 };
 
-GlobalObjectO2_0045cf30 g_01267c24;
+GlobalObjectO2_0045cf30 bRagdollAnim_RagdollAnim;
 
 // @fnv 0x005524d0
 // src: XBOX_PDB 0x005524d0
 unsigned char bhkRagdollController_QRagdollAnim()
 {
-    return *g_01267c24.GetLifeStateControlFlag();
+    return *bRagdollAnim_RagdollAnim.GetLifeStateControlFlag();
 }
 }  // namespace fnv_005524d0
 
@@ -14852,7 +14852,7 @@ struct LogSetting
 {
     bool* Bool();
 };
-extern LogSetting g_011de4e8;
+extern LogSetting bDebugSaveBuffer_Debug;
 struct OwnerAccess
 {
     unsigned int FormID();
@@ -15022,7 +15022,7 @@ void CellSave::SaveCell(unsigned int changes)
                                                                 blockSize = 0;
                                                                 blockStart = 0;
                                                                 start = g_TESSaveLoadGame->Position();
-                                                                if (*g_011de4e8.Bool())
+                                                                if (*bDebugSaveBuffer_Debug.Bool())
                                                                     start = g_TESSaveLoadGame->Position();
                                                                 if (g_TESSaveLoadGame->Active())
                                                                 {
@@ -15055,7 +15055,7 @@ void CellSave::SaveCell(unsigned int changes)
                                                                         ownerID = owner->FormID();
                                                                     WriteOwner(&ownerID, 4);
                                                                 }
-                                                                if (*g_011de4e8.Bool())
+                                                                if (*bDebugSaveBuffer_Debug.Bool())
                                                                 {
                                                                     end = g_TESSaveLoadGame->Position();
                                                                     record = g_TESSaveLoadGame->Record();
@@ -16025,7 +16025,7 @@ class GlobalObject_0045cf30
     unsigned char* Bool();
 };
 
-extern GlobalObject_0045cf30 g_011ca0a8;
+extern GlobalObject_0045cf30 bDefaultCOCPlacement_General;
 
 class TESObjectCELL_Ext
 {
@@ -16044,7 +16044,7 @@ void TESObjectCELL_Ext::TESObjectCELL_GetCOCPlacementInfo(CellPoint3* pCenter, C
 {
     *pCenter = CellPoint3((float)((GetCellGridX() << 12) + 0x800), (float)((GetCellGridY() << 12) + 0x800), 0.0f);
     *b = NiPoint3_ZERO;
-    if (*g_011ca0a8.Bool())
+    if (*bDefaultCOCPlacement_General.Bool())
     {
         if (!IsInterior())
             return;
@@ -21077,7 +21077,7 @@ struct GlobalObject_0045cf30
 {
     bool* Bool();
 };
-extern GlobalObject_0045cf30 g_011de4e8;
+extern GlobalObject_0045cf30 bDebugSaveBuffer_Debug;
 
 // TESSaveLoadGameView: unit-local view (declares only what 0x00554b90 calls), not the shared TESSaveLoadGame; renamed so no local type keeps the shared name
 struct TESSaveLoadGameView
@@ -21102,7 +21102,7 @@ unsigned short TESObjectCELL::GetSaveSize_00554b90(unsigned int flags)
 {
     using namespace fnv_00554b90;
     using fnv_00554b90::BSStringLength;
-    using fnv_00554b90::g_011de4e8;
+    using fnv_00554b90::bDebugSaveBuffer_Debug;
     using fnv_00554b90::TESForm_GetFormByNumericID;
     using fnv_00554b90::g_TESSaveLoadGame;
     unsigned short uSize = 0;
@@ -21126,7 +21126,7 @@ unsigned short TESObjectCELL::GetSaveSize_00554b90(unsigned int flags)
     }
     if (flags & 8)
         uSize += 4;
-    if (*g_011de4e8.Bool())
+    if (*bDebugSaveBuffer_Debug.Bool())
     {
         void* pObj4 = g_TESSaveLoadGame->FUN_004fd3e0();
         if (pObj4)

@@ -5023,7 +5023,7 @@ struct Form_009a5530
 
 
 
-extern Setting g_011f1ba0;
+extern Setting bDebugCombatThreats_Combat;
 
 // @fnv 0x009a5530
 void S_9a54a0_Class::AddOrUpdateItem(int pForm, float b, float c, float d, float e)
@@ -5040,7 +5040,7 @@ void S_9a54a0_Class::AddOrUpdateItem(int pForm, float b, float c, float d, float
         pItem = new FUN_009a44e0_FormEntry(pForm, b, c, d, e);
         ((Map_009a5530*)this)->SetAt(((Form_009a5530*)pForm)->GetFormID(), (unsigned int)pItem);
     }
-    if (*g_011f1ba0.Bool())
+    if (*bDebugCombatThreats_Combat.Bool())
     {
         pItem->FUN_004534f0(0);
     }

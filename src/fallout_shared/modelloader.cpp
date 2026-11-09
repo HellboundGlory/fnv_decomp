@@ -1486,13 +1486,13 @@ const char* __fastcall NiGeometry_GetSkinInstance(const char* pThis)
 }
 }  // namespace fnv_0043fad0
 
-extern ProcessLists g_011d5a44;
+extern ProcessLists bUseFaceGenHeads_General;
 
 // @fnv 0x0043faf0
 // src: XBOX_PDB 0x0043faf0
 unsigned char BSFaceGenManager_GetUseFaceGenHeads()
 {
-    return *g_011d5a44.GetLifeStateControlFlag();
+    return *bUseFaceGenHeads_General.GetLifeStateControlFlag();
 }
 
 struct FUN_00440490_shell : public NiAVObject

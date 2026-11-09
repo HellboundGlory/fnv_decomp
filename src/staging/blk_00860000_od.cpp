@@ -1012,12 +1012,12 @@ struct GlobalObject_0044f440
 {
     void FUN_00450410();
 };
-extern GlobalObject_0044f440 g_011c72a0;
+extern GlobalObject_0044f440 fSunBrightness_BlurShader;
 // @fnv 0x0086c0c0
 // src: COMMUNITY 0x0086c0c0
 void TESRenderer_GetBlurSunBrightness()
 {
-    g_011c72a0.FUN_00450410();
+    fSunBrightness_BlurShader.FUN_00450410();
 }
 
 namespace fnv_0086c0d0 {
@@ -1025,13 +1025,13 @@ struct GlobalObject_0044f440
 {
     void FUN_00450410();
 };
-extern GlobalObject_0044f440 g_011c774c;
+extern GlobalObject_0044f440 fSkyBrightness_BlurShader;
 
 // @fnv 0x0086c0d0
 // src: COMMUNITY 0x0086c0d0
 void __cdecl TESRenderer_GetBlurSkyBrightness()
 {
-    g_011c774c.FUN_00450410();
+    fSkyBrightness_BlurShader.FUN_00450410();
 }
 }  // namespace fnv_0086c0d0
 
@@ -1040,13 +1040,13 @@ struct GlobalObject_0044f440
 {
     void FUN_00450410();
 };
-extern GlobalObject_0044f440 g_011c7314;
+extern GlobalObject_0044f440 fSISpecularMult_BlurShader;
 
 // @fnv 0x0086c0e0
 // src: COMMUNITY 0x0086c0e0
 void __cdecl TESRenderer_GetBlurSpecularMult()
 {
-    g_011c7314.FUN_00450410();
+    fSISpecularMult_BlurShader.FUN_00450410();
 }
 }  // namespace fnv_0086c0e0
 
@@ -1055,12 +1055,12 @@ struct GlobalObject_0044f440
 {
     void FUN_00450410();
 };
-extern GlobalObject_0044f440 g_011c768c;
+extern GlobalObject_0044f440 fSIEmmisiveMult_BlurShader;
 // @fnv 0x0086c0f0
 // src: COMMUNITY 0x0086c0f0
 void TESRenderer_GetBlurEmmisiveMult()
 {
-    g_011c768c.FUN_00450410();
+    fSIEmmisiveMult_BlurShader.FUN_00450410();
 }
 }  // namespace fnv_0086c0f0
 
@@ -1069,12 +1069,12 @@ struct GlobalObject_0044f440
 {
     void FUN_00450410();
 };
-extern GlobalObject_0044f440 g_011c7758;
+extern GlobalObject_0044f440 fSunBrightness_BlurShaderHDR;
 // @fnv 0x0086c100
 // src: COMMUNITY 0x0086c100
 void TESRenderer_GetBlurSunBrightnessHDR()
 {
-    g_011c7758.FUN_00450410();
+    fSunBrightness_BlurShaderHDR.FUN_00450410();
 }
 }  // namespace fnv_0086c100
 
@@ -1083,13 +1083,13 @@ struct GlobalObject_0044f440
 {
     void FUN_00450410();
 };
-extern GlobalObject_0044f440 g_011c75bc;
+extern GlobalObject_0044f440 fSkyBrightness_BlurShaderHDR;
 
 // @fnv 0x0086c110
 // src: COMMUNITY 0x0086c110
 void __cdecl TESRenderer_GetBlurSkyBrightnessHDR()
 {
-    g_011c75bc.FUN_00450410();
+    fSkyBrightness_BlurShaderHDR.FUN_00450410();
 }
 }  // namespace fnv_0086c110
 
@@ -1098,13 +1098,13 @@ struct GlobalObject_0044f440
 {
     void FUN_00450410();
 };
-extern GlobalObject_0044f440 g_011c7458;
+extern GlobalObject_0044f440 fSISpecularMult_BlurShaderHDR;
 
 // @fnv 0x0086c120
 // src: COMMUNITY 0x0086c120
 void __cdecl TESRenderer_GetBlurSpecularMultHDR()
 {
-    g_011c7458.FUN_00450410();
+    fSISpecularMult_BlurShaderHDR.FUN_00450410();
 }
 }  // namespace fnv_0086c120
 
@@ -1113,12 +1113,12 @@ struct GlobalObject_0044f440
 {
     void FUN_00450410();
 };
-GlobalObject_0044f440 g_011c74a0;
+GlobalObject_0044f440 fSIEmmisiveMult_BlurShaderHDR;
 // @fnv 0x0086c130
 // src: COMMUNITY 0x0086c130
 void TESRenderer_GetBlurEmmisiveMultHDR()
 {
-    g_011c74a0.FUN_00450410();
+    fSIEmmisiveMult_BlurShaderHDR.FUN_00450410();
 }
 }  // namespace fnv_0086c130
 

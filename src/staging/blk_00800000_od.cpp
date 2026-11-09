@@ -272,9 +272,9 @@ struct GlobalObject_0044f440
 {
     float* Float();
 };
-extern GlobalObject_0044f440 g_011db6c8;
-extern GlobalObject_0044f440 g_011db7c4;
-extern GlobalObject_0044f440 g_011db7d8;
+extern GlobalObject_0044f440 fPulseRadius_VATS;
+extern GlobalObject_0044f440 fPulseIntensity_VATS;
+extern GlobalObject_0044f440 fPulseRate_VATS;
 float __cdecl ApplyNoise(float);
 
 struct FUN_008007b0_Class
@@ -285,9 +285,9 @@ struct FUN_008007b0_Class
 // @fnv 0x008007b0
 void __thiscall FUN_008007b0_Class::SetScaledValues(float value)
 {
-    float result = ApplyNoise(value * *g_011db7d8.Float()) * 2.0f;
-    *(float*)((char*)this + 0x2ac) = result * *g_011db7c4.Float();
-    *(float*)((char*)this + 0x2b0) = result * *g_011db6c8.Float();
+    float result = ApplyNoise(value * *fPulseRate_VATS.Float()) * 2.0f;
+    *(float*)((char*)this + 0x2ac) = result * *fPulseIntensity_VATS.Float();
+    *(float*)((char*)this + 0x2b0) = result * *fPulseRadius_VATS.Float();
 }
 
 struct FUN_00800d10_class
@@ -629,19 +629,19 @@ void FUN_008006b0_Class::FOVATSEffectManager_TriggerDistort()
 }
 }  // namespace fnv_008006b0
 
-extern Setting g_011db78c;
+extern Setting fVATSTargetPulseRate_VATS;
 extern double DAT_01011588;
 float __cdecl FUN_004e44d0(float);
 struct FUN_00800820_Class
 {
     void __thiscall FOVATSEffectManager_UpdateTargetPulse(float a);
 };
-// Computes (FUN_004e44d0(a * g_011db78c.Float()[0]) + 1.0) * DAT_01011588 and stores the result at this+0x2c0.
+// Computes (FUN_004e44d0(a * fVATSTargetPulseRate_VATS.Float()[0]) + 1.0) * DAT_01011588 and stores the result at this+0x2c0.
 // @fnv 0x00800820
 // src: COMMUNITY 0x00800820
 void __thiscall FUN_00800820_Class::FOVATSEffectManager_UpdateTargetPulse(float afValue)
 {
-    float f = (FUN_004e44d0(afValue * g_011db78c.Float()[0]) + 1.0) * DAT_01011588;
+    float f = (FUN_004e44d0(afValue * fVATSTargetPulseRate_VATS.Float()[0]) + 1.0) * DAT_01011588;
     *(float*)((char*)this + 0x2c0) = f;
 }
 

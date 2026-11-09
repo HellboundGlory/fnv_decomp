@@ -67,7 +67,7 @@ bool PathManager::Initialize()
 bool PathManager::BuildPath(NiPointer<PathingRequest> m_pPathingRequest, NiPointer<ActorPathingMessageQueue> spQueue,
                             bool bAsync)
 {
-    if (*g_011d77cc.Bool() && bAsync)
+    if (*bBackgroundPathing_Pathfinding.Bool() && bAsync)
     {
         return m_pPathManagerImpl->BuildPath(m_pPathingRequest, spQueue);
     }
